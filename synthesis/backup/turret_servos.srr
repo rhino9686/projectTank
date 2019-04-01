@@ -1,0 +1,1111 @@
+#Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
+#install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: EECS373-09
+
+# Sun Mar 31 19:22:47 2019
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q4p1, Build 517R, built Oct 30 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v" (library work)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\mss_tshell.v" (library work)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\turret_servo_mss_design.v" (library work)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" (library COREAPB3_LIB)
+@I::"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servos\turret_servos.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module turret_servos
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":117:7:117:22|Synthesizing module Button_Debouncer in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":88:7:88:9|Synthesizing module pwm in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
+
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[31] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[30] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[29] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[28] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[27] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[26] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[25] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[24] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[23] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[22] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[21] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[20] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[19] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[18] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[17] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[16] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[15] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[14] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[13] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[12] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[11] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[10] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[9] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[8] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[7] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[6] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[5] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[4] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[3] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[2] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 2 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG775 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	FAMILY=32'b00000000000000000000000000010010
+	SYNC_RESET=32'b00000000000000000000000000000000
+	IADDR_NOTINUSE=32'b00000000000000000000000000000000
+	IADDR_EXTERNAL=32'b00000000000000000000000000000001
+	IADDR_SLOT0=32'b00000000000000000000000000000010
+	IADDR_SLOT1=32'b00000000000000000000000000000011
+	IADDR_SLOT2=32'b00000000000000000000000000000100
+	IADDR_SLOT3=32'b00000000000000000000000000000101
+	IADDR_SLOT4=32'b00000000000000000000000000000110
+	IADDR_SLOT5=32'b00000000000000000000000000000111
+	IADDR_SLOT6=32'b00000000000000000000000000001000
+	IADDR_SLOT7=32'b00000000000000000000000000001001
+	IADDR_SLOT8=32'b00000000000000000000000000001010
+	IADDR_SLOT9=32'b00000000000000000000000000001011
+	IADDR_SLOT10=32'b00000000000000000000000000001100
+	IADDR_SLOT11=32'b00000000000000000000000000001101
+	IADDR_SLOT12=32'b00000000000000000000000000001110
+	IADDR_SLOT13=32'b00000000000000000000000000001111
+	IADDR_SLOT14=32'b00000000000000000000000000010000
+	IADDR_SLOT15=32'b00000000000000000000000000010001
+	SL0=16'b0000000000000001
+	SL1=16'b0000000000000000
+	SL2=16'b0000000000000000
+	SL3=16'b0000000000000000
+	SL4=16'b0000000000000000
+	SL5=16'b0000000000000000
+	SL6=16'b0000000000000000
+	SL7=16'b0000000000000000
+	SL8=16'b0000000000000000
+	SL9=16'b0000000000000000
+	SL10=16'b0000000000000000
+	SL11=16'b0000000000000000
+	SL12=16'b0000000000000000
+	SL13=16'b0000000000000000
+	SL14=16'b0000000000000000
+	SL15=16'b0000000000000000
+	SC=16'b0000000000000000
+	SC_qual=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|Removing wire IA_PRDATA, as there is no assignment to it.
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:51|Synthesizing module turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\turret_servo_mss_design.v":9:7:9:29|Synthesizing module turret_servo_mss_design in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servos\turret_servos.v":9:7:9:19|Synthesizing module turret_servos in library work.
+
+@W: CL157 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\turret_servos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[2] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[2] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Pruning register bits 2 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Pruning register bits 2 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL246 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 8 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:22:47 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:22:47 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:22:47 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:22:48 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Sun Mar 31 19:22:48 2019
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\mss_tshell_syn.sdc
+@L: C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos_scck.rpt 
+Printing clock  summary report in "C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
+
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                                                    Requested     Requested     Clock        Clock                   Clock
+Clock                                                                    Frequency     Period        Type         Group                   Load 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+FAB_CLK                                                                  100.0 MHz     10.000        declared     clk_group_0             0    
+FCLK                                                                     100.0 MHz     10.000        declared     clk_group_0             0    
+turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     136  
+===============================================================================================================================================
+
+@W: MT530 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":140:0:140:5|Found inferred clock turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 136 sequential elements including BUS_INTERFACE_0.b1.PB_cnt[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+None
+None
+@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos_cck.rpt" .
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Mar 31 19:22:49 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Sun Mar 31 19:22:49 2019
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+@N: MF176 |Default generator successful 
+@N: MO231 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":140:0:140:5|Found counter in view:work.Button_Debouncer(verilog) instance PB_cnt[15:0] 
+@N: MF179 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":103:5:103:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
+@N: MF238 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":102:13:102:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 114MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 116MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 116MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                               Fanout, notes
+----------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST / M2FRESETn     30           
+======================================================================
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 120MB)
+
+Buffering turret_servo_mss_design_0_M2F_RESET_N, fanout 30 segments 2
+
+Added 1 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 120MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 136 clock pin(s) of sequential element(s)
+0 instances converted, 136 sequential instances remain driven by gated/generated clocks
+
+===================================================================================================================== Gated/Generated Clocks ======================================================================================================================
+Clock Tree ID     Driving Element                                  Drive Element Type     Fanout     Sample Instance                 Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       turret_servo_mss_design_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                136        BUS_INTERFACE_0.PRDATA_1[1]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+===================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 120MB)
+
+Writing Analyst data base C:\Users\waierdg\Desktop\turret_servos\synthesis\synwork\turret_servos_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 120MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-SP1-5
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
+
+@W: MT420 |Found inferred clock turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:turret_servo_mss_design_0.MSS_CCC_0.FAB_CLK"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Mar 31 19:22:50 2019
+#
+
+
+Top view:               turret_servos
+Library name:           smartfusion
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servo_mss_design\mss_tshell_syn.sdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -9.751
+
+                                                                         Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                                           Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     101.9 MHz     10.000        9.812         0.188     inferred     Inferred_clkgroup_0
+System                                                                   100.0 MHz     181.5 MHz     10.000        5.509         4.491     system       system_clkgroup    
+===========================================================================================================================================================================
+@W: MT548 :"c:/users/waierdg/desktop/turret_servos/component/work/turret_servo_mss_design/mss_tshell_syn.sdc":1:0:1:0|Source for clock FAB_CLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
+@W: MT548 :"c:/users/waierdg/desktop/turret_servos/component/work/turret_servo_mss_design/mss_tshell_syn.sdc":2:0:2:0|Source for clock FCLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                              Ending                                                                |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                System                                                                |  10.000      4.491   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                                turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      -9.751  |  No paths    -      |  No paths    -      |  No paths    -    
+turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  System                                                                |  10.000      7.979   |  No paths    -      |  No paths    -      |  No paths    -    
+turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      0.188   |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                                                                Arrival          
+Instance                         Reference                                                                Type     Pin     Net           Time        Slack
+                                 Clock                                                                                                                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+BUS_INTERFACE_0.p.count[6]       turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count[6]      0.737       0.188
+BUS_INTERFACE_0.p1.count[6]      turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count[6]      0.737       0.188
+BUS_INTERFACE_0.p.count[5]       turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count[5]      0.737       0.374
+BUS_INTERFACE_0.p1.count[5]      turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count[5]      0.737       0.374
+BUS_INTERFACE_0.b1.PB_cnt[4]     turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       PB_cnt[4]     0.737       0.565
+BUS_INTERFACE_0.b2.PB_cnt[4]     turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       PB_cnt[4]     0.737       0.565
+BUS_INTERFACE_0.b1.PB_cnt[3]     turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       PB_cnt[3]     0.737       0.617
+BUS_INTERFACE_0.b2.PB_cnt[3]     turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       PB_cnt[3]     0.737       0.617
+BUS_INTERFACE_0.p1.count[9]      turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count[9]      0.737       0.648
+BUS_INTERFACE_0.p.count[9]       turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count[9]      0.737       0.648
+==========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                  Starting                                                                                                   Required          
+Instance                          Reference                                                                Type     Pin     Net              Time         Slack
+                                  Clock                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+BUS_INTERFACE_0.p1.pwm            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       pwm6             9.461        0.188
+BUS_INTERFACE_0.p.pwm             turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       pwm6             9.461        0.188
+BUS_INTERFACE_0.b2.PB_out         turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       PB_out_RNO_0     9.427        0.565
+BUS_INTERFACE_0.b1.PB_out         turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       PB_out_RNO       9.427        0.565
+BUS_INTERFACE_0.p.count[19]       turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count_3[19]      9.461        0.648
+BUS_INTERFACE_0.p1.count[19]      turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count_3[19]      9.461        0.648
+BUS_INTERFACE_0.p.count[20]       turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count_3[20]      9.461        0.648
+BUS_INTERFACE_0.p1.count[20]      turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count_3[20]      9.461        0.648
+BUS_INTERFACE_0.b1.PB_cnt[15]     turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       N_5              9.461        0.652
+BUS_INTERFACE_0.b2.PB_cnt[15]     turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       N_5              9.461        0.652
+===============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.274
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.188
+
+    Number of logic level(s):                6
+    Starting point:                          BUS_INTERFACE_0.p.count[6] / Q
+    Ending point:                            BUS_INTERFACE_0.p.pwm / D
+    The start point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                                   Type     Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+BUS_INTERFACE_0.p.count[6]             DFN1     Q        Out     0.737     0.737       -         
+count[6]                               Net      -        -       1.639     -           8         
+BUS_INTERFACE_0.p.pwm6_0.G_1           OR2A     B        In      -         2.376       -         
+BUS_INTERFACE_0.p.pwm6_0.G_1           OR2A     Y        Out     0.646     3.022       -         
+N_12                                   Net      -        -       0.322     -           1         
+BUS_INTERFACE_0.p.pwm6_0.G_0_0         AO1C     C        In      -         3.344       -         
+BUS_INTERFACE_0.p.pwm6_0.G_0_0         AO1C     Y        Out     0.633     3.976       -         
+G_0_0                                  Net      -        -       0.322     -           1         
+BUS_INTERFACE_0.p.pwm6_0.G_3           OA1A     B        In      -         4.298       -         
+BUS_INTERFACE_0.p.pwm6_0.G_3           OA1A     Y        Out     0.902     5.200       -         
+N_21                                   Net      -        -       0.322     -           1         
+BUS_INTERFACE_0.p.pwm6_0.G_5           OA1      B        In      -         5.521       -         
+BUS_INTERFACE_0.p.pwm6_0.G_5           OA1      Y        Out     0.902     6.423       -         
+DWACT_CMPLE_PO2_DWACT_COMP0_E_0[0]     Net      -        -       0.322     -           1         
+BUS_INTERFACE_0.p.pwm6_0.G_8           OA1      A        In      -         6.745       -         
+BUS_INTERFACE_0.p.pwm6_0.G_8           OA1      Y        Out     0.984     7.729       -         
+G_8_0                                  Net      -        -       0.322     -           1         
+BUS_INTERFACE_0.p.pwm6_0.G_10          OA1      B        In      -         8.050       -         
+BUS_INTERFACE_0.p.pwm6_0.G_10          OA1      Y        Out     0.902     8.952       -         
+pwm6                                   Net      -        -       0.322     -           1         
+BUS_INTERFACE_0.p.pwm                  DFN1     D        In      -         9.274       -         
+=================================================================================================
+Total path delay (propagation time + setup) of 9.812 is 6.244(63.6%) logic and 3.568(36.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                             Starting                                                                                         Arrival           
+Instance                                     Reference     Type        Pin              Net                                                   Time        Slack 
+                                             Clock                                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]                       0.000       -9.751
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]                       0.000       -9.044
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[0]     CoreAPB3_0_APBmslave0_PWDATA[0]                       0.000       -8.934
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[1]     CoreAPB3_0_APBmslave0_PWDATA[1]                       0.000       -8.860
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[4]     CoreAPB3_0_APBmslave0_PWDATA[4]                       0.000       -8.821
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[5]     CoreAPB3_0_APBmslave0_PWDATA[5]                       0.000       -8.368
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[6]     CoreAPB3_0_APBmslave0_PWDATA[6]                       0.000       -8.331
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[7]     CoreAPB3_0_APBmslave0_PWDATA[7]                       0.000       -7.801
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[8]     0.000       1.107 
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          turret_servo_mss_design_0_MSS_MASTER_APB_PSELx        0.000       1.159 
+================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                               Required           
+Instance                            Reference     Type     Pin     Net                     Time         Slack 
+                                    Clock                                                                     
+--------------------------------------------------------------------------------------------------------------
+BUS_INTERFACE_0.pulseWidth1[17]     System        DFN1     D       pulseWidth1_RNO[17]     9.427        -9.751
+BUS_INTERFACE_0.pulseWidth2[17]     System        DFN1     D       pulseWidth2_RNO[17]     9.427        -9.751
+BUS_INTERFACE_0.pulseWidth1[16]     System        DFN1     D       pulseWidth1_RNO[16]     9.461        -8.342
+BUS_INTERFACE_0.pulseWidth2[16]     System        DFN1     D       pulseWidth2_RNO[16]     9.461        -8.342
+BUS_INTERFACE_0.pulseWidth1[15]     System        DFN1     D       pulseWidth1_RNO[15]     9.427        -7.485
+BUS_INTERFACE_0.pulseWidth2[15]     System        DFN1     D       pulseWidth2_RNO[15]     9.427        -7.485
+BUS_INTERFACE_0.pulseWidth1[14]     System        DFN1     D       pulseWidth1_RNO[14]     9.427        -7.452
+BUS_INTERFACE_0.pulseWidth2[14]     System        DFN1     D       pulseWidth2_RNO[14]     9.427        -7.452
+BUS_INTERFACE_0.pulseWidth1[13]     System        DFN1     D       pulseWidth1_RNO[13]     9.461        -5.691
+BUS_INTERFACE_0.pulseWidth2[13]     System        DFN1     D       pulseWidth2_RNO[13]     9.461        -5.691
+==============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      19.178
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -9.751
+
+    Number of logic level(s):                13
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[3]
+    Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                              Pin              Pin               Arrival     No. of    
+Name                                                            Type        Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                        MSS_APB     MSSPWDATA[3]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[3]                                 Net         -                -       2.082     -           14        
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                             XOR2        B                In      -         2.082       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                             XOR2        Y                Out     0.937     3.019       -         
+N_246                                                           Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1      NOR2A       B                In      -         3.825       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1      NOR2A       Y                Out     0.386     4.211       -         
+N160                                                            Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I75_Y_0     XNOR2       B                In      -         5.490       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I75_Y_0     XNOR2       Y                Out     0.937     6.427       -         
+ADD_12x12_fast_I75_Y_0                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        B                In      -         6.813       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        Y                Out     0.751     7.564       -         
+i4_mux                                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           OR2A        B                In      -         7.949       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           OR2A        Y                Out     0.514     8.464       -         
+N_50                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m15                           XA1A        C                In      -         8.850       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m15                           XA1A        Y                Out     0.645     9.494       -         
+i8_mux                                                          Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                           OA1C        B                In      -         10.301      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                           OA1C        Y                Out     0.900     11.201      -         
+i12_mux                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           OA1C        B                In      -         12.007      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           OA1C        Y                Out     0.900     12.907      -         
+i16_mux                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR3A       A                In      -         13.714      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR3A       Y                Out     0.664     14.378      -         
+i20_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                         AX1         A                In      -         14.764      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                         AX1         Y                Out     0.992     15.756      -         
+m35_0                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           XNOR3       C                In      -         16.077      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           XNOR3       Y                Out     0.985     17.063      -         
+N_238                                                           Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         B                In      -         17.448      -         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         Y                Out     0.572     18.020      -         
+N_121                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       A                In      -         18.342      -         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       Y                Out     0.514     18.856      -         
+pulseWidth1_RNO[17]                                             Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1[17]                                 DFN1        D                In      -         19.178      -         
+=====================================================================================================================================
+Total path delay (propagation time + setup) of 19.751 is 10.271(52.0%) logic and 9.480(48.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      19.178
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -9.751
+
+    Number of logic level(s):                13
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[3]
+    Ending point:                            BUS_INTERFACE_0.pulseWidth2[17] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                              Pin              Pin               Arrival     No. of    
+Name                                                            Type        Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                        MSS_APB     MSSPWDATA[3]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[3]                                 Net         -                -       2.082     -           14        
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                             XOR2        B                In      -         2.082       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                             XOR2        Y                Out     0.937     3.019       -         
+N_246                                                           Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1      NOR2A       B                In      -         3.825       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1      NOR2A       Y                Out     0.386     4.211       -         
+N160                                                            Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I75_Y_0     XNOR2       B                In      -         5.490       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I75_Y_0     XNOR2       Y                Out     0.937     6.427       -         
+ADD_12x12_fast_I75_Y_0                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        B                In      -         6.813       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        Y                Out     0.751     7.564       -         
+i4_mux                                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           OR2A        B                In      -         7.949       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           OR2A        Y                Out     0.514     8.464       -         
+N_50                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m15                           XA1A        C                In      -         8.850       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m15                           XA1A        Y                Out     0.645     9.494       -         
+i8_mux                                                          Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                           OA1C        B                In      -         10.301      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                           OA1C        Y                Out     0.900     11.201      -         
+i12_mux                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           OA1C        B                In      -         12.007      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           OA1C        Y                Out     0.900     12.907      -         
+i16_mux                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR3A       A                In      -         13.714      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR3A       Y                Out     0.664     14.378      -         
+i20_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                         AX1         A                In      -         14.764      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                         AX1         Y                Out     0.992     15.756      -         
+m35_0                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           XNOR3       C                In      -         16.077      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           XNOR3       Y                Out     0.985     17.063      -         
+N_238                                                           Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                           MX2         B                In      -         17.448      -         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                           MX2         Y                Out     0.572     18.020      -         
+N_106                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2_RNO[17]                             NOR2B       A                In      -         18.342      -         
+BUS_INTERFACE_0.pulseWidth2_RNO[17]                             NOR2B       Y                Out     0.514     18.856      -         
+pulseWidth2_RNO[17]                                             Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2[17]                                 DFN1        D                In      -         19.178      -         
+=====================================================================================================================================
+Total path delay (propagation time + setup) of 19.751 is 10.271(52.0%) logic and 9.480(48.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.578
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -9.152
+
+    Number of logic level(s):                12
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[3]
+    Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                             Pin              Pin               Arrival     No. of    
+Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[3]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[3]                                Net         -                -       2.082     -           14        
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        B                In      -         2.082       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        Y                Out     0.937     3.019       -         
+N_246                                                          Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1     NOR2A       B                In      -         3.825       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1     NOR2A       Y                Out     0.386     4.211       -         
+N160                                                           Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I30_Y      AO1A        B                In      -         5.490       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I30_Y      AO1A        Y                Out     0.598     6.088       -         
+N213                                                           Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I46_Y      AO1         B                In      -         6.894       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I46_Y      AO1         Y                Out     0.598     7.492       -         
+N286                                                           Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I78_Y      XNOR3       C                In      -         7.878       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I78_Y      XNOR3       Y                Out     0.985     8.863       -         
+un4_pulseWidth1[7]                                             Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        A                In      -         9.670       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.931     10.601      -         
+i12_mux                                                        Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         11.408      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     12.308      -         
+i16_mux                                                        Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         13.114      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     13.778      -         
+i20_mux                                                        Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                        AX1         A                In      -         14.164      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                        AX1         Y                Out     0.992     15.156      -         
+m35_0                                                          Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          XNOR3       C                In      -         15.478      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          XNOR3       Y                Out     0.985     16.463      -         
+N_238                                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                          MX2         B                In      -         16.849      -         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                          MX2         Y                Out     0.572     17.421      -         
+N_121                                                          Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                            NOR2B       A                In      -         17.742      -         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                            NOR2B       Y                Out     0.514     18.257      -         
+pulseWidth1_RNO[17]                                            Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1[17]                                DFN1        D                In      -         18.578      -         
+====================================================================================================================================
+Total path delay (propagation time + setup) of 19.152 is 9.636(50.3%) logic and 9.515(49.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.578
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -9.152
+
+    Number of logic level(s):                12
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[3]
+    Ending point:                            BUS_INTERFACE_0.pulseWidth2[17] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                             Pin              Pin               Arrival     No. of    
+Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[3]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[3]                                Net         -                -       2.082     -           14        
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        B                In      -         2.082       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        Y                Out     0.937     3.019       -         
+N_246                                                          Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1     NOR2A       B                In      -         3.825       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1     NOR2A       Y                Out     0.386     4.211       -         
+N160                                                           Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I30_Y      AO1A        B                In      -         5.490       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I30_Y      AO1A        Y                Out     0.598     6.088       -         
+N213                                                           Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I46_Y      AO1         B                In      -         6.894       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I46_Y      AO1         Y                Out     0.598     7.492       -         
+N286                                                           Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I78_Y      XNOR3       C                In      -         7.878       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I78_Y      XNOR3       Y                Out     0.985     8.863       -         
+un4_pulseWidth1[7]                                             Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        A                In      -         9.670       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.931     10.601      -         
+i12_mux                                                        Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         11.408      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     12.308      -         
+i16_mux                                                        Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         13.114      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     13.778      -         
+i20_mux                                                        Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                        AX1         A                In      -         14.164      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                        AX1         Y                Out     0.992     15.156      -         
+m35_0                                                          Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          XNOR3       C                In      -         15.478      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          XNOR3       Y                Out     0.985     16.463      -         
+N_238                                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                          MX2         B                In      -         16.849      -         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                          MX2         Y                Out     0.572     17.421      -         
+N_106                                                          Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2_RNO[17]                            NOR2B       A                In      -         17.742      -         
+BUS_INTERFACE_0.pulseWidth2_RNO[17]                            NOR2B       Y                Out     0.514     18.257      -         
+pulseWidth2_RNO[17]                                            Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2[17]                                DFN1        D                In      -         18.578      -         
+====================================================================================================================================
+Total path delay (propagation time + setup) of 19.152 is 9.636(50.3%) logic and 9.515(49.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.470
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -9.044
+
+    Number of logic level(s):                13
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[2]
+    Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                              Pin              Pin               Arrival     No. of    
+Name                                                            Type        Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                        MSS_APB     MSSPWDATA[2]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[2]                                 Net         -                -       1.423     -           6         
+BUS_INTERFACE_0.un4_pulseWidth1_0_3_1                           OR2A        B                In      -         1.423       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_3_1                           OR2A        Y                Out     0.646     2.070       -         
+N_167_1                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1      NOR2A       A                In      -         2.876       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I0_CO1      NOR2A       Y                Out     0.627     3.504       -         
+N160                                                            Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I75_Y_0     XNOR2       B                In      -         4.783       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_30.ADD_12x12_fast_I75_Y_0     XNOR2       Y                Out     0.937     5.720       -         
+ADD_12x12_fast_I75_Y_0                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        B                In      -         6.105       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        Y                Out     0.751     6.856       -         
+i4_mux                                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           OR2A        B                In      -         7.242       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           OR2A        Y                Out     0.514     7.756       -         
+N_50                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m15                           XA1A        C                In      -         8.142       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m15                           XA1A        Y                Out     0.645     8.787       -         
+i8_mux                                                          Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                           OA1C        B                In      -         9.593       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m21                           OA1C        Y                Out     0.900     10.493      -         
+i12_mux                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           OA1C        B                In      -         11.300      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           OA1C        Y                Out     0.900     12.200      -         
+i16_mux                                                         Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR3A       A                In      -         13.007      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR3A       Y                Out     0.664     13.670      -         
+i20_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                         AX1         A                In      -         14.056      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35_0                         AX1         Y                Out     0.992     15.049      -         
+m35_0                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           XNOR3       C                In      -         15.370      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           XNOR3       Y                Out     0.985     16.355      -         
+N_238                                                           Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         B                In      -         16.741      -         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         Y                Out     0.572     17.313      -         
+N_121                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       A                In      -         17.634      -         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       Y                Out     0.514     18.149      -         
+pulseWidth1_RNO[17]                                             Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1[17]                                 DFN1        D                In      -         18.470      -         
+=====================================================================================================================================
+Total path delay (propagation time + setup) of 19.044 is 10.222(53.7%) logic and 8.822(46.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell turret_servos.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2    28      1.0       28.0
+             AND2A     2      1.0        2.0
+              AND3    94      1.0       94.0
+               AO1    16      1.0       16.0
+              AO13     3      1.0        3.0
+              AO1A     1      1.0        1.0
+              AO1C    15      1.0       15.0
+              AOI1     4      1.0        4.0
+             AOI1A     4      1.0        4.0
+             AOI1B    16      1.0       16.0
+               AX1    13      1.0       13.0
+              AX1A     2      1.0        2.0
+              AX1D     5      1.0        5.0
+              BUFF     1      1.0        1.0
+               GND    10      0.0        0.0
+               INV     2      1.0        2.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2     8      1.0        8.0
+              MX2A     2      1.0        2.0
+              MX2B    22      1.0       22.0
+              NOR2    18      1.0       18.0
+             NOR2A    31      1.0       31.0
+             NOR2B    55      1.0       55.0
+              NOR3     8      1.0        8.0
+             NOR3A    15      1.0       15.0
+             NOR3B    21      1.0       21.0
+             NOR3C    27      1.0       27.0
+               OA1     8      1.0        8.0
+              OA1A    11      1.0       11.0
+              OA1B     2      1.0        2.0
+              OA1C     9      1.0        9.0
+               OR2     9      1.0        9.0
+              OR2A    46      1.0       46.0
+              OR2B    12      1.0       12.0
+               OR3     4      1.0        4.0
+              OR3A     6      1.0        6.0
+              OR3B     6      1.0        6.0
+              OR3C     6      1.0        6.0
+             RCOSC     1      0.0        0.0
+               VCC    10      0.0        0.0
+               XA1     2      1.0        2.0
+              XA1A    14      1.0       14.0
+              XA1B     1      1.0        1.0
+             XNOR2    40      1.0       40.0
+             XNOR3     6      1.0        6.0
+              XO1A     2      1.0        2.0
+              XOR2    64      1.0       64.0
+              XOR3     3      1.0        3.0
+
+
+              DFN1   136      1.0      136.0
+                   -----          ----------
+             TOTAL   823               800.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     2
+         INBUF_MSS     1
+            OUTBUF     2
+                   -----
+             TOTAL     5
+
+
+Core Cells         : 800 of 4608 (17%)
+IO Cells           : 5
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 29MB peak: 120MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Mar 31 19:22:50 2019
+
+###########################################################]

@@ -1,0 +1,6 @@
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 2 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Pruning register bits 2 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Pruning register bits 2 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL246 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 8 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+

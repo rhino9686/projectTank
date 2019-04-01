@@ -1,0 +1,21 @@
+#define SWITCHES 0x40050000
+#define RIGHT_LEFT_SERVO 0x40050010
+#define UP_DOWN_SERVO 0x40050014
+
+
+
+int main()
+{
+	volatile uint32_t* switchAddr = (volatile uint32_t *)(SWITCHES);
+	volatile uint32_t* rlAddr = (volatile uint32_t *)(RIGHT_LEFT_SERVO);
+	volatile uint32_t* udAddr = (volatile uint32_t *)(UP_DOWN_SERVO);
+	uint32_t switches = 0;
+
+	while( 1 )
+	{
+		switches =
+
+
+
+	}
+}

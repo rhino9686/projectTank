@@ -1,0 +1,17 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\waierdg\\Desktop\\turret_servos\\synthesis\\synwork\\BUS_INTERFACE_comp.srs|-top|BUS_INTERFACE|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\waierdg\\Desktop\\turret_servos\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
+#CUR:"C:\\Users\\waierdg\\Desktop\\turret_servos\\hdl\\busapb3.v":1554073855
+0			"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work BUS_INTERFACE 0
+module work pwm 0
+module work Button_Debouncer 0

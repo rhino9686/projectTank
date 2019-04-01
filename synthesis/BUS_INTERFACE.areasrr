@@ -1,0 +1,173 @@
+----------------------------------------------------------------------
+Report for cell BUS_INTERFACE.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO13        11       1.0       11.0
+                               AO1A         1       1.0        1.0
+                               AO1D         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1A         1       1.0        1.0
+                               AX1B         2       1.0        2.0
+                               AX1D         3       1.0        3.0
+                               BUFF         1       1.0        1.0
+                 Button_Debouncer_1         1      70.0       70.0
+               Button_Debouncer_1_0         1      70.0       70.0
+                             CLKBUF         1       0.0        0.0
+                               DFN1        32       1.0       32.0
+                                GND         1       0.0        0.0
+                              INBUF        22       0.0        0.0
+                                MX2        10       1.0       10.0
+                               MX2B        20       1.0       20.0
+                               NOR2         3       1.0        3.0
+                              NOR2A         6       1.0        6.0
+                              NOR2B        17       1.0       17.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         1       1.0        1.0
+                              NOR3C         3       1.0        3.0
+                                OA1         1       1.0        1.0
+                               OA1B         2       1.0        2.0
+                               OR2A        14       1.0       14.0
+                             OUTBUF        36       0.0        0.0
+                                VCC         1       0.0        0.0
+                              XNOR2         4       1.0        4.0
+                              XNOR3         8       1.0        8.0
+                               XOR2         8       1.0        8.0
+                               XOR3         4       1.0        4.0
+                              pwm_1         1     224.0      224.0
+                            pwm_1_0         1     224.0      224.0
+                            
+                         TOTAL            220                743.0
+----------------------------------------------------------------------
+Report for cell pwm_1_0.netlist
+  Original Cell name pwm_1
+     Instance path:  p1
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        14       1.0       14.0
+                              AND2A         1       1.0        1.0
+                               AND3        47       1.0       47.0
+                                AO1         1       1.0        1.0
+                               AO1C         7       1.0        7.0
+                               AOI1         1       1.0        1.0
+                              AOI1A         2       1.0        2.0
+                              AOI1B         7       1.0        7.0
+                                AX1         4       1.0        4.0
+                               DFN1        33       1.0       33.0
+                                GND         1       0.0        0.0
+                               NOR2         7       1.0        7.0
+                              NOR2A         6       1.0        6.0
+                              NOR2B         9       1.0        9.0
+                               NOR3         4       1.0        4.0
+                              NOR3A         5       1.0        5.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         7       1.0        7.0
+                                OA1         4       1.0        4.0
+                               OA1A         4       1.0        4.0
+                                OR2         1       1.0        1.0
+                               OR2A        12       1.0       12.0
+                               OR3B         2       1.0        2.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                              XNOR2        16       1.0       16.0
+                               XOR2        27       1.0       27.0
+                            
+                         TOTAL            226                224.0
+----------------------------------------------------------------------
+Report for cell pwm_1.netlist
+  Original Cell name pwm
+     Instance path:  p
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        14       1.0       14.0
+                              AND2A         1       1.0        1.0
+                               AND3        47       1.0       47.0
+                                AO1         1       1.0        1.0
+                               AO1C         7       1.0        7.0
+                               AOI1         1       1.0        1.0
+                              AOI1A         2       1.0        2.0
+                              AOI1B         7       1.0        7.0
+                                AX1         4       1.0        4.0
+                               DFN1        33       1.0       33.0
+                                GND         1       0.0        0.0
+                               NOR2         7       1.0        7.0
+                              NOR2A         6       1.0        6.0
+                              NOR2B         9       1.0        9.0
+                               NOR3         4       1.0        4.0
+                              NOR3A         5       1.0        5.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         7       1.0        7.0
+                                OA1         4       1.0        4.0
+                               OA1A         4       1.0        4.0
+                                OR2         1       1.0        1.0
+                               OR2A        12       1.0       12.0
+                               OR3B         2       1.0        2.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                              XNOR2        16       1.0       16.0
+                               XOR2        27       1.0       27.0
+                            
+                         TOTAL            226                224.0
+----------------------------------------------------------------------
+Report for cell Button_Debouncer_1_0.netlist
+  Original Cell name Button_Debouncer_1
+     Instance path:  b2
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AOI1         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               DFN1        19       1.0       19.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                              NOR2A         4       1.0        4.0
+                              NOR2B         3       1.0        3.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         8       1.0        8.0
+                              NOR3C         2       1.0        2.0
+                               OA1A         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         3       1.0        3.0
+                               OR2A         1       1.0        1.0
+                               OR2B         6       1.0        6.0
+                                OR3         1       1.0        1.0
+                               OR3A         3       1.0        3.0
+                               OR3B         1       1.0        1.0
+                               OR3C         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         6       1.0        6.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             72                 70.0
+----------------------------------------------------------------------
+Report for cell Button_Debouncer_1.netlist
+  Original Cell name Button_Debouncer
+     Instance path:  b1
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AOI1         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               DFN1        19       1.0       19.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                              NOR2A         4       1.0        4.0
+                              NOR2B         3       1.0        3.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         8       1.0        8.0
+                              NOR3C         2       1.0        2.0
+                               OA1A         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         3       1.0        3.0
+                               OR2A         1       1.0        1.0
+                               OR2B         6       1.0        6.0
+                                OR3         1       1.0        1.0
+                               OR3A         3       1.0        3.0
+                               OR3B         1       1.0        1.0
+                               OR3C         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         6       1.0        6.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             72                 70.0

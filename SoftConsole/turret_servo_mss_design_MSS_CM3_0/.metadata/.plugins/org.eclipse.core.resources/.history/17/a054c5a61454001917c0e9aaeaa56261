@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdint.h>
+
+
+int main()
+{
+	volatile uint32_t * switchAddr = (volatile uint32_t *)(0x40050000);
+	volatile uint32_t * rlAddr = (volatile uint32_t *)(0x40050010);
+	volatile uint32_t * udAddr = (volatile uint32_t *)(0x40050014);
+
+	uint32_t switchVals = 0;
+	uint32_t udPos = 0;
+	uint32_t rlPos = 0;
+
+	while( 1 )
+	{
+		switchVals = *switchAddr;
+
+		if (switchVals == 2) {
+			if (rlPos == 1800000){
+				*rlAddr = 1800000;
+			} else {
+				rlPos += 1;
+				*rlAddr = rlPos;
+			}
+		} else if (switchVals == 1) {
+			if (rlPos == 0){
+				*rlAddr = 0;
+			} else {
+				rlPos -= 1;
+				*rlAddr = rlPos;
+			}
+
+		}
+
+		*udAddr = udPos;
+
+
+	}
+
+	return 0;
+}

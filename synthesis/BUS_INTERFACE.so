@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>BUS_INTERFACE</design>
+	<target_edif>C:\Users\waierdg\Desktop\turret_servos\synthesis\BUS_INTERFACE.edn</target_edif>
+</SynplifyOutput>

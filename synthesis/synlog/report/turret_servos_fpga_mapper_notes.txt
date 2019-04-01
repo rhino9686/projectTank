@@ -1,0 +1,14 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\waierdg\desktop\turret_servos\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MF176 |Default generator successful 
+@N: MO231 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":140:0:140:5|Found counter in view:work.Button_Debouncer(verilog) instance PB_cnt[15:0] 
+@N: MF179 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":103:5:103:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
+@N: MF238 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":102:13:102:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MT615 |Found clock FCLK with period 10.00ns 
+@N: MT615 |Found clock FAB_CLK with period 10.00ns 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

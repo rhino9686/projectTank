@@ -1,0 +1,32 @@
+!SESSION 2019-03-31 19:43:41.936 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import C:\Users\waierdg\Desktop\turret_servos\SoftConsole\turret_servo_mss_design_MSS_CM3_0\projects\turret_servo_mss_design_MSS_CM3_0_hw_platform
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data C:/Users/waierdg/Desktop/turret_servos/SoftConsole/turret_servo_mss_design_MSS_CM3_0 -import C:\Users\waierdg\Desktop\turret_servos\SoftConsole\turret_servo_mss_design_MSS_CM3_0\projects\turret_servo_mss_design_MSS_CM3_0_hw_platform
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-31 19:43:43.912
+!MESSAGE Indexed 'turret_servo_mss_design_MSS_CM3_0_hw_platform' (16 sources, 55 headers) in 0.59 sec: 3,914 declarations; 7,647 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+!SESSION 2019-03-31 19:43:44.649 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import C:\Users\waierdg\Desktop\turret_servos\SoftConsole\turret_servo_mss_design_MSS_CM3_0\projects\turret_servo_mss_design_MSS_CM3_0_app
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data C:/Users/waierdg/Desktop/turret_servos/SoftConsole/turret_servo_mss_design_MSS_CM3_0 -import C:\Users\waierdg\Desktop\turret_servos\SoftConsole\turret_servo_mss_design_MSS_CM3_0\projects\turret_servo_mss_design_MSS_CM3_0_app
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-31 19:43:45.297
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-31 19:43:46.122
+!MESSAGE Indexed 'turret_servo_mss_design_MSS_CM3_0_app' (1 sources, 8 headers) in 0.09 sec: 1 declarations; 0 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2019-03-31 19:45:41.287 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:/Users/waierdg/Desktop/turret_servos/SoftConsole/turret_servo_mss_design_MSS_CM3_0
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-31 19:45:42.050
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

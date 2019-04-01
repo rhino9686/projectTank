@@ -1,0 +1,9 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF176 |Default generator successful 
+@N: MO231 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":140:0:140:5|Found counter in view:work.Button_Debouncer(verilog) instance PB_cnt[15:0] 
+@N: MF179 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":103:5:103:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
+@N: MF238 :"c:\users\waierdg\desktop\turret_servos\hdl\busapb3.v":102:13:102:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: FP130 |Promoting Net PCLK_c on CLKBUF  PCLK_pad 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

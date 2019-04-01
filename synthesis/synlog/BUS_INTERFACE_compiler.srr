@@ -1,0 +1,93 @@
+Synopsys HDL Compiler, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q4p1, Build 517R, built Oct 30 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v" (library work)
+Verilog syntax check successful!
+Selecting top level module BUS_INTERFACE
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":117:7:117:22|Synthesizing module Button_Debouncer in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":88:7:88:9|Synthesizing module pwm in library work.
+
+@N: CG364 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
+
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[31] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[30] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[29] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[28] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[27] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[26] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[25] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[24] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[23] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[22] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[21] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[20] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[19] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[18] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[17] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[16] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[15] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[14] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[13] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[12] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[11] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[10] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[9] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[8] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[7] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[6] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[5] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[4] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[3] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[2] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 2 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[2] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[2] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":63:0:63:5|Pruning register bits 2 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":53:0:53:5|Pruning register bits 2 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL246 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\waierdg\Desktop\turret_servos\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 8 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:21:30 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:21:30 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar 31 19:21:30 2019
+
+###########################################################]

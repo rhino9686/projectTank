@@ -1,0 +1,510 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Sun Mar 31 20:33:57 2019
+
+
+Design: turret_servos
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[17]:D
+  Delay (ns):            18.446
+  Slack (ns):            -7.239
+  Arrival (ns):          22.001
+  Required (ns):         14.762
+
+Path 2
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[17]:D
+  Delay (ns):            18.441
+  Slack (ns):            -7.238
+  Arrival (ns):          21.996
+  Required (ns):         14.758
+
+Path 3
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[16]:D
+  Delay (ns):            18.236
+  Slack (ns):            -7.080
+  Arrival (ns):          21.791
+  Required (ns):         14.711
+
+Path 4
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[16]:D
+  Delay (ns):            18.199
+  Slack (ns):            -7.028
+  Arrival (ns):          21.754
+  Required (ns):         14.726
+
+Path 5
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[14]:D
+  Delay (ns):            17.271
+  Slack (ns):            -6.078
+  Arrival (ns):          20.826
+  Required (ns):         14.748
+
+Path 6
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[14]:D
+  Delay (ns):            17.271
+  Slack (ns):            -6.078
+  Arrival (ns):          20.826
+  Required (ns):         14.748
+
+Path 7
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[15]:D
+  Delay (ns):            16.929
+  Slack (ns):            -5.722
+  Arrival (ns):          20.484
+  Required (ns):         14.762
+
+Path 8
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[15]:D
+  Delay (ns):            16.914
+  Slack (ns):            -5.707
+  Arrival (ns):          20.469
+  Required (ns):         14.762
+
+Path 9
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[13]:D
+  Delay (ns):            16.317
+  Slack (ns):            -5.151
+  Arrival (ns):          19.872
+  Required (ns):         14.721
+
+Path 10
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[12]:D
+  Delay (ns):            15.852
+  Slack (ns):            -4.654
+  Arrival (ns):          19.407
+  Required (ns):         14.753
+
+Path 11
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[12]:D
+  Delay (ns):            15.849
+  Slack (ns):            -4.646
+  Arrival (ns):          19.404
+  Required (ns):         14.758
+
+Path 12
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[13]:D
+  Delay (ns):            15.584
+  Slack (ns):            -4.413
+  Arrival (ns):          19.139
+  Required (ns):         14.726
+
+Path 13
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[11]:D
+  Delay (ns):            15.072
+  Slack (ns):            -3.884
+  Arrival (ns):          18.627
+  Required (ns):         14.743
+
+Path 14
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[10]:D
+  Delay (ns):            14.929
+  Slack (ns):            -3.773
+  Arrival (ns):          18.484
+  Required (ns):         14.711
+
+Path 15
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[11]:D
+  Delay (ns):            14.766
+  Slack (ns):            -3.578
+  Arrival (ns):          18.321
+  Required (ns):         14.743
+
+Path 16
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[10]:D
+  Delay (ns):            14.167
+  Slack (ns):            -2.996
+  Arrival (ns):          17.722
+  Required (ns):         14.726
+
+Path 17
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[9]:D
+  Delay (ns):            13.910
+  Slack (ns):            -2.724
+  Arrival (ns):          17.465
+  Required (ns):         14.741
+
+Path 18
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[9]:D
+  Delay (ns):            13.615
+  Slack (ns):            -2.412
+  Arrival (ns):          17.170
+  Required (ns):         14.758
+
+Path 19
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[8]:D
+  Delay (ns):            12.844
+  Slack (ns):            -1.658
+  Arrival (ns):          16.399
+  Required (ns):         14.741
+
+Path 20
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[8]:D
+  Delay (ns):            12.542
+  Slack (ns):            -1.356
+  Arrival (ns):          16.097
+  Required (ns):         14.741
+
+Path 21
+  From:                  BUS_INTERFACE_0/p1/count[11]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            10.739
+  Slack (ns):            -1.212
+  Arrival (ns):          15.961
+  Required (ns):         14.749
+
+Path 22
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[2]:D
+  Delay (ns):            12.364
+  Slack (ns):            -1.181
+  Arrival (ns):          15.919
+  Required (ns):         14.738
+
+Path 23
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[4]:D
+  Delay (ns):            12.329
+  Slack (ns):            -1.178
+  Arrival (ns):          15.884
+  Required (ns):         14.706
+
+Path 24
+  From:                  BUS_INTERFACE_0/p1/count[10]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            10.692
+  Slack (ns):            -1.176
+  Arrival (ns):          15.925
+  Required (ns):         14.749
+
+Path 25
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    BUS_INTERFACE_0/pulseWidth1[17]:D
+  Delay (ns):            12.324
+  Slack (ns):            -1.121
+  Arrival (ns):          15.879
+  Required (ns):         14.758
+
+Path 26
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[5]:D
+  Delay (ns):            12.050
+  Slack (ns):            -0.862
+  Arrival (ns):          15.605
+  Required (ns):         14.743
+
+Path 27
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[0]:D
+  Delay (ns):            10.325
+  Slack (ns):            -0.847
+  Arrival (ns):          15.568
+  Required (ns):         14.721
+
+Path 28
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    BUS_INTERFACE_0/pulseWidth1[16]:D
+  Delay (ns):            12.022
+  Slack (ns):            -0.819
+  Arrival (ns):          15.577
+  Required (ns):         14.758
+
+Path 29
+  From:                  BUS_INTERFACE_0/p1/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            10.334
+  Slack (ns):            -0.813
+  Arrival (ns):          15.562
+  Required (ns):         14.749
+
+Path 30
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[3]:D
+  Delay (ns):            11.951
+  Slack (ns):            -0.806
+  Arrival (ns):          15.506
+  Required (ns):         14.700
+
+Path 31
+  From:                  BUS_INTERFACE_0/p/count[2]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            10.329
+  Slack (ns):            -0.801
+  Arrival (ns):          15.542
+  Required (ns):         14.741
+
+Path 32
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[10]:D
+  Delay (ns):            10.191
+  Slack (ns):            -0.725
+  Arrival (ns):          15.434
+  Required (ns):         14.709
+
+Path 33
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[7]:D
+  Delay (ns):            10.139
+  Slack (ns):            -0.665
+  Arrival (ns):          15.382
+  Required (ns):         14.717
+
+Path 34
+  From:                  BUS_INTERFACE_0/p/count[3]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            10.148
+  Slack (ns):            -0.629
+  Arrival (ns):          15.370
+  Required (ns):         14.741
+
+Path 35
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[17]:D
+  Delay (ns):            10.065
+  Slack (ns):            -0.587
+  Arrival (ns):          15.308
+  Required (ns):         14.721
+
+Path 36
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[6]:D
+  Delay (ns):            11.771
+  Slack (ns):            -0.578
+  Arrival (ns):          15.326
+  Required (ns):         14.748
+
+Path 37
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[3]:D
+  Delay (ns):            11.745
+  Slack (ns):            -0.557
+  Arrival (ns):          15.300
+  Required (ns):         14.743
+
+Path 38
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[4]:D
+  Delay (ns):            11.745
+  Slack (ns):            -0.552
+  Arrival (ns):          15.300
+  Required (ns):         14.748
+
+Path 39
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[6]:D
+  Delay (ns):            11.722
+  Slack (ns):            -0.536
+  Arrival (ns):          15.277
+  Required (ns):         14.741
+
+Path 40
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[2]:D
+  Delay (ns):            11.711
+  Slack (ns):            -0.533
+  Arrival (ns):          15.266
+  Required (ns):         14.733
+
+Path 41
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[15]:D
+  Delay (ns):            9.996
+  Slack (ns):            -0.518
+  Arrival (ns):          15.239
+  Required (ns):         14.721
+
+Path 42
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[7]:D
+  Delay (ns):            11.686
+  Slack (ns):            -0.501
+  Arrival (ns):          15.241
+  Required (ns):         14.740
+
+Path 43
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[18]:D
+  Delay (ns):            9.953
+  Slack (ns):            -0.475
+  Arrival (ns):          15.196
+  Required (ns):         14.721
+
+Path 44
+  From:                  BUS_INTERFACE_0/p/count[13]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            9.990
+  Slack (ns):            -0.472
+  Arrival (ns):          15.213
+  Required (ns):         14.741
+
+Path 45
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[20]:D
+  Delay (ns):            9.912
+  Slack (ns):            -0.459
+  Arrival (ns):          15.155
+  Required (ns):         14.696
+
+Path 46
+  From:                  BUS_INTERFACE_0/p/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p/count[19]:D
+  Delay (ns):            9.908
+  Slack (ns):            -0.451
+  Arrival (ns):          15.151
+  Required (ns):         14.700
+
+Path 47
+  From:                  BUS_INTERFACE_0/p1/count[2]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            9.894
+  Slack (ns):            -0.354
+  Arrival (ns):          15.103
+  Required (ns):         14.749
+
+Path 48
+  From:                  BUS_INTERFACE_0/b2/PB_cnt[7]:CLK
+  To:                    BUS_INTERFACE_0/b2/PB_cnt[15]:D
+  Delay (ns):            9.832
+  Slack (ns):            -0.341
+  Arrival (ns):          15.065
+  Required (ns):         14.724
+
+Path 49
+  From:                  BUS_INTERFACE_0/pulseWidth2[11]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            9.852
+  Slack (ns):            -0.336
+  Arrival (ns):          15.085
+  Required (ns):         14.749
+
+Path 50
+  From:                  BUS_INTERFACE_0/b2/PB_cnt[7]:CLK
+  To:                    BUS_INTERFACE_0/b2/PB_cnt[14]:D
+  Delay (ns):            9.810
+  Slack (ns):            -0.330
+  Arrival (ns):          15.043
+  Required (ns):         14.713
+
+Path 51
+  From:                  BUS_INTERFACE_0/pulseWidth2[10]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            9.808
+  Slack (ns):            -0.292
+  Arrival (ns):          15.041
+  Required (ns):         14.749
+
+Path 52
+  From:                  BUS_INTERFACE_0/b2/PB_cnt[7]:CLK
+  To:                    BUS_INTERFACE_0/b2/PB_out:D
+  Delay (ns):            9.744
+  Slack (ns):            -0.248
+  Arrival (ns):          14.977
+  Required (ns):         14.729
+
+Path 53
+  From:                  BUS_INTERFACE_0/p/count[4]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            9.704
+  Slack (ns):            -0.193
+  Arrival (ns):          14.934
+  Required (ns):         14.741
+
+Path 54
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[7]:D
+  Delay (ns):            11.299
+  Slack (ns):            -0.113
+  Arrival (ns):          14.854
+  Required (ns):         14.741
+
+Path 55
+  From:                  BUS_INTERFACE_0/pulseWidth1[2]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            9.618
+  Slack (ns):            -0.105
+  Arrival (ns):          14.846
+  Required (ns):         14.741
+
+Path 56
+  From:                  BUS_INTERFACE_0/p1/count[13]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            9.596
+  Slack (ns):            -0.075
+  Arrival (ns):          14.824
+  Required (ns):         14.749
+
+Path 57
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[5]:D
+  Delay (ns):            11.256
+  Slack (ns):            -0.070
+  Arrival (ns):          14.811
+  Required (ns):         14.741
+
+Path 58
+  From:                  BUS_INTERFACE_0/p1/count[3]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            9.592
+  Slack (ns):            -0.052
+  Arrival (ns):          14.801
+  Required (ns):         14.749
+
+Path 59
+  From:                  BUS_INTERFACE_0/b2/PB_cnt[5]:CLK
+  To:                    BUS_INTERFACE_0/b2/PB_cnt[15]:D
+  Delay (ns):            9.520
+  Slack (ns):            -0.026
+  Arrival (ns):          14.750
+  Required (ns):         14.724
+
+Path 60
+  From:                  BUS_INTERFACE_0/pulseWidth1[11]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            9.524
+  Slack (ns):            -0.016
+  Arrival (ns):          14.757
+  Required (ns):         14.741
+
+Path 61
+  From:                  BUS_INTERFACE_0/b2/PB_cnt[5]:CLK
+  To:                    BUS_INTERFACE_0/b2/PB_cnt[14]:D
+  Delay (ns):            9.498
+  Slack (ns):            -0.015
+  Arrival (ns):          14.728
+  Required (ns):         14.713
+
