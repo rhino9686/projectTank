@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
 #--  Project file C:\Users\waierdg\Desktop\turretservos\synthesis\run_options.txt
-#--  Written on Tue Apr 02 15:15:17 2019
+#--  Written on Tue Apr 02 16:51:32 2019
 
 
 #project files

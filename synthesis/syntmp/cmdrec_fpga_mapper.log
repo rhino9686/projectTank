@@ -2,16 +2,16 @@ C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -prodtype  synpli
 relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part A2F200M3F -package FBGA484 -grade STD -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile ..\synlog\report\turret_servos_fpga_mapper.xml -top_level_module turret_servos -licensetype synplifypro_actel -flow mapping -mp 4 -prjfile ..\scratchproject.prs -implementation synthesis -multisrs -oedif ..\turret_servos.edn -freq 100.000 -tcl ..\..\component\work\turret_servo_mss_design\mss_tshell_syn.sdc ..\synwork\turret_servos_prem.srd -sap ..\turret_servos.sap -otap ..\turret_servos.tap -omap ..\turret_servos.map -devicelib ..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v -sap ..\turret_servos.sap -ologparam turret_servos.plg -osyn ..\turret_servos.srm -prjdir ..\ -prjname turret_servos_syn -log ..\synlog\turret_servos_fpga_mapper.srr
 rc:1 success:1 runtime:2
 file:..\scratchproject.prs|io:o|time:1554232085|size:2952|exec:0|csum:
-file:..\turret_servos.edn|io:o|time:1554232520|size:486012|exec:0|csum:
-file:..\..\component\work\turret_servo_mss_design\mss_tshell_syn.sdc|io:i|time:1554232491|size:218|exec:0|csum:D8081D850AB1F4E2DA99ED16B64DCCBB
-file:..\synwork\turret_servos_prem.srd|io:i|time:1554232519|size:39303|exec:0|csum:F110EAAD0CB3A909F194B5A2316B299D
-file:..\turret_servos.sap|io:o|time:1554232519|size:954|exec:0|csum:
+file:..\turret_servos.edn|io:o|time:1554238296|size:621728|exec:0|csum:
+file:..\..\component\work\turret_servo_mss_design\mss_tshell_syn.sdc|io:i|time:1554236666|size:218|exec:0|csum:D8081D850AB1F4E2DA99ED16B64DCCBB
+file:..\synwork\turret_servos_prem.srd|io:i|time:1554238294|size:46732|exec:0|csum:388BFE0718D0CA6446F1DB6D94BE5ED8
+file:..\turret_servos.sap|io:o|time:1554238294|size:1072|exec:0|csum:
 file:..\turret_servos.tap|io:o|time:0|size:0|exec:0|csum:
-file:..\turret_servos.map|io:o|time:1554232520|size:28|exec:0|csum:
+file:..\turret_servos.map|io:o|time:1554238296|size:28|exec:0|csum:
 file:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509027488|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
-file:..\turret_servos.sap|io:o|time:1554232519|size:954|exec:0|csum:
-file:turret_servos.plg|io:o|time:1554232520|size:914|exec:0|csum:
-file:..\turret_servos.srm|io:o|time:1554232520|size:69322|exec:0|csum:
-file:..\synlog\turret_servos_fpga_mapper.srr|io:o|time:1554232520|size:59655|exec:0|csum:
+file:..\turret_servos.sap|io:o|time:1554238294|size:1072|exec:0|csum:
+file:turret_servos.plg|io:o|time:1554238296|size:920|exec:0|csum:
+file:..\turret_servos.srm|io:o|time:1554238296|size:69465|exec:0|csum:
+file:..\synlog\turret_servos_fpga_mapper.srr|io:o|time:1554238296|size:77992|exec:0|csum:
 file:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509373872|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
 file:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509375286|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr 02 15:15:06 2019
+// Created by SmartDesign Tue Apr 02 16:51:10 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -10,12 +10,12 @@ module turret_servos(
     // Inputs
     MSS_RESET_N,
     SPI_1_DI,
-    SW1,
-    SW2,
+    hit_data,
     // Outputs
     SPI_1_DO,
     pwm_out1,
     pwm_out2,
+    pwm_out_IR,
     // Inouts
     SPI_1_CLK,
     SPI_1_SS
@@ -26,14 +26,14 @@ module turret_servos(
 //--------------------------------------------------------------------
 input  MSS_RESET_N;
 input  SPI_1_DI;
-input  SW1;
-input  SW2;
+input  hit_data;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
 output SPI_1_DO;
 output pwm_out1;
 output pwm_out2;
+output pwm_out_IR;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
@@ -42,6 +42,7 @@ inout  SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          BUS_INTERFACE_0_FABINT;
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire          CoreAPB3_0_APBmslave0_PENABLE;
 wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
@@ -50,15 +51,15 @@ wire          CoreAPB3_0_APBmslave0_PSELx;
 wire          CoreAPB3_0_APBmslave0_PSLVERR;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
+wire          hit_data;
 wire          MSS_RESET_N;
 wire          pwm_out1_net_0;
 wire          pwm_out2_net_0;
+wire          pwm_out_IR_net_0;
 wire          SPI_1_CLK;
 wire          SPI_1_DI;
 wire          SPI_1_DO_net_0;
 wire          SPI_1_SS;
-wire          SW1;
-wire          SW2;
 wire          turret_servo_mss_design_0_FAB_CLK;
 wire          turret_servo_mss_design_0_M2F_RESET_N;
 wire          turret_servo_mss_design_0_MSS_MASTER_APB_PENABLE;
@@ -71,6 +72,7 @@ wire          turret_servo_mss_design_0_MSS_MASTER_APB_PWRITE;
 wire          pwm_out1_net_1;
 wire          pwm_out2_net_1;
 wire          SPI_1_DO_net_1;
+wire          pwm_out_IR_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -125,12 +127,14 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign pwm_out1_net_1 = pwm_out1_net_0;
-assign pwm_out1       = pwm_out1_net_1;
-assign pwm_out2_net_1 = pwm_out2_net_0;
-assign pwm_out2       = pwm_out2_net_1;
-assign SPI_1_DO_net_1 = SPI_1_DO_net_0;
-assign SPI_1_DO       = SPI_1_DO_net_1;
+assign pwm_out1_net_1   = pwm_out1_net_0;
+assign pwm_out1         = pwm_out1_net_1;
+assign pwm_out2_net_1   = pwm_out2_net_0;
+assign pwm_out2         = pwm_out2_net_1;
+assign SPI_1_DO_net_1   = SPI_1_DO_net_0;
+assign SPI_1_DO         = SPI_1_DO_net_1;
+assign pwm_out_IR_net_1 = pwm_out_IR_net_0;
+assign pwm_out_IR       = pwm_out_IR_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -144,21 +148,22 @@ assign turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0 = { turret_servo_mss_des
 //--------BUS_INTERFACE
 BUS_INTERFACE BUS_INTERFACE_0(
         // Inputs
-        .PCLK     ( turret_servo_mss_design_0_FAB_CLK ),
-        .PRESERN  ( turret_servo_mss_design_0_M2F_RESET_N ),
-        .PSEL     ( CoreAPB3_0_APBmslave0_PSELx ),
-        .PENABLE  ( CoreAPB3_0_APBmslave0_PENABLE ),
-        .PWRITE   ( CoreAPB3_0_APBmslave0_PWRITE ),
-        .SW1      ( SW1 ),
-        .SW2      ( SW2 ),
-        .PADDR    ( CoreAPB3_0_APBmslave0_PADDR ),
-        .PWDATA   ( CoreAPB3_0_APBmslave0_PWDATA ),
+        .PCLK       ( turret_servo_mss_design_0_FAB_CLK ),
+        .PRESERN    ( turret_servo_mss_design_0_M2F_RESET_N ),
+        .PSEL       ( CoreAPB3_0_APBmslave0_PSELx ),
+        .PENABLE    ( CoreAPB3_0_APBmslave0_PENABLE ),
+        .PWRITE     ( CoreAPB3_0_APBmslave0_PWRITE ),
+        .PADDR      ( CoreAPB3_0_APBmslave0_PADDR ),
+        .PWDATA     ( CoreAPB3_0_APBmslave0_PWDATA ),
+        .hit_data   ( hit_data ),
         // Outputs
-        .PREADY   ( CoreAPB3_0_APBmslave0_PREADY ),
-        .PSLVERR  ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .pwm_out1 ( pwm_out1_net_0 ),
-        .pwm_out2 ( pwm_out2_net_0 ),
-        .PRDATA   ( CoreAPB3_0_APBmslave0_PRDATA ) 
+        .PREADY     ( CoreAPB3_0_APBmslave0_PREADY ),
+        .PSLVERR    ( CoreAPB3_0_APBmslave0_PSLVERR ),
+        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ),
+        .pwm_out_IR ( pwm_out_IR_net_0 ),
+        .pwm_out1   ( pwm_out1_net_0 ),
+        .pwm_out2   ( pwm_out2_net_0 ),
+        .FABINT     ( BUS_INTERFACE_0_FABINT ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100
@@ -296,6 +301,7 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .MSSPSLVERR  ( turret_servo_mss_design_0_MSS_MASTER_APB_PSLVERR ),
         .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
         .SPI_1_DI    ( SPI_1_DI ),
+        .FABINT      ( BUS_INTERFACE_0_FABINT ),
         // Outputs
         .FAB_CLK     ( turret_servo_mss_design_0_FAB_CLK ),
         .MSSPSEL     ( turret_servo_mss_design_0_MSS_MASTER_APB_PSELx ),

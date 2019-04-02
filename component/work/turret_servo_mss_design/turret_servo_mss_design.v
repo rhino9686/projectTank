@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr 02 15:14:52 2019
+// Created by SmartDesign Tue Apr 02 16:24:26 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -8,6 +8,7 @@
 // turret_servo_mss_design
 module turret_servo_mss_design(
     // Inputs
+    FABINT,
     MSSPRDATA,
     MSSPREADY,
     MSSPSLVERR,
@@ -30,6 +31,7 @@ module turret_servo_mss_design(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
+input         FABINT;
 input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
@@ -54,6 +56,7 @@ inout         SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          FABINT;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
@@ -160,7 +163,7 @@ MSS_ADLIB_INST(
         .FABPENABLE     ( GND_net ), // tied to 1'b0 from definition
         .SYNCCLKFDBK    ( MSS_ADLIB_INST_SYNCCLKFDBK ),
         .CALIBIN        ( GND_net ), // tied to 1'b0 from definition
-        .FABINT         ( GND_net ), // tied to 1'b0 from definition
+        .FABINT         ( FABINT ),
         .F2MRESETn      ( VCC_net ), // tied to 1'b1 from definition
         .DMAREADY       ( DMAREADY_const_net_0 ), // tied to 2'h0 from definition
         .RXEV           ( GND_net ), // tied to 1'b0 from definition

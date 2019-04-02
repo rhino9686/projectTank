@@ -2,7 +2,7 @@
 <device>
   <name>turret_servos</name>
   <version>1.0</version>
-  <description>CMSIS description for turret_servos.  Created by Microsemi SmartDesign on Tue Apr 02 15:15:09 2019</description>
+  <description>CMSIS description for turret_servos.  Created by Microsemi SmartDesign on Tue Apr 02 16:51:12 2019</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

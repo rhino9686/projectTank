@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Tue Apr 02 15:15:06 2019 
+# Date generated: Tue Apr 02 16:51:09 2019 
 
 
 # 
@@ -74,6 +74,10 @@ set_io SPI_1_SS             \
 #
 
 # set_io MSS_RESET_N -iostd LVTTL -DIRECTION INPUT 
+# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
+# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
+# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
+# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
 # set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 

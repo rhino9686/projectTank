@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/waierdg/Desktop/turretservos/component/work/turret_servos</location>
-    <state>GENERATED ( Tue Apr 02 15:15:09 2019 )</state>
+    <state>GENERATED ( Tue Apr 02 16:51:12 2019 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\waierdg\Desktop\turretservos\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -34,19 +34,13 @@
     <file>C:\Users\waierdg\Desktop\turretservos\component\work\C:/Users/waierdg/Desktop/turretservos/component/work/turret_servo_mss_design/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
-    <port-name>SW2</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPI_1_SS</port-name>
-    <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
     <port-name>pwm_out2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>pwm_out_IR</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -58,20 +52,14 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPI_1_CLK</port-name>
+    <port-name>SPI_1_SS</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SW1</port-name>
+    <port-name>hit_data</port-name>
     <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPI_1_DO</port-name>
-    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -82,8 +70,20 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>SPI_1_CLK</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>MSS_RESET_N</port-name>
     <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPI_1_DO</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>

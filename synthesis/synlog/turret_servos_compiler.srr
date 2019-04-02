@@ -21,21 +21,20 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" (library COREAPB3_LIB)
 @I::"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.v" (library work)
 Verilog syntax check successful!
-File C:\Users\waierdg\Desktop\turretservos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v changed - recompiling
-File C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\mss_tshell.v changed - recompiling
-File C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
-File C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\turret_servo_mss_design.v changed - recompiling
-File C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v changed - recompiling
-File C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v changed - recompiling
-File C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v changed - recompiling
+File C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v changed - recompiling
 File C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.v changed - recompiling
 Selecting top level module turret_servos
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":111:7:111:22|Synthesizing module Button_Debouncer in library work.
+@W: CG775 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":157:7:157:12|Synthesizing module pwm_IR in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":82:7:82:9|Synthesizing module pwm in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":132:7:132:9|Synthesizing module pwm in library work.
 
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
 
+@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":56:24:56:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":56:38:56:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":57:24:57:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":57:38:57:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[31] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[30] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[29] is always 0.
@@ -64,10 +63,7 @@ Selecting top level module turret_servos
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[6] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[5] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[4] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[3] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[2] is always 0.
-@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 2 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CG775 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 4 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
 
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
@@ -237,12 +233,16 @@ Selecting top level module turret_servos
 @N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
 @N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
 @N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[1] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[1] is always 0.
-@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bits 1 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":53:0:53:5|Pruning register bits 1 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit freq[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[1] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Pruning register bits 1 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Pruning register bits 1 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bit 0 of freq[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bit 4 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bit 2 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL246 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 11 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
 
@@ -251,7 +251,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 02 15:15:17 2019
+# Tue Apr 02 16:51:32 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -262,7 +262,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 02 15:15:18 2019
+# Tue Apr 02 16:51:32 2019
 
 ###########################################################]
 @END
@@ -272,6 +272,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 02 15:15:18 2019
+# Tue Apr 02 16:51:32 2019
 
 ###########################################################]

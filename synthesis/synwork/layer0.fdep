@@ -5,15 +5,15 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
-#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\hdl\\busapb3.v":1554231831
+#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\hdl\\busapb3.v":1554238249
 #CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1536348874
-#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servo_mss_design\\mss_tshell.v":1554232491
-#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servo_mss_design\\MSS_CCC_0\\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":1554232489
-#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servo_mss_design\\turret_servo_mss_design.v":1554232492
+#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servo_mss_design\\mss_tshell.v":1554236666
+#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servo_mss_design\\MSS_CCC_0\\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":1554236664
+#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servo_mss_design\\turret_servo_mss_design.v":1554236667
 #CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1537729987
 #CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1537729987
 #CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3.v":1537729987
-#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servos\\turret_servos.v":1554232506
+#CUR:"C:\\Users\\waierdg\\Desktop\\turretservos\\component\\work\\turret_servos\\turret_servos.v":1554238270
 #numinternalfiles:5
 #defaultlanguage:verilog
 0			"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v" verilog
@@ -46,7 +46,7 @@
 7 8
 8 -1
 #Design Unit to File Association
-module work Button_Debouncer 0
+module work pwm_IR 0
 module work pwm 0
 module work BUS_INTERFACE 0
 module work MSS_XTLOSC 1

@@ -1,7 +1,7 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":111:7:111:22|Synthesizing module Button_Debouncer in library work.
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":82:7:82:9|Synthesizing module pwm in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":157:7:157:12|Synthesizing module pwm_IR in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":132:7:132:9|Synthesizing module pwm in library work.
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[31] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[30] is always 0.
@@ -31,8 +31,6 @@
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[6] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[5] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[4] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[3] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[2] is always 0.
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
 @N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
@@ -109,9 +107,10 @@
 @N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
 @N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
 @N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":53:0:53:5|Register bit pulseWidth1[1] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit pulseWidth2[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit freq[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[1] is always 0.
 @N|Running in 64-bit mode
 
