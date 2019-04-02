@@ -9,13 +9,13 @@ Opened an existing Libero design turret_servos.adb.
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\waierdg\Desktop\turret_servos\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\waierdg\Desktop\turretservos\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 0.0 seconds
+ Netlist Reading Time = 1.0 seconds
 Imported the files:
-   C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos.edn
-   C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servos\turret_servos.pdc
+   C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.edn
+   C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.pdc
 
 The Import command succeeded ( 00:00:01 )
 =====================================================================
@@ -25,9 +25,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos.edn
+Source      : C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.edn
 
-C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servos\turret_servos.pdc
+C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.pdc
 Format      : EDIF
 Topcell     : turret_servos
 Speed grade : STD
@@ -76,10 +76,6 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0MODE drives no
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_UART0TXD drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1DO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1DOE drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1MODE drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
@@ -254,14 +250,13 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[4] drives 
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[0] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[1] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[2] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[3] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[4] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[5] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[6] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[7] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[1] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[2] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[3] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[4] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[5] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[6] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[7] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_MACTXD[0] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_MACTXD[1] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_ACEFLAGS[0] drives no load.
@@ -375,7 +370,7 @@ Optimized macros:
 
     Total macros optimized  18
 
-There were 0 error(s) and 308 warning(s) in this design.
+There were 0 error(s) and 303 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -399,7 +394,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      1  Total:     43   (2.33%)
+    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -515,11 +510,11 @@ Wrote status report to file: turret_servos_compile_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: turret_servos_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:02 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: turret_servos_report_pin_bynumber.txt
 
-The Report command succeeded ( 00:00:00 )
-Design saved to file C:\Users\waierdg\Desktop\turret_servos\designer\impl1\turret_servos.adb.
+The Report command succeeded ( 00:00:01 )
+Design saved to file C:\Users\waierdg\Desktop\turretservos\designer\impl1\turret_servos.adb.
 
 The Execute Script command succeeded ( 00:00:06 )
 Design closed.

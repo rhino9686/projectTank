@@ -1,17 +1,17 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
 
-Date      :  Sun Mar 31 19:43:47 2019
-Project   :  C:\Users\waierdg\Desktop\turret_servos
+Date      :  Tue Apr 02 15:15:10 2019
+Project   :  C:\Users\waierdg\Desktop\turretservos
 Component :  turret_servos
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/waierdg/Desktop/turret_servos/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
-    C:/Users/waierdg/Desktop/turret_servos/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
-    C:/Users/waierdg/Desktop/turret_servos/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
-    C:/Users/waierdg/Desktop/turret_servos/component/work/turret_servos/turret_servos.v
+    C:/Users/waierdg/Desktop/turretservos/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    C:/Users/waierdg/Desktop/turretservos/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    C:/Users/waierdg/Desktop/turretservos/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
+    C:/Users/waierdg/Desktop/turretservos/component/work/turret_servos/turret_servos.v
 
 Stimulus files for all Simulation tools:
-    C:/Users/waierdg/Desktop/turret_servos/component/work/turret_servos/subsystem.bfm
+    C:/Users/waierdg/Desktop/turretservos/component/work/turret_servos/subsystem.bfm
 

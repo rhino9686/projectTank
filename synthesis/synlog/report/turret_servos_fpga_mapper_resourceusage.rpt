@@ -61,15 +61,17 @@ Report for cell turret_servos.verilog
 
   IO Cell usage:
               cell count
+         BIBUF_MSS     2
              INBUF     2
-         INBUF_MSS     1
+         INBUF_MSS     2
             OUTBUF     2
+       TRIBUFF_MSS     1
                    -----
-             TOTAL     5
+             TOTAL     9
 
 
 Core Cells         : 821 of 4608 (18%)
-IO Cells           : 5
+IO Cells           : 9
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

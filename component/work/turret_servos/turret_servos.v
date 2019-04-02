@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Mar 31 19:43:38 2019
+// Created by SmartDesign Tue Apr 02 15:15:06 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -9,24 +9,36 @@
 module turret_servos(
     // Inputs
     MSS_RESET_N,
+    SPI_1_DI,
     SW1,
     SW2,
     // Outputs
+    SPI_1_DO,
     pwm_out1,
-    pwm_out2
+    pwm_out2,
+    // Inouts
+    SPI_1_CLK,
+    SPI_1_SS
 );
 
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
 input  MSS_RESET_N;
+input  SPI_1_DI;
 input  SW1;
 input  SW2;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output SPI_1_DO;
 output pwm_out1;
 output pwm_out2;
+//--------------------------------------------------------------------
+// Inout
+//--------------------------------------------------------------------
+inout  SPI_1_CLK;
+inout  SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -41,6 +53,10 @@ wire          CoreAPB3_0_APBmslave0_PWRITE;
 wire          MSS_RESET_N;
 wire          pwm_out1_net_0;
 wire          pwm_out2_net_0;
+wire          SPI_1_CLK;
+wire          SPI_1_DI;
+wire          SPI_1_DO_net_0;
+wire          SPI_1_SS;
 wire          SW1;
 wire          SW2;
 wire          turret_servo_mss_design_0_FAB_CLK;
@@ -54,6 +70,7 @@ wire   [31:0] turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA;
 wire          turret_servo_mss_design_0_MSS_MASTER_APB_PWRITE;
 wire          pwm_out1_net_1;
 wire          pwm_out2_net_1;
+wire          SPI_1_DO_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -79,10 +96,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -112,6 +129,8 @@ assign pwm_out1_net_1 = pwm_out1_net_0;
 assign pwm_out1       = pwm_out1_net_1;
 assign pwm_out2_net_1 = pwm_out2_net_0;
 assign pwm_out2       = pwm_out2_net_1;
+assign SPI_1_DO_net_1 = SPI_1_DO_net_0;
+assign SPI_1_DO       = SPI_1_DO_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -276,6 +295,7 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .MSSPREADY   ( turret_servo_mss_design_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( turret_servo_mss_design_0_MSS_MASTER_APB_PSLVERR ),
         .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
+        .SPI_1_DI    ( SPI_1_DI ),
         // Outputs
         .FAB_CLK     ( turret_servo_mss_design_0_FAB_CLK ),
         .MSSPSEL     ( turret_servo_mss_design_0_MSS_MASTER_APB_PSELx ),
@@ -283,7 +303,11 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .MSSPWRITE   ( turret_servo_mss_design_0_MSS_MASTER_APB_PWRITE ),
         .M2F_RESET_N ( turret_servo_mss_design_0_M2F_RESET_N ),
         .MSSPADDR    ( turret_servo_mss_design_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA ) 
+        .MSSPWDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA ),
+        .SPI_1_DO    ( SPI_1_DO_net_0 ),
+        // Inouts
+        .SPI_1_CLK   ( SPI_1_CLK ),
+        .SPI_1_SS    ( SPI_1_SS ) 
         );
 
 

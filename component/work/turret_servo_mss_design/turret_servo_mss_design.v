@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Mar 31 19:43:32 2019
+// Created by SmartDesign Tue Apr 02 15:14:52 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -12,6 +12,7 @@ module turret_servo_mss_design(
     MSSPREADY,
     MSSPSLVERR,
     MSS_RESET_N,
+    SPI_1_DI,
     // Outputs
     FAB_CLK,
     M2F_RESET_N,
@@ -19,7 +20,11 @@ module turret_servo_mss_design(
     MSSPENABLE,
     MSSPSEL,
     MSSPWDATA,
-    MSSPWRITE
+    MSSPWRITE,
+    SPI_1_DO,
+    // Inouts
+    SPI_1_CLK,
+    SPI_1_SS
 );
 
 //--------------------------------------------------------------------
@@ -29,6 +34,7 @@ input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
 input         MSS_RESET_N;
+input         SPI_1_DI;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
@@ -39,6 +45,12 @@ output        MSSPENABLE;
 output        MSSPSEL;
 output [31:0] MSSPWDATA;
 output        MSSPWRITE;
+output        SPI_1_DO;
+//--------------------------------------------------------------------
+// Inout
+//--------------------------------------------------------------------
+inout         SPI_1_CLK;
+inout         SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -50,6 +62,14 @@ wire          MSS_ADLIB_INST_PLLLOCK;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK;
 wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
+wire          MSS_SPI_1_CLK_D;
+wire          MSS_SPI_1_CLK_Y;
+wire          MSS_SPI_1_DI_Y;
+wire          MSS_SPI_1_DO_D;
+wire          MSS_SPI_1_DO_E;
+wire   [0:0]  MSS_SPI_1_SS_D;
+wire          MSS_SPI_1_SS_E;
+wire          MSS_SPI_1_SS_Y;
 wire          net_71;
 wire   [19:0] net_72_PADDR;
 wire          net_72_PENABLE;
@@ -59,6 +79,10 @@ wire          net_72_PSELx;
 wire          MSSPSLVERR;
 wire   [31:0] net_72_PWDATA;
 wire          net_72_PWRITE;
+wire          SPI_1_CLK;
+wire          SPI_1_DI;
+wire          SPI_1_DO_net_0;
+wire          SPI_1_SS;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
 wire          net_72_PSELx_net_0;
 wire          net_72_PENABLE_net_0;
@@ -66,6 +90,8 @@ wire          net_72_PWRITE_net_0;
 wire          net_71_net_0;
 wire   [19:0] net_72_PADDR_net_0;
 wire   [31:0] net_72_PWDATA_net_0;
+wire          SPI_1_DO_net_1;
+wire   [7:0]  SPI1SSO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -107,6 +133,12 @@ assign net_72_PADDR_net_0               = net_72_PADDR;
 assign MSSPADDR[19:0]                   = net_72_PADDR_net_0;
 assign net_72_PWDATA_net_0              = net_72_PWDATA;
 assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
+assign SPI_1_DO_net_1                   = SPI_1_DO_net_0;
+assign SPI_1_DO                         = SPI_1_DO_net_1;
+//--------------------------------------------------------------------
+// Slices assignments
+//--------------------------------------------------------------------
+assign MSS_SPI_1_SS_D[0] = SPI1SSO_net_0[0:0];
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -183,9 +215,9 @@ MSS_ADLIB_INST(
         .UART0RXD       ( GND_net ), // tied to 1'b0 from definition
         .I2C0SDAI       ( GND_net ), // tied to 1'b0 from definition
         .I2C0SCLI       ( GND_net ), // tied to 1'b0 from definition
-        .SPI1DI         ( GND_net ), // tied to 1'b0 from definition
-        .SPI1CLKI       ( GND_net ), // tied to 1'b0 from definition
-        .SPI1SSI        ( GND_net ), // tied to 1'b0 from definition
+        .SPI1DI         ( MSS_SPI_1_DI_Y ),
+        .SPI1CLKI       ( MSS_SPI_1_CLK_Y ),
+        .SPI1SSI        ( MSS_SPI_1_SS_Y ),
         .UART1RXD       ( GND_net ), // tied to 1'b0 from definition
         .I2C1SDAI       ( GND_net ), // tied to 1'b0 from definition
         .I2C1SCLI       ( GND_net ), // tied to 1'b0 from definition
@@ -306,11 +338,11 @@ MSS_ADLIB_INST(
         .UART0TXD       (  ),
         .I2C0SDAO       (  ),
         .I2C0SCLO       (  ),
-        .SPI1DO         (  ),
-        .SPI1DOE        (  ),
-        .SPI1CLKO       (  ),
-        .SPI1MODE       (  ),
-        .SPI1SSO        (  ),
+        .SPI1DO         ( MSS_SPI_1_DO_D ),
+        .SPI1DOE        ( MSS_SPI_1_DO_E ),
+        .SPI1CLKO       ( MSS_SPI_1_CLK_D ),
+        .SPI1MODE       ( MSS_SPI_1_SS_E ),
+        .SPI1SSO        ( SPI1SSO_net_0 ),
         .UART1TXD       (  ),
         .I2C1SDAO       (  ),
         .I2C1SCLO       (  ),
@@ -379,6 +411,57 @@ MSS_RESET_0_MSS_RESET_N(
         .PAD ( MSS_RESET_N ),
         // Outputs
         .Y   ( MSS_RESET_0_MSS_RESET_N_Y ) 
+        );
+
+//--------BIBUF_MSS
+BIBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "AA22" ) )
+MSS_SPI_1_CLK(
+        // Inputs
+        .D   ( MSS_SPI_1_CLK_D ),
+        .E   ( MSS_SPI_1_SS_E ),
+        // Outputs
+        .Y   ( MSS_SPI_1_CLK_Y ),
+        // Inouts
+        .PAD ( SPI_1_CLK ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V19" ) )
+MSS_SPI_1_DI(
+        // Inputs
+        .PAD ( SPI_1_DI ),
+        // Outputs
+        .Y   ( MSS_SPI_1_DI_Y ) 
+        );
+
+//--------TRIBUFF_MSS
+TRIBUFF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "T17" ) )
+MSS_SPI_1_DO(
+        // Inputs
+        .D   ( MSS_SPI_1_DO_D ),
+        .E   ( MSS_SPI_1_DO_E ),
+        // Outputs
+        .PAD ( SPI_1_DO_net_0 ) 
+        );
+
+//--------BIBUF_MSS
+BIBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "W21" ) )
+MSS_SPI_1_SS(
+        // Inputs
+        .D   ( MSS_SPI_1_SS_D ),
+        .E   ( MSS_SPI_1_SS_E ),
+        // Outputs
+        .Y   ( MSS_SPI_1_SS_Y ),
+        // Inouts
+        .PAD ( SPI_1_SS ) 
         );
 
 

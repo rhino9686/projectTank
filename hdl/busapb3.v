@@ -49,7 +49,7 @@ begin
 end
 
 
-
+// r/l
 always @(posedge PCLK)
 begin
     if(!PRESERN)
@@ -60,13 +60,14 @@ begin
     end
 end
 
+// up/down
 always @(posedge PCLK)
 begin
     if(!PRESERN)
         pulseWidth2 <= `min;
     else if (Servo_write_2)
     begin
-        pulseWidth2 <= 60000 + (100 * PWDATA[10:0]); // 0-180 deg. (by 1e-6 deg every time)
+        pulseWidth2 <= 60000 + (100 * PWDATA[10:0]); // 60-120 deg. (by 1e-6 deg every time)
     end
 end
 

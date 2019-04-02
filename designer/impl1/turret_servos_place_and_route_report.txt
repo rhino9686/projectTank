@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Mar 31 20:33:51 2019 ***************************************************************************
+                          Tue Apr 02 15:15:46 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: C:\Users\waierdg\Desktop\turret_servos\designer\impl1\turret_servos.adb
+File Name: C:\Users\waierdg\Desktop\turretservos\designer\impl1\turret_servos.adb
 Design Name: turret_servos  Design State: layout
-Last Saved: Sun Mar 31 20:33:34 2019
+Last Saved: Tue Apr 02 15:15:29 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Mar 31 20:33:29 2019:
-        C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos.edn
-        C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servos\turret_servos.pdc
+Source File(s) Imported on Tue Apr 02 15:15:24 2019:
+        C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.edn
+        C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\waierdg\Desktop\turret_servos\synthesis\turret_servos.edn
+Source      : C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.edn
 
-C:\Users\waierdg\Desktop\turret_servos\component\work\turret_servos\turret_servos.pdc
+C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.pdc
 Format      : EDIF
 Topcell     : turret_servos
 Speed grade : STD
@@ -101,10 +101,6 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0MODE drives no
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_UART0TXD drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1DO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1DOE drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1MODE drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
@@ -279,14 +275,13 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[4] drives 
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[0] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[1] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[2] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[3] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[4] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[5] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[6] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI1SSO[7] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[1] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[2] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[3] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[4] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[5] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[6] drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/SPI1SSO_net_0[7] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_MACTXD[0] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_MACTXD[1] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_ACEFLAGS[0] drives no load.
@@ -400,7 +395,7 @@ Optimized macros:
 
     Total macros optimized  18
 
-There were 0 error(s) and 308 warning(s) in this design.
+There were 0 error(s) and 303 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -424,7 +419,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      1  Total:     43   (2.33%)
+    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -558,16 +553,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Mar 31 20:33:38 2019
+Timing-driven Placer Started: Tue Apr 02 15:15:32 2019
 
-Placer Finished: Sun Mar 31 20:33:42 2019
+Placer Finished: Tue Apr 02 15:15:36 2019
 Total Placer CPU Time:     00:00:04
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: turret_servos                   Started: Sun Mar 31 20:33:43 2019
+Design: turret_servos                   Started: Tue Apr 02 15:15:38 2019
 
  
 Iterative improvement...
@@ -575,9 +570,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: turret_servos                   
-Finished: Sun Mar 31 20:33:49 2019
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:06
-Total Memory Usage: 175.9 Mbytes
+Finished: Tue Apr 02 15:15:43 2019
+Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
+Total Memory Usage: 175.6 Mbytes
                         o - o - o - o - o - o
 
 status 257
