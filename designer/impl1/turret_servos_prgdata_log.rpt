@@ -2,18 +2,21 @@ Microsemi Libero Software
 Version: 11.9.0.4
 Release: v11.9
 
-Info: The design C:/Users/waierdg/Desktop/turretservos/designer/impl1/turret_servos.adb was last
-      modified by software version 11.9.0.4.
+Info: The design
+      C:/Users/waierdg/Desktop/ps2_turret_ir_integration/designer/impl1/turret_servos.adb was
+      last modified by software version 11.9.0.4.
 Opened an existing Libero design
-C:/Users/waierdg/Desktop/turretservos/designer/impl1/turret_servos.adb.
+C:/Users/waierdg/Desktop/ps2_turret_ir_integration/designer/impl1/turret_servos.adb.
 
-The Export-map command succeeded ( 00:00:05 )
-CHECKSUM: 7965
-Wrote to the file: C:\Users\waierdg\Desktop\turretservos\designer\impl1\turret_servos.fdb
+The Export-map command succeeded ( 00:00:06 )
+CHECKSUM: 1D4E
+Wrote to the file:
+C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.fdb
 
-The Export command succeeded ( 00:00:07 )
-Design saved to file C:/Users/waierdg/Desktop/turretservos/designer/impl1/turret_servos.adb.
+The Export command succeeded ( 00:00:08 )
+Design saved to file
+C:/Users/waierdg/Desktop/ps2_turret_ir_integration/designer/impl1/turret_servos.adb.
 
-The Execute Script command succeeded ( 00:00:08 )
+The Execute Script command succeeded ( 00:00:09 )
 Design closed.
 

@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Tue Apr 02 16:52:05 2019 ***************************************************************************
+                          Thu Apr 04 16:59:22 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: C:\Users\waierdg\Desktop\turretservos\designer\impl1\turret_servos.adb
+File Name: C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb
 Design Name: turret_servos  Design State: layout
-Last Saved: Tue Apr 02 16:51:45 2019
+Last Saved: Thu Apr 04 16:59:02 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Tue Apr 02 16:51:40 2019:
-        C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.edn
-        C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.pdc
+Source File(s) Imported on Thu Apr 04 16:58:57 2019:
+        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
+        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,10 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.edn
+Source      : C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
 
-C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.pdc
+C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.p\
+dc
 Format      : EDIF
 Topcell     : turret_servos
 Speed grade : STD
@@ -379,7 +380,7 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[30] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[31] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_GLB drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_GLC drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_LOCK drives no load.
+Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/FAB_LOCK drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_YB drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_YC drives no load.
 
@@ -553,16 +554,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Apr 02 16:51:48 2019
+Timing-driven Placer Started: Thu Apr 04 16:59:06 2019
 
-Placer Finished: Tue Apr 02 16:51:55 2019
-Total Placer CPU Time:     00:00:07
+Placer Finished: Thu Apr 04 16:59:12 2019
+Total Placer CPU Time:     00:00:06
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: turret_servos                   Started: Tue Apr 02 16:51:56 2019
+Design: turret_servos                   Started: Thu Apr 04 16:59:14 2019
 
  
 Iterative improvement...
@@ -570,11 +571,13 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: turret_servos                   
-Finished: Tue Apr 02 16:52:02 2019
+Finished: Thu Apr 04 16:59:20 2019
 Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
-Total Memory Usage: 180.0 Mbytes
+Total Memory Usage: 180.9 Mbytes
                         o - o - o - o - o - o
 
+status 257
+status 257
 status 257
 
 

@@ -129,6 +129,11 @@ int main()
 		int8_t left_y = master_rx_buffer[5];
 
 		if(right_y || left_y) {}
+		volatile int i = 0;
+		while (i < 100000)
+		{
+			++i;
+		}
 	}
 
 	return 0;

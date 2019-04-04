@@ -1,8 +1,8 @@
 
 Starting:    C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
-Hostname:    EECS373-05
-Date:        Tue Apr 02 16:51:32 2019
+Hostname:    EECS373-12
+Date:        Thu Apr 04 16:58:50 2019
 Version:     L-2016.09M-SP1-5
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log turret_servos_syn.tcl
@@ -18,7 +18,7 @@ Running in Vendor Mode
 
 auto_infer_blackbox is not supported in current product.
 
-log file: "C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.srr"
+log file: "C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.srr"
 
 Running: synthesis in foreground
 
@@ -28,47 +28,47 @@ Running turret_servos_syn|synthesis
 
 
 Running: compile (Compile) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:32 2019
+# Thu Apr 04 16:58:50 2019
 
 
 Running: compile_flow (Compile Process) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:32 2019
+# Thu Apr 04 16:58:50 2019
 
 
 Running: compiler (Compile Input) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:32 2019
+# Thu Apr 04 16:58:50 2019
 
-Copied C:\Users\waierdg\Desktop\turretservos\synthesis\synwork\turret_servos_comp.srs to C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.srs
+Copied C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.srs
 
 
 compiler completed
-# Tue Apr 02 16:51:33 2019
+# Thu Apr 04 16:58:52 2019
 
 Return Code: 0
-Run Time:00h:00m:01s
+Run Time:00h:00m:02s
 
 
 Running: multi_srs_gen (Multi-srs Generator) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:34 2019
+# Thu Apr 04 16:58:52 2019
 
 
 multi_srs_gen completed
-# Tue Apr 02 16:51:34 2019
+# Thu Apr 04 16:58:52 2019
 
 Return Code: 0
 Run Time:00h:00m:00s
 
-Copied C:\Users\waierdg\Desktop\turretservos\synthesis\synwork\turret_servos_mult.srs to C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.srs
+Copied C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_mult.srs to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.srs
 
 Complete: Compile Process on turret_servos_syn|synthesis
 
 
 Running: premap (Pre-mapping) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:34 2019
+# Thu Apr 04 16:58:52 2019
 
 
 premap completed
-# Tue Apr 02 16:51:34 2019
+# Thu Apr 04 16:58:52 2019
 
 Return Code: 0
 Run Time:00h:00m:00s
@@ -77,22 +77,22 @@ Complete: Compile on turret_servos_syn|synthesis
 
 
 Running: map (Map) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:34 2019
+# Thu Apr 04 16:58:52 2019
 
 License granted for 4 parallel jobs
 
 
 Running: fpga_mapper (Map & Optimize) on turret_servos_syn|synthesis
-# Tue Apr 02 16:51:34 2019
+# Thu Apr 04 16:58:52 2019
 
-Copied C:\Users\waierdg\Desktop\turretservos\synthesis\synwork\turret_servos_m.srm to C:\Users\waierdg\Desktop\turretservos\synthesis\turret_servos.srm
+Copied C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_m.srm to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.srm
 
 
 fpga_mapper completed with warnings
-# Tue Apr 02 16:51:36 2019
+# Thu Apr 04 16:58:55 2019
 
 Return Code: 1
-Run Time:00h:00m:02s
+Run Time:00h:00m:03s
 
 Complete: Map on turret_servos_syn|synthesis
 

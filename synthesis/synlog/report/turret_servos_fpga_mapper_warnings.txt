@@ -1,1 +1,1 @@
-@W: MT246 :"c:\users\waierdg\desktop\turretservos\component\work\turret_servo_mss_design\turret_servo_mss_design.v":448:0:448:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":448:0:448:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr 02 16:51:10 2019
+// Created by SmartDesign Thu Apr 04 16:58:43 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -153,17 +153,17 @@ BUS_INTERFACE BUS_INTERFACE_0(
         .PSEL       ( CoreAPB3_0_APBmslave0_PSELx ),
         .PENABLE    ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PWRITE     ( CoreAPB3_0_APBmslave0_PWRITE ),
+        .hit_data   ( hit_data ),
         .PADDR      ( CoreAPB3_0_APBmslave0_PADDR ),
         .PWDATA     ( CoreAPB3_0_APBmslave0_PWDATA ),
-        .hit_data   ( hit_data ),
         // Outputs
         .PREADY     ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR    ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ),
         .pwm_out_IR ( pwm_out_IR_net_0 ),
         .pwm_out1   ( pwm_out1_net_0 ),
         .pwm_out2   ( pwm_out2_net_0 ),
-        .FABINT     ( BUS_INTERFACE_0_FABINT ) 
+        .FABINT     ( BUS_INTERFACE_0_FABINT ),
+        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100
@@ -299,18 +299,18 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .MSS_RESET_N ( MSS_RESET_N ),
         .MSSPREADY   ( turret_servo_mss_design_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( turret_servo_mss_design_0_MSS_MASTER_APB_PSLVERR ),
-        .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
         .SPI_1_DI    ( SPI_1_DI ),
         .FABINT      ( BUS_INTERFACE_0_FABINT ),
+        .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( turret_servo_mss_design_0_FAB_CLK ),
         .MSSPSEL     ( turret_servo_mss_design_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( turret_servo_mss_design_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( turret_servo_mss_design_0_MSS_MASTER_APB_PWRITE ),
         .M2F_RESET_N ( turret_servo_mss_design_0_M2F_RESET_N ),
+        .SPI_1_DO    ( SPI_1_DO_net_0 ),
         .MSSPADDR    ( turret_servo_mss_design_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA ),
-        .SPI_1_DO    ( SPI_1_DO_net_0 ),
         // Inouts
         .SPI_1_CLK   ( SPI_1_CLK ),
         .SPI_1_SS    ( SPI_1_SS ) 

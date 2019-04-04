@@ -1,47 +1,47 @@
 Selecting top level module turret_servos
-@W: CG775 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":157:7:157:12|Synthesizing module pwm_IR in library work.
+@W: CG775 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":157:7:157:12|Synthesizing module pwm_IR in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":132:7:132:9|Synthesizing module pwm in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":132:7:132:9|Synthesizing module pwm in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
 
-@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":56:24:56:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":56:38:56:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":57:24:57:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":57:38:57:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[31] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[30] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[29] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[28] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[27] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[26] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[25] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[24] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[23] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[22] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[21] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[20] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[19] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[18] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[17] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[16] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[15] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[14] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[13] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[12] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[11] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[10] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[9] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[8] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[7] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[6] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[5] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[4] is always 0.
-@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 4 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":56:24:56:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":56:38:56:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":57:24:57:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":57:38:57:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[31] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[30] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[29] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[28] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[27] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[26] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[25] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[24] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[23] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[22] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[21] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[20] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[19] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[18] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[17] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[16] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[15] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[14] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[13] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[12] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[11] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[10] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[9] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[8] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[7] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[6] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[5] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Register bit PRDATA[4] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":44:0:44:5|Pruning register bits 31 to 4 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
 
 	APB_DWIDTH=6'b100000
 	IADDR_OPTION=32'b00000000000000000000000000000000
@@ -119,10 +119,10 @@ Selecting top level module turret_servos
 	SC_qual=16'b0000000000000000
    Generated name = CoreAPB3_Z1
 
-@W: CG360 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|Removing wire IA_PRDATA, as there is no assignment to it.
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
+@W: CG360 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|Removing wire IA_PRDATA, as there is no assignment to it.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
 
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC in library work.
 
@@ -130,93 +130,93 @@ Selecting top level module turret_servos
 
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:51|Synthesizing module turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:51|Synthesizing module turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\turret_servo_mss_design.v":9:7:9:29|Synthesizing module turret_servo_mss_design in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":9:7:9:29|Synthesizing module turret_servo_mss_design in library work.
 
-@N: CG364 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servos\turret_servos.v":9:7:9:19|Synthesizing module turret_servos in library work.
+@N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v":9:7:9:19|Synthesizing module turret_servos in library work.
 
-@W: CL157 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL157 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL157 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS1 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS3 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS1 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS3 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS1 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS3 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
-@N: CL159 :"C:\Users\waierdg\Desktop\turretservos\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Register bit freq[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[1] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[0] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[1] is always 0.
-@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":115:0:115:5|Pruning register bits 1 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":104:0:104:5|Pruning register bits 1 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bit 0 of freq[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bit 4 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":63:0:63:5|Pruning register bit 2 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL246 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
-@W: CL246 :"C:\Users\waierdg\Desktop\turretservos\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 11 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL157 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":63:0:63:5|Register bit freq[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":104:0:104:5|Register bit pulseWidth1[1] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit pulseWidth2[1] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Pruning register bits 1 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":104:0:104:5|Pruning register bits 1 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":63:0:63:5|Pruning register bit 0 of freq[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":63:0:63:5|Pruning register bit 4 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":63:0:63:5|Pruning register bit 2 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL246 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 11 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.

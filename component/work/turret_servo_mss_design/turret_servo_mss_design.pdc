@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Tue Apr 02 16:24:19 2019 
+# Date generated: Thu Apr 04 16:58:25 2019 
 
 
 # 
@@ -73,3 +73,11 @@ set_io SPI_1_SS             \
 # Old IO constraints, commented out for reference
 #
 
+# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
+# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
+# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
+# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
+# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
+# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
+# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
+# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 

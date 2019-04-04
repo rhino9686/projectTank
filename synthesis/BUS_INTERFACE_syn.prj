@@ -1,11 +1,11 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
-#--  Project file C:\Users\waierdg\Desktop\turretservos\synthesis\BUS_INTERFACE_syn.prj
+#--  Project file C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\BUS_INTERFACE_syn.prj
 #--  Written on Sun Mar 31 19:21:34 2019
 
 
 #project files
-add_file -verilog "C:/Users/waierdg/Desktop/turretservos/hdl/busapb3.v"
+add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/hdl/busapb3.v"
 
 
 
