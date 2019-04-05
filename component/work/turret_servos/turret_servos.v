@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Apr 04 16:58:43 2019
+// Created by SmartDesign Fri Apr 05 15:11:14 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -153,17 +153,17 @@ BUS_INTERFACE BUS_INTERFACE_0(
         .PSEL       ( CoreAPB3_0_APBmslave0_PSELx ),
         .PENABLE    ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PWRITE     ( CoreAPB3_0_APBmslave0_PWRITE ),
-        .hit_data   ( hit_data ),
         .PADDR      ( CoreAPB3_0_APBmslave0_PADDR ),
         .PWDATA     ( CoreAPB3_0_APBmslave0_PWDATA ),
+        .hit_data   ( hit_data ),
         // Outputs
         .PREADY     ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR    ( CoreAPB3_0_APBmslave0_PSLVERR ),
+        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ),
         .pwm_out_IR ( pwm_out_IR_net_0 ),
         .pwm_out1   ( pwm_out1_net_0 ),
         .pwm_out2   ( pwm_out2_net_0 ),
-        .FABINT     ( BUS_INTERFACE_0_FABINT ),
-        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ) 
+        .FABINT     ( BUS_INTERFACE_0_FABINT ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100

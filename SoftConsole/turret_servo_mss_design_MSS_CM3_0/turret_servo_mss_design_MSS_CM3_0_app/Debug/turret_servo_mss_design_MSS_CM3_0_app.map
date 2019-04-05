@@ -30,7 +30,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./main.o
  .data          0x00000000        0x0 ./main.o
  .bss           0x00000000        0x0 ./main.o
- .bss.hits      0x00000000        0x4 ./main.o
  .text          0x00000000        0x0 C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
  .data          0x00000000        0x0 C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
  .bss           0x00000000        0x0 C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
@@ -162,7 +161,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x1960
+.text           0x20000000     0x1988
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -328,55 +327,55 @@ END GROUP
  .text.NVIC_ClearPendingIRQ
                 0x200004d8       0x3c ./main.o
  .text.Fabric_IRQHandler
-                0x20000514       0x44 ./main.o
+                0x20000514       0x4c ./main.o
                 0x20000514                Fabric_IRQHandler
- .text.main     0x20000558      0x310 ./main.o
-                0x20000558                main
+ .text.main     0x20000560      0x330 ./main.o
+                0x20000560                main
  .text.setupSPI
-                0x20000868      0x2f0 ./main.o
-                0x20000868                setupSPI
+                0x20000890      0x2f0 ./main.o
+                0x20000890                setupSPI
  .text.NVIC_EnableIRQ
-                0x20000b58       0x38 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000b80       0x38 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.NVIC_DisableIRQ
-                0x20000b90       0x3c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000bb8       0x3c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.NVIC_ClearPendingIRQ
-                0x20000bcc       0x3c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000bf4       0x3c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.MSS_SPI_init
-                0x20000c08      0x134 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20000c08                MSS_SPI_init
+                0x20000c30      0x134 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000c30                MSS_SPI_init
  .text.recover_from_rx_overflow
-                0x20000d3c      0x160 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000d64      0x160 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.MSS_SPI_configure_master_mode
-                0x20000e9c      0x120 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20000e9c                MSS_SPI_configure_master_mode
+                0x20000ec4      0x120 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000ec4                MSS_SPI_configure_master_mode
  .text.MSS_SPI_set_slave_select
-                0x20000fbc      0x108 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20000fbc                MSS_SPI_set_slave_select
+                0x20000fe4      0x108 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000fe4                MSS_SPI_set_slave_select
  .text.MSS_SPI_clear_slave_select
-                0x200010c4       0x90 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x200010c4                MSS_SPI_clear_slave_select
+                0x200010ec       0x90 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200010ec                MSS_SPI_clear_slave_select
  .text.MSS_SPI_transfer_block
-                0x20001154      0x228 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20001154                MSS_SPI_transfer_block
+                0x2000117c      0x228 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x2000117c                MSS_SPI_transfer_block
  .text.fill_slave_tx_fifo
-                0x2000137c       0xe0 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200013a4       0xe0 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.read_slave_rx_fifo
-                0x2000145c       0xac C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001484       0xac C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.mss_spi_isr
-                0x20001508      0x2b0 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001530      0x2b0 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.SPI0_IRQHandler
-                0x200017b8       0x2c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x200017b8                SPI0_IRQHandler
+                0x200017e0       0x2c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200017e0                SPI0_IRQHandler
  .text.SPI1_IRQHandler
-                0x200017e4       0x2c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x200017e4                SPI1_IRQHandler
+                0x2000180c       0x2c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x2000180c                SPI1_IRQHandler
  .text.SystemInit
-                0x20001810        0xc C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20001810                SystemInit
- .text          0x2000181c       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x2000181c                __libc_init_array
- .text          0x2000186c       0xd4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
-                0x2000186c                memset
+                0x20001838        0xc C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20001838                SystemInit
+ .text          0x20001844       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20001844                __libc_init_array
+ .text          0x20001894       0xd4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x20001894                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -385,7 +384,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x20001940                . = ALIGN (0x4)
+                0x20001968                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -400,82 +399,82 @@ END GROUP
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x20001940        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20001940                _init
- .init          0x20001944        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x20001968        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20001968                _init
+ .init          0x2000196c        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x2000194c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x2000194c                _fini
- .fini          0x20001950        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x20001958                PROVIDE (__preinit_array_start, .)
+ .fini          0x20001974        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20001974                _fini
+ .fini          0x20001978        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20001980                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x20001958                PROVIDE (__preinit_array_end, .)
-                0x20001958                PROVIDE (__init_array_start, .)
+                0x20001980                PROVIDE (__preinit_array_end, .)
+                0x20001980                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x20001958        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x2000195c                PROVIDE (__init_array_end, .)
-                0x2000195c                PROVIDE (__fini_array_start, .)
+ .init_array    0x20001980        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x20001984                PROVIDE (__init_array_end, .)
+                0x20001984                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x2000195c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x20001984        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x20001960                PROVIDE (__fini_array_end, .)
-                0x20001960                __exidx_start = .
+                0x20001988                PROVIDE (__fini_array_end, .)
+                0x20001988                __exidx_start = .
 
-.v4_bx          0x20001960        0x0
+.v4_bx          0x20001988        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x20001960                __exidx_end = .
-                0x20001960                _etext = .
-                0x20001960                PROVIDE (__text_end, .)
+                0x20001988                __exidx_end = .
+                0x20001988                _etext = .
+                0x20001988                PROVIDE (__text_end, .)
 
-.data           0x20001960        0x4
-                0x20001960                __data_load = LOADADDR (.data)
-                0x20001960                _sidata = LOADADDR (.data)
-                0x20001960                __data_start = .
-                0x20001960                _sdata = .
+.data           0x20001988        0x4
+                0x20001988                __data_load = LOADADDR (.data)
+                0x20001988                _sidata = LOADADDR (.data)
+                0x20001988                __data_start = .
+                0x20001988                _sdata = .
  *(.jcr)
- .jcr           0x20001960        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x20001960        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x20001988        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x20001988        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
-                0x20001964                . = ALIGN (0x4)
-                0x20001964                _edata = .
+                0x2000198c                . = ALIGN (0x4)
+                0x2000198c                _edata = .
 
-.bss            0x20001964      0x124
-                0x20001964                __bss_start__ = .
-                0x20001964                _sbss = .
+.bss            0x2000198c      0x124
+                0x2000198c                __bss_start__ = .
+                0x2000198c                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x20001964        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x2000198c        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(COMMON)
- *fill*         0x20001965        0x3 00
- COMMON         0x20001968       0x15 ./main.o
-                0x20001968                master_rx_buffer
-                0x20001974                master_tx_buffer
- *fill*         0x2000197d        0x3 00
- COMMON         0x20001980      0x108 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20001980                g_mss_spi1
-                0x20001a04                g_mss_spi0
-                0x20001a88                . = ALIGN (0x8)
-                0x20001a88                __bss_end__ = .
-                0x20001a88                _end = .
-                0x20001a88                __end = _end
-                0x20001a88                _ebss = .
-                0x20001a88                PROVIDE (end, .)
+ *fill*         0x2000198d        0x3 00
+ COMMON         0x20001990       0x15 ./main.o
+                0x20001990                master_rx_buffer
+                0x2000199c                master_tx_buffer
+ *fill*         0x200019a5        0x3 00
+ COMMON         0x200019a8      0x108 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200019a8                g_mss_spi1
+                0x20001a2c                g_mss_spi0
+                0x20001ab0                . = ALIGN (0x8)
+                0x20001ab0                __bss_end__ = .
+                0x20001ab0                _end = .
+                0x20001ab0                __end = _end
+                0x20001ab0                _ebss = .
+                0x20001ab0                PROVIDE (end, .)
 
-.stack          0x20001a88     0x3000
-                0x20001a88                . = ALIGN (0x4)
-                0x20002a88                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x20001a88     0x1000 00
-                0x20002a88                . = ALIGN (0x4)
-                0x20004a88                . = (. + MAIN_STACK_SIZE)
- *fill*         0x20002a88     0x2000 00
-                0x20004a88                . = ALIGN (0x4)
+.stack          0x20001ab0     0x3000
+                0x20001ab0                . = ALIGN (0x4)
+                0x20002ab0                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20001ab0     0x1000 00
+                0x20002ab0                . = ALIGN (0x4)
+                0x20004ab0                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20002ab0     0x2000 00
+                0x20004ab0                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -513,23 +512,23 @@ END GROUP
                 0x000001c8       0x30 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_pubnames
-                0x00000000      0x42a
+                0x00000000      0x421
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x71 ./main.o
+                0x00000000       0x68 ./main.o
  .debug_pubnames
-                0x00000071       0xeb C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00000068       0xeb C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_pubnames
-                0x0000015c      0x21a C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x00000153      0x21a C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .debug_pubnames
-                0x00000376       0xb4 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x0000036d       0xb4 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000     0x2c5c
+.debug_info     0x00000000     0x2c58
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xbef ./main.o
- .debug_info    0x00000bef      0x6bf C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x000012ae     0x1472 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
- .debug_info    0x00002720      0x53c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000000      0xbeb ./main.o
+ .debug_info    0x00000beb      0x6bf C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x000012aa     0x1472 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_info    0x0000271c      0x53c C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_abbrev   0x00000000      0x614
  *(.debug_abbrev)
@@ -538,12 +537,12 @@ END GROUP
  .debug_abbrev  0x000002ea      0x219 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .debug_abbrev  0x00000503      0x111 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000     0x13c4
+.debug_line     0x00000000     0x13c6
  *(.debug_line)
- .debug_line    0x00000000      0x5d8 ./main.o
- .debug_line    0x000005d8      0x458 C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00000a30      0x719 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
- .debug_line    0x00001149      0x27b C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00000000      0x5da ./main.o
+ .debug_line    0x000005da      0x458 C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00000a32      0x719 C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_line    0x0000114b      0x27b C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\Debug\libturret_servo_mss_design_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_frame    0x00000000      0x6c0
  *(.debug_frame)

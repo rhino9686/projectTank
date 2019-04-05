@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Apr 04 16:59:06 2019
+Timing-driven Placer Started: Fri Apr 05 15:11:52 2019
 
-Placer Finished: Thu Apr 04 16:59:12 2019
+Placer Finished: Fri Apr 05 15:11:58 2019
 Total Placer CPU Time:     00:00:06
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: turret_servos                   Started: Thu Apr 04 16:59:14 2019
+Design: turret_servos                   Started: Fri Apr 05 15:12:00 2019
 
  
 Iterative improvement...
@@ -50,13 +50,11 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: turret_servos                   
-Finished: Thu Apr 04 16:59:20 2019
+Finished: Fri Apr 05 15:12:06 2019
 Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
-Total Memory Usage: 180.9 Mbytes
+Total Memory Usage: 179.9 Mbytes
                         o - o - o - o - o - o
 
-status 257
-status 257
 status 257
 Loading the Timing data for the design.
 Finished loading the Timing data.

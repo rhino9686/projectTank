@@ -12,14 +12,15 @@ uint8_t master_rx_buffer[MASTER_TX_BUFFER]; 	//Initialize return array for Data 
 
 void setupSPI(void);
 
-int hits = 0;
+//int hits = 0;
 __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 {
 	volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
 	uint32_t hits = *hitsAddr;
 	hits++;
-	*hitsAddr = hits;
+	*hitsAddr++ = hits;
     NVIC_ClearPendingIRQ( Fabric_IRQn );
+    //NVIC_DisableIRQ(Fabric_IRQn); // Add interrupts to disable timer for certain period of time later
 }
 
 int main()
@@ -27,9 +28,13 @@ int main()
 	volatile uint32_t * rlAddr = (volatile uint32_t *)(0x40050010); // Right/Left Servo
 	volatile uint32_t * udAddr = (volatile uint32_t *)(0x40050014); // Up/Down Servo
 	volatile uint32_t * freqAddr = (volatile uint32_t *)(FREQ_ADDR);
+	volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
+
+	*hitsAddr = 0;
 
 	// Enable FABINT
 	NVIC_EnableIRQ(Fabric_IRQn);
+	//NVIC_EnableIRQ(GPIO0_IRQn);
 
 	uint32_t udPos = 900000; // Start at 90 deg. (middle position)
 	uint32_t rlPos = 0;
@@ -80,7 +85,7 @@ int main()
 				*udAddr = 1200000 / 1000;
 			} 
 			else {
-				udPos += 100;
+				udPos += 10000;
 				*udAddr = udPos / 1000; // Divide by 1000 for smoother turning
 			}
 			LED += 1;
@@ -90,7 +95,7 @@ int main()
 				*udAddr = 600000 / 1000;
 			} 
 			else {
-				udPos -= 100;
+				udPos -= 10000;
 				*udAddr = udPos / 1000;
 			}
 			LED += 2;
@@ -101,7 +106,7 @@ int main()
 				*rlAddr = 0;
 			} 
 			else {
-				rlPos -= 100;
+				rlPos -= 10000;
 				*rlAddr = rlPos / 1000;
 			}
 			LED += 4;
@@ -111,7 +116,7 @@ int main()
 				*rlAddr = 1800000 / 1000;
 			} 
 			else {
-				rlPos += 100;
+				rlPos += 10000;
 				*rlAddr = rlPos / 1000; // Divide by 1000 for smoother turning
 			}
 			LED += 8;

@@ -1,4 +1,4 @@
-# Thu Apr 04 16:58:52 2019
+# Fri Apr 05 15:11:37 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -28,12 +28,12 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":78:0:78:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":81:0:81:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
 @N: MF176 |Default generator successful 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":166:0:166:5|Found counter in view:work.pwm_IR_1(verilog) instance count[31:0] 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":166:0:166:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
-@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":147:5:147:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
-@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":146:13:146:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":169:0:169:5|Found counter in view:work.pwm_IR_1(verilog) instance count[31:0] 
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":169:0:169:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
+@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":150:5:150:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
+@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":149:13:149:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
 
@@ -116,7 +116,7 @@ Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elaps
 Writing EDIF Netlist and constraint files
 L-2016.09M-SP1-5
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 135MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 135MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 135MB)
@@ -127,7 +127,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Apr 04 16:58:54 2019
+# Timing Report written on Fri Apr 05 15:11:40 2019
 #
 
 
@@ -966,6 +966,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 135MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Thu Apr 04 16:58:55 2019
+# Fri Apr 05 15:11:40 2019
 
 ###########################################################]

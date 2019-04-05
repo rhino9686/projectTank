@@ -19,8 +19,11 @@ output pwm_out_IR,
 output pwm_out1,
 output pwm_out2,
 output reg FABINT,
+//output reg TIMER_INT,
 input hit_data
 ); 
+
+
 
 `define ten_deg 10000 // 5 deg = 5000
 `define min 60000

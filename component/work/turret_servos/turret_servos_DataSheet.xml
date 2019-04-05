@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
-    <state>GENERATED ( Thu Apr 04 16:58:45 2019 )</state>
+    <state>GENERATED ( Fri Apr 05 15:11:17 2019 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -400,19 +400,6 @@ There is one APB3 Master interface.
       <param-tag>actel-cc:variantParameter</param-tag>
     </core-param>
     <core-name>HAL_0</core-name>
-  </firmware_core>
-  <firmware_core type="FirmWareModule">
-    <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_ACE_Driver</core-intname>
-    <core-ver>2.3.105</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) analog compute engine (
-ACE)  bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
-    <core-name>MSS_ACE_Driver_0</core-name>
   </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
@@ -2408,14 +2395,6 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
           </fullPinName>
           <remapAddress>0x40040000</remapAddress>
           <fullAddressSpace>0x40040000 - 0x4004FFFF</fullAddressSpace>
-          <range>0x10000</range>
-        </slave>
-        <slave>
-          <name>ACE</name>
-          <fullPinName>
-          </fullPinName>
-          <remapAddress>0x40000000</remapAddress>
-          <fullAddressSpace>0x40000000 - 0x4000FFFF</fullAddressSpace>
           <range>0x10000</range>
         </slave>
         <slave>

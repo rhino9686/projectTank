@@ -6,7 +6,7 @@ Software Version: 11.9.0.4
 PDB file
 'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_serv\
 os.pdb' has been loaded successfully.
-DESIGN : turret_servos;  CHECKSUM : 1D4E;  PDB_VERSION : 1.9
+DESIGN : turret_servos;  CHECKSUM : 02A7;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '78882' : FlashPro3
 Opened
@@ -41,7 +41,7 @@ programmer '78882' : Verifying FPGA Array
 programmer '78882' :         Verifying FPGA Array -- pass
 programmer '78882' : Program System Init and Boot Clients...
 programmer '78882' : Verify System Init and Boot Clients...
-programmer '78882' : Finished: Thu Apr 04 17:20:27 2019 (Elapsed time 00:00:34)
+programmer '78882' : Finished: Fri Apr 05 15:13:18 2019 (Elapsed time 00:00:34)
 programmer '78882' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
