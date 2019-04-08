@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Apr 05 15:12:09 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Apr 08 17:30:50 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -11,7 +11,13 @@ Package: 484 FBGA
 Port        |Pin  |Fixed |Function          |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
 ------------|-----|------|------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
 hit_data     H5    Yes    GFC0/IO66NPB5V0    LVTTL    ---                ---   None           No               ---   ---               No           No
+MOTOR[0]     H6    Yes    GFA1/IO64PDB5V0    LVTTL    12                 High  None           ---              No    35                No           No
+MOTOR[1]     J6    Yes    GFA0/IO64NDB5V0    LVTTL    12                 High  None           ---              No    35                No           No
+MOTOR[2]     B22   Yes    GBA2/IO20PDB1V0    LVTTL    12                 High  None           ---              No    35                No           No
+MOTOR[3]     C22   Yes    GBB2/IO20NDB1V0    LVTTL    12                 High  None           ---              No    35                No           No
 MSS_RESET_N  R1    Yes    MSS_RESET_N        LVTTL    ---                ---   None           No               ---   ---               No           Yes
+PWM_motor1   J19   Yes    GCA0/IO28NDB1V0    LVTTL    12                 High  None           ---              No    35                No           No
+PWM_motor2   J20   Yes    GCA1/IO28PDB1V0    LVTTL    12                 High  None           ---              No    35                No           No
 pwm_out1     F3    Yes    GFB2/IO68NDB5V0    LVTTL    12                 High  None           ---              No    35                No           No
 pwm_out2     G4    Yes    GFC1/IO66PPB5V0    LVTTL    12                 High  None           ---              No    35                No           No
 pwm_out_IR   E3    Yes    GFA2/IO68PDB5V0    LVTTL    12                 High  None           ---              No    35                No           No

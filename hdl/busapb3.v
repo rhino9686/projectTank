@@ -20,7 +20,11 @@ output pwm_out1,
 output pwm_out2,
 output reg FABINT,
 //output reg TIMER_INT,
-input hit_data
+input hit_data,
+output reg [3:0] MOTOR,
+output PWM_motor1,
+output PWM_motor2
+
 ); 
 
 
@@ -37,10 +41,28 @@ reg [17:0] pulseWidth1;
 reg [17:0] pulseWidth2;
 assign PSLVERR = 0;
 assign PREADY = 1;
-
+assign PWM_motor2 = PWM_motor1;
 
 wire Servo_write_1 = PWRITE && PENABLE && PSEL && (PADDR[7:0] == 8'b00010000);   //enable servo 1 write at offset #0x10
 wire Servo_write_2 = PWRITE && PENABLE && PSEL && (PADDR[7:0] == 8'b00010100);   //enable servo 2 write at offset #0x14
+wire Motor_write = PSEL && PENABLE && PADDR[2]; // enable motor at offset 0x40050004
+wire Motor_pulse_width_write = PSEL && PENABLE && PADDR[3]; // enable motor pulsewidth write at offset 0x40050008
+//set up motor pulse width write
+reg [23:0] PulseWidth = 0;
+
+pwmMotor modulator(PCLK, PulseWidth, PWM_motor1);
+always @(posedge PCLK)
+begin
+    if(!PRESERN)
+    MOTOR[3:0] <= 4'b0000;
+    else if(Motor_write)
+    MOTOR <= PWDATA[3:0];
+end
+always @(posedge PCLK)
+begin
+    if(Motor_pulse_width_write)
+        PulseWidth <= PWDATA[23:0];
+end 
 
 // Read hits all the time
 reg [3:0] hits;
@@ -179,3 +201,27 @@ begin
 end
 endmodule
 // end pwm_IR
+
+//PWM for Motor
+module pwmMotor(
+input clk,
+input[23:0] pulseWidth,
+output reg pwm
+);
+
+
+`define period 100000
+reg [31:0] count;
+always @(posedge clk)
+    begin
+        if (count == `period)
+            count <= 0;
+        else
+            count <= count + 1;
+        if (count < pulseWidth)
+            pwm <= 1;
+        else
+            pwm <= 0;
+    end
+endmodule
+// end pwmMotor

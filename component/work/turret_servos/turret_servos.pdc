@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Fri Apr 05 15:11:14 2019 
+# Date generated: Mon Apr 08 17:25:24 2019 
 
 
 # 
@@ -34,34 +34,43 @@ define_group -name SPI_1_PADs
 # Dedicated Peripheral I/O Settings
 # 
 
-# User Group SPI_1_PADs
-
-set_io SPI_1_CLK            \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION INOUT
-
-
-set_io SPI_1_DI             \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION INPUT
-
-
-set_io SPI_1_DO             \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION OUTPUT
-
-
-set_io SPI_1_SS             \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION INOUT
-
-
 
 # 
 # Unlocked I/O settings
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
+
+set_io MSS_RESET_N    \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+# User Group SPI_1_PADs
+
+set_io SPI_1_CLK            \
+    -iostd LVTTL            \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION INOUT
+
+
+set_io SPI_1_DI             \
+    -iostd LVTTL            \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION INPUT
+
+
+set_io SPI_1_DO             \
+    -iostd LVTTL            \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_1_SS             \
+    -iostd LVTTL            \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION INOUT
+
 
 
 #
@@ -73,22 +82,6 @@ set_io SPI_1_SS             \
 # Old IO constraints, commented out for reference
 #
 
-# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
 # set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 

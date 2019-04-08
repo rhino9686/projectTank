@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\devore\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb"
 LIST SOURCE_FILES
-VALUE "C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn;edn"
-VALUE "C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc;pdc"
+VALUE "C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn;edn"
+VALUE "C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

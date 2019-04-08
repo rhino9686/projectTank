@@ -1,6 +1,6 @@
 <project name="turret_servos" version="1.1">
     <ProjectDirectory>
-        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp
+        C:\Users\devore\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.log
+        C:\Users\devore\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.pdb
+                C:\Users\devore\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.pdb
             </filename>
             <local>
                 projectData\turret_servos.pdb

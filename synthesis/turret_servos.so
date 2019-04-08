@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>turret_servos</design>
-	<target_edif>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn</target_edif>
+	<target_edif>C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn</target_edif>
 </SynplifyOutput>

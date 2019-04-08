@@ -100,6 +100,20 @@
         <spirit:name>hit_data</spirit:name>
         <spirit:direction>in</spirit:direction>
       </spirit:signal>
+      <spirit:signal>
+        <spirit:name>MOTOR</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>3</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PWM_motor1</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PWM_motor2</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
     </spirit:signals>
     <spirit:hwParameters>
     </spirit:hwParameters>

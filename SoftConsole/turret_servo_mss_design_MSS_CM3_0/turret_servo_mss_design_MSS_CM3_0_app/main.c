@@ -11,6 +11,7 @@ uint8_t master_tx_buffer[MASTER_TX_BUFFER];
 uint8_t master_rx_buffer[MASTER_TX_BUFFER]; 	//Initialize return array for Data buffer
 
 void setupSPI(void);
+void changeSpeed( volatile uint32_t*, int );
 
 //int hits = 0;
 __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
@@ -29,7 +30,9 @@ int main()
 	volatile uint32_t * udAddr = (volatile uint32_t *)(0x40050014); // Up/Down Servo
 	volatile uint32_t * freqAddr = (volatile uint32_t *)(FREQ_ADDR);
 	volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
-
+	volatile uint32_t * motorAddr = (volatile uint32_t *) 0x40050004; // motor
+	volatile uint32_t * pulsewidthAddr = (volatile uint32_t *) 0x40050008; // pulse width
+	uint32_t joyVals = 0; // values from joysticks
 	*hitsAddr = 0;
 
 	// Enable FABINT
@@ -130,9 +133,41 @@ int main()
 			*freqAddr = 0; // Set back to 0 when done or not shooting
 		}
 
-		int8_t right_y = master_rx_buffer[3];	// down = -1, center = 1, up = 0
+		int8_t right_y = master_rx_buffer[3];	// down = -1, center = -2, up = 0
 		int8_t left_y = master_rx_buffer[5];
 
+
+		if((right_y == 0) && (left_y == 0)){ // robot go forward both sides
+			joyVals = 0b1010;
+		}
+		else if((right_y == 0) && (left_y == -2)){ // robot go forward right, left stopped
+			joyVals = 0b1011;
+		}
+		else if((right_y == 0) && (left_y == -1)){ // robot go forward right, left backwards
+			joyVals = 0b1001;
+		}
+		else if((right_y == -1) && (left_y == 0)){ // robot go backward right, left forward
+			joyVals = 0b0110;
+		}
+		else if((right_y == -1) && (left_y == -1)){ // robot go backward both sides
+			joyVals = 0b0101;
+
+		}
+		else if((right_y == -1) && (left_y == -2)){ // robot go backward right, left stopped
+			joyVals = 0b0111;
+		}
+		else if((right_y == -2) && (left_y == 0)){ // robot stopped right, forward left
+			joyVals = 0b1110;
+		}
+		else if((right_y == -2) && (left_y == -1)){ // robot go stopped right, backward left
+			joyVals = 0b1101;
+		}
+		else if((right_y == -2) && (left_y == -2)){ //robot fullstop
+			joyVals = 0b1111;
+		}
+		*motorAddr = joyVals;
+
+		changeSpeed(pulsewidthAddr, 45000); //change this number to fix pwm
 		if(right_y || left_y) {}
 		volatile int i = 0;
 		while (i < 100000)
@@ -241,4 +276,9 @@ void setupSPI(void) {
 	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
 
 }
+void changeSpeed( volatile uint32_t* speedPtr, int speed ){
 
+	*speedPtr = speed;
+
+	return;
+}

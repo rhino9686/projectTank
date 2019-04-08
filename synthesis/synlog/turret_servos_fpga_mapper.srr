@@ -1,4 +1,4 @@
-# Fri Apr 05 15:11:37 2019
+# Mon Apr 08 17:25:39 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -18,9 +18,9 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@N: MO111 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\devore\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\devore\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\devore\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -28,41 +28,43 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":81:0:81:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
+@N: MO231 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":103:0:103:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
 @N: MF176 |Default generator successful 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":169:0:169:5|Found counter in view:work.pwm_IR_1(verilog) instance count[31:0] 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":169:0:169:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
-@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":150:5:150:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
-@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":149:13:149:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MF179 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":221:12:221:30|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwmMotor(verilog))
+@N: MF238 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":220:21:220:30|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MO231 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":191:0:191:5|Found counter in view:work.pwm_IR_1(verilog) instance count[31:0] 
+@N: MO231 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":191:0:191:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
+@N: MF179 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":172:5:172:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
+@N: MF238 :"c:\users\devore\desktop\ps2_turret_ir_integration\hdl\busapb3.v":171:13:171:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 119MB)
-
-
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 119MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 119MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 119MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 125MB peak: 126MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 125MB peak: 126MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 120MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 125MB peak: 126MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 127MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 127MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
 
 
 High Fanout Net Report
@@ -70,20 +72,20 @@ High Fanout Net Report
 
 Driver Instance / Pin Name                               Fanout, notes
 ----------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST / M2FRESETn     39           
+turret_servo_mss_design_0.MSS_ADLIB_INST / M2FRESETn     43           
 ======================================================================
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 135MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 134MB)
 
-Buffering turret_servo_mss_design_0_M2F_RESET_N, fanout 39 segments 2
+Buffering turret_servo_mss_design_0_M2F_RESET_N, fanout 43 segments 2
 
 Added 1 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 135MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 134MB)
 
 
 
@@ -93,41 +95,41 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 202 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 263 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================================ Non-Gated/Non-Generated Clocks ============================================
 Clock Tree ID     Driving Element               Drive Element Type                Fanout     Sample Instance            
 ------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       turret_servo_mss_design_0     clock definition on hierarchy     202        BUS_INTERFACE_0.PRDATA_1[3]
+@K:CKID0001       turret_servo_mss_design_0     clock definition on hierarchy     263        BUS_INTERFACE_0.PRDATA_1[3]
 ========================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 135MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 130MB peak: 134MB)
 
-Writing Analyst data base C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_m.srm
+Writing Analyst data base C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 135MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 134MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-SP1-5
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 135MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 134MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 135MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 134MB)
 
-@W: MT246 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":448:0:448:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\devore\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":448:0:448:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @N: MT615 |Found clock FCLK with period 10.00ns 
 @N: MT615 |Found clock FAB_CLK with period 10.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Apr 05 15:11:40 2019
+# Timing Report written on Mon Apr 08 17:25:42 2019
 #
 
 
@@ -138,7 +140,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell_syn.sdc
+Constraint File(s):    C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell_syn.sdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -150,7 +152,7 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -8.764
+Worst slack in design: -9.541
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock          
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group          
@@ -173,8 +175,8 @@ Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  f
 Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ----------------------------------------------------------------------------------------------------------
 System    System   |  10.000      4.169   |  No paths    -      |  No paths    -      |  No paths    -    
-System    FAB_CLK  |  10.000      -8.764  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK   System   |  10.000      7.979   |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  10.000      -9.541  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  10.000      8.106   |  No paths    -      |  No paths    -      |  No paths    -    
 FAB_CLK   FAB_CLK  |  10.000      -2.195  |  No paths    -      |  No paths    -      |  No paths    -    
 ==========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -210,8 +212,8 @@ BUS_INTERFACE_0.p3.count[0]      FAB_CLK       DFN1       Q       count[0]      
 BUS_INTERFACE_0.p3.count[9]      FAB_CLK       DFN1       Q       count[9]         0.737       -1.172
 BUS_INTERFACE_0.p2.count[12]     FAB_CLK       DFN1       Q       count[12]        0.737       -1.156
 BUS_INTERFACE_0.p3.count[2]      FAB_CLK       DFN1       Q       count[2]         0.737       -1.112
-BUS_INTERFACE_0.p2.count[15]     FAB_CLK       DFN1E0     Q       count[15]        0.580       -1.020
 BUS_INTERFACE_0.hit_count[7]     FAB_CLK       DFN1       Q       hit_count[7]     0.737       -1.010
+BUS_INTERFACE_0.p3.count[4]      FAB_CLK       DFN1       Q       count[4]         0.737       -0.970
 =====================================================================================================
 
 
@@ -491,21 +493,21 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                             Starting                                                                         Arrival           
-Instance                                     Reference     Type        Pin               Net                                  Time        Slack 
-                                             Clock                                                                                              
-------------------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[1]      CoreAPB3_0_APBmslave0_PWDATA[1]      0.000       -8.764
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[0]      CoreAPB3_0_APBmslave0_PWDATA[0]      0.000       -8.639
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]      CoreAPB3_0_APBmslave0_PWDATA[3]      0.000       -8.588
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]      CoreAPB3_0_APBmslave0_PWDATA[2]      0.000       -8.531
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[4]      CoreAPB3_0_APBmslave0_PWDATA[4]      0.000       -8.418
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[5]      CoreAPB3_0_APBmslave0_PWDATA[5]      0.000       -8.208
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[6]      CoreAPB3_0_APBmslave0_PWDATA[6]      0.000       -7.885
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[7]      CoreAPB3_0_APBmslave0_PWDATA[7]      0.000       -7.772
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[10]     CoreAPB3_0_APBmslave0_PWDATA[10]     0.000       -6.699
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[9]      CoreAPB3_0_APBmslave0_PWDATA[9]      0.000       -6.029
-================================================================================================================================================
+                                             Starting                                                                       Arrival           
+Instance                                     Reference     Type        Pin              Net                                 Time        Slack 
+                                             Clock                                                                                            
+----------------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[1]     CoreAPB3_0_APBmslave0_PWDATA[1]     0.000       -9.541
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[4]     CoreAPB3_0_APBmslave0_PWDATA[4]     0.000       -8.875
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[0]     CoreAPB3_0_APBmslave0_PWDATA[0]     0.000       -8.688
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]     0.000       -8.432
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]     0.000       -8.219
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[6]     CoreAPB3_0_APBmslave0_PWDATA[6]     0.000       -7.390
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[7]     CoreAPB3_0_APBmslave0_PWDATA[7]     0.000       -7.191
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[5]     CoreAPB3_0_APBmslave0_PWDATA[5]     0.000       -7.118
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[9]     CoreAPB3_0_APBmslave0_PWDATA[9]     0.000       -6.576
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[8]     CoreAPB3_0_APBmslave0_PWDATA[8]     0.000       -6.387
+==============================================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -515,16 +517,16 @@ Ending Points with Worst Slack
 Instance                            Reference     Type     Pin     Net                     Time         Slack 
                                     Clock                                                                     
 --------------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.pulseWidth1[17]     System        DFN1     D       pulseWidth1_RNO[17]     9.427        -8.764
-BUS_INTERFACE_0.pulseWidth2[17]     System        DFN1     D       pulseWidth2_RNO[17]     9.427        -8.764
-BUS_INTERFACE_0.pulseWidth1[16]     System        DFN1     D       pulseWidth1_RNO[16]     9.461        -8.661
-BUS_INTERFACE_0.pulseWidth2[16]     System        DFN1     D       pulseWidth2_RNO[16]     9.461        -8.661
-BUS_INTERFACE_0.pulseWidth1[15]     System        DFN1     D       pulseWidth1_RNO[15]     9.427        -7.805
-BUS_INTERFACE_0.pulseWidth2[15]     System        DFN1     D       pulseWidth2_RNO[15]     9.427        -7.805
-BUS_INTERFACE_0.pulseWidth1[14]     System        DFN1     D       pulseWidth1_RNO[14]     9.427        -7.772
-BUS_INTERFACE_0.pulseWidth2[14]     System        DFN1     D       pulseWidth2_RNO[14]     9.427        -7.772
-BUS_INTERFACE_0.pulseWidth1[13]     System        DFN1     D       pulseWidth1_RNO[13]     9.461        -6.011
-BUS_INTERFACE_0.pulseWidth2[13]     System        DFN1     D       pulseWidth2_RNO[13]     9.461        -6.011
+BUS_INTERFACE_0.pulseWidth1[17]     System        DFN1     D       pulseWidth1_RNO[17]     9.427        -9.541
+BUS_INTERFACE_0.pulseWidth2[17]     System        DFN1     D       pulseWidth2_RNO[17]     9.427        -9.541
+BUS_INTERFACE_0.pulseWidth1[16]     System        DFN1     D       pulseWidth1_RNO[16]     9.461        -9.438
+BUS_INTERFACE_0.pulseWidth2[16]     System        DFN1     D       pulseWidth2_RNO[16]     9.461        -9.438
+BUS_INTERFACE_0.pulseWidth1[15]     System        DFN1     D       pulseWidth1_RNO[15]     9.427        -8.585
+BUS_INTERFACE_0.pulseWidth2[15]     System        DFN1     D       pulseWidth2_RNO[15]     9.427        -8.585
+BUS_INTERFACE_0.pulseWidth1[14]     System        DFN1     D       pulseWidth1_RNO[14]     9.427        -7.572
+BUS_INTERFACE_0.pulseWidth2[14]     System        DFN1     D       pulseWidth2_RNO[14]     9.427        -7.572
+BUS_INTERFACE_0.pulseWidth1[13]     System        DFN1     D       pulseWidth1_RNO[13]     9.427        -6.559
+BUS_INTERFACE_0.pulseWidth2[13]     System        DFN1     D       pulseWidth2_RNO[13]     9.427        -6.559
 ==============================================================================================================
 
 
@@ -539,64 +541,67 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      18.191
+    - Propagation time:                      18.968
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -8.764
+    = Slack (critical) :                     -9.541
 
-    Number of logic level(s):                13
+    Number of logic level(s):                14
     Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[1]
     Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                             Pin              Pin               Arrival     No. of    
-Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[1]                                Net         -                -       1.776     -           11        
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        B                In      -         1.776       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        Y                Out     0.937     2.713       -         
-un4_pulseWidth1_0_4_0                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        A                In      -         3.034       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        Y                Out     0.408     3.443       -         
-N_322                                                          Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         B                In      -         4.249       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         Y                Out     0.646     4.896       -         
-N174                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       A                In      -         5.282       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       Y                Out     0.514     5.796       -         
-N225                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         A                In      -         6.182       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         Y                Out     0.464     6.646       -         
-N252                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        B                In      -         7.452       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        Y                Out     0.624     8.076       -         
-un4_pulseWidth1[6]                                             Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        A                In      -         8.882       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        Y                Out     0.931     9.814       -         
-i8_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        B                In      -         10.620      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.900     11.521      -         
-i12_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         12.327      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     13.227      -         
-i16_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         14.034      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     14.697      -         
-i20_mux                                                        Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          AX1         A                In      -         15.083      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          AX1         Y                Out     0.992     16.076      -         
-N_388                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                          MX2         B                In      -         16.461      -         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                          MX2         Y                Out     0.572     17.033      -         
-N_259                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                            NOR2B       A                In      -         17.355      -         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                            NOR2B       Y                Out     0.514     17.869      -         
-pulseWidth1_RNO[17]                                            Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1[17]                                DFN1        D                In      -         18.191      -         
-====================================================================================================================================
-Total path delay (propagation time + setup) of 18.764 is 9.642(51.4%) logic and 9.122(48.6%) route.
+Instance / Net                                                                 Pin              Pin               Arrival     No. of    
+Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[1]                                    Net         -                -       1.994     -           12        
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        B                In      -         1.994       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        Y                Out     0.937     2.930       -         
+un4_pulseWidth1_0_0                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        A                In      -         3.252       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        Y                Out     0.408     3.660       -         
+N_367                                                              Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         4.466       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     5.094       -         
+N223                                                               Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         6.373       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.782       -         
+N_19                                                               Net         -                -       1.184     -           4         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.965       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     8.453       -         
+ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.839       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.630       -         
+N_50                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         10.436      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     11.032      -         
+N_46                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.839      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     12.435      -         
+i14_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       A                In      -         12.821      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       Y                Out     0.627     13.448      -         
+i16_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       A                In      -         13.834      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       Y                Out     0.627     14.461      -         
+i18_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         14.847      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     15.475      -         
+i20_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1         A                In      -         15.860      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1         Y                Out     0.992     16.853      -         
+N_435                                                              Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                              MX2         B                In      -         17.238      -         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                              MX2         Y                Out     0.572     17.810      -         
+N_250                                                              Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                                NOR2B       A                In      -         18.132      -         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                                NOR2B       Y                Out     0.514     18.646      -         
+pulseWidth1_RNO[17]                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1[17]                                    DFN1        D                In      -         18.968      -         
+========================================================================================================================================
+Total path delay (propagation time + setup) of 19.541 is 9.386(48.0%) logic and 10.155(52.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -606,64 +611,67 @@ Path information for path number 2:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      18.191
+    - Propagation time:                      18.968
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -8.764
+    = Slack (critical) :                     -9.541
 
-    Number of logic level(s):                13
+    Number of logic level(s):                14
     Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[1]
     Ending point:                            BUS_INTERFACE_0.pulseWidth2[17] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                             Pin              Pin               Arrival     No. of    
-Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[1]                                Net         -                -       1.776     -           11        
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        B                In      -         1.776       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        Y                Out     0.937     2.713       -         
-un4_pulseWidth1_0_4_0                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        A                In      -         3.034       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        Y                Out     0.408     3.443       -         
-N_322                                                          Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         B                In      -         4.249       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         Y                Out     0.646     4.896       -         
-N174                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       A                In      -         5.282       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       Y                Out     0.514     5.796       -         
-N225                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         A                In      -         6.182       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         Y                Out     0.464     6.646       -         
-N252                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        B                In      -         7.452       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        Y                Out     0.624     8.076       -         
-un4_pulseWidth1[6]                                             Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        A                In      -         8.882       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        Y                Out     0.931     9.814       -         
-i8_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        B                In      -         10.620      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.900     11.521      -         
-i12_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         12.327      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     13.227      -         
-i16_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         14.034      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     14.697      -         
-i20_mux                                                        Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          AX1         A                In      -         15.083      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          AX1         Y                Out     0.992     16.076      -         
-N_388                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                          MX2         B                In      -         16.461      -         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                          MX2         Y                Out     0.572     17.033      -         
-N_243                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2_RNO[17]                            NOR2B       A                In      -         17.355      -         
-BUS_INTERFACE_0.pulseWidth2_RNO[17]                            NOR2B       Y                Out     0.514     17.869      -         
-pulseWidth2_RNO[17]                                            Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2[17]                                DFN1        D                In      -         18.191      -         
-====================================================================================================================================
-Total path delay (propagation time + setup) of 18.764 is 9.642(51.4%) logic and 9.122(48.6%) route.
+Instance / Net                                                                 Pin              Pin               Arrival     No. of    
+Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[1]                                    Net         -                -       1.994     -           12        
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        B                In      -         1.994       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        Y                Out     0.937     2.930       -         
+un4_pulseWidth1_0_0                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        A                In      -         3.252       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        Y                Out     0.408     3.660       -         
+N_367                                                              Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         4.466       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     5.094       -         
+N223                                                               Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         6.373       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.782       -         
+N_19                                                               Net         -                -       1.184     -           4         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.965       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     8.453       -         
+ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.839       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.630       -         
+N_50                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         10.436      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     11.032      -         
+N_46                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.839      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     12.435      -         
+i14_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       A                In      -         12.821      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       Y                Out     0.627     13.448      -         
+i16_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       A                In      -         13.834      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       Y                Out     0.627     14.461      -         
+i18_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         14.847      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     15.475      -         
+i20_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1         A                In      -         15.860      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1         Y                Out     0.992     16.853      -         
+N_435                                                              Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                              MX2         B                In      -         17.238      -         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                              MX2         Y                Out     0.572     17.810      -         
+N_234                                                              Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2_RNO[17]                                NOR2B       A                In      -         18.132      -         
+BUS_INTERFACE_0.pulseWidth2_RNO[17]                                NOR2B       Y                Out     0.514     18.646      -         
+pulseWidth2_RNO[17]                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2[17]                                    DFN1        D                In      -         18.968      -         
+========================================================================================================================================
+Total path delay (propagation time + setup) of 19.541 is 9.386(48.0%) logic and 10.155(52.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -673,64 +681,67 @@ Path information for path number 3:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      18.123
+    - Propagation time:                      18.900
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -8.661
+    = Slack (non-critical) :                 -9.438
 
-    Number of logic level(s):                13
+    Number of logic level(s):                14
     Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[1]
     Ending point:                            BUS_INTERFACE_0.pulseWidth1[16] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                             Pin              Pin               Arrival     No. of    
-Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[1]                                Net         -                -       1.776     -           11        
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        B                In      -         1.776       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        Y                Out     0.937     2.713       -         
-un4_pulseWidth1_0_4_0                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        A                In      -         3.034       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        Y                Out     0.408     3.443       -         
-N_322                                                          Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         B                In      -         4.249       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         Y                Out     0.646     4.896       -         
-N174                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       A                In      -         5.282       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       Y                Out     0.514     5.796       -         
-N225                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         A                In      -         6.182       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         Y                Out     0.464     6.646       -         
-N252                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        B                In      -         7.452       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        Y                Out     0.624     8.076       -         
-un4_pulseWidth1[6]                                             Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        A                In      -         8.882       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        Y                Out     0.931     9.814       -         
-i8_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        B                In      -         10.620      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.900     11.521      -         
-i12_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         12.327      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     13.227      -         
-i16_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         14.034      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     14.697      -         
-i20_mux                                                        Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m36                          XNOR2       B                In      -         15.083      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m36                          XNOR2       Y                Out     0.937     16.020      -         
-N_387                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[16]                          MX2         B                In      -         16.406      -         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[16]                          MX2         Y                Out     0.586     16.991      -         
-N_258                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1_RNO[16]                            NOR2B       A                In      -         17.313      -         
-BUS_INTERFACE_0.pulseWidth1_RNO[16]                            NOR2B       Y                Out     0.488     17.801      -         
-pulseWidth1_RNO[16]                                            Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1[16]                                DFN1        D                In      -         18.123      -         
-====================================================================================================================================
-Total path delay (propagation time + setup) of 18.661 is 9.539(51.1%) logic and 9.122(48.9%) route.
+Instance / Net                                                                 Pin              Pin               Arrival     No. of    
+Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[1]                                    Net         -                -       1.994     -           12        
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        B                In      -         1.994       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        Y                Out     0.937     2.930       -         
+un4_pulseWidth1_0_0                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        A                In      -         3.252       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        Y                Out     0.408     3.660       -         
+N_367                                                              Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         4.466       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     5.094       -         
+N223                                                               Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         6.373       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.782       -         
+N_19                                                               Net         -                -       1.184     -           4         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.965       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     8.453       -         
+ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.839       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.630       -         
+N_50                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         10.436      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     11.032      -         
+N_46                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.839      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     12.435      -         
+i14_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       A                In      -         12.821      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       Y                Out     0.627     13.448      -         
+i16_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       A                In      -         13.834      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       Y                Out     0.627     14.461      -         
+i18_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         14.847      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     15.475      -         
+i20_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m36                              XNOR2       B                In      -         15.860      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m36                              XNOR2       Y                Out     0.937     16.797      -         
+N_434                                                              Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[16]                              MX2         B                In      -         17.183      -         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[16]                              MX2         Y                Out     0.586     17.769      -         
+N_249                                                              Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1_RNO[16]                                NOR2B       A                In      -         18.090      -         
+BUS_INTERFACE_0.pulseWidth1_RNO[16]                                NOR2B       Y                Out     0.488     18.578      -         
+pulseWidth1_RNO[16]                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1[16]                                    DFN1        D                In      -         18.900      -         
+========================================================================================================================================
+Total path delay (propagation time + setup) of 19.438 is 9.284(47.8%) logic and 10.155(52.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -740,64 +751,67 @@ Path information for path number 4:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      18.123
+    - Propagation time:                      18.900
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -8.661
+    = Slack (non-critical) :                 -9.438
 
-    Number of logic level(s):                13
+    Number of logic level(s):                14
     Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[1]
     Ending point:                            BUS_INTERFACE_0.pulseWidth2[16] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                             Pin              Pin               Arrival     No. of    
-Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[1]                                Net         -                -       1.776     -           11        
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        B                In      -         1.776       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4_0                          XOR2        Y                Out     0.937     2.713       -         
-un4_pulseWidth1_0_4_0                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        A                In      -         3.034       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_4                            XOR2        Y                Out     0.408     3.443       -         
-N_322                                                          Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         B                In      -         4.249       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_P0N     OR2         Y                Out     0.646     4.896       -         
-N174                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       A                In      -         5.282       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I30_Y      NOR2B       Y                Out     0.514     5.796       -         
-N225                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         A                In      -         6.182       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I53_Y      AO1         Y                Out     0.464     6.646       -         
-N252                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        B                In      -         7.452       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I91_Y      XOR3        Y                Out     0.624     8.076       -         
-un4_pulseWidth1[6]                                             Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        A                In      -         8.882       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        Y                Out     0.931     9.814       -         
-i8_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        B                In      -         10.620      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.900     11.521      -         
-i12_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         12.327      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     13.227      -         
-i16_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         14.034      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     14.697      -         
-i20_mux                                                        Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m36                          XNOR2       B                In      -         15.083      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m36                          XNOR2       Y                Out     0.937     16.020      -         
-N_387                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[16]                          MX2         B                In      -         16.406      -         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[16]                          MX2         Y                Out     0.586     16.991      -         
-N_242                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2_RNO[16]                            NOR2B       A                In      -         17.313      -         
-BUS_INTERFACE_0.pulseWidth2_RNO[16]                            NOR2B       Y                Out     0.488     17.801      -         
-pulseWidth2_RNO[16]                                            Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2[16]                                DFN1        D                In      -         18.123      -         
-====================================================================================================================================
-Total path delay (propagation time + setup) of 18.661 is 9.539(51.1%) logic and 9.122(48.9%) route.
+Instance / Net                                                                 Pin              Pin               Arrival     No. of    
+Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[1]                                    Net         -                -       1.994     -           12        
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        B                In      -         1.994       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                                XOR2        Y                Out     0.937     2.930       -         
+un4_pulseWidth1_0_0                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        A                In      -         3.252       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR2        Y                Out     0.408     3.660       -         
+N_367                                                              Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         4.466       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     5.094       -         
+N223                                                               Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         6.373       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.782       -         
+N_19                                                               Net         -                -       1.184     -           4         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.965       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     8.453       -         
+ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.839       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.630       -         
+N_50                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         10.436      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     11.032      -         
+N_46                                                               Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.839      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     12.435      -         
+i14_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       A                In      -         12.821      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                              NOR2A       Y                Out     0.627     13.448      -         
+i16_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       A                In      -         13.834      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR2A       Y                Out     0.627     14.461      -         
+i18_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         14.847      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     15.475      -         
+i20_mux                                                            Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m36                              XNOR2       B                In      -         15.860      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m36                              XNOR2       Y                Out     0.937     16.797      -         
+N_434                                                              Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[16]                              MX2         B                In      -         17.183      -         
+BUS_INTERFACE_0.pulseWidth2_RNO_0[16]                              MX2         Y                Out     0.586     17.769      -         
+N_233                                                              Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2_RNO[16]                                NOR2B       A                In      -         18.090      -         
+BUS_INTERFACE_0.pulseWidth2_RNO[16]                                NOR2B       Y                Out     0.488     18.578      -         
+pulseWidth2_RNO[16]                                                Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth2[16]                                    DFN1        D                In      -         18.900      -         
+========================================================================================================================================
+Total path delay (propagation time + setup) of 19.438 is 9.284(47.8%) logic and 10.155(52.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -807,64 +821,67 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      18.065
+    - Propagation time:                      18.700
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -8.639
+    = Slack (non-critical) :                 -9.273
 
-    Number of logic level(s):                13
-    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[0]
+    Number of logic level(s):                14
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[1]
     Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                             Pin              Pin               Arrival     No. of    
-Name                                                           Type        Name             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                       MSS_APB     MSSPWDATA[0]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[0]                                Net         -                -       2.082     -           14        
-BUS_INTERFACE_0.un4_pulseWidth1_0_3_1                          OA1         A                In      -         2.082       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_3_1                          OA1         Y                Out     0.984     3.066       -         
-N_321_1                                                        Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_3                            AO1         C                In      -         3.452       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_3                            AO1         Y                Out     0.655     4.107       -         
-N_321                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_G0N     NOR2B       A                In      -         4.493       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I1_G0N     NOR2B       Y                Out     0.488     4.981       -         
-N173                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I27_Y      AO1         A                In      -         5.787       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I27_Y      AO1         Y                Out     0.520     6.307       -         
-N221                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I70_Y      AO1         C                In      -         6.693       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I70_Y      AO1         Y                Out     0.655     7.348       -         
-N311                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I92_Y      XOR3        B                In      -         8.154       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I92_Y      XOR3        Y                Out     0.624     8.778       -         
-un4_pulseWidth1[7]                                             Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        C                In      -         9.164       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m15                          OA1C        Y                Out     0.525     9.689       -         
-i8_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        B                In      -         10.495      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m21                          OA1C        Y                Out     0.900     11.395      -         
-i12_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        B                In      -         12.202      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m27                          OA1C        Y                Out     0.900     13.102      -         
-i16_mux                                                        Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       A                In      -         13.908      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                          NOR3A       Y                Out     0.664     14.572      -         
-i20_mux                                                        Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          AX1         A                In      -         14.958      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                          AX1         Y                Out     0.992     15.950      -         
-N_388                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                          MX2         B                In      -         16.336      -         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                          MX2         Y                Out     0.572     16.908      -         
-N_259                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                            NOR2B       A                In      -         17.230      -         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                            NOR2B       Y                Out     0.514     17.744      -         
-pulseWidth1_RNO[17]                                            Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1[17]                                DFN1        D                In      -         18.065      -         
-====================================================================================================================================
-Total path delay (propagation time + setup) of 18.639 is 9.567(51.3%) logic and 9.072(48.7%) route.
+Instance / Net                                                              Pin              Pin               Arrival     No. of    
+Name                                                            Type        Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST                        MSS_APB     MSSPWDATA[1]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[1]                                 Net         -                -       1.994     -           12        
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                             XOR2        B                In      -         1.994       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_0                             XOR2        Y                Out     0.937     2.930       -         
+un4_pulseWidth1_0_0                                             Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.un4_pulseWidth1_0                               XOR2        A                In      -         3.252       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0                               XOR2        Y                Out     0.408     3.660       -         
+N_367                                                           Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y       NOR2B       B                In      -         4.466       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y       NOR2B       Y                Out     0.627     5.094       -         
+N223                                                            Net         -                -       1.279     -           5         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I82_Y_0     XOR2        B                In      -         6.373       -         
+BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I82_Y_0     XOR2        Y                Out     0.937     7.310       -         
+ADD_12x12_fast_I82_Y_0                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        B                In      -         7.696       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        Y                Out     0.791     8.486       -         
+i4_mux                                                          Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           XO1A        C                In      -         8.872       -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           XO1A        Y                Out     0.490     9.362       -         
+N_50                                                            Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                           AO1C        B                In      -         10.169      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m18                           AO1C        Y                Out     0.596     10.765      -         
+N_46                                                            Net         -                -       0.806     -           3         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                           AO1C        B                In      -         11.571      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m24                           AO1C        Y                Out     0.596     12.167      -         
+i14_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           NOR2A       A                In      -         12.553      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m27                           NOR2A       Y                Out     0.627     13.180      -         
+i16_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                           NOR2A       A                In      -         13.566      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m30                           NOR2A       Y                Out     0.627     14.194      -         
+i18_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR2A       A                In      -         14.579      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR2A       Y                Out     0.627     15.207      -         
+i20_mux                                                         Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           AX1         A                In      -         15.593      -         
+BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           AX1         Y                Out     0.992     16.585      -         
+N_435                                                           Net         -                -       0.386     -           2         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         B                In      -         16.971      -         
+BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         Y                Out     0.572     17.543      -         
+N_250                                                           Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       A                In      -         17.864      -         
+BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       Y                Out     0.514     18.378      -         
+pulseWidth1_RNO[17]                                             Net         -                -       0.322     -           1         
+BUS_INTERFACE_0.pulseWidth1[17]                                 DFN1        D                In      -         18.700      -         
+=====================================================================================================================================
+Total path delay (propagation time + setup) of 19.273 is 9.916(51.5%) logic and 9.357(48.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -874,74 +891,75 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 135MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 134MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 135MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 134MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
 Report for cell turret_servos.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2    28      1.0       28.0
-             AND2A     2      1.0        2.0
-              AND3    94      1.0       94.0
-               AO1    21      1.0       21.0
-              AO1A     1      1.0        1.0
+              AND2    44      1.0       44.0
+             AND2A     3      1.0        3.0
+              AND3   143      1.0      143.0
+               AO1    23      1.0       23.0
+              AO1A     2      1.0        2.0
               AO1B     1      1.0        1.0
-              AO1C    15      1.0       15.0
-              AOI1     8      1.0        8.0
-             AOI1A     4      1.0        4.0
-             AOI1B    18      1.0       18.0
-               AX1    15      1.0       15.0
-              AX1A     2      1.0        2.0
+              AO1C    29      1.0       29.0
+              AO1D     1      1.0        1.0
+              AOI1     7      1.0        7.0
+             AOI1A     7      1.0        7.0
+             AOI1B    24      1.0       24.0
+               AX1    18      1.0       18.0
+              AX1A     1      1.0        1.0
               AX1C    24      1.0       24.0
-              AX1D     2      1.0        2.0
+              AX1D     1      1.0        1.0
               BUFF     1      1.0        1.0
-               GND    10      0.0        0.0
+               GND    11      0.0        0.0
                INV    19      1.0       19.0
-              MAJ3     8      1.0        8.0
+              MAJ3     9      1.0        9.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2    15      1.0       15.0
+               MX2    19      1.0       19.0
               MX2A     1      1.0        1.0
               MX2B    22      1.0       22.0
-              NOR2    29      1.0       29.0
-             NOR2A    31      1.0       31.0
-             NOR2B   160      1.0      160.0
-              NOR3    14      1.0       14.0
-             NOR3A    24      1.0       24.0
-             NOR3B    20      1.0       20.0
-             NOR3C    97      1.0       97.0
-               OA1    14      1.0       14.0
-              OA1A    12      1.0       12.0
+              NOR2    40      1.0       40.0
+             NOR2A    48      1.0       48.0
+             NOR2B   172      1.0      172.0
+              NOR3    18      1.0       18.0
+             NOR3A    25      1.0       25.0
+             NOR3B    19      1.0       19.0
+             NOR3C   104      1.0      104.0
+               OA1    18      1.0       18.0
+              OA1A    20      1.0       20.0
               OA1B     1      1.0        1.0
-              OA1C     5      1.0        5.0
+              OA1C     2      1.0        2.0
               OAI1     1      1.0        1.0
-               OR2    20      1.0       20.0
-              OR2A    45      1.0       45.0
-              OR2B    13      1.0       13.0
-               OR3    13      1.0       13.0
+               OR2    21      1.0       21.0
+              OR2A    66      1.0       66.0
+              OR2B    14      1.0       14.0
+               OR3    12      1.0       12.0
               OR3A     1      1.0        1.0
-              OR3B     9      1.0        9.0
-              OR3C     7      1.0        7.0
+              OR3B    10      1.0       10.0
+              OR3C     8      1.0        8.0
              RCOSC     1      0.0        0.0
-               VCC    10      0.0        0.0
+               VCC    11      0.0        0.0
                XA1    21      1.0       21.0
               XA1B     3      1.0        3.0
-              XA1C     3      1.0        3.0
-             XNOR2    37      1.0       37.0
-              XO1A     1      1.0        1.0
-              XOR2    75      1.0       75.0
-              XOR3    16      1.0       16.0
+              XA1C     4      1.0        4.0
+             XNOR2    64      1.0       64.0
+              XO1A     2      1.0        2.0
+              XOR2   102      1.0      102.0
+              XOR3    15      1.0       15.0
 
 
-              DFN1   184      1.0      184.0
+              DFN1   221      1.0      221.0
             DFN1E0    15      1.0       15.0
-            DFN1E1     3      1.0        3.0
+            DFN1E1    27      1.0       27.0
                    -----          ----------
-             TOTAL  1198              1175.0
+             TOTAL  1498              1473.0
 
 
   IO Cell usage:
@@ -949,23 +967,23 @@ Report for cell turret_servos.verilog
          BIBUF_MSS     2
              INBUF     1
          INBUF_MSS     2
-            OUTBUF     3
+            OUTBUF     9
        TRIBUFF_MSS     1
                    -----
-             TOTAL     9
+             TOTAL    15
 
 
-Core Cells         : 1175 of 4608 (25%)
-IO Cells           : 9
+Core Cells         : 1473 of 4608 (32%)
+IO Cells           : 15
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 134MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Fri Apr 05 15:11:40 2019
+# Mon Apr 08 17:25:42 2019
 
 ###########################################################]

@@ -1,8 +1,8 @@
-C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  turret_servos  -multisrs  C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs  -osyn  C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_mult.srs  -log  C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synlog\turret_servos_multi_srs_gen.srr 
+C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  turret_servos  -multisrs  C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs  -osyn  C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_mult.srs  -log  C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\synlog\turret_servos_multi_srs_gen.srr 
 relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe -link -top turret_servos -multisrs ..\synwork\turret_servos_comp.srs -osyn ..\synwork\turret_servos_mult.srs -log ..\synlog\turret_servos_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\turret_servos_comp.srs|io:i|time:1554491495|size:39451|exec:0|csum:1A5D951B6BD6CC9ACF8D8051BD9D5688
-file:..\synwork\turret_servos_mult.srs|io:o|time:1554491497|size:7281|exec:0|csum:
-file:..\synlog\turret_servos_multi_srs_gen.srr|io:o|time:1554491497|size:529|exec:0|csum:
+file:..\synwork\turret_servos_comp.srs|io:i|time:1554758738|size:41639|exec:0|csum:3666A875C0533F5D81421E0D77E372D9
+file:..\synwork\turret_servos_mult.srs|io:o|time:1554758739|size:7457|exec:0|csum:
+file:..\synlog\turret_servos_multi_srs_gen.srr|io:o|time:1554758739|size:529|exec:0|csum:
 file:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\syn_nfilter.exe|io:i|time:1509029812|size:3128832|exec:1|csum:962D613D77B03012E41E67FDFAA0D819
 file:..\..\..\..\..\..\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1509030084|size:3947520|exec:1|csum:17B0DA4185D3A16356E0044EDC31C9F0

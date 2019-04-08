@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Apr 05 15:12:10 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Apr 08 17:30:51 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -97,7 +97,7 @@ B18                  VCCFPGAIOB0                   Reserved
 B19                  GBB0/IO18NDB0V0               Special
 B20                  GBB1/IO18PDB0V0               Special
 B21                  GND                           Reserved
-B22                  GBA2/IO20PDB1V0               Special
+B22     MOTOR[2]     GBA2/IO20PDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 C1                   EMC_DB[14]/GAB2/IO71NDB5V0    Special
 C2                   Not Bonded                    Unconnected
 C3                   Not Bonded                    Unconnected
@@ -119,7 +119,7 @@ C18                  EMC_AB[23]/IO15PDB0V0         Unassigned
 C19                  GBA0/IO19NPB0V0               Special
 C20                  Not Bonded                    Unconnected
 C21                  GBC2/IO21PDB1V0               Special
-C22                  GBB2/IO20NDB1V0               Special
+C22     MOTOR[3]     GBB2/IO20NDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 D1                   GND                           Reserved
 D2                   EMC_DB[12]/IO70NDB5V0         Unassigned
 D3                   EMC_DB[13]/GAC2/IO70PDB5V0    Special
@@ -213,7 +213,7 @@ H2                   VCCFPGAIOB5                   Reserved
 H3                   EMC_DB[8]/GEC0/IO63NDB5V0     Special
 H4                   GND                           Reserved
 H5      hit_data     GFC0/IO66NPB5V0               Special      LVTTL    ---                ---   None           No               ---   ---               No           No
-H6                   GFA1/IO64PDB5V0               Special
+H6      MOTOR[0]     GFA1/IO64PDB5V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 H7                   GND                           Reserved
 H8                   VCC                           Reserved
 H9                   GND                           Reserved
@@ -235,7 +235,7 @@ J2                   EMC_DB[5]/GEA1/IO61PDB5V0     Special
 J3                   EMC_DB[4]/GEA0/IO61NDB5V0     Special
 J4                   EMC_DB[3]/GEC2/IO60PPB5V0     Special
 J5                   VCCFPGAIOB5                   Reserved
-J6                   GFA0/IO64NDB5V0               Special
+J6      MOTOR[1]     GFA0/IO64NDB5V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 J7                   VCCFPGAIOB5                   Reserved
 J8                   GND                           Reserved
 J9                   VCC                           Reserved
@@ -248,8 +248,8 @@ J15                  VCC                           Reserved
 J16                  GND                           Reserved
 J17                  Not Bonded                    Unconnected
 J18                  VCCFPGAIOB1                   Reserved
-J19                  GCA0/IO28NDB1V0               Special
-J20                  GCA1/IO28PDB1V0               Special
+J19     PWM_motor1   GCA0/IO28NDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
+J20     PWM_motor2   GCA1/IO28PDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 J21                  GCC1/IO26PPB1V0               Special
 J22                  GCB1/IO27PDB1V0               Special
 K1                   GND                           Reserved

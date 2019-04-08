@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 05 15:11:14 2019
+// Created by SmartDesign Mon Apr 08 17:25:24 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -12,6 +12,9 @@ module turret_servos(
     SPI_1_DI,
     hit_data,
     // Outputs
+    MOTOR,
+    PWM_motor1,
+    PWM_motor2,
     SPI_1_DO,
     pwm_out1,
     pwm_out2,
@@ -24,21 +27,24 @@ module turret_servos(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input  MSS_RESET_N;
-input  SPI_1_DI;
-input  hit_data;
+input        MSS_RESET_N;
+input        SPI_1_DI;
+input        hit_data;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output SPI_1_DO;
-output pwm_out1;
-output pwm_out2;
-output pwm_out_IR;
+output [3:0] MOTOR;
+output       PWM_motor1;
+output       PWM_motor2;
+output       SPI_1_DO;
+output       pwm_out1;
+output       pwm_out2;
+output       pwm_out_IR;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
-inout  SPI_1_CLK;
-inout  SPI_1_SS;
+inout        SPI_1_CLK;
+inout        SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -52,7 +58,10 @@ wire          CoreAPB3_0_APBmslave0_PSLVERR;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
 wire          hit_data;
+wire   [3:0]  MOTOR_net_0;
 wire          MSS_RESET_N;
+wire          PWM_motor1_net_0;
+wire          PWM_motor2_net_0;
 wire          pwm_out1_net_0;
 wire          pwm_out2_net_0;
 wire          pwm_out_IR_net_0;
@@ -73,6 +82,9 @@ wire          pwm_out1_net_1;
 wire          pwm_out2_net_1;
 wire          SPI_1_DO_net_1;
 wire          pwm_out_IR_net_1;
+wire   [3:0]  MOTOR_net_1;
+wire          PWM_motor1_net_1;
+wire          PWM_motor2_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -98,10 +110,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0;
-wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -135,6 +147,12 @@ assign SPI_1_DO_net_1   = SPI_1_DO_net_0;
 assign SPI_1_DO         = SPI_1_DO_net_1;
 assign pwm_out_IR_net_1 = pwm_out_IR_net_0;
 assign pwm_out_IR       = pwm_out_IR_net_1;
+assign MOTOR_net_1      = MOTOR_net_0;
+assign MOTOR[3:0]       = MOTOR_net_1;
+assign PWM_motor1_net_1 = PWM_motor1_net_0;
+assign PWM_motor1       = PWM_motor1_net_1;
+assign PWM_motor2_net_1 = PWM_motor2_net_0;
+assign PWM_motor2       = PWM_motor2_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -163,7 +181,10 @@ BUS_INTERFACE BUS_INTERFACE_0(
         .pwm_out_IR ( pwm_out_IR_net_0 ),
         .pwm_out1   ( pwm_out1_net_0 ),
         .pwm_out2   ( pwm_out2_net_0 ),
-        .FABINT     ( BUS_INTERFACE_0_FABINT ) 
+        .FABINT     ( BUS_INTERFACE_0_FABINT ),
+        .MOTOR      ( MOTOR_net_0 ),
+        .PWM_motor1 ( PWM_motor1_net_0 ),
+        .PWM_motor2 ( PWM_motor2_net_0 ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100
