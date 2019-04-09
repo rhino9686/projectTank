@@ -97,6 +97,10 @@
         <spirit:direction>out</spirit:direction>
       </spirit:signal>
       <spirit:signal>
+        <spirit:name>HIT_INT</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
         <spirit:name>hit_data</spirit:name>
         <spirit:direction>in</spirit:direction>
       </spirit:signal>

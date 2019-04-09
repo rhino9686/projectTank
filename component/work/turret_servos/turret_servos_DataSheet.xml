@@ -11,27 +11,27 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/devore/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
-    <state>GENERATED ( Mon Apr 08 17:25:27 2019 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\devore\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
+    <location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
+    <state>GENERATED ( Tue Apr 09 17:49:16 2019 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v</file>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\hdl\busapb3.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\C:/Users/devore/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>SPI_1_CLK</port-name>
@@ -46,7 +46,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>PWM_motor1</port-name>
+    <port-name>MOTOR[1]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -70,13 +70,13 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>PWM_motor2</port-name>
+    <port-name>MOTOR[0]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[2]</port-name>
+    <port-name>PWM_motor2</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -88,13 +88,13 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[1]</port-name>
+    <port-name>MOTOR[3]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[0]</port-name>
+    <port-name>MOTOR[2]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -118,7 +118,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[3]</port-name>
+    <port-name>PWM_motor1</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -403,7 +403,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/devore/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design</core-location>
+    <core-location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design</core-location>
     <core-name>turret_servo_mss_design_0</core-name>
   </core>
   <firmware_core type="FirmWareModule">

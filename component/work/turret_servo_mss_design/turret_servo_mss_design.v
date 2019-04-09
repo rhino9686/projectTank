@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Apr 08 17:24:34 2019
+// Created by SmartDesign Tue Apr 09 17:46:33 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -8,6 +8,7 @@
 // turret_servo_mss_design
 module turret_servo_mss_design(
     // Inputs
+    F2M_GPI_0,
     FABINT,
     MSSPRDATA,
     MSSPREADY,
@@ -31,6 +32,7 @@ module turret_servo_mss_design(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
+input         F2M_GPI_0;
 input         FABINT;
 input  [31:0] MSSPRDATA;
 input         MSSPREADY;
@@ -56,6 +58,7 @@ inout         SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          F2M_GPI_0;
 wire          FABINT;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
@@ -73,6 +76,7 @@ wire          MSS_SPI_1_DO_E;
 wire   [0:0]  MSS_SPI_1_SS_D;
 wire          MSS_SPI_1_SS_E;
 wire          MSS_SPI_1_SS_Y;
+wire          MSSINT_GPI_0_Y;
 wire          net_71;
 wire   [19:0] net_72_PADDR;
 wire          net_72_PENABLE;
@@ -94,6 +98,7 @@ wire          net_71_net_0;
 wire   [19:0] net_72_PADDR_net_0;
 wire   [31:0] net_72_PWDATA_net_0;
 wire          SPI_1_DO_net_1;
+wire   [31:0] GPI_net_0;
 wire   [7:0]  SPI1SSO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
@@ -101,7 +106,6 @@ wire   [7:0]  SPI1SSO_net_0;
 wire          GND_net;
 wire          VCC_net;
 wire   [1:0]  DMAREADY_const_net_0;
-wire   [31:0] GPI_const_net_0;
 wire   [1:0]  MACF2MRXD_const_net_0;
 wire   [1:0]  MACRXD_const_net_0;
 wire   [15:0] EMCRDB_const_net_0;
@@ -113,7 +117,6 @@ wire   [31:0] FABPWDATA_const_net_0;
 assign GND_net               = 1'b0;
 assign VCC_net               = 1'b1;
 assign DMAREADY_const_net_0  = 2'h0;
-assign GPI_const_net_0       = 32'h00000000;
 assign MACF2MRXD_const_net_0 = 2'h0;
 assign MACRXD_const_net_0    = 2'h0;
 assign EMCRDB_const_net_0    = 16'h0000;
@@ -143,6 +146,10 @@ assign SPI_1_DO                         = SPI_1_DO_net_1;
 //--------------------------------------------------------------------
 assign MSS_SPI_1_SS_D[0] = SPI1SSO_net_0[0:0];
 //--------------------------------------------------------------------
+// Concatenation assignments
+//--------------------------------------------------------------------
+assign GPI_net_0 = { 31'h00000000 , MSSINT_GPI_0_Y };
+//--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
 //--------MSS_APB
@@ -168,7 +175,7 @@ MSS_ADLIB_INST(
         .DMAREADY       ( DMAREADY_const_net_0 ), // tied to 2'h0 from definition
         .RXEV           ( GND_net ), // tied to 1'b0 from definition
         .VRON           ( GND_net ), // tied to 1'b0 from definition
-        .GPI            ( GPI_const_net_0 ), // tied to 32'h00000000 from definition
+        .GPI            ( GPI_net_0 ),
         .UART0CTSn      ( GND_net ), // tied to 1'b0 from definition
         .UART0DSRn      ( GND_net ), // tied to 1'b0 from definition
         .UART0RIn       ( GND_net ), // tied to 1'b0 from definition
@@ -465,6 +472,14 @@ MSS_SPI_1_SS(
         .Y   ( MSS_SPI_1_SS_Y ),
         // Inouts
         .PAD ( SPI_1_SS ) 
+        );
+
+//--------MSSINT
+MSSINT MSSINT_GPI_0(
+        // Inputs
+        .A ( F2M_GPI_0 ),
+        // Outputs
+        .Y ( MSSINT_GPI_0_Y ) 
         );
 
 

@@ -19,7 +19,7 @@ output pwm_out_IR,
 output pwm_out1,
 output pwm_out2,
 output reg FABINT,
-//output reg TIMER_INT,
+output reg HIT_INT,
 input hit_data,
 output reg [3:0] MOTOR,
 output PWM_motor1,
@@ -45,8 +45,8 @@ assign PWM_motor2 = PWM_motor1;
 
 wire Servo_write_1 = PWRITE && PENABLE && PSEL && (PADDR[7:0] == 8'b00010000);   //enable servo 1 write at offset #0x10
 wire Servo_write_2 = PWRITE && PENABLE && PSEL && (PADDR[7:0] == 8'b00010100);   //enable servo 2 write at offset #0x14
-wire Motor_write = PSEL && PENABLE && PADDR[2]; // enable motor at offset 0x40050004
-wire Motor_pulse_width_write = PSEL && PENABLE && PADDR[3]; // enable motor pulsewidth write at offset 0x40050008
+wire Motor_write = PSEL && PENABLE && (PADDR[7:0] == 8'b00110100); // enable motor at offset 0x40050034
+wire Motor_pulse_width_write = PSEL && PENABLE && (PADDR[7:0] == 8'b00111000); // enable motor pulsewidth write at offset 0x40050038
 //set up motor pulse width write
 reg [23:0] PulseWidth = 0;
 
@@ -103,16 +103,16 @@ reg [25:0] hit_count;
 always @ (posedge PCLK) begin
     if (hit_data == 0) begin
         if (hit_count[25:0] == 10000000) begin // Hit for .1 seconds to start, may decrease (large for glitches)
-            FABINT <= 1'b1;
+            HIT_INT <= 1'b1;
             hit_count <= 0;
         end
         else begin
-            FABINT <= 1'b0;
+            HIT_INT <= 1'b0;
             hit_count <= hit_count + 1;
         end
     end
     else begin
-        FABINT <= 1'b0;
+        HIT_INT <= 1'b0;
         hit_count <= 0;
     end
 end

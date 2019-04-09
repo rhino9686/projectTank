@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 08 17:30:49 2019 ***************************************************************************
+                          Tue Apr 09 17:49:59 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: C:\Users\devore\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb
+File Name: C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb
 Design Name: turret_servos  Design State: layout
-Last Saved: Mon Apr 08 17:30:20 2019
+Last Saved: Tue Apr 09 17:49:35 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 08 17:25:48 2019:
-        C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
-        C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
+Source File(s) Imported on Tue Apr 09 17:49:30 2019:
+        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
+        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,10 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\devore\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
+Source      : C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
 
-C:\Users\devore\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
+C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.p\
+dc
 Format      : EDIF
 Topcell     : turret_servos
 Speed grade : STD
@@ -375,12 +376,12 @@ Netlist Optimization Report
 
 Optimized macros:
   - Dangling net drivers:   0
-  - Buffers:                0
+  - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        40
+  - Logic combining:        47
 
-    Total macros optimized  40
+    Total macros optimized  48
 
 There were 0 error(s) and 290 warning(s) in this design.
 =====================================================================
@@ -402,7 +403,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1433  Total:   4608   (31.10%)
+    Fabric                     Used:   1460  Total:   4608   (31.68%)
     Fabric IO (W/ clocks)      Used:     10  Total:     94   (10.64%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -431,7 +432,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1170         | 1170
+    COMB    | 1197         | 1197
     SEQ     | 263          | 263
 
 I/O Function:
@@ -454,11 +455,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   4 ( 40.00% )
+    Locked  :  10 ( 100.00% )
     Placed  :   0
-    UnPlaced:   6 ( 60.00% )
-
-Warning: Only some I/Os are locked
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -475,47 +474,47 @@ High fanout nets in the post compile netlist:
     --------------------------
     24      INT_NET       Net   : BUS_INTERFACE_0/Motor_pulse_width_write
                           Driver: BUS_INTERFACE_0/Motor_pulse_width_write
-    23      INT_NET       Net   : BUS_INTERFACE_0/hit_count_1_sqmuxa
-                          Driver: BUS_INTERFACE_0/hit_count_RNITE7I8[13]
-    22      INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N
+    21      INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    22      INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N_0
+    21      INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N_0
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313
-    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_1
-                          Driver: BUS_INTERFACE_0/Servo_write_1
     16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_2
                           Driver: BUS_INTERFACE_0/Servo_write_2
-    13      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
+    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_1
+                          Driver: BUS_INTERFACE_0/Servo_write_1
+    15      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    12      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[0]
-                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    12      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
-                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    12      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[2]
-                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    15      INT_NET       Net   : hit_data_c
+                          Driver: hit_data_pad
+    15      INT_NET       Net   : hit_data_c_0
+                          Driver: hit_data_pad_RNIICM7
+    14      INT_NET       Net   : BUS_INTERFACE_0/HIT_INT4_0
+                          Driver: BUS_INTERFACE_0/hit_count_RNIB2HA8[10]
+    14      INT_NET       Net   : BUS_INTERFACE_0/HIT_INT4
+                          Driver: BUS_INTERFACE_0/hit_count_RNIB2HA8_0[10]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    43      INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N
+    41      INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    29      INT_NET       Net   : hit_data_c
+                          Driver: hit_data_pad
     24      INT_NET       Net   : BUS_INTERFACE_0/Motor_pulse_width_write
                           Driver: BUS_INTERFACE_0/Motor_pulse_width_write
-    23      INT_NET       Net   : BUS_INTERFACE_0/hit_count_1_sqmuxa
-                          Driver: BUS_INTERFACE_0/hit_count_RNITE7I8[13]
-    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_1
-                          Driver: BUS_INTERFACE_0/Servo_write_1
     16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_2
                           Driver: BUS_INTERFACE_0/Servo_write_2
-    13      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
+    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_1
+                          Driver: BUS_INTERFACE_0/Servo_write_1
+    15      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    12      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[0]
+    14      INT_NET       Net   : BUS_INTERFACE_0/HIT_INT4_0
+                          Driver: BUS_INTERFACE_0/hit_count_RNIB2HA8[10]
+    14      INT_NET       Net   : BUS_INTERFACE_0/HIT_INT4
+                          Driver: BUS_INTERFACE_0/hit_count_RNIB2HA8_0[10]
+    13      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[0]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    12      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
-                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    12      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[2]
-                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    11      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[4]
+    11      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
 
 
@@ -542,16 +541,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Apr 08 17:30:28 2019
+Timing-driven Placer Started: Tue Apr 09 17:49:38 2019
 
-Placer Finished: Mon Apr 08 17:30:37 2019
-Total Placer CPU Time:     00:00:09
+Placer Finished: Tue Apr 09 17:49:48 2019
+Total Placer CPU Time:     00:00:10
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: turret_servos                   Started: Mon Apr 08 17:30:38 2019
+Design: turret_servos                   Started: Tue Apr 09 17:49:49 2019
 
  
 Iterative improvement...
@@ -559,9 +558,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: turret_servos                   
-Finished: Mon Apr 08 17:30:46 2019
-Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
-Total Memory Usage: 183.8 Mbytes
+Finished: Tue Apr 09 17:49:56 2019
+Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:07
+Total Memory Usage: 184.1 Mbytes
                         o - o - o - o - o - o
 
 

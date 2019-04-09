@@ -3,6 +3,7 @@
 #include <inttypes.h>
 #include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 #include "CMSIS/a2fxxxm3.h"
+#include "drivers/mss_gpio/mss_gpio.h"
 
 #define MASTER_TX_BUFFER 9
 #define FREQ_ADDR 0x40050020
@@ -14,13 +15,15 @@ void setupSPI(void);
 void changeSpeed( volatile uint32_t*, int );
 
 //int hits = 0;
-__attribute__ ((interrupt)) void Fabric_IRQHandler( void )
+__attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 {
 	volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
 	uint32_t hits = *hitsAddr;
 	hits++;
 	*hitsAddr++ = hits;
-    NVIC_ClearPendingIRQ( Fabric_IRQn );
+    //NVIC_ClearPendingIRQ( GPIO0_IRQn );
+	MSS_GPIO_clear_irq(MSS_GPIO_0);
+	MSS_GPIO_set_output(MSS_GPIO_0, 0);
     //NVIC_DisableIRQ(Fabric_IRQn); // Add interrupts to disable timer for certain period of time later
 }
 
@@ -28,15 +31,18 @@ int main()
 {
 	volatile uint32_t * rlAddr = (volatile uint32_t *)(0x40050010); // Right/Left Servo
 	volatile uint32_t * udAddr = (volatile uint32_t *)(0x40050014); // Up/Down Servo
-	volatile uint32_t * freqAddr = (volatile uint32_t *)(FREQ_ADDR);
-	volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
-	volatile uint32_t * motorAddr = (volatile uint32_t *) 0x40050004; // motor
-	volatile uint32_t * pulsewidthAddr = (volatile uint32_t *) 0x40050008; // pulse width
+	volatile uint32_t * freqAddr = (volatile uint32_t *)(0x40050020); // Frequency of IR
+	volatile uint32_t * hitsAddr = (volatile uint32_t *)(0x40050024); // hits IR
+	volatile uint32_t * motorAddr = (volatile uint32_t *) 0x40050034; // motor
+	volatile uint32_t * pulsewidthAddr = (volatile uint32_t *) 0x40050038; // pulse width motor
 	uint32_t joyVals = 0; // values from joysticks
 	*hitsAddr = 0;
 
 	// Enable FABINT
-	NVIC_EnableIRQ(Fabric_IRQn);
+
+	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_IRQ_EDGE_POSITIVE);
+	MSS_GPIO_enable_irq(MSS_GPIO_0);
+	//NVIC_EnableIRQ(GPIO0_IRQn);
 	//NVIC_EnableIRQ(GPIO0_IRQn);
 
 	uint32_t udPos = 900000; // Start at 90 deg. (middle position)

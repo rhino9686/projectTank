@@ -9,7 +9,7 @@ Opened an existing Libero design turret_servos.adb.
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\devore\Desktop\ps2_turret_ir_integration\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 ***** Layout Variables *********************************************
 
@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Apr 08 17:30:28 2019
+Timing-driven Placer Started: Tue Apr 09 17:49:38 2019
 
-Placer Finished: Mon Apr 08 17:30:37 2019
-Total Placer CPU Time:     00:00:09
+Placer Finished: Tue Apr 09 17:49:48 2019
+Total Placer CPU Time:     00:00:10
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: turret_servos                   Started: Mon Apr 08 17:30:38 2019
+Design: turret_servos                   Started: Tue Apr 09 17:49:49 2019
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: turret_servos                   
-Finished: Mon Apr 08 17:30:46 2019
-Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
-Total Memory Usage: 183.8 Mbytes
+Finished: Tue Apr 09 17:49:56 2019
+Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:07
+Total Memory Usage: 184.1 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -60,7 +60,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have NOT been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:00:23 )
+The Layout command succeeded ( 00:00:22 )
 Wrote status report to file: turret_servos_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -80,8 +80,8 @@ Wrote pin report to file: turret_servos_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 Design saved to file
-C:\Users\devore\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb.
+C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb.
 
-The Execute Script command succeeded ( 00:00:26 )
+The Execute Script command succeeded ( 00:00:25 )
 Design closed.
 
