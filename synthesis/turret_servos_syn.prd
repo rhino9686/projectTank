@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09M-SP1-5
+#--  Project file C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos_syn.prd
+#--  Written on Tue Apr 09 18:38:45 2019
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

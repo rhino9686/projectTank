@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: EECS373-09
 
-# Tue Apr 09 17:49:22 2019
+# Tue Apr 09 20:43:21 2019
 
 #Implementation: synthesis
 
@@ -20,14 +20,14 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" (library COREAPB3_LIB)
 @I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v" (library work)
 @I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
 @I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v" (library work)
 @I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
 @I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v" (library work)
-@I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" (library COREAPB3_LIB)
-@I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
-@I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" (library COREAPB3_LIB)
 @I::"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" (library work)
 Verilog syntax check successful!
 Options changed - recompiling
@@ -41,40 +41,40 @@ Selecting top level module turret_servos
 
 @N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":3:7:3:19|Synthesizing module BUS_INTERFACE in library work.
 
-@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":81:24:81:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":81:38:81:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":82:24:82:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":82:38:82:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":73:24:73:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":73:38:73:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":74:24:74:28|Port-width mismatch for port pulseWidth. The port definition is 18 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":74:38:74:38|Port-width mismatch for port period. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
 @W: CG133 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":21:11:21:16|Object FABINT is declared but not assigned. Either assign a value or remove the declaration.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[31] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[30] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[29] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[28] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[27] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[26] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[25] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[24] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[23] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[22] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[21] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[20] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[19] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[18] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[17] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[16] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[15] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[14] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[13] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[12] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[11] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[10] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[9] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[8] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[7] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[6] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[5] is always 0.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Register bit PRDATA[4] is always 0.
-@W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":69:0:69:5|Pruning register bits 31 to 4 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[31] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[30] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[29] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[28] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[27] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[26] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[25] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[24] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[23] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[22] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[21] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[20] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[19] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[18] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[17] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[16] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[15] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[14] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[13] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[12] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[11] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[10] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[9] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[8] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[7] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[6] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[5] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Register bit PRDATA[4] is always 0.
+@W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":115:0:115:5|Pruning register bits 31 to 4 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
 
 @N: CG364 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
@@ -246,16 +246,16 @@ Selecting top level module turret_servos
 @N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
 @N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
 @N: CL159 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
-@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":88:0:88:5|Register bit freq[0] is always 0.
+@N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":80:0:80:5|Register bit freq[0] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":129:0:129:5|Register bit pulseWidth1[0] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":129:0:129:5|Register bit pulseWidth1[1] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":140:0:140:5|Register bit pulseWidth2[0] is always 0.
 @N: CL189 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":140:0:140:5|Register bit pulseWidth2[1] is always 0.
 @W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":140:0:140:5|Pruning register bits 1 to 0 of pulseWidth2[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":129:0:129:5|Pruning register bits 1 to 0 of pulseWidth1[17:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":88:0:88:5|Pruning register bit 0 of freq[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":88:0:88:5|Pruning register bit 4 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":88:0:88:5|Pruning register bit 2 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":80:0:80:5|Pruning register bit 0 of freq[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":80:0:80:5|Pruning register bit 4 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":80:0:80:5|Pruning register bit 2 of freq[5:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL246 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":13:13:13:17|Input port bits 31 to 8 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":14:18:14:23|Input port bits 31 to 24 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
 @A: CL153 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":21:11:21:16|*Unassigned bits of FABINT are referenced and tied to 0 -- simulation mismatch possible.
@@ -265,7 +265,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 09 17:49:22 2019
+# Tue Apr 09 20:43:22 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -276,7 +276,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 09 17:49:22 2019
+# Tue Apr 09 20:43:22 2019
 
 ###########################################################]
 @END
@@ -286,7 +286,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 09 17:49:22 2019
+# Tue Apr 09 20:43:22 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -298,10 +298,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 09 17:49:23 2019
+# Tue Apr 09 20:43:23 2019
 
 ###########################################################]
-# Tue Apr 09 17:49:24 2019
+# Tue Apr 09 20:43:23 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -353,10 +353,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 28MB peak: 114MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Apr 09 17:49:24 2019
+# Tue Apr 09 20:43:24 2019
 
 ###########################################################]
-# Tue Apr 09 17:49:24 2019
+# Tue Apr 09 20:43:24 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -386,7 +386,7 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":103:0:103:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":95:0:95:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
 @N: MF176 |Default generator successful 
 @N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":221:12:221:30|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwmMotor(verilog))
 @N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":220:21:220:30|Found 32-bit incrementor, 'un3_count_1[31:0]'
@@ -475,7 +475,7 @@ Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01
 
 Writing Analyst data base C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 130MB peak: 134MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 130MB peak: 134MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-SP1-5
@@ -492,7 +492,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Apr 09 17:49:26 2019
+# Timing Report written on Tue Apr 09 20:43:26 2019
 #
 
 
@@ -1316,6 +1316,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 134MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Apr 09 17:49:26 2019
+# Tue Apr 09 20:43:26 2019
 
 ###########################################################]

@@ -27,8 +27,6 @@ output PWM_motor2
 
 ); 
 
-
-
 `define ten_deg 10000 // 5 deg = 5000
 `define min 60000
 `define max 240000
@@ -64,13 +62,7 @@ begin
         PulseWidth <= PWDATA[23:0];
 end 
 
-// Read hits all the time
-reg [3:0] hits;
-always @(posedge PCLK)
-begin
-    PRDATA[31:4] <= 28'h0000000;
-    PRDATA[3:0] <= hits;
-end
+
 
 // Frequency and hits write conditions
 wire freq_write = PWRITE & PSEL & PENABLE & (PADDR[7:0] == 8'h20);
@@ -115,6 +107,14 @@ always @ (posedge PCLK) begin
         HIT_INT <= 1'b0;
         hit_count <= 0;
     end
+end
+
+
+reg [3:0] hits;
+// Read hits data
+always @ (posedge PCLK) begin
+    PRDATA[31:4] <= 28'h0000000; // PRDATA will read hits if timer isn't being read
+    PRDATA[3:0] <= hits;
 end
 
 // Write hits data
@@ -225,3 +225,174 @@ always @(posedge clk)
     end
 endmodule
 // end pwmMotor
+
+
+
+/* TIMER MODULE (not needed now, just here in case)
+
+// Timer for Hits
+assign BUS_WRITE_EN = (PENABLE && PWRITE && PSEL && ((PADDR[7:0] == 8'b00000000) || (PADDR[7:0] == 8'b00000100) || (PADDR[7:0] == 8'b00001000))); // offset 0x40050000 - 8
+assign BUS_READ_EN = (!PWRITE && PSEL && ((PADDR[7:0] == 8'b00000000) || (PADDR[7:0] == 8'b00000100) || (PADDR[7:0] == 8'b00001000))); 
+//Data is ready during first cycle to make it availble on the bus when PENABLE is asserted
+
+// TIMER STUFF
+
+reg [31:0] compareReg;
+reg [31:0] counterReg;
+reg [31:0] controlReg;
+reg [31:0] overflowReg;
+
+reg overflowReset;		//Resets counterReg when new overflow value is written
+
+wire timerEn;        //Timer Enable
+wire interruptEn;    //Interrupt Enable
+wire compareEn;      //Compare Enable
+wire overflowEn;	 //Overflow Enable
+
+assign timerEn 		= controlReg[0];
+assign interruptEn 	= controlReg[1];
+assign compareEn 	= controlReg[2];
+assign overflowEn	= controlReg[3];
+
+reg [1:0] interrupt_status;
+reg reset_interrupt;
+reg timer_interrupt;
+
+reg [31:0] nextCounter;
+
+always@(posedge PCLK)
+if(~PRESERN)
+  FABINT   <= 1'b0;
+else
+  begin
+    if(timer_interrupt)
+      FABINT   <= 1'b1;
+    else
+      FABINT   <= 1'b0;
+end
+
+
+
+always@(posedge PCLK)
+if(~PRESERN)
+  begin
+    overflowReset <= 1'b0;
+    compareReg <= 32'h00000000;
+    overflowReg <= 32'h00000000;
+	controlReg <= 32'h00000000;
+    reset_interrupt <= 1'b0;
+  end
+else begin
+	if(BUS_WRITE_EN) begin : WRITE
+		case(PADDR[4:2])
+			3'b000: // Overflow Register
+                begin 
+                overflowReset <= 1'b1;
+				overflowReg <= PWDATA[31:0];
+                end
+            3'b001: // Timer Value, Read Only
+                begin
+                overflowReset <= 1'b0;
+                end
+            3'b010: // Timer Control
+                begin 
+                overflowReset <= 1'b0;
+                controlReg <= PWDATA[31:0];
+                end
+            3'b011: // Compare Register
+                begin
+                overflowReset <= 1'b0;
+                compareReg <= PWDATA[31:0];
+                end
+            3'b100: //Interrupt Status, Read Only
+                begin
+                overflowReset <= 1'b0;
+                end
+            3'b101: //Spare
+                begin
+                end
+        endcase
+    end
+	else if(BUS_READ_EN) begin : READ
+        case(PADDR[4:2])
+	        3'b000: // Timer Overflow register
+                begin 
+		        PRDATA[31:0] <= overflowReg;
+                reset_interrupt <= 1'b0;
+				end
+            3'b001: // Timer Value, Read Only
+                begin 
+                PRDATA[31:0] <= counterReg;
+                reset_interrupt <= 1'b0;
+				end
+            3'b010: // Timer Control
+                begin 
+                PRDATA[31:0] <= controlReg;
+                reset_interrupt <= 1'b0;
+			    end
+            3'b011: //Compare Register
+                begin
+                PRDATA[31:0] <= compareReg;
+                reset_interrupt <= 1'b0;
+                end
+            3'b100: // Interrupt Status
+                begin 
+                PRDATA[31:2] <= 30'd0;;
+                PRDATA[1:0] <= interrupt_status;
+                reset_interrupt <= 1'b1;
+                end
+            3'b101: //Spare
+                begin
+                end
+        endcase
+     end
+     else begin
+	   overflowReset <= 1'b0;
+       reset_interrupt <= 1'b0;
+       
+     end
+end
+
+always@*
+	nextCounter = counterReg + 1;
+  
+always@(posedge PCLK)
+if(~PRESERN) begin
+	counterReg <= 32'd0;
+    timer_interrupt <= 1'b0;
+    interrupt_status <= 2'b00;
+end
+else begin
+    if(reset_interrupt)begin
+        interrupt_status <= 2'b00;
+        timer_interrupt <= 1'b0;
+    end
+    else begin
+        if(overflowReset) begin
+            counterReg <= 32'd0;
+            timer_interrupt <= 1'b0;
+        end
+        else if(timerEn) begin
+            if(counterReg == overflowReg) begin
+                counterReg <= 32'd0;
+                if(interruptEn && overflowEn) begin
+                    timer_interrupt <= 1'b1;
+                    interrupt_status[0] <= 1'b1;
+                end
+                else
+                    timer_interrupt <= 1'b0;
+            end
+            else begin
+                if(counterReg == compareReg && interruptEn && compareEn) begin
+                    timer_interrupt <= 1'b1;
+                    interrupt_status[1] <= 1'b1;
+                end
+                else
+                    timer_interrupt <= 1'b0;
+                counterReg <= nextCounter;
+            end
+        end
+
+    end
+end 
+*/

@@ -1,0 +1,2 @@
+@E: CL172 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":15:18:15:23|Only one always block can assign a given variable PRDATA[31:0]
+

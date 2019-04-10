@@ -1,18 +1,18 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
 #--  Project file C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos_syn.prj
-#--  Written on Tue Apr 09 17:49:27 2019
+#--  Written on Tue Apr 09 20:43:26 2019
 
 
 #project files
+add_file -verilog -lib COREAPB3_LIB "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v"
 add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/hdl/busapb3.v"
 add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
 add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/mss_tshell.v"
 add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/MSS_CCC_0/turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v"
 add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/turret_servo_mss_design.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v"
 add_file -verilog "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servos/turret_servos.v"
 add_file -constraint "C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/mss_tshell_syn.sdc"
 

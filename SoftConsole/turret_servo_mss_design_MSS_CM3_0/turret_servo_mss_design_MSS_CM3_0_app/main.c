@@ -4,6 +4,7 @@
 #include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 #include "CMSIS/a2fxxxm3.h"
 #include "drivers/mss_gpio/mss_gpio.h"
+#include "mss_timer.h"
 
 #define MASTER_TX_BUFFER 9
 #define FREQ_ADDR 0x40050020
@@ -15,16 +16,49 @@ void setupSPI(void);
 void changeSpeed( volatile uint32_t*, int );
 
 //int hits = 0;
+int can_hit = 1;
+/*
+__attribute__ ((interrupt)) void Fabric_IRQHandler( void )
+{
+    uint32_t status = MYTIMER_getInterrupt_status();
+
+    if(status & 0x01) // OVERFLOW interrupt
+    {
+    	MYTIMER_disable();
+    	can_hit = 1;
+    }
+    NVIC_ClearPendingIRQ( Fabric_IRQn );
+} */
+
+void Timer1_IRQHandler( void ){
+
+	can_hit = 1;
+	MSS_TIM1_clear_irq();
+	MSS_TIM1_stop();
+	MSS_TIM1_disable_irq();
+	//MSS_TIM1_load_immediate(root->time);
+	//MSS_TIM1_start();
+}
+
+
 __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 {
-	volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
-	uint32_t hits = *hitsAddr;
-	hits++;
-	*hitsAddr++ = hits;
-    //NVIC_ClearPendingIRQ( GPIO0_IRQn );
+	if (can_hit){
+		volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
+		uint32_t hits = *hitsAddr;
+		hits++;
+		*hitsAddr++ = hits;
+
+		// MSS timer start
+		MSS_TIM1_init(1); // one shot
+		MSS_TIM1_load_immediate(500000000); // 5 seconds
+		MSS_TIM1_start();
+		MSS_TIM1_enable_irq();
+		can_hit = 0; // Prevent from going in additional times
+		//NVIC_DisableIRQ(Fabric_IRQn); // Add interrupts to disable timer for certain period of time later
+	}
 	MSS_GPIO_clear_irq(MSS_GPIO_0);
 	MSS_GPIO_set_output(MSS_GPIO_0, 0);
-    //NVIC_DisableIRQ(Fabric_IRQn); // Add interrupts to disable timer for certain period of time later
 }
 
 int main()
@@ -38,11 +72,11 @@ int main()
 	uint32_t joyVals = 0; // values from joysticks
 	*hitsAddr = 0;
 
-	// Enable FABINT
 
+	NVIC_EnableIRQ(Fabric_IRQn);
 	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_IRQ_EDGE_POSITIVE);
 	MSS_GPIO_enable_irq(MSS_GPIO_0);
-	//NVIC_EnableIRQ(GPIO0_IRQn);
+
 	//NVIC_EnableIRQ(GPIO0_IRQn);
 
 	uint32_t udPos = 900000; // Start at 90 deg. (middle position)
@@ -132,7 +166,7 @@ int main()
 		}
 
 		// Shoot
-		if (fire == 0){
+		if (fire == 0 && can_hit){
 			*freqAddr = 56;
 			LED += 16;
 		} else {
