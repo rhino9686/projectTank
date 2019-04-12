@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Tue Apr 09 20:42:57 2019 
+# Date generated: Fri Apr 12 12:23:32 2019 
 
 
 # 
@@ -11,6 +11,8 @@
 # 
 
 define_group -name SPI_1_PADs
+
+define_group -name UART_0_PADs
 
 
 # 
@@ -54,6 +56,18 @@ set_io SPI_1_DO             \
 set_io SPI_1_SS             \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INOUT
+
+
+# User Group UART_0_PADs
+
+set_io UART_0_RXD            \
+    -GROUP_NAME UART_0_PADs  \
+    -DIRECTION INPUT
+
+
+set_io UART_0_TXD            \
+    -GROUP_NAME UART_0_PADs  \
+    -DIRECTION OUTPUT
 
 
 

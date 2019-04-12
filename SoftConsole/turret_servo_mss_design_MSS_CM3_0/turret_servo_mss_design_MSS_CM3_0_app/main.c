@@ -5,6 +5,7 @@
 #include "CMSIS/a2fxxxm3.h"
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "mss_timer.h"
+#include "drivers/mss_uart/mss_uart.h"
 
 #define MASTER_TX_BUFFER 9
 #define FREQ_ADDR 0x40050020

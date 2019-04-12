@@ -1,4 +1,3 @@
-Design Entry;SmartDesign Check||(null)||'turret_servo_mss_design' was generated successfully||(null);(null)||(null);(null)
 HelpInfo,C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\html,fpgahelp.qhc,errormessages.mp,C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\mbin\assistant
 Implementation;Synthesis;RootName:turret_servos
 Implementation;Synthesis|| CG775 ||@W:Found Component CoreAPB3 in library COREAPB3_LIB||turret_servos.srr(35);liberoaction://cross_probe/hdl/file/'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.srr'/linenumber/35||coreapb3.v(31);liberoaction://cross_probe/hdl/file/'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v'/linenumber/31

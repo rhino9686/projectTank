@@ -15,6 +15,7 @@ ARCHIVES :=
 SUBDIRS := \
 hal/CortexM3 \
 hal/CortexM3/GNU \
+drivers/mss_uart \
 drivers/mss_spi/drivers/mss_spi \
 drivers/mss_rtc/drivers/mss_rtc \
 drivers/mss_pdma \
