@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086231"
+TIME="1555109739"
 SIZE="2736"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1555086231"
+TIME="1555109739"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -152,7 +152,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109732"
 SIZE="945"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
@@ -170,113 +170,113 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086216"
+TIME="1555109730"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086216"
+TIME="1555109730"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086216"
+TIME="1555109730"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086216"
+TIME="1555109730"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="254"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_SPI\1.0.102\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="254"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="254"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086233"
-SIZE="2203"
+TIME="1555106662"
+SIZE="2374"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\turret_servos.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086235"
-SIZE="6331"
+TIME="1555109743"
+SIZE="7237"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\turret_servos.pdc,pdc"
 STATE="utd"
-TIME="1555086230"
-SIZE="2070"
+TIME="1555109738"
+SIZE="2567"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -286,41 +286,41 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\turret_servos.v,hdl"
 STATE="utd"
-TIME="1555086231"
-SIZE="16027"
+TIME="1555109739"
+SIZE="16378"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="31587"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086216"
+TIME="1555109730"
 SIZE="513"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1555086216"
+TIME="1555109730"
 SIZE="2853"
 PARENT="<project>\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1555086217"
+TIME="1555109731"
 SIZE="16218"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109731"
 SIZE="12226"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 BEGIN_USE_CONSTRAINT
@@ -332,7 +332,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1555086218"
+TIME="1555109732"
 SIZE="218"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 BEGIN_USE_CONSTRAINT
@@ -344,13 +344,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555086220"
-SIZE="14033"
+TIME="1555109733"
+SIZE="14939"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.pdc,pdc"
 STATE="utd"
-TIME="1555086212"
-SIZE="1943"
+TIME="1555109726"
+SIZE="2440"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -360,80 +360,80 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.v,hdl"
 STATE="utd"
-TIME="1555086219"
-SIZE="21416"
+TIME="1555109732"
+SIZE="22252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\BUS_INTERFACE.adb,adb"
 STATE="ood"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="258560"
 ENDFILE
 VALUE "<project>\designer\impl1\BUS_INTERFACE.ide_des,ide_des"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="990"
 ENDFILE
 VALUE "<project>\designer\impl1\BUS_INTERFACE_compile_log.rpt,log"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="11449"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.adb,adb"
-STATE="ood"
-TIME="1555086001"
+STATE="utd"
+TIME="1555106481"
 SIZE="1586688"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.fdb,fdb"
-STATE="ood"
-TIME="1555086001"
-SIZE="68931"
+STATE="utd"
+TIME="1555111155"
+SIZE="68657"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.ide_des,ide_des"
 STATE="utd"
-TIME="1555086001"
-SIZE="1120"
+TIME="1555106481"
+SIZE="1115"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_compile_log.rpt,log"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="34815"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\projectData\turret_servos.pdb,pdb"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="74482"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\turret_servos.pdb,pdb"
-STATE="ood"
-TIME="1555086001"
+STATE="utd"
+TIME="1555106481"
 SIZE="74482"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\turret_servos.pro,pro"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="2466"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1555086001"
-SIZE="2757"
+TIME="1555111142"
+SIZE="2718"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1555086001"
+TIME="1555111157"
 SIZE="742"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1555086001"
+TIME="1555111147"
 SIZE="1215"
 ENDFILE
 VALUE "<project>\hdl\busapb3.v,hdl"
 STATE="utd"
-TIME="1555086001"
-SIZE="9944"
+TIME="1555111098"
+SIZE="9946"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -449,71 +449,71 @@ PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1555086231"
+TIME="1555109739"
 SIZE="638"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1555086217"
+TIME="1555109730"
 SIZE="5496"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="670"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE.edn,syn_edn"
 STATE="ood"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="352410"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE.so,so"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="234"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE_syn.prj,prj"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="1755"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos.edn,syn_edn"
-STATE="ood"
-TIME="1555086001"
+STATE="utd"
+TIME="1555106481"
 SIZE="769410"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos.so,so"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="246"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1555086001"
+STATE="utd"
+TIME="1555106481"
 SIZE="564"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos_syn.prj,prj"
 STATE="utd"
-TIME="1555086001"
+TIME="1555106481"
 SIZE="3058"
 ENDFILE
 ENDLIST
@@ -539,6 +539,24 @@ VALUE "<project>\component\work\turret_servos\turret_servos.pdc,pdc"
 ENDLIST
 LIST SynthesisConstraints
 VALUE "<project>\component\work\turret_servo_mss_design\mss_tshell_syn.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\turret_servos.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\turret_servos.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\turret_servos_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\turret_servos_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "CoreAPB3::COREAPB3_LIB"
@@ -669,8 +687,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -703,6 +721,20 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "turret_servos::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\turret_servos.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\turret_servos.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -717,12 +749,12 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:turret_servos_prgdata_log.rpt
+ReportsCurrentItem;Program Device:turret_servos_program.log
 SmartDesign;turret_servos;0
 StartPage;StartPage;0
 HDL;hdl\busapb3.v;0
 SmartDesign;turret_servo_mss_design;0
-ACTIVEVIEW;turret_servos
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -811,9 +843,9 @@ LIST "turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC::work","component\work\turre
 SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "turret_servos::work","component\work\turret_servos\turret_servos.v","TRUE","FALSE"
-SUBBLOCK "BUS_INTERFACE::work","hdl\busapb3.v","FALSE","FALSE"
 SUBBLOCK "turret_servo_mss_design::work","component\work\turret_servo_mss_design\turret_servo_mss_design.v","TRUE","FALSE"
 SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "BUS_INTERFACE::work","hdl\busapb3.v","FALSE","FALSE"
 ENDLIST
 LIST "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
 SUBBLOCK "COREAPB3_MUXPTOB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v","FALSE","FALSE"

@@ -1,4 +1,4 @@
-# Tue Apr 09 20:43:24 2019
+# Fri Apr 12 19:18:27 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -28,14 +28,14 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":95:0:95:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":96:0:96:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
 @N: MF176 |Default generator successful 
-@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":221:12:221:30|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwmMotor(verilog))
-@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":220:21:220:30|Found 32-bit incrementor, 'un3_count_1[31:0]'
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":191:0:191:5|Found counter in view:work.pwm_IR_1(verilog) instance count[31:0] 
-@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":191:0:191:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
-@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":172:5:172:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
-@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":171:13:171:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":222:12:222:30|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwmMotor(verilog))
+@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":221:21:221:30|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":192:0:192:5|Found counter in view:work.pwm_IR_1(verilog) instance count[31:0] 
+@N: MO231 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":192:0:192:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
+@N: MF179 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":173:5:173:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
+@N: MF238 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\hdl\busapb3.v":172:13:172:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
 
@@ -49,10 +49,10 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 120MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 120MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 125MB peak: 125MB)
@@ -78,7 +78,7 @@ BUS_INTERFACE_0.HIT_INT4 / Y                             28
 ======================================================================
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 134MB)
 
 Replicating Combinational Instance BUS_INTERFACE_0.HIT_INT4, fanout 28 segments 2
 Buffering hit_data_c, fanout 29 segments 2
@@ -89,7 +89,7 @@ Added 1 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 1 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 134MB)
 
 
 
@@ -113,7 +113,7 @@ Clock Tree ID     Driving Element               Drive Element Type              
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 130MB peak: 134MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 130MB peak: 134MB)
 
 Writing Analyst data base C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_m.srm
 
@@ -127,14 +127,14 @@ Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s
 
 Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 134MB)
 
-@W: MT246 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":478:7:478:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":455:0:455:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":544:7:544:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\waierdg\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":477:0:477:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @N: MT615 |Found clock FCLK with period 10.00ns 
 @N: MT615 |Found clock FAB_CLK with period 10.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Apr 09 20:43:26 2019
+# Timing Report written on Fri Apr 12 19:18:29 2019
 #
 
 
@@ -940,15 +940,16 @@ Report for cell turret_servos.verilog
               cell count
          BIBUF_MSS     2
              INBUF     1
-         INBUF_MSS     2
+         INBUF_MSS     4
             OUTBUF     9
+        OUTBUF_MSS     2
        TRIBUFF_MSS     1
                    -----
-             TOTAL    15
+             TOTAL    19
 
 
 Core Cells         : 1507 of 4608 (33%)
-IO Cells           : 15
+IO Cells           : 19
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
@@ -958,6 +959,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 134MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Apr 09 20:43:26 2019
+# Fri Apr 12 19:18:29 2019
 
 ###########################################################]

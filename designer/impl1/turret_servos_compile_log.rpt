@@ -76,10 +76,8 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0DO drives no l
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0DOE drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0CLKO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_SPI0MODE drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_UART0TXD drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_ADLIB_INST_MACTXEN drives no load.
@@ -360,7 +358,7 @@ Optimized macros:
 
     Total macros optimized  48
 
-There were 0 error(s) and 290 warning(s) in this design.
+There were 0 error(s) and 288 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -384,7 +382,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:     10  Total:     94   (10.64%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
+    Dedicated MSS IO           Used:      9  Total:     43   (20.93%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)

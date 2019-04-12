@@ -81,7 +81,7 @@ int main()
 	//NVIC_EnableIRQ(GPIO0_IRQn);
 
 	uint32_t udPos = 900000; // Start at 90 deg. (middle position)
-	uint32_t rlPos = 0;
+	uint32_t rlPos = 900000;
 
 	// Initialize servo positions
 	*udAddr = udPos;

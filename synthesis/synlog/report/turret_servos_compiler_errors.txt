@@ -1,2 +1,6 @@
-@E: CL172 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":15:18:15:23|Only one always block can assign a given variable PRDATA[31:0]
+@E: CG426 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":39:4:39:11|Assignment target hit_data must be of type reg or genvar
+@E: CG426 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":40:4:40:13|Assignment target pwm_out_IR must be of type reg or genvar
+@E: CG342 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":41:4:41:14|Expecting target variable, found pulseWidth1 -- possible misspelling
+@E: CG342 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":139:8:139:18|Expecting target variable, found pulseWidth1 -- possible misspelling
+@E: CS187 :"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":233:0:233:8|Expecting endmodule
 

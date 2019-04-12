@@ -35,6 +35,7 @@ output PWM_motor2
 `define khz_56 1785
 `define khz_38 2632
 
+
 reg [17:0] pulseWidth1;
 reg [17:0] pulseWidth2;
 assign PSLVERR = 0;
