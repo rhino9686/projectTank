@@ -11,28 +11,40 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
-    <state>GENERATED ( Fri Apr 12 18:55:42 2019 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
+    <location>C:/Users/celinesc/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
+    <state>GENERATED ( Mon Apr 15 19:32:34 2019 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\celinesc\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v</file>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\hdl\busapb3.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
+  <io>
+    <port-name>TX</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
   <io>
     <port-name>SPI_1_CLK</port-name>
     <direction>INOUT</direction>
@@ -40,14 +52,14 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPI_1_SS</port-name>
-    <direction>INOUT</direction>
+    <port-name>UART_1_TXD</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[3]</port-name>
-    <direction>OUT</direction>
+    <port-name>SPI_1_SS</port-name>
+    <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -64,7 +76,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[1]</port-name>
+    <port-name>MOTOR[3]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -82,19 +94,19 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[2]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
     <port-name>PWM_motor2</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_1_RXD</port-name>
+    <port-name>MOTOR[0]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>RX</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -118,13 +130,13 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_1_TXD</port-name>
+    <port-name>MOTOR[1]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MOTOR[0]</port-name>
+    <port-name>MOTOR[2]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -144,6 +156,12 @@
   <io>
     <port-name>PWM_motor1</port-name>
     <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_1_RXD</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -179,9 +197,9 @@ There is one APB3 Master interface.
     </core-param>
     <core-param>
       <param-name>Slot 1:</param-name>
-      <param-value>false</param-value>
+      <param-value>true</param-value>
       <param-hdlname>APBSLOT1ENABLE</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
+      <param-hdlvalue>1</param-hdlvalue>
       <param-tag>spirit:hwParameter</param-tag>
     </core-param>
     <core-param>
@@ -424,12 +442,103 @@ There is one APB3 Master interface.
     </core-param>
     <core-name>CoreAPB3_0</core-name>
   </core>
+  <core type="SpiritModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>SpiritModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>DirectCore</core-lib>
+    <core-intname>CoreUARTapb</core-intname>
+    <core-ver>5.6.102</core-ver>
+    <core-desc>CoreUARTapb is a serial communication controller with a flexible serial data interface that is intended primarily for embedded systems. The controller operates as an asynchronous (UART) with a control register interface and APB wrapper.</core-desc>
+    <core-param>
+      <param-name>Fractional Part of Baud Value:</param-name>
+      <param-value>+0.0</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Enable Extra Precision:</param-name>
+      <param-value>false</param-value>
+      <param-hdlname>BAUD_VAL_FRCTN_EN</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Baud Value:</param-name>
+      <param-value>1</param-value>
+      <param-hdlname>BAUD_VALUE</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>FPGA Family:</param-name>
+      <param-value>SmartFusion</param-value>
+      <param-hdlname>FAMILY</param-hdlname>
+      <param-hdlvalue>18</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Configuration:</param-name>
+      <param-value>Programmable</param-value>
+      <param-hdlname>FIXEDMODE</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Character Size:</param-name>
+      <param-value>7 bits</param-value>
+      <param-hdlname>PRG_BIT8</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>Parity:</param-name>
+      <param-value>Parity Disabled</param-value>
+      <param-hdlname>PRG_PARITY</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX FIFO:</param-name>
+      <param-value>Enable RX FIFO</param-value>
+      <param-hdlname>RX_FIFO</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>RX Legacy Mode:</param-name>
+      <param-value>Disabled</param-value>
+      <param-hdlname>RX_LEGACY_MODE</param-hdlname>
+      <param-hdlvalue>0</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-param>
+      <param-name>TX FIFO:</param-name>
+      <param-value>Enable TX FIFO</param-value>
+      <param-hdlname>TX_FIFO</param-hdlname>
+      <param-hdlvalue>1</param-hdlvalue>
+      <param-tag>spirit:hwParameter</param-tag>
+    </core-param>
+    <core-name>CoreUARTapb_0</core-name>
+  </core>
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design</core-location>
+    <core-location>C:/Users/celinesc/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design</core-location>
     <core-name>turret_servo_mss_design_0</core-name>
   </core>
+  <firmware_core type="FirmWareModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>CoreUARTapb_Driver</core-intname>
+    <core-ver>3.3.101</core-ver>
+    <core-desc>Bare metal software driver for CoreUARTapb IP.
+</core-desc>
+    <core-name>CoreUARTapb_Driver_0</core-name>
+  </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
     <core-type>FirmWareModule</core-type>
@@ -2471,6 +2580,13 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
           <fullPinName>BUS_INTERFACE_0:BIF_1</fullPinName>
           <remapAddress>0x40050000</remapAddress>
           <fullAddressSpace>0x40050000 - 0x400500FF</fullAddressSpace>
+          <range>0x00000100</range>
+        </slave>
+        <slave>
+          <name>CoreUARTapb_0</name>
+          <fullPinName>CoreUARTapb_0:APB_bif</fullPinName>
+          <remapAddress>0x40050100</remapAddress>
+          <fullAddressSpace>0x40050100 - 0x400501FF</fullAddressSpace>
           <range>0x00000100</range>
         </slave>
         <slave>

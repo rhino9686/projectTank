@@ -5,16 +5,16 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\synlog\report\turret_servos_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\synlog\report\turret_servos_fpga_mapper_resourceusage.rpt</data>
 <title>Report for cell</title>
 </report_link>
 <parameter tooltip="Total Core Cells used" name="Core Cells">
-<data>1507</data>
+<data>1920</data>
 </parameter>
 <parameter tooltip="Total IO Cells used" name="IO Cells">
-<data>19</data>
+<data>21</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
-<data>0</data>
+<data>2</data>
 </parameter>
 </report_table>

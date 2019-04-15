@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 12 18:55:39 2019
+// Created by SmartDesign Mon Apr 15 19:32:30 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -9,6 +9,7 @@
 module turret_servos(
     // Inputs
     MSS_RESET_N,
+    RX,
     SPI_1_DI,
     UART_0_RXD,
     UART_1_RXD,
@@ -18,6 +19,7 @@ module turret_servos(
     PWM_motor1,
     PWM_motor2,
     SPI_1_DO,
+    TX,
     UART_0_TXD,
     UART_1_TXD,
     pwm_out1,
@@ -32,6 +34,7 @@ module turret_servos(
 // Input
 //--------------------------------------------------------------------
 input        MSS_RESET_N;
+input        RX;
 input        SPI_1_DI;
 input        UART_0_RXD;
 input        UART_1_RXD;
@@ -43,6 +46,7 @@ output [3:0] MOTOR;
 output       PWM_motor1;
 output       PWM_motor2;
 output       SPI_1_DO;
+output       TX;
 output       UART_0_TXD;
 output       UART_1_TXD;
 output       pwm_out1;
@@ -58,14 +62,15 @@ inout        SPI_1_SS;
 //--------------------------------------------------------------------
 wire          BUS_INTERFACE_0_FABINT;
 wire          BUS_INTERFACE_0_HIT_INT;
-wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire          CoreAPB3_0_APBmslave0_PENABLE;
 wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
 wire          CoreAPB3_0_APBmslave0_PREADY;
 wire          CoreAPB3_0_APBmslave0_PSELx;
 wire          CoreAPB3_0_APBmslave0_PSLVERR;
-wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
+wire          CoreAPB3_0_APBmslave1_PREADY;
+wire          CoreAPB3_0_APBmslave1_PSELx;
+wire          CoreAPB3_0_APBmslave1_PSLVERR;
 wire          hit_data;
 wire   [3:0]  MOTOR_net_0;
 wire          MSS_RESET_N;
@@ -74,6 +79,7 @@ wire          PWM_motor2_net_0;
 wire          pwm_out1_net_0;
 wire          pwm_out2_net_0;
 wire          pwm_out_IR_net_0;
+wire          RX;
 wire          SPI_1_CLK;
 wire          SPI_1_DI;
 wire          SPI_1_DO_net_0;
@@ -87,6 +93,7 @@ wire          turret_servo_mss_design_0_MSS_MASTER_APB_PSELx;
 wire          turret_servo_mss_design_0_MSS_MASTER_APB_PSLVERR;
 wire   [31:0] turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA;
 wire          turret_servo_mss_design_0_MSS_MASTER_APB_PWRITE;
+wire          TX_net_0;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
@@ -98,15 +105,15 @@ wire          pwm_out_IR_net_1;
 wire          PWM_motor1_net_1;
 wire          PWM_motor2_net_1;
 wire          UART_0_TXD_net_1;
-wire   [3:0]  MOTOR_net_1;
 wire          UART_1_TXD_net_1;
+wire   [3:0]  MOTOR_net_1;
+wire          TX_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
 wire          GND_net;
 wire          VCC_net;
 wire   [31:0] IADDR_const_net_0;
-wire   [31:0] PRDATAS1_const_net_0;
 wire   [31:0] PRDATAS2_const_net_0;
 wire   [31:0] PRDATAS3_const_net_0;
 wire   [31:0] PRDATAS4_const_net_0;
@@ -125,6 +132,16 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_0_4to0;
+wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
+wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
+wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
+wire   [31:0] CoreAPB3_0_APBmslave1_PRDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:20]turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0;
@@ -135,7 +152,6 @@ wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR;
 assign GND_net               = 1'b0;
 assign VCC_net               = 1'b1;
 assign IADDR_const_net_0     = 32'h00000000;
-assign PRDATAS1_const_net_0  = 32'h00000000;
 assign PRDATAS2_const_net_0  = 32'h00000000;
 assign PRDATAS3_const_net_0  = 32'h00000000;
 assign PRDATAS4_const_net_0  = 32'h00000000;
@@ -168,13 +184,25 @@ assign PWM_motor2_net_1 = PWM_motor2_net_0;
 assign PWM_motor2       = PWM_motor2_net_1;
 assign UART_0_TXD_net_1 = UART_0_TXD_net_0;
 assign UART_0_TXD       = UART_0_TXD_net_1;
-assign MOTOR_net_1      = MOTOR_net_0;
-assign MOTOR[3:0]       = MOTOR_net_1;
 assign UART_1_TXD_net_1 = UART_1_TXD_net_0;
 assign UART_1_TXD       = UART_1_TXD_net_1;
+assign MOTOR_net_1      = MOTOR_net_0;
+assign MOTOR[3:0]       = MOTOR_net_1;
+assign TX_net_1         = TX_net_0;
+assign TX               = TX_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
+assign CoreAPB3_0_APBmslave0_PADDR_0_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
+assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_4to0 };
+
+assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
+assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
+
+assign CoreAPB3_0_APBmslave1_PRDATA_0_31to8 = 24'h0;
+assign CoreAPB3_0_APBmslave1_PRDATA_0_7to0 = CoreAPB3_0_APBmslave1_PRDATA[7:0];
+assign CoreAPB3_0_APBmslave1_PRDATA_0 = { CoreAPB3_0_APBmslave1_PRDATA_0_31to8, CoreAPB3_0_APBmslave1_PRDATA_0_7to0 };
+
 assign turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_31to20 = 12'h0;
 assign turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_19to0 = turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[19:0];
 assign turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0 = { turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_31to20, turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_19to0 };
@@ -211,7 +239,7 @@ BUS_INTERFACE BUS_INTERFACE_0(
 CoreAPB3 #( 
         .APB_DWIDTH      ( 32 ),
         .APBSLOT0ENABLE  ( 1 ),
-        .APBSLOT1ENABLE  ( 0 ),
+        .APBSLOT1ENABLE  ( 1 ),
         .APBSLOT2ENABLE  ( 0 ),
         .APBSLOT3ENABLE  ( 0 ),
         .APBSLOT4ENABLE  ( 0 ),
@@ -255,8 +283,8 @@ CoreAPB3_0(
         .PSEL       ( turret_servo_mss_design_0_MSS_MASTER_APB_PSELx ),
         .PREADYS0   ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERRS0  ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .PREADYS1   ( VCC_net ), // tied to 1'b1 from definition
-        .PSLVERRS1  ( GND_net ), // tied to 1'b0 from definition
+        .PREADYS1   ( CoreAPB3_0_APBmslave1_PREADY ),
+        .PSLVERRS1  ( CoreAPB3_0_APBmslave1_PSLVERR ),
         .PREADYS2   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS2  ( GND_net ), // tied to 1'b0 from definition
         .PREADYS3   ( VCC_net ), // tied to 1'b1 from definition
@@ -290,7 +318,7 @@ CoreAPB3_0(
         .PADDR      ( turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0 ),
         .PWDATA     ( turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA ),
         .PRDATAS0   ( CoreAPB3_0_APBmslave0_PRDATA ),
-        .PRDATAS1   ( PRDATAS1_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS1   ( CoreAPB3_0_APBmslave1_PRDATA_0 ),
         .PRDATAS2   ( PRDATAS2_const_net_0 ), // tied to 32'h00000000 from definition
         .PRDATAS3   ( PRDATAS3_const_net_0 ), // tied to 32'h00000000 from definition
         .PRDATAS4   ( PRDATAS4_const_net_0 ), // tied to 32'h00000000 from definition
@@ -313,7 +341,7 @@ CoreAPB3_0(
         .PWRITES    ( CoreAPB3_0_APBmslave0_PWRITE ),
         .PENABLES   ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PSELS0     ( CoreAPB3_0_APBmslave0_PSELx ),
-        .PSELS1     (  ),
+        .PSELS1     ( CoreAPB3_0_APBmslave1_PSELx ),
         .PSELS2     (  ),
         .PSELS3     (  ),
         .PSELS4     (  ),
@@ -334,6 +362,40 @@ CoreAPB3_0(
         .PWDATAS    ( CoreAPB3_0_APBmslave0_PWDATA ) 
         );
 
+//--------turret_servos_CoreUARTapb_0_CoreUARTapb   -   Actel:DirectCore:CoreUARTapb:5.6.102
+turret_servos_CoreUARTapb_0_CoreUARTapb #( 
+        .BAUD_VAL_FRCTN    ( 0 ),
+        .BAUD_VAL_FRCTN_EN ( 0 ),
+        .BAUD_VALUE        ( 1 ),
+        .FAMILY            ( 18 ),
+        .FIXEDMODE         ( 0 ),
+        .PRG_BIT8          ( 0 ),
+        .PRG_PARITY        ( 0 ),
+        .RX_FIFO           ( 1 ),
+        .RX_LEGACY_MODE    ( 0 ),
+        .TX_FIFO           ( 1 ) )
+CoreUARTapb_0(
+        // Inputs
+        .PCLK        ( turret_servo_mss_design_0_FAB_CLK ),
+        .PRESETN     ( turret_servo_mss_design_0_M2F_RESET_N ),
+        .PADDR       ( CoreAPB3_0_APBmslave0_PADDR_0 ),
+        .PSEL        ( CoreAPB3_0_APBmslave1_PSELx ),
+        .PENABLE     ( CoreAPB3_0_APBmslave0_PENABLE ),
+        .PWRITE      ( CoreAPB3_0_APBmslave0_PWRITE ),
+        .PWDATA      ( CoreAPB3_0_APBmslave0_PWDATA_0 ),
+        .RX          ( RX ),
+        // Outputs
+        .PRDATA      ( CoreAPB3_0_APBmslave1_PRDATA ),
+        .TXRDY       (  ),
+        .RXRDY       (  ),
+        .PARITY_ERR  (  ),
+        .OVERFLOW    (  ),
+        .TX          ( TX_net_0 ),
+        .PREADY      ( CoreAPB3_0_APBmslave1_PREADY ),
+        .PSLVERR     ( CoreAPB3_0_APBmslave1_PSLVERR ),
+        .FRAMING_ERR (  ) 
+        );
+
 //--------turret_servo_mss_design
 turret_servo_mss_design turret_servo_mss_design_0(
         // Inputs
@@ -344,8 +406,8 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .FABINT      ( BUS_INTERFACE_0_FABINT ),
         .F2M_GPI_0   ( BUS_INTERFACE_0_HIT_INT ),
         .UART_0_RXD  ( UART_0_RXD ),
-        .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
         .UART_1_RXD  ( UART_1_RXD ),
+        .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( turret_servo_mss_design_0_FAB_CLK ),
         .MSSPSEL     ( turret_servo_mss_design_0_MSS_MASTER_APB_PSELx ),
@@ -354,9 +416,9 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .M2F_RESET_N ( turret_servo_mss_design_0_M2F_RESET_N ),
         .SPI_1_DO    ( SPI_1_DO_net_0 ),
         .UART_0_TXD  ( UART_0_TXD_net_0 ),
+        .UART_1_TXD  ( UART_1_TXD_net_0 ),
         .MSSPADDR    ( turret_servo_mss_design_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PWDATA ),
-        .UART_1_TXD  ( UART_1_TXD_net_0 ),
         // Inouts
         .SPI_1_CLK   ( SPI_1_CLK ),
         .SPI_1_SS    ( SPI_1_SS ) 

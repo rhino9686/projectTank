@@ -1,72 +1,103 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\synthesis\\synwork\\turret_servos_comp.srs|-top|turret_servos|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\synthesis\\synwork\\turret_servos_comp.srs|-top|turret_servos|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1536348874
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\mss_tshell.v":1555109731
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\MSS_CCC_0\\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":1555109730
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\turret_servo_mss_design.v":1555109732
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1537821911
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1537821911
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3.v":1537821911
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\hdl\\busapb3.v":1555111098
-#CUR:"C:\\Users\\waierdg\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\turret_servos.v":1555109739
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\hdl\\busapb3.v":1555370752
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1555370752
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\mss_tshell.v":1555370752
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\MSS_CCC_0\\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":1555370752
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\turret_servo_mss_design.v":1555370752
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Clock_gen.v":1555371150
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Rx_async.v":1555371150
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Tx_async.v":1555371150
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\fifo_256x8_smartfusion.v":1555371150
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\CoreUART.v":1555371150
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\CoreUARTapb.v":1555371150
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1537483521
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1537483521
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3.v":1537483521
+#CUR:"C:\\Users\\celinesc\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\turret_servos.v":1555371150
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-1			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v" verilog
-2			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-3			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v" verilog
-4			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" verilog
-5			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" verilog
-6			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" verilog
-7			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v" verilog
-8			"C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" verilog
+0			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\hdl\busapb3.v" verilog
+1			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+2			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v" verilog
+3			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+4			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v" verilog
+5			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v" verilog
+6			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v" verilog
+7			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v" verilog
+8			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v" verilog
+9			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v" verilog
+10			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v" verilog
+11			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" verilog
+12			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" verilog
+13			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" verilog
+14			"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
-2 0
-3 2 1 0
-4 -1
+2 -1
+3 1
+4 3 2 1
 5 -1
-6 4 5
+6 -1
 7 -1
-8 7 6 3
-#Dependency Lists(Users Of)
-0 2 3
-1 3
-2 3
-3 8
-4 6
-5 6
-6 8
-7 8
 8 -1
+9 5 7 6 8
+10 9
+11 -1
+12 -1
+13 11 12
+14 0 13 10 4
+#Dependency Lists(Users Of)
+0 14
+1 3 4
+2 4
+3 4
+4 14
+5 9
+6 9
+7 9
+8 9
+9 10
+10 14
+11 13
+12 13
+13 14
+14 -1
 #Design Unit to File Association
-module work MSS_XTLOSC 0
-module work MSS_LPXTLOSC 0
-module work INBUF_MSS 0
-module work OUTBUF_MSS 0
-module work TRIBUFF_MSS 0
-module work BIBUF_MSS 0
-module work BIBUF_OPEND_MSS 0
-module work INBUF_MCCC 0
-module work INBUF_LVPECL_MCCC 0
-module work INBUF_LVDS_MCCC 0
-module work MSSINT 0
-module work MSS_CCC 0
-module work MSS_ALL 0
-module work MSS_APB 1
-module work turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC 2
-module work turret_servo_mss_design 3
-module work pwmMotor 7
-module work pwm_IR 7
-module work pwm 7
-module work BUS_INTERFACE 7
-module work turret_servos 8
-module COREAPB3_LIB COREAPB3_MUXPTOB3 4
-module COREAPB3_LIB coreapb3_iaddr_reg 5
-module COREAPB3_LIB CoreAPB3 6
+module work pwmMotor 0
+module work pwm_IR 0
+module work pwm 0
+module work BUS_INTERFACE 0
+module work MSS_XTLOSC 1
+module work MSS_LPXTLOSC 1
+module work INBUF_MSS 1
+module work OUTBUF_MSS 1
+module work TRIBUFF_MSS 1
+module work BIBUF_MSS 1
+module work BIBUF_OPEND_MSS 1
+module work INBUF_MCCC 1
+module work INBUF_LVPECL_MCCC 1
+module work INBUF_LVDS_MCCC 1
+module work MSSINT 1
+module work MSS_CCC 1
+module work MSS_ALL 1
+module work MSS_APB 2
+module work turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC 3
+module work turret_servo_mss_design 4
+module work turret_servos_CoreUARTapb_0_Clock_gen 5
+module work turret_servos_CoreUARTapb_0_Rx_async 6
+module work turret_servos_CoreUARTapb_0_Tx_async 7
+module work turret_servos_CoreUARTapb_0_fifo_256x8_pa3 8
+module work turret_servos_CoreUARTapb_0_fifo_256x8 8
+module work turret_servos_CoreUARTapb_0_COREUART 9
+module work turret_servos_CoreUARTapb_0_CoreUARTapb 10
+module work turret_servos 14
+module COREAPB3_LIB COREAPB3_MUXPTOB3 11
+module COREAPB3_LIB coreapb3_iaddr_reg 12
+module COREAPB3_LIB CoreAPB3 13

@@ -6,12 +6,17 @@
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "mss_timer.h"
 #include "drivers/mss_uart/mss_uart.h"
+#include "drivers/CoreUARTapb/core_uart_apb.h"
 
 #define MASTER_TX_BUFFER 9
 #define FREQ_ADDR 0x40050020
 #define HITS_ADDR 0x40050024
+#define BAUD_VALUE_9600    650
+#define COREUARTAPB0_BASE_ADDR      0x40050100 // base address of apb3 slave ie PSEL
+#define MAX_RX_DATA_SIZE    256
 uint8_t master_tx_buffer[MASTER_TX_BUFFER];
 uint8_t master_rx_buffer[MASTER_TX_BUFFER]; 	//Initialize return array for Data buffer
+UART_instance_t g_uart;		// sound board UART
 
 void setupSPI(void);
 void changeSpeed( volatile uint32_t*, int );
@@ -49,6 +54,13 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		uint32_t hits = *hitsAddr;
 		hits++;
 		*hitsAddr++ = hits;
+		uint8_t tx_buff[3] = "#1\n";
+		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
+		volatile int i = 0;
+		 while(i < 100000)
+		 {
+			 ++i;
+		 }
 
 		// MSS timer start
 		MSS_TIM1_init(1); // one shot
@@ -73,6 +85,7 @@ int main()
 	uint32_t joyVals = 0; // values from joysticks
 	*hitsAddr = 0;
 
+	UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY)); // endable sound board UART
 
 	NVIC_EnableIRQ(Fabric_IRQn);
 	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_IRQ_EDGE_POSITIVE);
@@ -170,6 +183,13 @@ int main()
 		if (fire == 0 && can_hit){
 			*freqAddr = 56;
 			LED += 16;
+			uint8_t tx_buff[3] = "#0\n";
+			UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
+			 volatile int i = 0;
+			 while(i < 100000)
+			 {
+				 ++i;
+			 }
 		} else {
 			*freqAddr = 0; // Set back to 0 when done or not shooting
 		}

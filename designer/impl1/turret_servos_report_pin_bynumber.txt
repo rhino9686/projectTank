@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Apr 12 19:19:02 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Apr 15 19:33:47 2019 UNCOMPLETED LAYOUT
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -118,7 +118,7 @@ C17                  EMC_AB[22]/IO15NDB0V0         Unassigned
 C18                  EMC_AB[23]/IO15PDB0V0         Unassigned
 C19                  GBA0/IO19NPB0V0               Special
 C20                  Not Bonded                    Unconnected
-C21                  GBC2/IO21PDB1V0               Special
+C21     TX           GBC2/IO21PDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 C22     MOTOR[3]     GBB2/IO20NDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
 D1                   GND                           Reserved
 D2                   EMC_DB[12]/IO70NDB5V0         Unassigned
@@ -227,7 +227,7 @@ H16                  VCCFPGAIOB1                   Reserved
 H17                  IO25NDB1V0                    Unassigned
 H18                  GCC2/IO25PDB1V0               Special
 H19                  GND                           Reserved
-H20                  GCC0/IO26NPB1V0               Special
+H20     RX           GCC0/IO26NPB1V0               Special      LVTTL    ---                ---   None           No               ---   ---               No           No
 H21                  VCCFPGAIOB1                   Reserved
 H22                  GCB0/IO27NDB1V0               Special
 J1                   EMC_DB[6]/GEB0/IO62NDB5V0     Special

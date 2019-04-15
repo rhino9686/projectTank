@@ -21,9 +21,21 @@ drivers/mss_rtc/drivers/mss_rtc \
 drivers/mss_pdma \
 drivers/mss_nvm/drivers/F2DSS_NVM \
 drivers/mss_gpio \
+drivers/CoreUARTapb \
 CMSIS \
 CMSIS/startup_gcc \
 
+################################################################################
+# Microsemi SoftConsole IDE Variables
+################################################################################
+
+BUILDCMD = arm-none-eabi-ar -r 
+SHELL := cmd.exe
+EXECUTABLE := turret_servo_mss_design_MSS_CM3_0_hw_platform.a
+
+# Target-specific items to be cleaned up in the top directory.
+clean::
+	-$(RM) $(wildcard ./*.map) 
 ################################################################################
 # Microsemi SoftConsole IDE Variables
 ################################################################################
