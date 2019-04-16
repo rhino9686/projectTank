@@ -1,0 +1,1267 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Tue Apr 16 14:58:55 2019
+
+
+Design: turret_servos
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                10.731
+Frequency (MHz):            93.188
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       40.000
+Required Frequency (MHz):   25.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                12.256
+Frequency (MHz):            81.593
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        3.751
+Max Clock-To-Out (ns):      15.354
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        -5.434
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               turret_servo_mss_design_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+Path 1
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+  Delay (ns):            12.951
+  Slack (ns):            -0.731
+  Arrival (ns):          17.126
+  Required (ns):         16.395
+  Setup (ns):            -2.220
+  Minimum Period (ns):   10.731
+
+Path 2
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  Delay (ns):            12.811
+  Slack (ns):            -0.587
+  Arrival (ns):          16.986
+  Required (ns):         16.399
+  Setup (ns):            -2.224
+  Minimum Period (ns):   10.587
+
+Path 3
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  Delay (ns):            11.568
+  Slack (ns):            0.647
+  Arrival (ns):          15.743
+  Required (ns):         16.390
+  Setup (ns):            -2.215
+  Minimum Period (ns):   9.353
+
+Path 4
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
+  Delay (ns):            11.555
+  Slack (ns):            0.679
+  Arrival (ns):          15.730
+  Required (ns):         16.409
+  Setup (ns):            -2.234
+  Minimum Period (ns):   9.321
+
+Path 5
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
+  Delay (ns):            11.257
+  Slack (ns):            0.967
+  Arrival (ns):          15.432
+  Required (ns):         16.399
+  Setup (ns):            -2.224
+  Minimum Period (ns):   9.033
+
+
+Expanded Path 1
+  From: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+  data required time                             16.395
+  data arrival time                          -   17.126
+  slack                                          -0.731
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     4.175          Clock generation
+  4.175
+               +     2.981          cell: ADLIB:MSS_APB_IP
+  7.156                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPSEL (r)
+               +     0.123          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPSELINT_NET
+  7.279                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_42:PIN1INT (r)
+               +     0.089          cell: ADLIB:MSS_IF
+  7.368                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_42:PIN1 (r)
+               +     1.183          net: turret_servo_mss_design_0_MSS_MASTER_APB_PSELx
+  8.551                        CoreAPB3_0/iPSELS_0_a2_0_1[0]:A (r)
+               +     0.470          cell: ADLIB:NOR2A
+  9.021                        CoreAPB3_0/iPSELS_0_a2_0_1[0]:Y (r)
+               +     0.351          net: CoreAPB3_0/iPSELS_0_a2_0_1[0]
+  9.372                        CoreAPB3_0/iPSELS_0_a2[0]:B (r)
+               +     0.652          cell: ADLIB:NOR3B
+  10.024                       CoreAPB3_0/iPSELS_0_a2[0]:Y (r)
+               +     2.949          net: CoreAPB3_0_APBmslave0_PSELx
+  12.973                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1_a3_0[3]:B (r)
+               +     0.470          cell: ADLIB:NOR2B
+  13.443                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1_a3_0[3]:Y (r)
+               +     0.296          net: CoreAPB3_0/u_mux_p_to_b3/N_67
+  13.739                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1[3]:C (r)
+               +     0.699          cell: ADLIB:AO1A
+  14.438                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1[3]:Y (r)
+               +     2.163          net: turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA[3]
+  16.601                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_37:PIN6 (r)
+               +     0.076          cell: ADLIB:MSS_IF
+  16.677                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_37:PIN6INT (r)
+               +     0.449          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPRDATA[3]INT_NET
+  17.126                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3] (r)
+                                    
+  17.126                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_fabric_interface_clock
+               +     0.000          Clock source
+  10.000                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     4.175          Clock generation
+  14.175
+               -    -2.220          Library setup time: ADLIB:MSS_APB_IP
+  16.395                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+                                    
+  16.395                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_ccc_gla1 to mss_fabric_interface_clock
+
+Path 1
+  From:                  CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  Delay (ns):            8.842
+  Slack (ns):            1.660
+  Arrival (ns):          14.730
+  Required (ns):         16.390
+  Setup (ns):            -2.215
+
+Path 2
+  From:                  CoreUARTapb_0/uUART/rx_dout_reg[0]:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  Delay (ns):            8.655
+  Slack (ns):            1.810
+  Arrival (ns):          14.580
+  Required (ns):         16.390
+  Setup (ns):            -2.215
+
+Path 3
+  From:                  CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[2]
+  Delay (ns):            8.434
+  Slack (ns):            2.068
+  Arrival (ns):          14.322
+  Required (ns):         16.390
+  Setup (ns):            -2.215
+
+Path 4
+  From:                  CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
+  Delay (ns):            8.396
+  Slack (ns):            2.114
+  Arrival (ns):          14.284
+  Required (ns):         16.398
+  Setup (ns):            -2.223
+
+Path 5
+  From:                  CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+  Delay (ns):            7.987
+  Slack (ns):            2.520
+  Arrival (ns):          13.875
+  Required (ns):         16.395
+  Setup (ns):            -2.220
+
+
+Expanded Path 1
+  From: CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK
+  To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  data required time                             16.390
+  data arrival time                          -   14.730
+  slack                                          1.660
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  5.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.639          net: FAB_CLK
+  5.888                        CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK (r)
+               +     0.671          cell: ADLIB:DFN1E0C0
+  6.559                        CoreUARTapb_0/uUART/make_RX/parity_err_0:Q (f)
+               +     1.524          net: CoreUARTapb_0/PARITY_ERR_0
+  8.083                        CoreUARTapb_0/uUART/rx_dout_reg_RNI5OFV[0]:S (f)
+               +     0.437          cell: ADLIB:MX2
+  8.520                        CoreUARTapb_0/uUART/rx_dout_reg_RNI5OFV[0]:Y (r)
+               +     1.530          net: CoreUARTapb_0/data_out[0]
+  10.050                       CoreUARTapb_0/iPRDATA_RNIHA581[0]:B (r)
+               +     0.533          cell: ADLIB:MX2C
+  10.583                       CoreUARTapb_0/iPRDATA_RNIHA581[0]:Y (f)
+               +     1.688          net: CoreUARTapb_0_i19_mux
+  12.271                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1[0]:A (f)
+               +     0.473          cell: ADLIB:AO1A
+  12.744                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_1[0]:Y (r)
+               +     1.465          net: turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA[0]
+  14.209                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_36:PIN6 (r)
+               +     0.076          cell: ADLIB:MSS_IF
+  14.285                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_36:PIN6INT (r)
+               +     0.445          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPRDATA[0]INT_NET
+  14.730                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0] (r)
+                                    
+  14.730                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_fabric_interface_clock
+               +     0.000          Clock source
+  10.000                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     4.175          Clock generation
+  14.175
+               -    -2.215          Library setup time: ADLIB:MSS_APB_IP
+  16.390                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+                                    
+  16.390                       data required time
+
+
+END SET mss_ccc_gla1 to mss_fabric_interface_clock
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_ccc_gla1 to mss_pclk1
+
+Path 1
+  From:                  BUS_INTERFACE_0/HIT_INT:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0]
+  Delay (ns):            1.016
+  Slack (ns):            7.353
+  Arrival (ns):          6.883
+  Required (ns):         14.236
+  Setup (ns):            -0.061
+
+
+Expanded Path 1
+  From: BUS_INTERFACE_0/HIT_INT:CLK
+  To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0]
+  data required time                             14.236
+  data arrival time                          -   6.883
+  slack                                          7.353
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  5.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.618          net: FAB_CLK
+  5.867                        BUS_INTERFACE_0/HIT_INT:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  6.395                        BUS_INTERFACE_0/HIT_INT:Q (r)
+               +     0.272          net: BUS_INTERFACE_0_HIT_INT
+  6.667                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_20:PIN5 (r)
+               +     0.216          cell: ADLIB:MSS_IF
+  6.883                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_20:PIN5INT (r)
+               +     0.000          net: turret_servo_mss_design_0/MSS_ADLIB_INST/GPI[0]INT_NET
+  6.883                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0] (r)
+                                    
+  6.883                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_pclk1
+               +     0.000          Clock source
+  10.000                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     4.175          Clock generation
+  14.175
+               -    -0.061          Library setup time: ADLIB:MSS_APB_IP
+  14.236                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0]
+                                    
+  14.236                       data required time
+
+
+END SET mss_ccc_gla1 to mss_pclk1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                  BUS_INTERFACE_0/modulator/count[5]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.766
+  Slack (ns):            -2.256
+  Arrival (ns):          17.645
+  Required (ns):         15.389
+  Setup (ns):            0.490
+  Minimum Period (ns):   12.256
+
+Path 2
+  From:                  BUS_INTERFACE_0/modulator/count[0]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.541
+  Slack (ns):            -2.014
+  Arrival (ns):          17.403
+  Required (ns):         15.389
+  Setup (ns):            0.490
+  Minimum Period (ns):   12.014
+
+Path 3
+  From:                  BUS_INTERFACE_0/modulator/count[1]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.496
+  Slack (ns):            -1.959
+  Arrival (ns):          17.348
+  Required (ns):         15.389
+  Setup (ns):            0.490
+  Minimum Period (ns):   11.959
+
+Path 4
+  From:                  BUS_INTERFACE_0/modulator/count[6]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.309
+  Slack (ns):            -1.799
+  Arrival (ns):          17.188
+  Required (ns):         15.389
+  Setup (ns):            0.490
+  Minimum Period (ns):   11.799
+
+Path 5
+  From:                  BUS_INTERFACE_0/modulator/count[4]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.178
+  Slack (ns):            -1.679
+  Arrival (ns):          17.068
+  Required (ns):         15.389
+  Setup (ns):            0.490
+  Minimum Period (ns):   11.679
+
+
+Expanded Path 1
+  From: BUS_INTERFACE_0/modulator/count[5]:CLK
+  To: BUS_INTERFACE_0/modulator/pwm:D
+  data required time                             15.389
+  data arrival time                          -   17.645
+  slack                                          -2.256
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  5.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.630          net: FAB_CLK
+  5.879                        BUS_INTERFACE_0/modulator/count[5]:CLK (r)
+               +     0.671          cell: ADLIB:DFN1
+  6.550                        BUS_INTERFACE_0/modulator/count[5]:Q (f)
+               +     2.443          net: BUS_INTERFACE_0/modulator/count[5]
+  8.993                        BUS_INTERFACE_0/modulator/pwm6_0_I_118:B (f)
+               +     0.445          cell: ADLIB:NOR2A
+  9.438                        BUS_INTERFACE_0/modulator/pwm6_0_I_118:Y (r)
+               +     0.311          net: BUS_INTERFACE_0/modulator/N_14_0
+  9.749                        BUS_INTERFACE_0/modulator/pwm6_0_I_120:C (r)
+               +     0.698          cell: ADLIB:AO1C
+  10.447                       BUS_INTERFACE_0/modulator/pwm6_0_I_120:Y (f)
+               +     0.320          net: BUS_INTERFACE_0/modulator/N_16
+  10.767                       BUS_INTERFACE_0/modulator/pwm6_0_I_125:A (f)
+               +     0.895          cell: ADLIB:OA1A
+  11.662                       BUS_INTERFACE_0/modulator/pwm6_0_I_125:Y (r)
+               +     0.306          net: BUS_INTERFACE_0/modulator/N_21
+  11.968                       BUS_INTERFACE_0/modulator/pwm6_0_I_126:A (r)
+               +     0.895          cell: ADLIB:OA1
+  12.863                       BUS_INTERFACE_0/modulator/pwm6_0_I_126:Y (r)
+               +     0.306          net: BUS_INTERFACE_0/modulator/DWACT_CMPLE_PO2_DWACT_COMP0_E_0[0]
+  13.169                       BUS_INTERFACE_0/modulator/pwm6_0_I_138:C (r)
+               +     0.596          cell: ADLIB:AO1
+  13.765                       BUS_INTERFACE_0/modulator/pwm6_0_I_138:Y (r)
+               +     1.032          net: BUS_INTERFACE_0/modulator/DWACT_CMPLE_PO2_DWACT_COMP0_E[2]
+  14.797                       BUS_INTERFACE_0/modulator/pwm6_0_I_139:B (r)
+               +     0.516          cell: ADLIB:AO1
+  15.313                       BUS_INTERFACE_0/modulator/pwm6_0_I_139:Y (r)
+               +     1.510          net: BUS_INTERFACE_0/modulator/DWACT_COMP0_E[2]
+  16.823                       BUS_INTERFACE_0/modulator/pwm6_0_I_140:B (r)
+               +     0.516          cell: ADLIB:AO1
+  17.339                       BUS_INTERFACE_0/modulator/pwm6_0_I_140:Y (r)
+               +     0.306          net: BUS_INTERFACE_0/modulator/pwm6
+  17.645                       BUS_INTERFACE_0/modulator/pwm:D (r)
+                                    
+  17.645                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  15.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.630          net: FAB_CLK
+  15.879                       BUS_INTERFACE_0/modulator/pwm:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  15.389                       BUS_INTERFACE_0/modulator/pwm:D
+                                    
+  15.389                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                  hit_data
+  To:                    BUS_INTERFACE_0/hit_count[9]:D
+  Delay (ns):            9.147
+  Slack (ns):
+  Arrival (ns):          9.147
+  Required (ns):
+  Setup (ns):            0.490
+  External Setup (ns):   3.751
+
+Path 2
+  From:                  hit_data
+  To:                    BUS_INTERFACE_0/hit_count[14]:D
+  Delay (ns):            8.574
+  Slack (ns):
+  Arrival (ns):          8.574
+  Required (ns):
+  Setup (ns):            0.490
+  External Setup (ns):   3.173
+
+Path 3
+  From:                  hit_data
+  To:                    BUS_INTERFACE_0/hit_count[8]:D
+  Delay (ns):            8.468
+  Slack (ns):
+  Arrival (ns):          8.468
+  Required (ns):
+  Setup (ns):            0.490
+  External Setup (ns):   3.072
+
+Path 4
+  From:                  hit_data
+  To:                    BUS_INTERFACE_0/hit_count[1]:D
+  Delay (ns):            8.253
+  Slack (ns):
+  Arrival (ns):          8.253
+  Required (ns):
+  Setup (ns):            0.490
+  External Setup (ns):   2.857
+
+Path 5
+  From:                  hit_data
+  To:                    BUS_INTERFACE_0/hit_count[10]:D
+  Delay (ns):            7.963
+  Slack (ns):
+  Arrival (ns):          7.963
+  Required (ns):
+  Setup (ns):            0.490
+  External Setup (ns):   2.574
+
+
+Expanded Path 1
+  From: hit_data
+  To: BUS_INTERFACE_0/hit_count[9]:D
+  data required time                             N/C
+  data arrival time                          -   9.147
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        hit_data (f)
+               +     0.000          net: hit_data
+  0.000                        hit_data_pad/U0/U0:PAD (f)
+               +     0.670          cell: ADLIB:IOPAD_IN
+  0.670                        hit_data_pad/U0/U0:Y (f)
+               +     0.000          net: hit_data_pad/U0/NET1
+  0.670                        hit_data_pad/U0/U1:YIN (f)
+               +     0.036          cell: ADLIB:IOIN_IB
+  0.706                        hit_data_pad/U0/U1:Y (f)
+               +     2.641          net: hit_data_c
+  3.347                        hit_data_pad_RNIICM7:A (f)
+               +     0.489          cell: ADLIB:BUFF
+  3.836                        hit_data_pad_RNIICM7:Y (f)
+               +     3.769          net: hit_data_c_0
+  7.605                        BUS_INTERFACE_0/hit_count_RNO_0[9]:C (f)
+               +     0.362          cell: ADLIB:OA1B
+  7.967                        BUS_INTERFACE_0/hit_count_RNO_0[9]:Y (r)
+               +     0.306          net: BUS_INTERFACE_0/hit_m1_e_10_0
+  8.273                        BUS_INTERFACE_0/hit_count_RNO[9]:B (r)
+               +     0.568          cell: ADLIB:NOR3B
+  8.841                        BUS_INTERFACE_0/hit_count_RNO[9]:Y (r)
+               +     0.306          net: BUS_INTERFACE_0/hit_N_3_mux_4
+  9.147                        BUS_INTERFACE_0/hit_count[9]:D (r)
+                                    
+  9.147                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  N/C
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.637          net: FAB_CLK
+  N/C                          BUS_INTERFACE_0/hit_count[9]:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  N/C                          BUS_INTERFACE_0/hit_count[9]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                  BUS_INTERFACE_0/freq[1]:CLK
+  To:                    pwm_out_IR
+  Delay (ns):            9.480
+  Slack (ns):
+  Arrival (ns):          15.354
+  Required (ns):
+  Clock to Out (ns):     15.354
+
+Path 2
+  From:                  BUS_INTERFACE_0/freq[5]:CLK
+  To:                    pwm_out_IR
+  Delay (ns):            8.268
+  Slack (ns):
+  Arrival (ns):          14.152
+  Required (ns):
+  Clock to Out (ns):     14.152
+
+Path 3
+  From:                  BUS_INTERFACE_0/freq[3]:CLK
+  To:                    pwm_out_IR
+  Delay (ns):            8.107
+  Slack (ns):
+  Arrival (ns):          13.991
+  Required (ns):
+  Clock to Out (ns):     13.991
+
+Path 4
+  From:                  BUS_INTERFACE_0/modulator/pwm:CLK
+  To:                    PWM_motor2
+  Delay (ns):            7.878
+  Slack (ns):
+  Arrival (ns):          13.757
+  Required (ns):
+  Clock to Out (ns):     13.757
+
+Path 5
+  From:                  BUS_INTERFACE_0/modulator/pwm:CLK
+  To:                    PWM_motor1
+  Delay (ns):            7.877
+  Slack (ns):
+  Arrival (ns):          13.756
+  Required (ns):
+  Clock to Out (ns):     13.756
+
+
+Expanded Path 1
+  From: BUS_INTERFACE_0/freq[1]:CLK
+  To: pwm_out_IR
+  data required time                             N/C
+  data arrival time                          -   15.354
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  5.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.625          net: FAB_CLK
+  5.874                        BUS_INTERFACE_0/freq[1]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  6.402                        BUS_INTERFACE_0/freq[1]:Q (r)
+               +     1.898          net: BUS_INTERFACE_0/freq[1]
+  8.300                        BUS_INTERFACE_0/freq_RNI05PT[1]:B (r)
+               +     0.468          cell: ADLIB:NOR2A
+  8.768                        BUS_INTERFACE_0/freq_RNI05PT[1]:Y (f)
+               +     0.320          net: BUS_INTERFACE_0/from_pwm_56_m_0
+  9.088                        BUS_INTERFACE_0/p2/pwm_RNIBQ8Q1:C (f)
+               +     0.620          cell: ADLIB:NOR3C
+  9.708                        BUS_INTERFACE_0/p2/pwm_RNIBQ8Q1:Y (f)
+               +     0.313          net: BUS_INTERFACE_0/from_pwm_56_m
+  10.021                       BUS_INTERFACE_0/p3/pwm_RNINON83:C (f)
+               +     0.576          cell: ADLIB:AO1
+  10.597                       BUS_INTERFACE_0/p3/pwm_RNINON83:Y (f)
+               +     0.788          net: pwm_out_IR_c
+  11.385                       pwm_out_IR_pad/U0/U1:D (f)
+               +     0.600          cell: ADLIB:IOTRI_OB_EB
+  11.985                       pwm_out_IR_pad/U0/U1:DOUT (f)
+               +     0.000          net: pwm_out_IR_pad/U0/NET1
+  11.985                       pwm_out_IR_pad/U0/U0:D (f)
+               +     3.369          cell: ADLIB:IOPAD_TRI
+  15.354                       pwm_out_IR_pad/U0/U0:PAD (f)
+               +     0.000          net: pwm_out_IR
+  15.354                       pwm_out_IR (f)
+                                    
+  15.354                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  N/C
+                                    
+  N/C                          pwm_out_IR (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_ccc_gla0 to mss_ccc_gla1
+
+Path 1
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RESET
+  Delay (ns):            8.022
+  Slack (ns):            2.187
+  Arrival (ns):          12.197
+  Required (ns):         14.384
+  Setup (ns):
+
+Path 2
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    CoreUARTapb_0/uUART/genblk2.tx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RESET
+  Delay (ns):            8.077
+  Slack (ns):            2.218
+  Arrival (ns):          12.252
+  Required (ns):         14.470
+  Setup (ns):
+
+Path 3
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    BUS_INTERFACE_0/freq[1]:D
+  Delay (ns):            8.721
+  Slack (ns):            2.488
+  Arrival (ns):          12.896
+  Required (ns):         15.384
+  Setup (ns):            0.490
+
+Path 4
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    BUS_INTERFACE_0/freq[3]:D
+  Delay (ns):            8.712
+  Slack (ns):            2.507
+  Arrival (ns):          12.887
+  Required (ns):         15.394
+  Setup (ns):            0.490
+
+Path 5
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    BUS_INTERFACE_0/freq[5]:D
+  Delay (ns):            8.712
+  Slack (ns):            2.507
+  Arrival (ns):          12.887
+  Required (ns):         15.394
+  Setup (ns):            0.490
+
+
+Expanded Path 1
+  From: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RESET
+  data required time                             14.384
+  data arrival time                          -   12.197
+  slack                                          2.187
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     3.545          Clock generation
+  3.545
+               +     0.630          net: turret_servo_mss_design_0/GLA0
+  4.175                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     3.632          cell: ADLIB:MSS_APB_IP
+  7.807                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:M2FRESETn (r)
+               +     0.122          net: turret_servo_mss_design_0/MSS_ADLIB_INST/M2FRESETnINT_NET
+  7.929                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_46:PIN2INT (r)
+               +     0.095          cell: ADLIB:MSS_IF
+  8.024                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_46:PIN2 (r)
+               +     2.625          net: turret_servo_mss_design_0/MSS_ADLIB_INST_M2FRESETn
+  10.649                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC:A (r)
+               +     0.699          cell: ADLIB:CLKSRC
+  11.348                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC:Y (r)
+               +     0.849          net: turret_servo_mss_design_0_M2F_RESET_N
+  12.197                       CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RESET (r)
+                                    
+  12.197                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  15.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.915          net: FAB_CLK
+  16.164                       CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RCLK (r)
+               -     1.780          Library recovery time: ADLIB:FIFO4K18
+  14.384                       CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RESET
+                                    
+  14.384                       data required time
+
+
+END SET mss_ccc_gla0 to mss_ccc_gla1
+
+----------------------------------------------------
+
+SET mss_fabric_interface_clock to mss_ccc_gla1
+
+Path 1
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[17]:D
+  Delay (ns):            19.222
+  Slack (ns):            -8.072
+  Arrival (ns):          23.397
+  Required (ns):         15.325
+  Setup (ns):            0.522
+
+Path 2
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[17]:D
+  Delay (ns):            19.192
+  Slack (ns):            -8.032
+  Arrival (ns):          23.367
+  Required (ns):         15.335
+  Setup (ns):            0.522
+
+Path 3
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[16]:D
+  Delay (ns):            18.927
+  Slack (ns):            -7.724
+  Arrival (ns):          23.102
+  Required (ns):         15.378
+  Setup (ns):            0.490
+
+Path 4
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[16]:D
+  Delay (ns):            18.913
+  Slack (ns):            -7.710
+  Arrival (ns):          23.088
+  Required (ns):         15.378
+  Setup (ns):            0.490
+
+Path 5
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[15]:D
+  Delay (ns):            17.943
+  Slack (ns):            -6.732
+  Arrival (ns):          22.118
+  Required (ns):         15.386
+  Setup (ns):            0.490
+
+
+Expanded Path 1
+  From: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: BUS_INTERFACE_0/pulseWidth2[17]:D
+  data required time                             15.325
+  data arrival time                          -   23.397
+  slack                                          -8.072
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     4.175          Clock generation
+  4.175
+               +     3.514          cell: ADLIB:MSS_APB_IP
+  7.689                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPWDATA[3] (r)
+               +     0.124          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPWDATA[3]INT_NET
+  7.813                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_37:PIN3INT (r)
+               +     0.086          cell: ADLIB:MSS_IF
+  7.899                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_37:PIN3 (r)
+               +     1.509          net: CoreAPB3_0_APBmslave0_PWDATA[3]
+  9.408                        BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I0_CO1:B (r)
+               +     0.470          cell: ADLIB:NOR2B
+  9.878                        BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I0_CO1:Y (r)
+               +     0.404          net: BUS_INTERFACE_0/N159
+  10.282                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I31_Y:A (r)
+               +     0.370          cell: ADLIB:NOR2B
+  10.652                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I31_Y:Y (r)
+               +     0.334          net: BUS_INTERFACE_0/N223
+  10.986                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I64_Y_0_o3:A (r)
+               +     0.478          cell: ADLIB:MAJ3
+  11.464                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I64_Y_0_o3:Y (r)
+               +     1.361          net: BUS_INTERFACE_0/N_19
+  12.825                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I64_Y_0_o4:B (r)
+               +     0.516          cell: ADLIB:AO1A
+  13.341                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I64_Y_0_o4:Y (r)
+               +     0.977          net: BUS_INTERFACE_0/N300
+  14.318                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I72_Y_0_0_tz:A (r)
+               +     0.473          cell: ADLIB:AO1
+  14.791                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I72_Y_0_0_tz:Y (r)
+               +     0.306          net: BUS_INTERFACE_0/ADD_12x12_fast_I72_Y_0_0_tz
+  15.097                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I72_Y_0:B (r)
+               +     0.516          cell: ADLIB:AO1A
+  15.613                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I72_Y_0:Y (r)
+               +     1.057          net: BUS_INTERFACE_0/N289
+  16.670                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I89_Y:B (r)
+               +     0.565          cell: ADLIB:XOR3
+  17.235                       BUS_INTERFACE_0/un4_pulseWidth1_0_40_ADD_12x12_fast_I89_Y:Y (f)
+               +     0.361          net: BUS_INTERFACE_0/un4_pulseWidth1[12]
+  17.596                       BUS_INTERFACE_0/un3_pulseWidth1_1_m30:C (f)
+               +     0.652          cell: ADLIB:NOR3A
+  18.248                       BUS_INTERFACE_0/un3_pulseWidth1_1_m30:Y (r)
+               +     1.107          net: BUS_INTERFACE_0/i18_mux
+  19.355                       BUS_INTERFACE_0/un3_pulseWidth1_1_m33:A (r)
+               +     0.470          cell: ADLIB:NOR2A
+  19.825                       BUS_INTERFACE_0/un3_pulseWidth1_1_m33:Y (r)
+               +     0.334          net: BUS_INTERFACE_0/i20_mux
+  20.159                       BUS_INTERFACE_0/un3_pulseWidth1_1_m34:B (r)
+               +     0.468          cell: ADLIB:NOR2A
+  20.627                       BUS_INTERFACE_0/un3_pulseWidth1_1_m34:Y (f)
+               +     0.294          net: BUS_INTERFACE_0/N_35_i
+  20.921                       BUS_INTERFACE_0/un3_pulseWidth1_1_m35:C (f)
+               +     0.443          cell: ADLIB:AX1D
+  21.364                       BUS_INTERFACE_0/un3_pulseWidth1_1_m35:Y (r)
+               +     0.351          net: BUS_INTERFACE_0/N_435
+  21.715                       BUS_INTERFACE_0/pulseWidth2_RNO_0[17]:B (r)
+               +     0.617          cell: ADLIB:MX2
+  22.332                       BUS_INTERFACE_0/pulseWidth2_RNO_0[17]:Y (r)
+               +     0.309          net: BUS_INTERFACE_0/N_234
+  22.641                       BUS_INTERFACE_0/pulseWidth2_RNO[17]:A (r)
+               +     0.445          cell: ADLIB:NOR2B
+  23.086                       BUS_INTERFACE_0/pulseWidth2_RNO[17]:Y (r)
+               +     0.311          net: BUS_INTERFACE_0/pulseWidth2_RNO[17]
+  23.397                       BUS_INTERFACE_0/pulseWidth2[17]:D (r)
+                                    
+  23.397                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     5.249          Clock generation
+  15.249
+               +     0.000          net: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.598          net: FAB_CLK
+  15.847                       BUS_INTERFACE_0/pulseWidth2[17]:CLK (r)
+               -     0.522          Library setup time: ADLIB:DFN1
+  15.325                       BUS_INTERFACE_0/pulseWidth2[17]:D
+                                    
+  15.325                       data required time
+
+
+END SET mss_fabric_interface_clock to mss_ccc_gla1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                  MSS_RESET_N
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):            0.937
+  Slack (ns):
+  Arrival (ns):          0.937
+  Required (ns):
+  Setup (ns):            -2.196
+  External Setup (ns):   -5.434
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.937
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        turret_servo_mss_design_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_IN
+  0.937                        turret_servo_mss_design_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: turret_servo_mss_design_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.937                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     3.545          Clock generation
+  N/C
+               +     0.630          net: turret_servo_mss_design_0/GLA0
+  N/C                          turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -2.196          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain turret_servo_mss_design_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

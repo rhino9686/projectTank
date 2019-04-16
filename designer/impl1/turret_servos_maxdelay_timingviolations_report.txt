@@ -1,0 +1,822 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Tue Apr 16 14:58:55 2019
+
+
+Design: turret_servos
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[17]:D
+  Delay (ns):            19.222
+  Slack (ns):            -8.072
+  Arrival (ns):          23.397
+  Required (ns):         15.325
+
+Path 2
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[17]:D
+  Delay (ns):            19.192
+  Slack (ns):            -8.032
+  Arrival (ns):          23.367
+  Required (ns):         15.335
+
+Path 3
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[16]:D
+  Delay (ns):            18.927
+  Slack (ns):            -7.724
+  Arrival (ns):          23.102
+  Required (ns):         15.378
+
+Path 4
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[16]:D
+  Delay (ns):            18.913
+  Slack (ns):            -7.710
+  Arrival (ns):          23.088
+  Required (ns):         15.378
+
+Path 5
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[15]:D
+  Delay (ns):            17.943
+  Slack (ns):            -6.732
+  Arrival (ns):          22.118
+  Required (ns):         15.386
+
+Path 6
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[15]:D
+  Delay (ns):            17.926
+  Slack (ns):            -6.724
+  Arrival (ns):          22.101
+  Required (ns):         15.377
+
+Path 7
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[14]:D
+  Delay (ns):            17.801
+  Slack (ns):            -6.631
+  Arrival (ns):          21.976
+  Required (ns):         15.345
+
+Path 8
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[13]:D
+  Delay (ns):            17.186
+  Slack (ns):            -6.016
+  Arrival (ns):          21.361
+  Required (ns):         15.345
+
+Path 9
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[13]:D
+  Delay (ns):            17.186
+  Slack (ns):            -6.004
+  Arrival (ns):          21.361
+  Required (ns):         15.357
+
+Path 10
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[11]:D
+  Delay (ns):            16.827
+  Slack (ns):            -5.657
+  Arrival (ns):          21.002
+  Required (ns):         15.345
+
+Path 11
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[14]:D
+  Delay (ns):            16.741
+  Slack (ns):            -5.559
+  Arrival (ns):          20.916
+  Required (ns):         15.357
+
+Path 12
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[11]:D
+  Delay (ns):            16.419
+  Slack (ns):            -5.237
+  Arrival (ns):          20.594
+  Required (ns):         15.357
+
+Path 13
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[12]:D
+  Delay (ns):            16.312
+  Slack (ns):            -5.142
+  Arrival (ns):          20.487
+  Required (ns):         15.345
+
+Path 14
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[12]:D
+  Delay (ns):            16.266
+  Slack (ns):            -5.084
+  Arrival (ns):          20.441
+  Required (ns):         15.357
+
+Path 15
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[10]:D
+  Delay (ns):            15.015
+  Slack (ns):            -3.836
+  Arrival (ns):          19.190
+  Required (ns):         15.354
+
+Path 16
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[9]:D
+  Delay (ns):            14.686
+  Slack (ns):            -3.484
+  Arrival (ns):          18.861
+  Required (ns):         15.377
+
+Path 17
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[10]:D
+  Delay (ns):            14.444
+  Slack (ns):            -3.262
+  Arrival (ns):          18.619
+  Required (ns):         15.357
+
+Path 18
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[9]:D
+  Delay (ns):            14.189
+  Slack (ns):            -2.940
+  Arrival (ns):          18.364
+  Required (ns):         15.424
+
+Path 19
+  From:                  BUS_INTERFACE_0/modulator/count[5]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.766
+  Slack (ns):            -2.256
+  Arrival (ns):          17.645
+  Required (ns):         15.389
+
+Path 20
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[8]:D
+  Delay (ns):            13.329
+  Slack (ns):            -2.127
+  Arrival (ns):          17.504
+  Required (ns):         15.377
+
+Path 21
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[8]:D
+  Delay (ns):            13.268
+  Slack (ns):            -2.065
+  Arrival (ns):          17.443
+  Required (ns):         15.378
+
+Path 22
+  From:                  BUS_INTERFACE_0/modulator/count[0]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.541
+  Slack (ns):            -2.014
+  Arrival (ns):          17.403
+  Required (ns):         15.389
+
+Path 23
+  From:                  BUS_INTERFACE_0/modulator/count[1]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.496
+  Slack (ns):            -1.959
+  Arrival (ns):          17.348
+  Required (ns):         15.389
+
+Path 24
+  From:                  BUS_INTERFACE_0/modulator/count[6]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.309
+  Slack (ns):            -1.799
+  Arrival (ns):          17.188
+  Required (ns):         15.389
+
+Path 25
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/freq[5]:D
+  Delay (ns):            12.993
+  Slack (ns):            -1.774
+  Arrival (ns):          17.168
+  Required (ns):         15.394
+
+Path 26
+  From:                  BUS_INTERFACE_0/modulator/count[4]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            11.178
+  Slack (ns):            -1.679
+  Arrival (ns):          17.068
+  Required (ns):         15.389
+
+Path 27
+  From:                  CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:WCLK
+  To:                    CoreUARTapb_0/uUART/overflow_reg:E
+  Delay (ns):            10.749
+  Slack (ns):            -1.587
+  Arrival (ns):          16.923
+  Required (ns):         15.336
+
+Path 28
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/freq[3]:D
+  Delay (ns):            12.640
+  Slack (ns):            -1.453
+  Arrival (ns):          16.815
+  Required (ns):         15.362
+
+Path 29
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/freq[1]:D
+  Delay (ns):            12.510
+  Slack (ns):            -1.301
+  Arrival (ns):          16.685
+  Required (ns):         15.384
+
+Path 30
+  From:                  BUS_INTERFACE_0/PulseWidth[0]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.716
+  Slack (ns):            -1.241
+  Arrival (ns):          16.630
+  Required (ns):         15.389
+
+Path 31
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    CoreUARTapb_0/uUART/make_RX/framing_error:E
+  Delay (ns):            12.357
+  Slack (ns):            -1.197
+  Arrival (ns):          16.532
+  Required (ns):         15.335
+
+Path 32
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[3]:D
+  Delay (ns):            12.355
+  Slack (ns):            -1.173
+  Arrival (ns):          16.530
+  Required (ns):         15.357
+
+Path 33
+  From:                  BUS_INTERFACE_0/modulator/count[3]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.648
+  Slack (ns):            -1.111
+  Arrival (ns):          16.500
+  Required (ns):         15.389
+
+Path 34
+  From:                  BUS_INTERFACE_0/PulseWidth[1]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.549
+  Slack (ns):            -1.039
+  Arrival (ns):          16.428
+  Required (ns):         15.389
+
+Path 35
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[5]:D
+  Delay (ns):            12.231
+  Slack (ns):            -1.017
+  Arrival (ns):          16.406
+  Required (ns):         15.389
+
+Path 36
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[7]:D
+  Delay (ns):            12.166
+  Slack (ns):            -0.964
+  Arrival (ns):          16.341
+  Required (ns):         15.377
+
+Path 37
+  From:                  CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RCLK
+  To:                    CoreUARTapb_0/uUART/overflow_reg:E
+  Delay (ns):            10.270
+  Slack (ns):            -0.908
+  Arrival (ns):          16.434
+  Required (ns):         15.526
+
+Path 38
+  From:                  BUS_INTERFACE_0/p/count[2]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            10.407
+  Slack (ns):            -0.887
+  Arrival (ns):          16.254
+  Required (ns):         15.367
+
+Path 39
+  From:                  BUS_INTERFACE_0/pulseWidth1[2]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            10.350
+  Slack (ns):            -0.840
+  Arrival (ns):          16.207
+  Required (ns):         15.367
+
+Path 40
+  From:                  BUS_INTERFACE_0/p3/count[25]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[6]:D
+  Delay (ns):            10.282
+  Slack (ns):            -0.839
+  Arrival (ns):          16.172
+  Required (ns):         15.333
+
+Path 41
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    CoreUARTapb_0/uUART/rx_dout_reg_empty:E
+  Delay (ns):            11.948
+  Slack (ns):            -0.803
+  Arrival (ns):          16.123
+  Required (ns):         15.320
+
+Path 42
+  From:                  BUS_INTERFACE_0/p3/count[25]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[9]:D
+  Delay (ns):            10.234
+  Slack (ns):            -0.791
+  Arrival (ns):          16.124
+  Required (ns):         15.333
+
+Path 43
+  From:                  CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:WCLK
+  To:                    CoreUARTapb_0/uUART/overflow_reg:D
+  Delay (ns):            10.039
+  Slack (ns):            -0.782
+  Arrival (ns):          16.213
+  Required (ns):         15.431
+
+Path 44
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[7]:D
+  Delay (ns):            11.928
+  Slack (ns):            -0.767
+  Arrival (ns):          16.103
+  Required (ns):         15.336
+
+Path 45
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+  Delay (ns):            12.951
+  Slack (ns):            -0.731
+  Arrival (ns):          17.126
+  Required (ns):         16.395
+
+Path 46
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[24]:D
+  Delay (ns):            10.151
+  Slack (ns):            -0.689
+  Arrival (ns):          16.027
+  Required (ns):         15.338
+
+Path 47
+  From:                  BUS_INTERFACE_0/p3/count[25]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[0]:D
+  Delay (ns):            10.176
+  Slack (ns):            -0.648
+  Arrival (ns):          16.066
+  Required (ns):         15.418
+
+Path 48
+  From:                  CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:WCLK
+  To:                    CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:WEN
+  Delay (ns):            9.469
+  Slack (ns):            -0.624
+  Arrival (ns):          15.643
+  Required (ns):         15.019
+
+Path 49
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[6]:D
+  Delay (ns):            11.833
+  Slack (ns):            -0.622
+  Arrival (ns):          16.008
+  Required (ns):         15.386
+
+Path 50
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  Delay (ns):            12.811
+  Slack (ns):            -0.587
+  Arrival (ns):          16.986
+  Required (ns):         16.399
+
+Path 51
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    CoreUARTapb_0/uUART/overflow_reg:E
+  Delay (ns):            11.731
+  Slack (ns):            -0.570
+  Arrival (ns):          15.906
+  Required (ns):         15.336
+
+Path 52
+  From:                  BUS_INTERFACE_0/p1/count[2]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            10.083
+  Slack (ns):            -0.569
+  Arrival (ns):          15.947
+  Required (ns):         15.378
+
+Path 53
+  From:                  BUS_INTERFACE_0/modulator/count[2]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.050
+  Slack (ns):            -0.540
+  Arrival (ns):          15.929
+  Required (ns):         15.389
+
+Path 54
+  From:                  BUS_INTERFACE_0/modulator/count[7]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.066
+  Slack (ns):            -0.534
+  Arrival (ns):          15.923
+  Required (ns):         15.389
+
+Path 55
+  From:                  BUS_INTERFACE_0/hit_count[13]:CLK
+  To:                    BUS_INTERFACE_0/hit_count[23]:D
+  Delay (ns):            10.012
+  Slack (ns):            -0.519
+  Arrival (ns):          15.903
+  Required (ns):         15.384
+
+Path 56
+  From:                  BUS_INTERFACE_0/modulator/count[19]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.020
+  Slack (ns):            -0.519
+  Arrival (ns):          15.908
+  Required (ns):         15.389
+
+Path 57
+  From:                  BUS_INTERFACE_0/modulator/count[10]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.026
+  Slack (ns):            -0.516
+  Arrival (ns):          15.905
+  Required (ns):         15.389
+
+Path 58
+  From:                  BUS_INTERFACE_0/modulator/count[8]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            10.014
+  Slack (ns):            -0.504
+  Arrival (ns):          15.893
+  Required (ns):         15.389
+
+Path 59
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[27]:D
+  Delay (ns):            10.022
+  Slack (ns):            -0.499
+  Arrival (ns):          15.898
+  Required (ns):         15.399
+
+Path 60
+  From:                  BUS_INTERFACE_0/p1/count[3]:CLK
+  To:                    BUS_INTERFACE_0/p1/pwm:D
+  Delay (ns):            10.000
+  Slack (ns):            -0.486
+  Arrival (ns):          15.864
+  Required (ns):         15.378
+
+Path 61
+  From:                  BUS_INTERFACE_0/PulseWidth[2]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.983
+  Slack (ns):            -0.473
+  Arrival (ns):          15.862
+  Required (ns):         15.389
+
+Path 62
+  From:                  BUS_INTERFACE_0/modulator/count[9]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.977
+  Slack (ns):            -0.467
+  Arrival (ns):          15.856
+  Required (ns):         15.389
+
+Path 63
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[3]:D
+  Delay (ns):            11.612
+  Slack (ns):            -0.466
+  Arrival (ns):          15.787
+  Required (ns):         15.321
+
+Path 64
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[6]:D
+  Delay (ns):            11.657
+  Slack (ns):            -0.454
+  Arrival (ns):          15.832
+  Required (ns):         15.378
+
+Path 65
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[31]:D
+  Delay (ns):            9.939
+  Slack (ns):            -0.429
+  Arrival (ns):          15.815
+  Required (ns):         15.386
+
+Path 66
+  From:                  BUS_INTERFACE_0/p3/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[6]:D
+  Delay (ns):            9.894
+  Slack (ns):            -0.428
+  Arrival (ns):          15.761
+  Required (ns):         15.333
+
+Path 67
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[30]:D
+  Delay (ns):            9.947
+  Slack (ns):            -0.424
+  Arrival (ns):          15.823
+  Required (ns):         15.399
+
+Path 68
+  From:                  BUS_INTERFACE_0/modulator/count[20]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.922
+  Slack (ns):            -0.423
+  Arrival (ns):          15.812
+  Required (ns):         15.389
+
+Path 69
+  From:                  BUS_INTERFACE_0/p3/count[16]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[6]:D
+  Delay (ns):            9.866
+  Slack (ns):            -0.409
+  Arrival (ns):          15.742
+  Required (ns):         15.333
+
+Path 70
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[4]:D
+  Delay (ns):            11.548
+  Slack (ns):            -0.402
+  Arrival (ns):          15.723
+  Required (ns):         15.321
+
+Path 71
+  From:                  BUS_INTERFACE_0/modulator/count[15]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.909
+  Slack (ns):            -0.399
+  Arrival (ns):          15.788
+  Required (ns):         15.389
+
+Path 72
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth2[2]:D
+  Delay (ns):            11.531
+  Slack (ns):            -0.393
+  Arrival (ns):          15.706
+  Required (ns):         15.313
+
+Path 73
+  From:                  BUS_INTERFACE_0/p3/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[9]:D
+  Delay (ns):            9.846
+  Slack (ns):            -0.380
+  Arrival (ns):          15.713
+  Required (ns):         15.333
+
+Path 74
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    CoreUARTapb_0/iPRDATA[1]:E
+  Delay (ns):            11.671
+  Slack (ns):            -0.367
+  Arrival (ns):          15.846
+  Required (ns):         15.479
+
+Path 75
+  From:                  BUS_INTERFACE_0/p3/count[16]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[9]:D
+  Delay (ns):            9.818
+  Slack (ns):            -0.361
+  Arrival (ns):          15.694
+  Required (ns):         15.333
+
+Path 76
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    CoreUARTapb_0/iPRDATA[2]:E
+  Delay (ns):            11.664
+  Slack (ns):            -0.360
+  Arrival (ns):          15.839
+  Required (ns):         15.479
+
+Path 77
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/MOTOR[3]:D
+  Delay (ns):            11.502
+  Slack (ns):            -0.356
+  Arrival (ns):          15.677
+  Required (ns):         15.321
+
+Path 78
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[23]:E
+  Delay (ns):            9.770
+  Slack (ns):            -0.305
+  Arrival (ns):          15.646
+  Required (ns):         15.341
+
+Path 79
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/MOTOR[2]:D
+  Delay (ns):            11.453
+  Slack (ns):            -0.286
+  Arrival (ns):          15.628
+  Required (ns):         15.342
+
+Path 80
+  From:                  BUS_INTERFACE_0/PulseWidth[19]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.765
+  Slack (ns):            -0.273
+  Arrival (ns):          15.662
+  Required (ns):         15.389
+
+Path 81
+  From:                  BUS_INTERFACE_0/p/count[3]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            9.746
+  Slack (ns):            -0.262
+  Arrival (ns):          15.629
+  Required (ns):         15.367
+
+Path 82
+  From:                  CoreUARTapb_0/uUART/genblk3.rx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:RCLK
+  To:                    CoreUARTapb_0/uUART/overflow_reg:D
+  Delay (ns):            9.476
+  Slack (ns):            -0.240
+  Arrival (ns):          15.640
+  Required (ns):         15.400
+
+Path 83
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/hits[0]:D
+  Delay (ns):            11.419
+  Slack (ns):            -0.237
+  Arrival (ns):          15.594
+  Required (ns):         15.357
+
+Path 84
+  From:                  BUS_INTERFACE_0/p3/count[12]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[0]:D
+  Delay (ns):            9.788
+  Slack (ns):            -0.237
+  Arrival (ns):          15.655
+  Required (ns):         15.418
+
+Path 85
+  From:                  BUS_INTERFACE_0/p3/count[26]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[6]:D
+  Delay (ns):            9.662
+  Slack (ns):            -0.219
+  Arrival (ns):          15.552
+  Required (ns):         15.333
+
+Path 86
+  From:                  BUS_INTERFACE_0/p3/count[16]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[0]:D
+  Delay (ns):            9.760
+  Slack (ns):            -0.218
+  Arrival (ns):          15.636
+  Required (ns):         15.418
+
+Path 87
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[25]:E
+  Delay (ns):            9.828
+  Slack (ns):            -0.209
+  Arrival (ns):          15.704
+  Required (ns):         15.495
+
+Path 88
+  From:                  BUS_INTERFACE_0/p3/count[22]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[6]:D
+  Delay (ns):            9.643
+  Slack (ns):            -0.205
+  Arrival (ns):          15.538
+  Required (ns):         15.333
+
+Path 89
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[29]:E
+  Delay (ns):            9.618
+  Slack (ns):            -0.172
+  Arrival (ns):          15.494
+  Required (ns):         15.322
+
+Path 90
+  From:                  BUS_INTERFACE_0/PulseWidth[5]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.647
+  Slack (ns):            -0.172
+  Arrival (ns):          15.561
+  Required (ns):         15.389
+
+Path 91
+  From:                  BUS_INTERFACE_0/p3/count[26]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[9]:D
+  Delay (ns):            9.614
+  Slack (ns):            -0.171
+  Arrival (ns):          15.504
+  Required (ns):         15.333
+
+Path 92
+  From:                  BUS_INTERFACE_0/p3/count[22]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[9]:D
+  Delay (ns):            9.595
+  Slack (ns):            -0.157
+  Arrival (ns):          15.490
+  Required (ns):         15.333
+
+Path 93
+  From:                  BUS_INTERFACE_0/pulseWidth1[3]:CLK
+  To:                    BUS_INTERFACE_0/p/pwm:D
+  Delay (ns):            9.622
+  Slack (ns):            -0.134
+  Arrival (ns):          15.501
+  Required (ns):         15.367
+
+Path 94
+  From:                  BUS_INTERFACE_0/hit_count[12]:CLK
+  To:                    BUS_INTERFACE_0/hit_count[23]:D
+  Delay (ns):            9.614
+  Slack (ns):            -0.125
+  Arrival (ns):          15.509
+  Required (ns):         15.384
+
+Path 95
+  From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    BUS_INTERFACE_0/pulseWidth1[2]:D
+  Delay (ns):            11.264
+  Slack (ns):            -0.104
+  Arrival (ns):          15.439
+  Required (ns):         15.335
+
+Path 96
+  From:                  CoreUARTapb_0/uUART/genblk2.tx_fifo/turret_servos_CoreUARTapb_0_fifo_256x8_pa3/FIFOBLOCK0:WCLK
+  To:                    CoreUARTapb_0/uUART/make_TX/txrdy_int:D
+  Delay (ns):            9.185
+  Slack (ns):            -0.104
+  Arrival (ns):          15.451
+  Required (ns):         15.347
+
+Path 97
+  From:                  BUS_INTERFACE_0/hit_count[13]:CLK
+  To:                    BUS_INTERFACE_0/hit_count[24]:D
+  Delay (ns):            9.608
+  Slack (ns):            -0.103
+  Arrival (ns):          15.499
+  Required (ns):         15.396
+
+Path 98
+  From:                  BUS_INTERFACE_0/p3/count[5]:CLK
+  To:                    BUS_INTERFACE_0/p3/count[16]:E
+  Delay (ns):            9.546
+  Slack (ns):            -0.100
+  Arrival (ns):          15.422
+  Required (ns):         15.322
+
+Path 99
+  From:                  BUS_INTERFACE_0/hit_count[13]:CLK
+  To:                    BUS_INTERFACE_0/hit_count[22]:D
+  Delay (ns):            9.602
+  Slack (ns):            -0.092
+  Arrival (ns):          15.493
+  Required (ns):         15.401
+
+Path 100
+  From:                  BUS_INTERFACE_0/modulator/count[11]:CLK
+  To:                    BUS_INTERFACE_0/modulator/pwm:D
+  Delay (ns):            9.614
+  Slack (ns):            -0.082
+  Arrival (ns):          15.471
+  Required (ns):         15.389
+

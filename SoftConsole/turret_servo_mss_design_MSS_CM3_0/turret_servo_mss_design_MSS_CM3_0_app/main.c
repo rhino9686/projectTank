@@ -54,13 +54,8 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		uint32_t hits = *hitsAddr;
 		hits++;
 		*hitsAddr++ = hits;
-		uint8_t tx_buff[3] = "#1\n";
+		uint8_t tx_buff[3] = "#0\n";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
-		volatile int i = 0;
-		 while(i < 100000)
-		 {
-			 ++i;
-		 }
 
 		// MSS timer start
 		MSS_TIM1_init(1); // one shot
@@ -183,13 +178,8 @@ int main()
 		if (fire == 0 && can_hit){
 			*freqAddr = 56;
 			LED += 16;
-			uint8_t tx_buff[3] = "#0\n";
+			uint8_t tx_buff[3] = "#1\n";
 			UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
-			 volatile int i = 0;
-			 while(i < 100000)
-			 {
-				 ++i;
-			 }
 		} else {
 			*freqAddr = 0; // Set back to 0 when done or not shooting
 		}

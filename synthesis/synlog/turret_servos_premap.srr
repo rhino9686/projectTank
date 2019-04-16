@@ -1,4 +1,4 @@
-# Mon Apr 15 19:32:42 2019
+# Tue Apr 16 14:58:05 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -6,9 +6,9 @@ Product Version L-2016.09M-SP1-5
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell_syn.sdc
-@L: C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\turret_servos_scck.rpt 
-Printing clock  summary report in "C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\turret_servos_scck.rpt" file 
+Reading constraint file: C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell_syn.sdc
+@L: C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\turret_servos_scck.rpt 
+Printing clock  summary report in "C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\turret_servos_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
@@ -17,14 +17,14 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 108MB)
 
-@N: MO111 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v":74:16:74:20|Tristate driver AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_0(verilog)) on net AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_0(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v":74:16:74:20|Tristate driver AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_1(verilog)) on net AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\rx_async.v":286:0:286:5|Removing sequential instance stop_strobe (in view: work.turret_servos_CoreUARTapb_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v":74:16:74:20|Tristate driver AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_0(verilog)) on net AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v":74:16:74:20|Tristate driver AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_1(verilog)) on net AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3_1(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\rx_async.v":286:0:286:5|Removing sequential instance stop_strobe (in view: work.turret_servos_CoreUARTapb_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
 
 
@@ -39,9 +39,9 @@ FCLK        100.0 MHz     10.000        declared     clk_group_0     0
 ==========================================================================
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.sap.
+@N: BN225 |Writing default property annotation file C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
 Encoding state machine xmit_state[6:0] (in view: work.turret_servos_CoreUARTapb_0_Tx_async_0s_1s_0s_1s_2s_3s_4s_5s_6s(verilog))
 original code -> new code
@@ -58,24 +58,24 @@ original code -> new code
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
 Encoding state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_COREUART_1s_1s_0s_18s_0s_0s(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\celinesc\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\coreuart.v":293:0:293:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_COREUART_1s_1s_0s_18s_0s_0s(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\coreuart.v":293:0:293:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_COREUART_1s_1s_0s_18s_0s_0s(verilog)); safe FSM implementation is not required.
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 114MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 115MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Apr 15 19:32:43 2019
+# Tue Apr 16 14:58:06 2019
 
 ###########################################################]

@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\celinesc\Desktop\ps2_turret_ir_integration"
+KEY ProjectLocation "C:\Users\rpuyat\Desktop\ps2_turret_ir_integration"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555371149"
+TIME="1555441050"
 SIZE="2736"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1555371149"
+TIME="1555441050"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -71,14 +71,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1537312291"
+TIME="1555441050"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -86,7 +86,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -94,7 +94,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -102,7 +102,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -110,7 +110,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -118,7 +118,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="29701"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -126,7 +126,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="4465"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -134,7 +134,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="5708"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -142,7 +142,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1537483521"
+TIME="1555441050"
 SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -152,19 +152,19 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreUARTapb\5.6.102\CoreUARTapb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="779"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="945"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v,hdl"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="11942"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -176,107 +176,107 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="254"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_SPI\1.0.102\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="254"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="253"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="254"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555371153"
+TIME="1555441050"
 SIZE="2551"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="605"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
@@ -284,133 +284,133 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\mti\scripts\bfmtovec_compile.do,do"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="1011"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\mti\scripts\wave_vlog_amba.do,do"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="2034"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
 STATE="utd"
-TIME="1555371149"
+TIME="1555441050"
 SIZE="8114"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
 STATE="utd"
-TIME="1555371149"
+TIME="1555441050"
 SIZE="11264"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="2517"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="48862"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="4663"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="9156"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="25211"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="36329"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="4726"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="122537"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="13258"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="14308"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="13963"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="3691"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="21167"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="8866"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="8978"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 MODULE_UNDER_TEST="testbench"
@@ -419,18 +419,18 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="4149"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\turret_servos.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555371155"
+TIME="1555441050"
 SIZE="8046"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\turret_servos.pdc,pdc"
 STATE="utd"
-TIME="1555371149"
+TIME="1555441050"
 SIZE="3190"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 BEGIN_USE_CONSTRAINT
@@ -441,41 +441,41 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servos\turret_servos.v,hdl"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="18923"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="31587"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="513"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="2853"
 PARENT="<project>\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="16218"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="12226"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 BEGIN_USE_CONSTRAINT
@@ -487,7 +487,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="218"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 BEGIN_USE_CONSTRAINT
@@ -499,12 +499,12 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="14939"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.pdc,pdc"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="2440"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 BEGIN_USE_CONSTRAINT
@@ -515,153 +515,153 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.v,hdl"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="22252"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\BUS_INTERFACE.adb,adb"
 STATE="ood"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="258560"
 ENDFILE
 VALUE "<project>\designer\impl1\BUS_INTERFACE.ide_des,ide_des"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="990"
 ENDFILE
 VALUE "<project>\designer\impl1\BUS_INTERFACE_compile_log.rpt,log"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="11449"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.adb,adb"
 STATE="utd"
-TIME="1555370752"
-SIZE="1486848"
+TIME="1555441050"
+SIZE="1705984"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.ide_des,ide_des"
 STATE="utd"
-TIME="1555370752"
-SIZE="1120"
+TIME="1555441050"
+SIZE="1124"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_compile_log.rpt,log"
 STATE="utd"
-TIME="1555370752"
-SIZE="34639"
+TIME="1555441050"
+SIZE="38677"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\projectData\turret_servos.pdb,pdb"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="74215"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\turret_servos.pdb,pdb"
 STATE="ood"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="74215"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\turret_servos.pro,pro"
 STATE="utd"
-TIME="1555370752"
-SIZE="2466"
+TIME="1555441050"
+SIZE="2469"
 ENDFILE
 VALUE "<project>\hdl\busapb3.v,hdl"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="9946"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
-TIME="1537312291"
+TIME="1555441050"
 SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="42"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreuart_usertb_apb_master.bfm,sim"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="2906"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreuart_usertb_include.bfm,sim"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="13597"
 PARENT="<project>\component\work\turret_servos\CoreUARTapb_0\turret_servos_CoreUARTapb_0_CoreUARTapb.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1555371150"
+TIME="1555441050"
 SIZE="672"
 PARENT="<project>\component\work\turret_servos\turret_servos.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="5496"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="670"
 PARENT="<project>\component\work\turret_servo_mss_design\turret_servo_mss_design.cxf"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE.edn,syn_edn"
 STATE="ood"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="352410"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE.so,so"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="234"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE_syn.prj,prj"
 STATE="utd"
-TIME="1555370752"
-SIZE="1755"
+TIME="1555441050"
+SIZE="1757"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos.edn,syn_edn"
 STATE="utd"
-TIME="1555370752"
-SIZE="772801"
+TIME="1555441050"
+SIZE="1032585"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos.so,so"
 STATE="utd"
-TIME="1555370752"
-SIZE="246"
+TIME="1555441050"
+SIZE="247"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1555370752"
+TIME="1555441050"
 SIZE="564"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos_syn.prj,prj"
 STATE="utd"
-TIME="1555370752"
-SIZE="3058"
+TIME="1555441050"
+SIZE="3933"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -739,6 +739,18 @@ VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bf
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 VALUE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST "CoreAPB3::COREAPB3_LIB"
 FILE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
@@ -762,6 +774,18 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -887,7 +911,7 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="smartfusion"
+NAME="softconsole"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
 LOCATION="C:\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
@@ -900,8 +924,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -947,6 +971,30 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "turret_servos_CoreUARTapb_0_CoreUARTapb::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -960,13 +1008,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Compile:turret_servos_compile_log.rpt
-SmartDesign;turret_servos;0
 StartPage;StartPage;0
-HDL;hdl\busapb3.v;0
-SmartDesign;turret_servo_mss_design;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
