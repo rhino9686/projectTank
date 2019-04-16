@@ -12,13 +12,13 @@ Opened an existing Libero design turret_servos.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 0.0 seconds
+ Netlist Reading Time = 1.0 seconds
 Imported the files:
    C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
 
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
 
-The Import command succeeded ( 00:00:02 )
+The Import command succeeded ( 00:00:03 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -330,14 +330,6 @@ Warning: CMP201: Net turret_servo_mss_design_0/MSSPADDR[16] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSSPADDR[17] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSSPADDR[18] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSSPADDR[19] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[24] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[25] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[26] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[27] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[28] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[29] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[30] drives no load.
-Warning: CMP201: Net turret_servo_mss_design_0/MSSPWDATA[31] drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_GLB drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC_GLC drives no load.
 Warning: CMP201: Net turret_servo_mss_design_0/MSS_CCC_0/FAB_LOCK drives no load.
@@ -420,15 +412,18 @@ Netlist Optimization Report
 ===========================
 
 Optimized macros:
-  - Dangling net drivers:   0
+  - Dangling net drivers:   2
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        43
+  - Logic combining:        56
 
-    Total macros optimized  44
+    Total macros optimized  59
 
-There were 0 error(s) and 312 warning(s) in this design.
+Warning: CMP503: Remapped 50 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+         pin on the enable flip-flop is not being driven by a global net.
+
+There were 0 error(s) and 305 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -448,12 +443,12 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1877  Total:   4608   (40.73%)
-    Fabric IO (W/ clocks)      Used:     12  Total:     94   (12.77%)
+    Fabric                     Used:   3285  Total:   4608   (71.29%)
+    Fabric IO (W/ clocks)      Used:     17  Total:     94   (18.09%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      9  Total:     43   (20.93%)
-    GLOBAL (Chip+Quadrant)     Used:      1  Total:     15   (6.67%)
+    GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
     Main Crystal oscillator    Used:      0  Total:      1   (0.00%)
@@ -465,7 +460,7 @@ Global Information:
 
     Type            | Used   | Total
     ----------------|--------|--------------
-    Chip global     | 1      | 3  (33.33%)*
+    Chip global     | 3      | 3  (100.00%)*
     Quadrant global | 0      | 12 (0.00%)
     MSS global      | 3      | 3  (100.00%)
 
@@ -477,15 +472,15 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1467         | 1467
-    SEQ     | 410          | 410
+    COMB    | 2313         | 2313
+    SEQ     | 972          | 972
 
 I/O Function:
 
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
-    Input I/O                             | 2             | 0            | 0
-    Output I/O                            | 10            | 0            | 0
+    Input I/O                             | 5             | 0            | 0
+    Output I/O                            | 12            | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -496,74 +491,92 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 2     | 10     | 0
+    LVTTL                           | 3.30v | N/A   | 5     | 12     | 0
 
 I/O Placement:
 
-    Locked  :  12 ( 100.00% )
-    Placed  :   0
+    Locked  :  14 ( 82.35% )
+    Placed  :   3 ( 17.65% )
     UnPlaced:   0
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
 
+The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
+    EffCnt  Type          Name
+    --------------------------
+    18      SET/RESET_NET Net   : CORESPI_0/USPI/UCC/N_1000_1
+                          Driver: CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1
+    18      SET/RESET_NET Net   : CORESPI_0/USPI/UCC/N_1000_0
+                          Driver: CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_0
+    14      SET/RESET_NET Net   : CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7
+                          Driver: CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7
+
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    415     CLK_NET       Net   : FAB_CLK
+    977     CLK_NET       Net   : FAB_CLK
                           Driver: turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    176     INT_NET       Net   : turret_servo_mss_design_0_M2F_RESET_N
+    423     SET/RESET_NET Net   : turret_servo_mss_design_0_M2F_RESET_N
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC
+                          Source: NETLIST
+    69      INT_NET       Net   : CORESPI_0/USPI/UTXF/rd_pointer_q[0]
+                          Driver: CORESPI_0/USPI/UTXF/rd_pointer_q_RNI4TP4[0]/U_CLKSRC
+                          Source: NETLIST
+    69      INT_NET       Net   : CORESPI_0/USPI/URXF/rd_pointer_q[0]
+                          Driver: CORESPI_0/USPI/URXF/rd_pointer_q_RNI2P6B[0]/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[0]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
     24      INT_NET       Net   : BUS_INTERFACE_0/Motor_pulse_width_write
                           Driver: BUS_INTERFACE_0/Motor_pulse_width_write
-    22      INT_NET       Net   : CoreUARTapb_0/uUART/baud_clock
-                          Driver: CoreUARTapb_0/uUART/make_CLOCK_GEN/genblk1.baud_clock_int
-    18      INT_NET       Net   : CoreUARTapb_0/uUART/make_RX/N_250_1
-                          Driver: CoreUARTapb_0/uUART/make_RX/rx_state_RNINSJ6_2[0]
-    16      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_1
-                          Driver: BUS_INTERFACE_0/Servo_write_1
-    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_2
-                          Driver: BUS_INTERFACE_0/Servo_write_2
-    15      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[2]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    15      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[2]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[4]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    15      INT_NET       Net   : hit_data_c
-                          Driver: hit_data_pad
-    15      INT_NET       Net   : hit_data_c_0
-                          Driver: hit_data_pad_RNIICM7
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[7]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    22      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe
+                          Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
+    22      INT_NET       Net   : CORESPI_0/USPI/UCC/stxs_state
+                          Driver: CORESPI_0/USPI/UCC/stxs_state
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    29      INT_NET       Net   : hit_data_c
-                          Driver: hit_data_pad
-    27      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+    35      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[2]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[0]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    24      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
     24      INT_NET       Net   : BUS_INTERFACE_0/Motor_pulse_width_write
                           Driver: BUS_INTERFACE_0/Motor_pulse_width_write
-    22      INT_NET       Net   : CoreUARTapb_0/uUART/baud_clock
-                          Driver: CoreUARTapb_0/uUART/make_CLOCK_GEN/genblk1.baud_clock_int
-    18      INT_NET       Net   : CoreUARTapb_0/uUART/make_RX/N_250_1
-                          Driver: CoreUARTapb_0/uUART/make_RX/rx_state_RNINSJ6_2[0]
-    16      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[3]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PADDR[3]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_1
-                          Driver: BUS_INTERFACE_0/Servo_write_1
-    16      INT_NET       Net   : BUS_INTERFACE_0/Servo_write_2
-                          Driver: BUS_INTERFACE_0/Servo_write_2
-    15      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[1]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[2]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
-    15      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[2]
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[4]
                           Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    23      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[7]
+                          Driver: turret_servo_mss_design_0/MSS_ADLIB_INST
+    22      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe
+                          Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
 
 The Compile command succeeded ( 00:00:01 )
 Wrote status report to file: turret_servos_compile_report.txt
@@ -574,7 +587,7 @@ Wrote pin report to file: turret_servos_report_pin_byname.txt
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: turret_servos_report_pin_bynumber.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb.
 

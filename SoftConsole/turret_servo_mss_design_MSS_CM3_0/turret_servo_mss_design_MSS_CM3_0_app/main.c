@@ -7,16 +7,26 @@
 #include "mss_timer.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/CoreUARTapb/core_uart_apb.h"
+#include "drivers/CoreSPI/core_spi.h"
 
 #define MASTER_TX_BUFFER 9
 #define FREQ_ADDR 0x40050020
 #define HITS_ADDR 0x40050024
 #define BAUD_VALUE_9600    650
 #define COREUARTAPB0_BASE_ADDR      0x40050100 // base address of apb3 slave ie PSEL
+#define CORESPI0_BASE_ADDR     		0x40050200
 #define MAX_RX_DATA_SIZE    256
+#define start 0x00000000
+#define end 0x11111111
+#define R 0b11111111000000000000000011111111
+#define B 0b11111111000000001111111100000000
+#define G 0b11111111111111110000000000000000
+
+
 uint8_t master_tx_buffer[MASTER_TX_BUFFER];
 uint8_t master_rx_buffer[MASTER_TX_BUFFER]; 	//Initialize return array for Data buffer
 UART_instance_t g_uart;		// sound board UART
+spi_instance_t g_spi_led; // LED SPI
 
 void setupSPI(void);
 void changeSpeed( volatile uint32_t*, int );
@@ -98,10 +108,32 @@ int main()
 	volatile uint32_t * hitsAddr = (volatile uint32_t *)(0x40050024); // hits IR
 	volatile uint32_t * motorAddr = (volatile uint32_t *) 0x40050034; // motor
 	volatile uint32_t * pulsewidthAddr = (volatile uint32_t *) 0x40050038; // pulse width motor
+
+	uint32_t master_tx_frame_led = start;
 	uint32_t joyVals = 0; // values from joysticks
 	*hitsAddr = 0;
 
 	UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY)); // endable sound board UART
+
+	// SPI for LED
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = R;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	// end SPI LED
+
 
 	NVIC_EnableIRQ(Fabric_IRQn);
 	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_IRQ_EDGE_POSITIVE);

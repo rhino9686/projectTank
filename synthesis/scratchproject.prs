@@ -17,6 +17,13 @@ add_file -verilog "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/w
 add_file -verilog -lib COREAPB3_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v"
 add_file -verilog -lib COREAPB3_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v"
 add_file -verilog -lib COREAPB3_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_clockmux.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_chanctrl.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_control.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_fifo.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_rf.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi.v"
+add_file -verilog -lib CORESPI_LIB "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/corespi.v"
 add_file -verilog "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/work/turret_servos/turret_servos.v"
 add_file -constraint "C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/mss_tshell_syn.sdc"
 

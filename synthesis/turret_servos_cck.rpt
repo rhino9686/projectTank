@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version mapact, Build 2172R, built Oct 30 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Tue Apr 16 17:34:25 2019
+# Written on Tue Apr 16 18:48:50 2019
 
 
 ##### DESIGN INFO #######################################################
@@ -43,6 +43,11 @@ p:MSS_RESET_N
 p:PWM_motor1
 p:PWM_motor2
 p:RX
+p:SPICLKI
+p:SPISCLKO
+p:SPISDI
+p:SPISDO
+p:SPISSI
 p:SPI_1_CLK (bidir end point)
 p:SPI_1_CLK (bidir start point)
 p:SPI_1_DI

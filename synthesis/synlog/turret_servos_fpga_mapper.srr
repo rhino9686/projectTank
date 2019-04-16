@@ -1,4 +1,4 @@
-# Tue Apr 16 17:34:25 2019
+# Tue Apr 16 18:48:51 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -16,7 +16,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
 
 @N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v":74:16:74:20|Tristate driver AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3(verilog)) on net AFULL (in view: work.turret_servos_CoreUARTapb_0_fifo_256x8_pa3(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_ccc_0\turret_servo_mss_design_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
@@ -27,7 +27,7 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
 
 @N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\hdl\busapb3.v":96:0:96:5|Found counter in view:work.BUS_INTERFACE(verilog) instance hit_count[25:0] 
 @N: MF176 |Default generator successful 
@@ -37,6 +37,28 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\hdl\busapb3.v":192:0:192:5|Found counter in view:work.pwm_IR_0(verilog) instance count[31:0] 
 @N: MF179 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\hdl\busapb3.v":173:5:173:23|Found 32 by 32 bit less-than operator ('<') pwm6 (in view: work.pwm(verilog))
 @N: MF238 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\hdl\busapb3.v":172:13:172:22|Found 32-bit incrementor, 'un3_count_1[31:0]'
+@N: MF135 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|RAM fifo_mem_q[32] (in view: CORESPI_LIB.spi_fifo_32s_4s_2_1(verilog)) is 4 words by 1 bits.
+@W: MF136 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|Unknown RAM style no_rw_check
+@N: MF135 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|RAM fifo_mem_q[31:0] (in view: CORESPI_LIB.spi_fifo_32s_4s_2_1(verilog)) is 4 words by 32 bits.
+@W: MF136 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|Unknown RAM style no_rw_check
+@N: MF239 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":176:5:176:6|Found 6-bit decrementor, 'un1_counter_q_1_dec[5:0]'
+@N: MF135 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|RAM fifo_mem_q[32] (in view: CORESPI_LIB.spi_fifo_32s_4s_2_0(verilog)) is 4 words by 1 bits.
+@W: MF136 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|Unknown RAM style no_rw_check
+@N: MF135 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|RAM fifo_mem_q[31:0] (in view: CORESPI_LIB.spi_fifo_32s_4s_2_0(verilog)) is 4 words by 32 bits.
+@W: MF136 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|Unknown RAM style no_rw_check
+@N: MF176 |Default generator successful 
+@N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Found counter in view:CORESPI_LIB.spi_chanctrl_Z2(verilog) instance mtx_bitsel[4:0] 
+@N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Found counter in view:CORESPI_LIB.spi_chanctrl_Z2(verilog) instance stxs_bitsel[4:0] 
+@N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":286:0:286:5|Found counter in view:CORESPI_LIB.spi_chanctrl_Z2(verilog) instance spi_clk_count[7:0] 
+Encoding state machine mtx_state[5:0] (in view: CORESPI_LIB.spi_chanctrl_Z2(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0111 -> 001000
+   1000 -> 010000
+   1001 -> 100000
+@N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Found counter in view:CORESPI_LIB.spi_chanctrl_Z2(verilog) instance stxs_bitcnt[4:0] 
 Encoding state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_COREUART_1s_1s_0s_18s_0s_0s(verilog))
 original code -> new code
    00 -> 00
@@ -65,37 +87,39 @@ original code -> new code
    11 -> 11
 @N: MO225 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.turret_servos_CoreUARTapb_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
 @N: MO231 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\rx_async.v":181:0:181:5|Found counter in view:work.turret_servos_CoreUARTapb_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog) instance receive_count[3:0] 
+@N: MF794 |RAM fifo_mem_q[32] required 264 registers during mapping 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 115MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 120MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 128MB)
 
 @W: BN132 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\coreuart.v":263:0:263:5|Removing sequential instance CoreUARTapb_0.uUART.clear_parity_reg0 because it is equivalent to instance CoreUARTapb_0.uUART.clear_framing_error_reg0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servos\coreuartapb_0\rtl\vlog\core\coreuart.v":278:0:278:5|Removing sequential instance CoreUARTapb_0.uUART.clear_framing_error_reg because it is equivalent to instance CoreUARTapb_0.uUART.clear_parity_reg. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 128MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 128MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 122MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 128MB peak: 134MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 122MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 129MB peak: 134MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 136MB peak: 137MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 127MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 135MB peak: 137MB)
+
+@N: MF794 |RAM fifo_mem_q[32] required 264 registers during mapping 
+
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 134MB peak: 137MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 136MB)
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 138MB peak: 140MB)
 
 
 High Fanout Net Report
@@ -103,30 +127,66 @@ High Fanout Net Report
 
 Driver Instance / Pin Name                                                   Fanout, notes                   
 -------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST / M2FRESETn                         175 : 130 asynchronous set/reset
-turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[2]                       27                              
+turret_servo_mss_design_0.MSS_ADLIB_INST / M2FRESETn                         419 : 375 asynchronous set/reset
+turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[2]                       35                              
 CoreUARTapb_0.uUART.make_RX.parity_err / Q                                   28                              
-CoreUARTapb_0.uUART.make_CLOCK_GEN.genblk1.make_baud_cntr.baud_cntr8 / Y     26                              
-hit_data_pad / Y                                                             29                              
-BUS_INTERFACE_0.HIT_INT4 / Y                                                 28                              
+CoreUARTapb_0.uUART.make_CLOCK_GEN.genblk1.make_baud_cntr.baud_cntr8 / Y     25                              
+CORESPI_0.USPI.UCC.un1_resetn_tx / Y                                         52 : 52 asynchronous set/reset  
+CORESPI_0.USPI.URXF.rd_pointer_q[0] / Q                                      69                              
+CORESPI_0.USPI.URXF.rd_pointer_q[1] / Q                                      35                              
+CORESPI_0.USPI.UTXF.rd_pointer_q[0] / Q                                      69                              
+CORESPI_0.USPI.UTXF.rd_pointer_q[1] / Q                                      35                              
+BUS_INTERFACE_0.hit_count_1_sqmuxa / Y                                       26                              
+CORESPI_0.USPI.URXF.m23 / Y                                                  33                              
+CORESPI_0.USPI.URXF.m24 / Y                                                  33                              
+CORESPI_0.USPI.UCC.msrxs_datain_0_sqmuxa_1 / Y                               59                              
+CORESPI_0.USPI.UCC.clock_rx_re / Y                                           33                              
+CORESPI_0.USPI.UCON.un1_PADDR_0_a2 / Y                                       32                              
+CoreAPB3_0.iPSELS_0_a5[2] / Y                                                25                              
+CORESPI_0.USPI.UTXF.fifo_mem_q.awe3 / Y                                      33                              
+CORESPI_0.USPI.UTXF.fifo_mem_q.awe2 / Y                                      33                              
+CORESPI_0.USPI.UCC.stxs_datareg_1_sqmuxa_2 / Y                               32                              
+CORESPI_0.USPI.UCC.un1_stxs_datareg_2_sqmuxa_i_0 / Y                         31                              
+CORESPI_0.USPI.UTXF.fifo_mem_q.awe1 / Y                                      33                              
+CORESPI_0.USPI.UTXF.fifo_mem_q.awe0 / Y                                      33                              
+CORESPI_0.USPI.URXF.m21 / Y                                                  33                              
+CORESPI_0.USPI.URXF.m20 / Y                                                  35                              
 =============================================================================================================
 
-@N: FP130 |Promoting Net turret_servo_mss_design_0_M2F_RESET_N on CLKINT  I_80 
+@N: FP130 |Promoting Net turret_servo_mss_design_0_M2F_RESET_N on CLKINT  I_99 
+@N: FP130 |Promoting Net CORESPI_0.USPI.URXF.rd_pointer_q[0] on CLKINT  I_100 
+@N: FP130 |Promoting Net CORESPI_0.USPI.UTXF.rd_pointer_q[0] on CLKINT  I_101 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 135MB peak: 136MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 140MB peak: 142MB)
 
-Replicating Combinational Instance BUS_INTERFACE_0.HIT_INT4, fanout 28 segments 2
-Buffering hit_data_c, fanout 29 segments 2
-Replicating Combinational Instance CoreUARTapb_0.uUART.make_CLOCK_GEN.genblk1.make_baud_cntr.baud_cntr8, fanout 26 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.URXF.m20, fanout 35 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.URXF.m21, fanout 33 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UTXF.fifo_mem_q.awe0, fanout 33 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UTXF.fifo_mem_q.awe1, fanout 33 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UCC.un1_stxs_datareg_2_sqmuxa_i_0, fanout 31 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UCC.stxs_datareg_1_sqmuxa_2, fanout 32 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UTXF.fifo_mem_q.awe2, fanout 33 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UTXF.fifo_mem_q.awe3, fanout 33 segments 2
+Replicating Combinational Instance CoreAPB3_0.iPSELS_0_a5[2], fanout 25 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UCON.un1_PADDR_0_a2, fanout 32 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UCC.clock_rx_re, fanout 33 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UCC.msrxs_datain_0_sqmuxa_1, fanout 59 segments 3
+Replicating Combinational Instance CORESPI_0.USPI.URXF.m24, fanout 33 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.URXF.m23, fanout 33 segments 2
+Replicating Combinational Instance BUS_INTERFACE_0.hit_count_1_sqmuxa, fanout 26 segments 2
+Replicating Sequential Instance CORESPI_0.USPI.UTXF.rd_pointer_q[1], fanout 35 segments 2
+Replicating Sequential Instance CORESPI_0.USPI.URXF.rd_pointer_q[1], fanout 35 segments 2
+Replicating Combinational Instance CORESPI_0.USPI.UCC.un1_resetn_tx, fanout 52 segments 3
+Replicating Combinational Instance CoreUARTapb_0.uUART.make_CLOCK_GEN.genblk1.make_baud_cntr.baud_cntr8, fanout 25 segments 2
 Replicating Sequential Instance CoreUARTapb_0.uUART.make_RX.parity_err, fanout 28 segments 2
-Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 27 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 35 segments 2
 
-Added 2 Buffers
-Added 3 Cells via replication
-	Added 1 Sequential Cells via replication
-	Added 2 Combinational Cells via replication
+Added 1 Buffers
+Added 22 Cells via replication
+	Added 3 Sequential Cells via replication
+	Added 19 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 135MB peak: 136MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 140MB peak: 142MB)
 
 
 
@@ -136,33 +196,33 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 414 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 977 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================================ Non-Gated/Non-Generated Clocks =============================================
 Clock Tree ID     Driving Element               Drive Element Type                Fanout     Sample Instance             
 -------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       turret_servo_mss_design_0     clock definition on hierarchy     414        CoreUARTapb_0.controlReg1[7]
+@K:CKID0001       turret_servo_mss_design_0     clock definition on hierarchy     977        CoreUARTapb_0.controlReg1[7]
 =========================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 136MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 134MB peak: 142MB)
 
 Writing Analyst data base C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 132MB peak: 136MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 136MB peak: 142MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-SP1-5
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 136MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 138MB peak: 142MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 136MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 136MB peak: 142MB)
 
 @W: MT246 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":544:7:544:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"c:\users\rpuyat\desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v":477:0:477:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
@@ -171,7 +231,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Apr 16 17:34:28 2019
+# Timing Report written on Tue Apr 16 18:48:55 2019
 #
 
 
@@ -194,14 +254,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -8.547
+Worst slack in design: -11.920
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock          
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group          
 ------------------------------------------------------------------------------------------------------------------
-FAB_CLK            100.0 MHz     90.3 MHz      10.000        11.069        -1.069     declared     clk_group_0    
+FAB_CLK            100.0 MHz     73.7 MHz      10.000        13.564        -3.564     declared     clk_group_0    
 FCLK               100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0    
-System             100.0 MHz     171.5 MHz     10.000        5.831         4.169      system       system_clkgroup
+System             100.0 MHz     62.2 MHz      10.000        16.074        -6.074     system       system_clkgroup
 ==================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -212,15 +272,15 @@ System             100.0 MHz     171.5 MHz     10.000        5.831         4.169
 Clock Relationships
 *******************
 
-Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
-----------------------------------------------------------------------------------------------------------
-Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
-----------------------------------------------------------------------------------------------------------
-System    System   |  10.000      4.169   |  No paths    -      |  No paths    -      |  No paths    -    
-System    FAB_CLK  |  10.000      -8.547  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK   System   |  10.000      4.607   |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK   FAB_CLK  |  10.000      -1.069  |  No paths    -      |  No paths    -      |  No paths    -    
-==========================================================================================================
+Clocks             |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------
+System    System   |  10.000      -6.074   |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  10.000      -11.920  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  10.000      0.113    |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  10.000      -3.564   |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -242,40 +302,40 @@ Detailed Report for Clock: FAB_CLK
 Starting Points with Worst Slack
 ********************************
 
-                                  Starting                                           Arrival           
-Instance                          Reference     Type       Pin     Net               Time        Slack 
-                                  Clock                                                                
--------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.p3.count[5]       FAB_CLK       DFN1       Q       count[5]          0.737       -1.069
-BUS_INTERFACE_0.hit_count[14]     FAB_CLK       DFN1       Q       hit_count[14]     0.737       -0.898
-BUS_INTERFACE_0.hit_count[13]     FAB_CLK       DFN1       Q       hit_count[13]     0.737       -0.881
-BUS_INTERFACE_0.p3.count[1]       FAB_CLK       DFN1       Q       count[1]          0.737       -0.812
-BUS_INTERFACE_0.p3.count[7]       FAB_CLK       DFN1E0     Q       count[7]          0.737       -0.812
-BUS_INTERFACE_0.p3.count[16]      FAB_CLK       DFN1E0     Q       count[16]         0.737       -0.806
-BUS_INTERFACE_0.p3.count[12]      FAB_CLK       DFN1       Q       count[12]         0.737       -0.803
-BUS_INTERFACE_0.hit_count[12]     FAB_CLK       DFN1       Q       hit_count[12]     0.737       -0.768
-BUS_INTERFACE_0.hit_count[7]      FAB_CLK       DFN1       Q       hit_count[7]      0.737       -0.732
-BUS_INTERFACE_0.p3.count[22]      FAB_CLK       DFN1E0     Q       count[22]         0.737       -0.664
-=======================================================================================================
+                                    Starting                                           Arrival           
+Instance                            Reference     Type       Pin     Net               Time        Slack 
+                                    Clock                                                                
+---------------------------------------------------------------------------------------------------------
+CORESPI_0.USPI.UCC.msrxp_strobe     FAB_CLK       DFN1C0     Q       rx_fifo_write     0.737       -3.564
+BUS_INTERFACE_0.p3.count[0]         FAB_CLK       DFN1       Q       count[0]          0.737       -3.391
+CORESPI_0.USPI.URXF.empty_out       FAB_CLK       DFN1P0     Q       rx_fifo_empty     0.737       -3.281
+CORESPI_0.USPI.URF.clr_rxfifo       FAB_CLK       DFN1C0     Q       fiforstrx         0.737       -3.128
+BUS_INTERFACE_0.p3.count[7]         FAB_CLK       DFN1E0     Q       count[7]          0.737       -3.101
+BUS_INTERFACE_0.p3.count[1]         FAB_CLK       DFN1       Q       count[1]          0.737       -2.967
+BUS_INTERFACE_0.p3.count[8]         FAB_CLK       DFN1E0     Q       count[8]          0.737       -2.892
+BUS_INTERFACE_0.p3.count[2]         FAB_CLK       DFN1       Q       count[2]          0.737       -2.729
+CORESPI_0.USPI.URF.clr_txfifo       FAB_CLK       DFN1P0     Q       fiforsttx_i_0     0.737       -2.584
+BUS_INTERFACE_0.p3.count[3]         FAB_CLK       DFN1       Q       count[3]          0.737       -2.251
+=========================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                  Starting                                             Required           
-Instance                          Reference     Type       Pin     Net                 Time         Slack 
-                                  Clock                                                                   
+                                     Starting                                          Required           
+Instance                             Reference     Type       Pin     Net              Time         Slack 
+                                     Clock                                                                
 ----------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.p3.count[24]      FAB_CLK       DFN1       D       count_n24           9.461        -1.069
-BUS_INTERFACE_0.p3.count[26]      FAB_CLK       DFN1       D       count_n26           9.461        -1.069
-BUS_INTERFACE_0.p3.count[20]      FAB_CLK       DFN1       D       count_n20           9.461        -1.062
-BUS_INTERFACE_0.hit_count[24]     FAB_CLK       DFN1       D       hit_count_n24       9.461        -0.898
-BUS_INTERFACE_0.hit_count[22]     FAB_CLK       DFN1       D       hit_count_n22       9.461        -0.891
-BUS_INTERFACE_0.hit_count[23]     FAB_CLK       DFN1       D       hit_count_n23       9.461        -0.891
-BUS_INTERFACE_0.p3.count[25]      FAB_CLK       DFN1E1     E       count_N_5_mux_0     9.392        -0.822
-BUS_INTERFACE_0.p3.count[30]      FAB_CLK       DFN1       D       count_n30           9.461        -0.822
-BUS_INTERFACE_0.p3.count[31]      FAB_CLK       DFN1       D       count_n31           9.461        -0.822
-BUS_INTERFACE_0.p3.count[27]      FAB_CLK       DFN1       D       count_n27           9.461        -0.815
+CORESPI_0.USPI.URXF.full_out         FAB_CLK       DFN1C0     D       full_out_2       9.427        -3.564
+CORESPI_0.USPI.URXF.empty_out        FAB_CLK       DFN1P0     D       empty_out_2      9.461        -3.531
+BUS_INTERFACE_0.p3.count[30]         FAB_CLK       DFN1       D       count_n30        9.461        -3.391
+BUS_INTERFACE_0.p3.count[31]         FAB_CLK       DFN1       D       count_n31        9.461        -3.391
+CORESPI_0.USPI.URXF.counter_q[5]     FAB_CLK       DFN1C0     D       counter_d[5]     9.427        -3.043
+BUS_INTERFACE_0.p3.count[22]         FAB_CLK       DFN1E0     E       N_63             9.566        -2.744
+CORESPI_0.USPI.UTXF.empty_out        FAB_CLK       DFN1P0     D       empty_out_2      9.427        -2.584
+CORESPI_0.USPI.UTXF.full_out         FAB_CLK       DFN1C0     D       full_out_2       9.427        -2.584
+BUS_INTERFACE_0.p3.count[23]         FAB_CLK       DFN1       D       count_n23        9.461        -2.378
+BUS_INTERFACE_0.p3.count[24]         FAB_CLK       DFN1       D       count_n24        9.461        -2.378
 ==========================================================================================================
 
 
@@ -286,46 +346,55 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.539
+    - Setup time:                            0.573
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
+    = Required time:                         9.427
 
-    - Propagation time:                      10.530
+    - Propagation time:                      12.991
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.069
+    = Slack (non-critical) :                 -3.564
 
-    Number of logic level(s):                6
-    Starting point:                          BUS_INTERFACE_0.p3.count[5] / Q
-    Ending point:                            BUS_INTERFACE_0.p3.count[24] / D
+    Number of logic level(s):                9
+    Starting point:                          CORESPI_0.USPI.UCC.msrxp_strobe / Q
+    Ending point:                            CORESPI_0.USPI.URXF.full_out / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                      Pin      Pin               Arrival     No. of    
-Name                                      Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.p3.count[5]               DFN1      Q        Out     0.737     0.737       -         
-count[5]                                  Net       -        -       1.423     -           6         
-BUS_INTERFACE_0.p3.count_RNIOL5M[1]       NOR2B     B        In      -         2.160       -         
-BUS_INTERFACE_0.p3.count_RNIOL5M[1]       NOR2B     Y        Out     0.627     2.788       -         
-count_m6_0_a2_5_5_0                       Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count_RNIPKBC1[1]      NOR2B     B        In      -         3.109       -         
-BUS_INTERFACE_0.p3.count_RNIPKBC1[1]      NOR2B     Y        Out     0.627     3.737       -         
-count_m6_0_a2_5_5                         Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.p3.count_RNI5T852[10]     NOR2B     B        In      -         4.122       -         
-BUS_INTERFACE_0.p3.count_RNI5T852[10]     NOR2B     Y        Out     0.627     4.750       -         
-count_m1_0_a2_1                           Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count_RNIH3NS3[6]      NOR2B     A        In      -         5.071       -         
-BUS_INTERFACE_0.p3.count_RNIH3NS3[6]      NOR2B     Y        Out     0.514     5.586       -         
-count_N_3_mux_0                           Net       -        -       1.526     -           7         
-BUS_INTERFACE_0.p3.count_RNIOJ4P7[12]     NOR2B     B        In      -         7.112       -         
-BUS_INTERFACE_0.p3.count_RNIOJ4P7[12]     NOR2B     Y        Out     0.627     7.739       -         
-count_N_13_mux                            Net       -        -       1.526     -           7         
-BUS_INTERFACE_0.p3.count_RNO[24]          AX1C      A        In      -         9.265       -         
-BUS_INTERFACE_0.p3.count_RNO[24]          AX1C      Y        Out     0.944     10.209      -         
-count_n24                                 Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count[24]              DFN1      D        In      -         10.530      -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 11.069 is 5.243(47.4%) logic and 5.826(52.6%) route.
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+CORESPI_0.USPI.UCC.msrxp_strobe                DFN1C0     Q        Out     0.737     0.737       -         
+rx_fifo_write                                  Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       B        In      -         2.160       -         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       Y        Out     0.646     2.807       -         
+N_26_0                                         Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        B        In      -         4.230       -         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        Y        Out     0.586     4.816       -         
+un1_counter_d_0_sqmuxa[0]                      Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      B        In      -         5.622       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      Y        Out     0.516     6.138       -         
+N_2_i                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       B        In      -         6.524       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       Y        Out     0.586     7.110       -         
+i2_mux                                         Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       B        In      -         7.496       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       Y        Out     0.610     8.106       -         
+i4_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       B        In      -         8.912       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       Y        Out     0.610     9.522       -         
+i6_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.counter_q_RNI88HDS[0]      XA1        A        In      -         10.329      -         
+CORESPI_0.USPI.URXF.counter_q_RNI88HDS[0]      XA1        Y        Out     0.407     10.735      -         
+m11_e_2                                        Net        -        -       0.322     -           1         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        C        In      -         11.057      -         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        Y        Out     0.713     11.769      -         
+N_327                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.full_out_RNO               NOR2B      A        In      -         12.155      -         
+CORESPI_0.USPI.URXF.full_out_RNO               NOR2B      Y        Out     0.514     12.669      -         
+full_out_2                                     Net        -        -       0.322     -           1         
+CORESPI_0.USPI.URXF.full_out                   DFN1C0     D        In      -         12.991      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 13.564 is 6.498(47.9%) logic and 7.066(52.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -335,42 +404,51 @@ Path information for path number 2:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      10.530
+    - Propagation time:                      13.001
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.069
+    = Slack (non-critical) :                 -3.540
 
-    Number of logic level(s):                6
-    Starting point:                          BUS_INTERFACE_0.p3.count[5] / Q
-    Ending point:                            BUS_INTERFACE_0.p3.count[26] / D
+    Number of logic level(s):                9
+    Starting point:                          CORESPI_0.USPI.UCC.msrxp_strobe / Q
+    Ending point:                            CORESPI_0.USPI.URXF.full_out / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                      Pin      Pin               Arrival     No. of    
-Name                                      Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.p3.count[5]               DFN1      Q        Out     0.737     0.737       -         
-count[5]                                  Net       -        -       1.423     -           6         
-BUS_INTERFACE_0.p3.count_RNIOL5M[1]       NOR2B     B        In      -         2.160       -         
-BUS_INTERFACE_0.p3.count_RNIOL5M[1]       NOR2B     Y        Out     0.627     2.788       -         
-count_m6_0_a2_5_5_0                       Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count_RNIPKBC1[1]      NOR2B     B        In      -         3.109       -         
-BUS_INTERFACE_0.p3.count_RNIPKBC1[1]      NOR2B     Y        Out     0.627     3.737       -         
-count_m6_0_a2_5_5                         Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.p3.count_RNI5T852[10]     NOR2B     B        In      -         4.122       -         
-BUS_INTERFACE_0.p3.count_RNI5T852[10]     NOR2B     Y        Out     0.627     4.750       -         
-count_m1_0_a2_1                           Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count_RNIH3NS3[6]      NOR2B     A        In      -         5.071       -         
-BUS_INTERFACE_0.p3.count_RNIH3NS3[6]      NOR2B     Y        Out     0.514     5.586       -         
-count_N_3_mux_0                           Net       -        -       1.526     -           7         
-BUS_INTERFACE_0.p3.count_RNIOJ4P7[12]     NOR2B     B        In      -         7.112       -         
-BUS_INTERFACE_0.p3.count_RNIOJ4P7[12]     NOR2B     Y        Out     0.627     7.739       -         
-count_N_13_mux                            Net       -        -       1.526     -           7         
-BUS_INTERFACE_0.p3.count_RNO[26]          AX1C      A        In      -         9.265       -         
-BUS_INTERFACE_0.p3.count_RNO[26]          AX1C      Y        Out     0.944     10.209      -         
-count_n26                                 Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count[26]              DFN1      D        In      -         10.530      -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 11.069 is 5.243(47.4%) logic and 5.826(52.6%) route.
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+CORESPI_0.USPI.UCC.msrxp_strobe                DFN1C0     Q        Out     0.737     0.737       -         
+rx_fifo_write                                  Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       B        In      -         2.160       -         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       Y        Out     0.646     2.807       -         
+N_26_0                                         Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        B        In      -         4.230       -         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        Y        Out     0.586     4.816       -         
+un1_counter_d_0_sqmuxa[0]                      Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      B        In      -         5.622       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      Y        Out     0.516     6.138       -         
+N_2_i                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       B        In      -         6.524       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       Y        Out     0.586     7.110       -         
+i2_mux                                         Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       B        In      -         7.496       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       Y        Out     0.610     8.106       -         
+i4_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       B        In      -         8.912       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       Y        Out     0.610     9.522       -         
+i6_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m22          MX2A       B        In      -         10.329      -         
+CORESPI_0.USPI.URXF.un1_counter_q.m22          MX2A       Y        Out     0.610     10.938      -         
+i8_mux                                         Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        A        In      -         11.324      -         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        Y        Out     0.481     11.806      -         
+N_327                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.full_out_RNO               NOR2B      A        In      -         12.192      -         
+CORESPI_0.USPI.URXF.full_out_RNO               NOR2B      Y        Out     0.488     12.680      -         
+full_out_2                                     Net        -        -       0.322     -           1         
+CORESPI_0.USPI.URXF.full_out                   DFN1C0     D        In      -         13.001      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 13.540 is 6.409(47.3%) logic and 7.131(52.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -380,42 +458,51 @@ Path information for path number 3:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      10.523
+    - Propagation time:                      12.993
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.062
+    = Slack (non-critical) :                 -3.531
 
-    Number of logic level(s):                6
-    Starting point:                          BUS_INTERFACE_0.p3.count[5] / Q
-    Ending point:                            BUS_INTERFACE_0.p3.count[20] / D
+    Number of logic level(s):                9
+    Starting point:                          CORESPI_0.USPI.UCC.msrxp_strobe / Q
+    Ending point:                            CORESPI_0.USPI.URXF.empty_out / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                      Pin      Pin               Arrival     No. of    
-Name                                      Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.p3.count[5]               DFN1      Q        Out     0.737     0.737       -         
-count[5]                                  Net       -        -       1.423     -           6         
-BUS_INTERFACE_0.p3.count_RNIOL5M[1]       NOR2B     B        In      -         2.160       -         
-BUS_INTERFACE_0.p3.count_RNIOL5M[1]       NOR2B     Y        Out     0.627     2.788       -         
-count_m6_0_a2_5_5_0                       Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count_RNIPKBC1[1]      NOR2B     B        In      -         3.109       -         
-BUS_INTERFACE_0.p3.count_RNIPKBC1[1]      NOR2B     Y        Out     0.627     3.737       -         
-count_m6_0_a2_5_5                         Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.p3.count_RNI5T852[10]     NOR2B     B        In      -         4.122       -         
-BUS_INTERFACE_0.p3.count_RNI5T852[10]     NOR2B     Y        Out     0.627     4.750       -         
-count_m1_0_a2_1                           Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count_RNIH3NS3[6]      NOR2B     A        In      -         5.071       -         
-BUS_INTERFACE_0.p3.count_RNIH3NS3[6]      NOR2B     Y        Out     0.514     5.586       -         
-count_N_3_mux_0                           Net       -        -       1.526     -           7         
-BUS_INTERFACE_0.p3.count_RNIOJ4P7[12]     NOR2B     B        In      -         7.112       -         
-BUS_INTERFACE_0.p3.count_RNIOJ4P7[12]     NOR2B     Y        Out     0.627     7.739       -         
-count_N_13_mux                            Net       -        -       1.526     -           7         
-BUS_INTERFACE_0.p3.count_RNO[20]          XOR2      B        In      -         9.265       -         
-BUS_INTERFACE_0.p3.count_RNO[20]          XOR2      Y        Out     0.937     10.202      -         
-count_n20                                 Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.p3.count[20]              DFN1      D        In      -         10.523      -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 11.062 is 5.236(47.3%) logic and 5.826(52.7%) route.
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+CORESPI_0.USPI.UCC.msrxp_strobe                DFN1C0     Q        Out     0.737     0.737       -         
+rx_fifo_write                                  Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       B        In      -         2.160       -         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       Y        Out     0.646     2.807       -         
+N_26_0                                         Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        B        In      -         4.230       -         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        Y        Out     0.586     4.816       -         
+un1_counter_d_0_sqmuxa[0]                      Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      B        In      -         5.622       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      Y        Out     0.516     6.138       -         
+N_2_i                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       B        In      -         6.524       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       Y        Out     0.586     7.110       -         
+i2_mux                                         Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       B        In      -         7.496       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       Y        Out     0.610     8.106       -         
+i4_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       B        In      -         8.912       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       Y        Out     0.610     9.522       -         
+i6_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m22          MX2A       B        In      -         10.329      -         
+CORESPI_0.USPI.URXF.un1_counter_q.m22          MX2A       Y        Out     0.610     10.938      -         
+i8_mux                                         Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        A        In      -         11.324      -         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        Y        Out     0.481     11.806      -         
+N_327                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.empty_out_RNO              MX2B       S        In      -         12.192      -         
+CORESPI_0.USPI.URXF.empty_out_RNO              MX2B       Y        Out     0.480     12.671      -         
+empty_out_2                                    Net        -        -       0.322     -           1         
+CORESPI_0.USPI.URXF.empty_out                  DFN1P0     D        In      -         12.993      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 13.531 is 6.401(47.3%) logic and 7.131(52.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -425,48 +512,51 @@ Path information for path number 4:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      10.360
+    - Propagation time:                      12.956
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.898
+    = Slack (non-critical) :                 -3.495
 
-    Number of logic level(s):                8
-    Starting point:                          BUS_INTERFACE_0.hit_count[14] / Q
-    Ending point:                            BUS_INTERFACE_0.hit_count[24] / D
+    Number of logic level(s):                9
+    Starting point:                          CORESPI_0.USPI.UCC.msrxp_strobe / Q
+    Ending point:                            CORESPI_0.USPI.URXF.empty_out / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                       Pin      Pin               Arrival     No. of    
-Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.hit_count[14]              DFN1      Q        Out     0.737     0.737       -         
-hit_count[14]                              Net       -        -       1.184     -           4         
-BUS_INTERFACE_0.hit_count_RNI3V7I[15]      NOR2B     B        In      -         1.921       -         
-BUS_INTERFACE_0.hit_count_RNI3V7I[15]      NOR2B     Y        Out     0.627     2.548       -         
-hit_m1_0_a2_2_0                            Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.hit_count_RNI2QF41[12]     NOR2B     B        In      -         2.869       -         
-BUS_INTERFACE_0.hit_count_RNI2QF41[12]     NOR2B     Y        Out     0.627     3.497       -         
-hit_m1_0_a2_2                              Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNI5RJD1[16]     NOR2B     A        In      -         3.883       -         
-BUS_INTERFACE_0.hit_count_RNI5RJD1[16]     NOR2B     Y        Out     0.514     4.397       -         
-hit_count_c16_out                          Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNI9TNM1[17]     NOR2B     A        In      -         4.783       -         
-BUS_INTERFACE_0.hit_count_RNI9TNM1[17]     NOR2B     Y        Out     0.514     5.297       -         
-hit_count_c17_out                          Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNII15I2[20]     NOR2B     B        In      -         5.683       -         
-BUS_INTERFACE_0.hit_count_RNII15I2[20]     NOR2B     Y        Out     0.627     6.310       -         
-hit_count_c20_1                            Net       -        -       0.806     -           3         
-BUS_INTERFACE_0.hit_count_RNIHO8J7[21]     NOR3C     B        In      -         7.117       -         
-BUS_INTERFACE_0.hit_count_RNIHO8J7[21]     NOR3C     Y        Out     0.607     7.723       -         
-hit_count_c21                              Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNO_0[24]        AX1C      A        In      -         8.109       -         
-BUS_INTERFACE_0.hit_count_RNO_0[24]        AX1C      Y        Out     0.944     9.053       -         
-hit_count_n24_tz                           Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.hit_count_RNO[24]          NOR3A     A        In      -         9.374       -         
-BUS_INTERFACE_0.hit_count_RNO[24]          NOR3A     Y        Out     0.664     10.038      -         
-hit_count_n24                              Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.hit_count[24]              DFN1      D        In      -         10.360      -         
-======================================================================================================
-Total path delay (propagation time + setup) of 10.898 is 6.401(58.7%) logic and 4.498(41.3%) route.
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+CORESPI_0.USPI.UCC.msrxp_strobe                DFN1C0     Q        Out     0.737     0.737       -         
+rx_fifo_write                                  Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       B        In      -         2.160       -         
+CORESPI_0.USPI.URXF.empty_out_RNIC46L          NOR2       Y        Out     0.646     2.807       -         
+N_26_0                                         Net        -        -       1.423     -           6         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        B        In      -         4.230       -         
+CORESPI_0.USPI.URXF.full_out_RNIQFAC2          MX2        Y        Out     0.586     4.816       -         
+un1_counter_d_0_sqmuxa[0]                      Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      B        In      -         5.622       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m1           NOR2B      Y        Out     0.516     6.138       -         
+N_2_i                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       B        In      -         6.524       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m4           MX2C       Y        Out     0.586     7.110       -         
+i2_mux                                         Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       B        In      -         7.496       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m7           MX2A       Y        Out     0.610     8.106       -         
+i4_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       B        In      -         8.912       -         
+CORESPI_0.USPI.URXF.un1_counter_q.m10          MX2A       Y        Out     0.610     9.522       -         
+i6_mux                                         Net        -        -       0.806     -           3         
+CORESPI_0.USPI.URXF.counter_q_RNI88HDS[0]      XA1        A        In      -         10.329      -         
+CORESPI_0.USPI.URXF.counter_q_RNI88HDS[0]      XA1        Y        Out     0.407     10.735      -         
+m11_e_2                                        Net        -        -       0.322     -           1         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        C        In      -         11.057      -         
+CORESPI_0.USPI.URXF.counter_q_RNIJ473C1[0]     XA1        Y        Out     0.713     11.769      -         
+N_327                                          Net        -        -       0.386     -           2         
+CORESPI_0.USPI.URXF.empty_out_RNO              MX2B       S        In      -         12.155      -         
+CORESPI_0.USPI.URXF.empty_out_RNO              MX2B       Y        Out     0.480     12.634      -         
+empty_out_2                                    Net        -        -       0.322     -           1         
+CORESPI_0.USPI.URXF.empty_out                  DFN1P0     D        In      -         12.956      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 13.495 is 6.428(47.6%) logic and 7.066(52.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -476,48 +566,45 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.461
 
-    - Propagation time:                      10.353
+    - Propagation time:                      12.852
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.891
+    = Slack (non-critical) :                 -3.391
 
-    Number of logic level(s):                8
-    Starting point:                          BUS_INTERFACE_0.hit_count[14] / Q
-    Ending point:                            BUS_INTERFACE_0.hit_count[23] / D
+    Number of logic level(s):                7
+    Starting point:                          BUS_INTERFACE_0.p3.count[0] / Q
+    Ending point:                            BUS_INTERFACE_0.p3.count[30] / D
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
 Instance / Net                                       Pin      Pin               Arrival     No. of    
 Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.hit_count[14]              DFN1      Q        Out     0.737     0.737       -         
-hit_count[14]                              Net       -        -       1.184     -           4         
-BUS_INTERFACE_0.hit_count_RNI3V7I[15]      NOR2B     B        In      -         1.921       -         
-BUS_INTERFACE_0.hit_count_RNI3V7I[15]      NOR2B     Y        Out     0.627     2.548       -         
-hit_m1_0_a2_2_0                            Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.hit_count_RNI2QF41[12]     NOR2B     B        In      -         2.869       -         
-BUS_INTERFACE_0.hit_count_RNI2QF41[12]     NOR2B     Y        Out     0.627     3.497       -         
-hit_m1_0_a2_2                              Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNI5RJD1[16]     NOR2B     A        In      -         3.883       -         
-BUS_INTERFACE_0.hit_count_RNI5RJD1[16]     NOR2B     Y        Out     0.514     4.397       -         
-hit_count_c16_out                          Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNI9TNM1[17]     NOR2B     A        In      -         4.783       -         
-BUS_INTERFACE_0.hit_count_RNI9TNM1[17]     NOR2B     Y        Out     0.514     5.297       -         
-hit_count_c17_out                          Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNII15I2[20]     NOR2B     B        In      -         5.683       -         
-BUS_INTERFACE_0.hit_count_RNII15I2[20]     NOR2B     Y        Out     0.627     6.310       -         
-hit_count_c20_1                            Net       -        -       0.806     -           3         
-BUS_INTERFACE_0.hit_count_RNIHNDS7[21]     NOR3C     B        In      -         7.117       -         
-BUS_INTERFACE_0.hit_count_RNIHNDS7[21]     NOR3C     Y        Out     0.607     7.723       -         
-hit_count_c22                              Net       -        -       0.386     -           2         
-BUS_INTERFACE_0.hit_count_RNO_0[23]        XOR2      B        In      -         8.109       -         
-BUS_INTERFACE_0.hit_count_RNO_0[23]        XOR2      Y        Out     0.937     9.046       -         
-hit_count_n23_tz                           Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.hit_count_RNO[23]          NOR3A     A        In      -         9.367       -         
-BUS_INTERFACE_0.hit_count_RNO[23]          NOR3A     Y        Out     0.664     10.031      -         
-hit_count_n23                              Net       -        -       0.322     -           1         
-BUS_INTERFACE_0.hit_count[23]              DFN1      D        In      -         10.353      -         
+BUS_INTERFACE_0.p3.count[0]                DFN1      Q        Out     0.737     0.737       -         
+count[0]                                   Net       -        -       1.669     -           9         
+BUS_INTERFACE_0.p3.count_RNIEA811_0[2]     NOR3C     C        In      -         2.405       -         
+BUS_INTERFACE_0.p3.count_RNIEA811_0[2]     NOR3C     Y        Out     0.641     3.047       -         
+count_m6_0_a2_5_4                          Net       -        -       0.322     -           1         
+BUS_INTERFACE_0.p3.count_RNI93EN1[6]       NOR3C     C        In      -         3.368       -         
+BUS_INTERFACE_0.p3.count_RNI93EN1[6]       NOR3C     Y        Out     0.641     4.010       -         
+count_m6_0_a2_5_6                          Net       -        -       0.322     -           1         
+BUS_INTERFACE_0.p3.count_RNI5RP33[4]       NOR2B     A        In      -         4.331       -         
+BUS_INTERFACE_0.p3.count_RNI5RP33[4]       NOR2B     Y        Out     0.514     4.845       -         
+count_N_13_mux_0                           Net       -        -       1.279     -           5         
+BUS_INTERFACE_0.p3.count_RNIH3NS3[10]      NOR2B     B        In      -         6.125       -         
+BUS_INTERFACE_0.p3.count_RNIH3NS3[10]      NOR2B     Y        Out     0.627     6.752       -         
+count_N_3_mux_0                            Net       -        -       1.669     -           9         
+BUS_INTERFACE_0.p3.count_RNIOJ4P7[15]      NOR2B     B        In      -         8.421       -         
+BUS_INTERFACE_0.p3.count_RNIOJ4P7[15]      NOR2B     Y        Out     0.627     9.048       -         
+count_N_13_mux                             Net       -        -       1.526     -           7         
+BUS_INTERFACE_0.p3.count_RNIQA4QA[26]      NOR2B     B        In      -         10.574      -         
+BUS_INTERFACE_0.p3.count_RNIQA4QA[26]      NOR2B     Y        Out     0.627     11.201      -         
+count_N_9_mux                              Net       -        -       0.386     -           2         
+BUS_INTERFACE_0.p3.count_RNO[30]           AX1C      A        In      -         11.587      -         
+BUS_INTERFACE_0.p3.count_RNO[30]           AX1C      Y        Out     0.944     12.531      -         
+count_n30                                  Net       -        -       0.322     -           1         
+BUS_INTERFACE_0.p3.count[30]               DFN1      D        In      -         12.852      -         
 ======================================================================================================
-Total path delay (propagation time + setup) of 10.891 is 6.394(58.7%) logic and 4.498(41.3%) route.
+Total path delay (propagation time + setup) of 13.391 is 5.898(44.0%) logic and 7.492(56.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -532,41 +619,41 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                             Starting                                                                       Arrival           
-Instance                                     Reference     Type        Pin              Net                                 Time        Slack 
-                                             Clock                                                                                            
-----------------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[0]     CoreAPB3_0_APBmslave0_PWDATA[0]     0.000       -8.547
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[1]     CoreAPB3_0_APBmslave0_PWDATA[1]     0.000       -8.234
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[4]     CoreAPB3_0_APBmslave0_PWDATA[4]     0.000       -8.185
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]     0.000       -8.166
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]     0.000       -7.951
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[5]     CoreAPB3_0_APBmslave0_PWDATA[5]     0.000       -7.652
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[6]     CoreAPB3_0_APBmslave0_PWDATA[6]     0.000       -7.170
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[7]     CoreAPB3_0_APBmslave0_PWDATA[7]     0.000       -6.378
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[9]     CoreAPB3_0_APBmslave0_PWDATA[9]     0.000       -6.204
-turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[8]     CoreAPB3_0_APBmslave0_PWDATA[8]     0.000       -5.985
-==============================================================================================================================================
+                                             Starting                                                                                          Arrival            
+Instance                                     Reference     Type        Pin              Net                                                    Time        Slack  
+                                             Clock                                                                                                                
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[11]     0.000       -11.920
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[10]     0.000       -11.769
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          turret_servo_mss_design_0_MSS_MASTER_APB_PSELx         0.000       -11.197
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[9]      0.000       -10.593
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]                        0.000       -10.076
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[1]     CoreAPB3_0_APBmslave0_PWDATA[1]                        0.000       -9.991 
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[8]      0.000       -9.762 
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[5]     CoreAPB3_0_APBmslave0_PWDATA[5]                        0.000       -9.621 
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[6]     CoreAPB3_0_APBmslave0_PWDATA[6]                        0.000       -9.586 
+turret_servo_mss_design_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]                        0.000       -9.525 
+==================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                    Starting                                               Required           
-Instance                            Reference     Type     Pin     Net                     Time         Slack 
-                                    Clock                                                                     
---------------------------------------------------------------------------------------------------------------
-BUS_INTERFACE_0.pulseWidth1[17]     System        DFN1     D       pulseWidth1_RNO[17]     9.461        -8.547
-BUS_INTERFACE_0.pulseWidth2[17]     System        DFN1     D       pulseWidth2_RNO[17]     9.461        -8.547
-BUS_INTERFACE_0.pulseWidth1[16]     System        DFN1     D       pulseWidth1_RNO[16]     9.461        -8.267
-BUS_INTERFACE_0.pulseWidth2[16]     System        DFN1     D       pulseWidth2_RNO[16]     9.461        -8.267
-BUS_INTERFACE_0.pulseWidth1[15]     System        DFN1     D       pulseWidth1_RNO[15]     9.427        -7.414
-BUS_INTERFACE_0.pulseWidth2[15]     System        DFN1     D       pulseWidth2_RNO[15]     9.427        -7.414
-BUS_INTERFACE_0.pulseWidth1[14]     System        DFN1     D       pulseWidth1_RNO[14]     9.427        -6.420
-BUS_INTERFACE_0.pulseWidth2[14]     System        DFN1     D       pulseWidth2_RNO[14]     9.427        -6.420
-BUS_INTERFACE_0.pulseWidth1[13]     System        DFN1     D       pulseWidth1_RNO[13]     9.427        -6.387
-BUS_INTERFACE_0.pulseWidth2[13]     System        DFN1     D       pulseWidth2_RNO[13]     9.427        -6.387
-==============================================================================================================
+                                     Starting                                                 Required            
+Instance                             Reference     Type       Pin     Net                     Time         Slack  
+                                     Clock                                                                        
+------------------------------------------------------------------------------------------------------------------
+CORESPI_0.USPI.UTXF.empty_out        System        DFN1P0     D       empty_out_2             9.427        -11.920
+CORESPI_0.USPI.UTXF.full_out         System        DFN1C0     D       full_out_2              9.427        -11.920
+CORESPI_0.USPI.URXF.full_out         System        DFN1C0     D       full_out_2              9.427        -10.896
+CORESPI_0.USPI.URXF.empty_out        System        DFN1P0     D       empty_out_2             9.461        -10.863
+CORESPI_0.USPI.UTXF.counter_q[3]     System        DFN1C0     D       counter_d[3]            9.461        -10.414
+CORESPI_0.USPI.URXF.counter_q[5]     System        DFN1C0     D       counter_d[5]            9.427        -10.375
+CORESPI_0.USPI.UTXF.counter_q[5]     System        DFN1C0     D       counter_d[5]            9.461        -10.101
+BUS_INTERFACE_0.pulseWidth1[17]      System        DFN1       D       pulseWidth1_RNO[17]     9.427        -10.076
+BUS_INTERFACE_0.pulseWidth2[17]      System        DFN1       D       pulseWidth2_RNO[17]     9.427        -10.076
+CORESPI_0.USPI.UTXF.counter_q[4]     System        DFN1C0     D       counter_d[4]            9.461        -10.057
+==================================================================================================================
 
 
 
@@ -576,333 +663,366 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.539
+    - Setup time:                            0.573
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
+    = Required time:                         9.427
 
-    - Propagation time:                      18.008
+    - Propagation time:                      21.347
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -8.547
+    = Slack (critical) :                     -11.920
 
-    Number of logic level(s):                13
-    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[0]
-    Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
+    Number of logic level(s):                15
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[11]
+    Ending point:                            CORESPI_0.USPI.UTXF.empty_out / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                                 Pin              Pin               Arrival     No. of    
-Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[0]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[0]                                    Net         -                -       2.082     -           14        
-BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR3        C                In      -         2.082       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR3        Y                Out     0.985     3.067       -         
-N_367                                                              Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         3.874       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     4.501       -         
-N223                                                               Net         -                -       1.279     -           5         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         5.781       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.189       -         
-N_19                                                               Net         -                -       1.184     -           4         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.372       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     7.861       -         
-ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.247       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.037       -         
-N_50                                                               Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         9.844       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     10.440      -         
-N_46                                                               Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.246      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     11.842      -         
-i14_mux                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR3A       A                In      -         12.649      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR3A       Y                Out     0.641     13.290      -         
-i18_mux                                                            Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         13.676      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     14.303      -         
-i20_mux                                                            Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                              NOR2A       B                In      -         14.689      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                              NOR2A       Y                Out     0.407     15.096      -         
-N_35_i                                                             Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1D        C                In      -         15.417      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1D        Y                Out     0.488     15.905      -         
-N_435                                                              Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                              MX2         B                In      -         16.291      -         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                              MX2         Y                Out     0.586     16.877      -         
-N_250                                                              Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                                NOR2B       A                In      -         17.198      -         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                                NOR2B       Y                Out     0.488     17.687      -         
-pulseWidth1_RNO[17]                                                Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1[17]                                    DFN1        D                In      -         18.008      -         
-========================================================================================================================================
-Total path delay (propagation time + setup) of 18.547 is 8.269(44.6%) logic and 10.278(55.4%) route.
+Instance / Net                                                     Pin              Pin               Arrival     No. of    
+Name                                                   Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST               MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
+turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[11]     Net         -                -       0.322     -           1         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        B                In      -         0.322       -         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        Y                Out     0.514     0.836       -         
+CoreAPB3_0_APBmslave0_PSELx_2                          Net         -                -       0.806     -           3         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       A                In      -         1.642       -         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       Y                Out     0.514     2.157       -         
+N_53                                                   Net         -                -       1.423     -           6         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       B                In      -         3.580       -         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       Y                Out     0.607     4.187       -         
+CoreAPB3_0_APBmslave2_PSELx                            Net         -                -       1.994     -           12        
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       B                In      -         6.180       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       Y                Out     0.627     6.808       -         
+tx_fifo_write_sig16                                    Net         -                -       1.776     -           11        
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       B                In      -         8.584       -         
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       Y                Out     0.607     9.190       -         
+tx_fifo_last_0_a2_0                                    Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         C                In      -         9.576       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         Y                Out     0.713     10.289      -         
+tx_fifo_write                                          Net         -                -       1.526     -           7         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       A                In      -         11.815      -         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       Y                Out     0.641     12.456      -         
+counter_d_0_sqmuxa_1_0                                 Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        B                In      -         13.262      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        Y                Out     0.627     13.890      -         
+DWACT_ADD_CI_0_TMP[0]                                  Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       A                In      -         14.275      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       Y                Out     0.514     14.790      -         
+DWACT_ADD_CI_0_g_array_1[0]                            Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       A                In      -         15.596      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       Y                Out     0.514     16.111      -         
+DWACT_ADD_CI_0_g_array_2[0]                            Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_21               XOR2        B                In      -         16.496      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_21               XOR2        Y                Out     0.937     17.433      -         
+un1_counter_q0[4]                                      Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_m[4]                 MX2         A                In      -         17.755      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m[4]                 MX2         Y                Out     0.568     18.323      -         
+un1_counter_q[4]                                       Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNITMEE[4]         NOR2B       A                In      -         18.644      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNITMEE[4]         NOR2B       Y                Out     0.488     19.133      -         
+counter_d[4]                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        B                In      -         19.519      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        Y                Out     0.514     20.033      -         
+full_out_2_3                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.empty_out_RNO                      NOR3B       B                In      -         20.419      -         
+CORESPI_0.USPI.UTXF.empty_out_RNO                      NOR3B       Y                Out     0.607     21.025      -         
+empty_out_2                                            Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.empty_out                          DFN1P0      D                In      -         21.347      -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 21.920 is 9.567(43.6%) logic and 12.353(56.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
       Requested Period:                      10.000
-    - Setup time:                            0.539
+    - Setup time:                            0.573
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
+    = Required time:                         9.427
 
-    - Propagation time:                      18.008
+    - Propagation time:                      21.347
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -8.547
+    = Slack (critical) :                     -11.920
 
-    Number of logic level(s):                13
-    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[0]
-    Ending point:                            BUS_INTERFACE_0.pulseWidth2[17] / D
+    Number of logic level(s):                15
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[11]
+    Ending point:                            CORESPI_0.USPI.UTXF.full_out / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                                 Pin              Pin               Arrival     No. of    
-Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[0]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[0]                                    Net         -                -       2.082     -           14        
-BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR3        C                In      -         2.082       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR3        Y                Out     0.985     3.067       -         
-N_367                                                              Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         3.874       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     4.501       -         
-N223                                                               Net         -                -       1.279     -           5         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         5.781       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.189       -         
-N_19                                                               Net         -                -       1.184     -           4         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.372       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     7.861       -         
-ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.247       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.037       -         
-N_50                                                               Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         9.844       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     10.440      -         
-N_46                                                               Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.246      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     11.842      -         
-i14_mux                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR3A       A                In      -         12.649      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR3A       Y                Out     0.641     13.290      -         
-i18_mux                                                            Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         13.676      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     14.303      -         
-i20_mux                                                            Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                              NOR2A       B                In      -         14.689      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                              NOR2A       Y                Out     0.407     15.096      -         
-N_35_i                                                             Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1D        C                In      -         15.417      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                              AX1D        Y                Out     0.488     15.905      -         
-N_435                                                              Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                              MX2         B                In      -         16.291      -         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                              MX2         Y                Out     0.586     16.877      -         
-N_234                                                              Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2_RNO[17]                                NOR2B       A                In      -         17.198      -         
-BUS_INTERFACE_0.pulseWidth2_RNO[17]                                NOR2B       Y                Out     0.488     17.687      -         
-pulseWidth2_RNO[17]                                                Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2[17]                                    DFN1        D                In      -         18.008      -         
-========================================================================================================================================
-Total path delay (propagation time + setup) of 18.547 is 8.269(44.6%) logic and 10.278(55.4%) route.
+Instance / Net                                                     Pin              Pin               Arrival     No. of    
+Name                                                   Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST               MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
+turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[11]     Net         -                -       0.322     -           1         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        B                In      -         0.322       -         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        Y                Out     0.514     0.836       -         
+CoreAPB3_0_APBmslave0_PSELx_2                          Net         -                -       0.806     -           3         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       A                In      -         1.642       -         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       Y                Out     0.514     2.157       -         
+N_53                                                   Net         -                -       1.423     -           6         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       B                In      -         3.580       -         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       Y                Out     0.607     4.187       -         
+CoreAPB3_0_APBmslave2_PSELx                            Net         -                -       1.994     -           12        
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       B                In      -         6.180       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       Y                Out     0.627     6.808       -         
+tx_fifo_write_sig16                                    Net         -                -       1.776     -           11        
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       B                In      -         8.584       -         
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       Y                Out     0.607     9.190       -         
+tx_fifo_last_0_a2_0                                    Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         C                In      -         9.576       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         Y                Out     0.713     10.289      -         
+tx_fifo_write                                          Net         -                -       1.526     -           7         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       A                In      -         11.815      -         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       Y                Out     0.641     12.456      -         
+counter_d_0_sqmuxa_1_0                                 Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        B                In      -         13.262      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        Y                Out     0.627     13.890      -         
+DWACT_ADD_CI_0_TMP[0]                                  Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       A                In      -         14.275      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       Y                Out     0.514     14.790      -         
+DWACT_ADD_CI_0_g_array_1[0]                            Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       A                In      -         15.596      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       Y                Out     0.514     16.111      -         
+DWACT_ADD_CI_0_g_array_2[0]                            Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_21               XOR2        B                In      -         16.496      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_21               XOR2        Y                Out     0.937     17.433      -         
+un1_counter_q0[4]                                      Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_m[4]                 MX2         A                In      -         17.755      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m[4]                 MX2         Y                Out     0.568     18.323      -         
+un1_counter_q[4]                                       Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNITMEE[4]         NOR2B       A                In      -         18.644      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNITMEE[4]         NOR2B       Y                Out     0.488     19.133      -         
+counter_d[4]                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        B                In      -         19.519      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        Y                Out     0.514     20.033      -         
+full_out_2_3                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.full_out_RNO                       NOR3B       B                In      -         20.419      -         
+CORESPI_0.USPI.UTXF.full_out_RNO                       NOR3B       Y                Out     0.607     21.025      -         
+full_out_2                                             Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.full_out                           DFN1C0      D                In      -         21.347      -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 21.920 is 9.567(43.6%) logic and 12.353(56.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            0.539
+    - Setup time:                            0.573
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
+    = Required time:                         9.427
 
-    - Propagation time:                      17.741
+    - Propagation time:                      21.239
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -8.279
+    = Slack (non-critical) :                 -11.813
 
-    Number of logic level(s):                13
-    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[0]
-    Ending point:                            BUS_INTERFACE_0.pulseWidth1[17] / D
+    Number of logic level(s):                15
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[11]
+    Ending point:                            CORESPI_0.USPI.UTXF.empty_out / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                              Pin              Pin               Arrival     No. of    
-Name                                                            Type        Name             Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                        MSS_APB     MSSPWDATA[0]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[0]                                 Net         -                -       2.082     -           14        
-BUS_INTERFACE_0.un4_pulseWidth1_0                               XOR3        C                In      -         2.082       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0                               XOR3        Y                Out     0.985     3.067       -         
-N_367                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y       NOR2B       B                In      -         3.874       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y       NOR2B       Y                Out     0.627     4.501       -         
-N223                                                            Net         -                -       1.279     -           5         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I82_Y_0     XOR2        B                In      -         5.781       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I82_Y_0     XOR2        Y                Out     0.937     6.717       -         
-ADD_12x12_fast_I82_Y_0                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        B                In      -         7.103       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        Y                Out     0.791     7.894       -         
-i4_mux                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           XO1A        C                In      -         8.280       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           XO1A        Y                Out     0.490     8.770       -         
-N_50                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                           AO1C        B                In      -         9.576       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                           AO1C        Y                Out     0.596     10.172      -         
-N_46                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                           AO1C        B                In      -         10.979      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                           AO1C        Y                Out     0.596     11.575      -         
-i14_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                           NOR3A       A                In      -         12.381      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                           NOR3A       Y                Out     0.641     13.022      -         
-i18_mux                                                         Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR2A       A                In      -         13.408      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR2A       Y                Out     0.627     14.036      -         
-i20_mux                                                         Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                           NOR2A       B                In      -         14.421      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                           NOR2A       Y                Out     0.407     14.828      -         
-N_35_i                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           AX1D        C                In      -         15.149      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           AX1D        Y                Out     0.488     15.638      -         
-N_435                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         B                In      -         16.023      -         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[17]                           MX2         Y                Out     0.586     16.609      -         
-N_250                                                           Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       A                In      -         16.931      -         
-BUS_INTERFACE_0.pulseWidth1_RNO[17]                             NOR2B       Y                Out     0.488     17.419      -         
-pulseWidth1_RNO[17]                                             Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1[17]                                 DFN1        D                In      -         17.741      -         
-=====================================================================================================================================
-Total path delay (propagation time + setup) of 18.279 is 8.799(48.1%) logic and 9.480(51.9%) route.
+Instance / Net                                                     Pin              Pin               Arrival     No. of    
+Name                                                   Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST               MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
+turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[11]     Net         -                -       0.322     -           1         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        B                In      -         0.322       -         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        Y                Out     0.514     0.836       -         
+CoreAPB3_0_APBmslave0_PSELx_2                          Net         -                -       0.806     -           3         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       A                In      -         1.642       -         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       Y                Out     0.514     2.157       -         
+N_53                                                   Net         -                -       1.423     -           6         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       B                In      -         3.580       -         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       Y                Out     0.607     4.187       -         
+CoreAPB3_0_APBmslave2_PSELx                            Net         -                -       1.994     -           12        
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       B                In      -         6.180       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       Y                Out     0.627     6.808       -         
+tx_fifo_write_sig16                                    Net         -                -       1.776     -           11        
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       B                In      -         8.584       -         
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       Y                Out     0.607     9.190       -         
+tx_fifo_last_0_a2_0                                    Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         C                In      -         9.576       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         Y                Out     0.713     10.289      -         
+tx_fifo_write                                          Net         -                -       1.526     -           7         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       A                In      -         11.815      -         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       Y                Out     0.641     12.456      -         
+counter_d_0_sqmuxa_1_0                                 Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        B                In      -         13.262      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        Y                Out     0.627     13.890      -         
+DWACT_ADD_CI_0_TMP[0]                                  Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       A                In      -         14.275      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       Y                Out     0.514     14.790      -         
+DWACT_ADD_CI_0_g_array_1[0]                            Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       A                In      -         15.596      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       Y                Out     0.514     16.111      -         
+DWACT_ADD_CI_0_g_array_2[0]                            Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_29               NOR2B       A                In      -         16.496      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_29               NOR2B       Y                Out     0.514     17.011      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                         Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_26               XOR2        B                In      -         17.332      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_26               XOR2        Y                Out     0.937     18.269      -         
+un1_counter_q0[5]                                      Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_1_RNIDTL64[5]        MX2         B                In      -         18.590      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_1_RNIDTL64[5]        MX2         Y                Out     0.586     19.176      -         
+counter_d[5]                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        A                In      -         19.562      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        Y                Out     0.363     19.925      -         
+full_out_2_3                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.empty_out_RNO                      NOR3B       B                In      -         20.311      -         
+CORESPI_0.USPI.UTXF.empty_out_RNO                      NOR3B       Y                Out     0.607     20.918      -         
+empty_out_2                                            Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.empty_out                          DFN1P0      D                In      -         21.239      -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 21.813 is 9.459(43.4%) logic and 12.353(56.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            0.539
+    - Setup time:                            0.573
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
+    = Required time:                         9.427
 
-    - Propagation time:                      17.741
+    - Propagation time:                      21.239
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -8.279
+    = Slack (non-critical) :                 -11.813
 
-    Number of logic level(s):                13
-    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[0]
-    Ending point:                            BUS_INTERFACE_0.pulseWidth2[17] / D
+    Number of logic level(s):                15
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[11]
+    Ending point:                            CORESPI_0.USPI.UTXF.full_out / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                              Pin              Pin               Arrival     No. of    
-Name                                                            Type        Name             Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                        MSS_APB     MSSPWDATA[0]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[0]                                 Net         -                -       2.082     -           14        
-BUS_INTERFACE_0.un4_pulseWidth1_0                               XOR3        C                In      -         2.082       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0                               XOR3        Y                Out     0.985     3.067       -         
-N_367                                                           Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y       NOR2B       B                In      -         3.874       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y       NOR2B       Y                Out     0.627     4.501       -         
-N223                                                            Net         -                -       1.279     -           5         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I82_Y_0     XOR2        B                In      -         5.781       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I82_Y_0     XOR2        Y                Out     0.937     6.717       -         
-ADD_12x12_fast_I82_Y_0                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        B                In      -         7.103       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m9                            XO1A        Y                Out     0.791     7.894       -         
-i4_mux                                                          Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           XO1A        C                In      -         8.280       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                           XO1A        Y                Out     0.490     8.770       -         
-N_50                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                           AO1C        B                In      -         9.576       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                           AO1C        Y                Out     0.596     10.172      -         
-N_46                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                           AO1C        B                In      -         10.979      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                           AO1C        Y                Out     0.596     11.575      -         
-i14_mux                                                         Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                           NOR3A       A                In      -         12.381      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                           NOR3A       Y                Out     0.641     13.022      -         
-i18_mux                                                         Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR2A       A                In      -         13.408      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                           NOR2A       Y                Out     0.627     14.036      -         
-i20_mux                                                         Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                           NOR2A       B                In      -         14.421      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m34                           NOR2A       Y                Out     0.407     14.828      -         
-N_35_i                                                          Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           AX1D        C                In      -         15.149      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m35                           AX1D        Y                Out     0.488     15.638      -         
-N_435                                                           Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                           MX2         B                In      -         16.023      -         
-BUS_INTERFACE_0.pulseWidth2_RNO_0[17]                           MX2         Y                Out     0.586     16.609      -         
-N_234                                                           Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2_RNO[17]                             NOR2B       A                In      -         16.931      -         
-BUS_INTERFACE_0.pulseWidth2_RNO[17]                             NOR2B       Y                Out     0.488     17.419      -         
-pulseWidth2_RNO[17]                                             Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth2[17]                                 DFN1        D                In      -         17.741      -         
-=====================================================================================================================================
-Total path delay (propagation time + setup) of 18.279 is 8.799(48.1%) logic and 9.480(51.9%) route.
+Instance / Net                                                     Pin              Pin               Arrival     No. of    
+Name                                                   Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST               MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
+turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[11]     Net         -                -       0.322     -           1         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        B                In      -         0.322       -         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        Y                Out     0.514     0.836       -         
+CoreAPB3_0_APBmslave0_PSELx_2                          Net         -                -       0.806     -           3         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       A                In      -         1.642       -         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       Y                Out     0.514     2.157       -         
+N_53                                                   Net         -                -       1.423     -           6         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       B                In      -         3.580       -         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       Y                Out     0.607     4.187       -         
+CoreAPB3_0_APBmslave2_PSELx                            Net         -                -       1.994     -           12        
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       B                In      -         6.180       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       Y                Out     0.627     6.808       -         
+tx_fifo_write_sig16                                    Net         -                -       1.776     -           11        
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       B                In      -         8.584       -         
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       Y                Out     0.607     9.190       -         
+tx_fifo_last_0_a2_0                                    Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         C                In      -         9.576       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         Y                Out     0.713     10.289      -         
+tx_fifo_write                                          Net         -                -       1.526     -           7         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       A                In      -         11.815      -         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       Y                Out     0.641     12.456      -         
+counter_d_0_sqmuxa_1_0                                 Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        B                In      -         13.262      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        Y                Out     0.627     13.890      -         
+DWACT_ADD_CI_0_TMP[0]                                  Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       A                In      -         14.275      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       Y                Out     0.514     14.790      -         
+DWACT_ADD_CI_0_g_array_1[0]                            Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       A                In      -         15.596      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       Y                Out     0.514     16.111      -         
+DWACT_ADD_CI_0_g_array_2[0]                            Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_29               NOR2B       A                In      -         16.496      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_29               NOR2B       Y                Out     0.514     17.011      -         
+DWACT_ADD_CI_0_g_array_12_1[0]                         Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_26               XOR2        B                In      -         17.332      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_26               XOR2        Y                Out     0.937     18.269      -         
+un1_counter_q0[5]                                      Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_1_RNIDTL64[5]        MX2         B                In      -         18.590      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_1_RNIDTL64[5]        MX2         Y                Out     0.586     19.176      -         
+counter_d[5]                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        A                In      -         19.562      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        Y                Out     0.363     19.925      -         
+full_out_2_3                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.full_out_RNO                       NOR3B       B                In      -         20.311      -         
+CORESPI_0.USPI.UTXF.full_out_RNO                       NOR3B       Y                Out     0.607     20.918      -         
+full_out_2                                             Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.full_out                           DFN1C0      D                In      -         21.239      -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 21.813 is 9.459(43.4%) logic and 12.353(56.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            0.539
+    - Setup time:                            0.573
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.461
+    = Required time:                         9.427
 
-    - Propagation time:                      17.729
+    - Propagation time:                      21.195
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -8.267
+    = Slack (non-critical) :                 -11.769
 
-    Number of logic level(s):                12
-    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPWDATA[0]
-    Ending point:                            BUS_INTERFACE_0.pulseWidth1[16] / D
+    Number of logic level(s):                15
+    Starting point:                          turret_servo_mss_design_0.MSS_ADLIB_INST / MSSPADDR[10]
+    Ending point:                            CORESPI_0.USPI.UTXF.empty_out / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
-Instance / Net                                                                 Pin              Pin               Arrival     No. of    
-Name                                                               Type        Name             Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------------------------------------
-turret_servo_mss_design_0.MSS_ADLIB_INST                           MSS_APB     MSSPWDATA[0]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PWDATA[0]                                    Net         -                -       2.082     -           14        
-BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR3        C                In      -         2.082       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0                                  XOR3        Y                Out     0.985     3.067       -         
-N_367                                                              Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       B                In      -         3.874       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I31_Y          NOR2B       Y                Out     0.627     4.501       -         
-N223                                                               Net         -                -       1.279     -           5         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        A                In      -         5.781       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I64_Y_0_o3     MAJ3        Y                Out     0.408     6.189       -         
-N_19                                                               Net         -                -       1.184     -           4         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        A                In      -         7.372       -         
-BUS_INTERFACE_0.un4_pulseWidth1_0_40.ADD_12x12_fast_I83_Y_0        XOR2        Y                Out     0.488     7.861       -         
-ADD_12x12_fast_I83_Y_0                                             Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        B                In      -         8.247       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m12                              XO1A        Y                Out     0.791     9.037       -         
-N_50                                                               Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        B                In      -         9.844       -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m18                              AO1C        Y                Out     0.596     10.440      -         
-N_46                                                               Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        B                In      -         11.246      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m24                              AO1C        Y                Out     0.596     11.842      -         
-i14_mux                                                            Net         -                -       0.806     -           3         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR3A       A                In      -         12.649      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m30                              NOR3A       Y                Out     0.641     13.290      -         
-i18_mux                                                            Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       A                In      -         13.676      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m33                              NOR2A       Y                Out     0.627     14.303      -         
-i20_mux                                                            Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m36                              XNOR2       B                In      -         14.689      -         
-BUS_INTERFACE_0.un3_pulseWidth1_1.m36                              XNOR2       Y                Out     0.937     15.626      -         
-N_434                                                              Net         -                -       0.386     -           2         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[16]                              MX2         B                In      -         16.012      -         
-BUS_INTERFACE_0.pulseWidth1_RNO_0[16]                              MX2         Y                Out     0.586     16.597      -         
-N_249                                                              Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1_RNO[16]                                NOR2B       A                In      -         16.919      -         
-BUS_INTERFACE_0.pulseWidth1_RNO[16]                                NOR2B       Y                Out     0.488     17.407      -         
-pulseWidth1_RNO[16]                                                Net         -                -       0.322     -           1         
-BUS_INTERFACE_0.pulseWidth1[16]                                    DFN1        D                In      -         17.729      -         
-========================================================================================================================================
-Total path delay (propagation time + setup) of 18.267 is 8.311(45.5%) logic and 9.957(54.5%) route.
+Instance / Net                                                     Pin              Pin               Arrival     No. of    
+Name                                                   Type        Name             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+turret_servo_mss_design_0.MSS_ADLIB_INST               MSS_APB     MSSPADDR[10]     Out     0.000     0.000       -         
+turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[10]     Net         -                -       0.322     -           1         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        A                In      -         0.322       -         
+CoreAPB3_0.iPSELS_2[0]                                 NOR2        Y                Out     0.363     0.685       -         
+CoreAPB3_0_APBmslave0_PSELx_2                          Net         -                -       0.806     -           3         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       A                In      -         1.491       -         
+CoreAPB3_0.iPSELS_0_a2[2]                              NOR2B       Y                Out     0.514     2.006       -         
+N_53                                                   Net         -                -       1.423     -           6         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       B                In      -         3.429       -         
+CoreAPB3_0.iPSELS_0_a5[2]                              NOR3B       Y                Out     0.607     4.035       -         
+CoreAPB3_0_APBmslave2_PSELx                            Net         -                -       1.994     -           12        
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       B                In      -         6.029       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_sig16                NOR2B       Y                Out     0.627     6.656       -         
+tx_fifo_write_sig16                                    Net         -                -       1.776     -           11        
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       B                In      -         8.432       -         
+CORESPI_0.USPI.UCON.tx_fifo_last_0_a2_0                NOR3C       Y                Out     0.607     9.039       -         
+tx_fifo_last_0_a2_0                                    Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         C                In      -         9.425       -         
+CORESPI_0.USPI.UCON.tx_fifo_write_0_a2                 XA1         Y                Out     0.713     10.137      -         
+tx_fifo_write                                          Net         -                -       1.526     -           7         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       A                In      -         11.663      -         
+CORESPI_0.USPI.UTXF.full_out_RNI0FPI1_0                NOR3B       Y                Out     0.641     12.305      -         
+counter_d_0_sqmuxa_1_0                                 Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        B                In      -         13.111      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_1                AND2        Y                Out     0.627     13.738      -         
+DWACT_ADD_CI_0_TMP[0]                                  Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       A                In      -         14.124      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_27               NOR2B       Y                Out     0.514     14.639      -         
+DWACT_ADD_CI_0_g_array_1[0]                            Net         -                -       0.806     -           3         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       A                In      -         15.445      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_33               NOR2B       Y                Out     0.514     15.959      -         
+DWACT_ADD_CI_0_g_array_2[0]                            Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_21               XOR2        B                In      -         16.345      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_0.I_21               XOR2        Y                Out     0.937     17.282      -         
+un1_counter_q0[4]                                      Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_m[4]                 MX2         A                In      -         17.603      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m[4]                 MX2         Y                Out     0.568     18.172      -         
+un1_counter_q[4]                                       Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNITMEE[4]         NOR2B       A                In      -         18.493      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNITMEE[4]         NOR2B       Y                Out     0.488     18.982      -         
+counter_d[4]                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        B                In      -         19.367      -         
+CORESPI_0.USPI.UTXF.un1_counter_q_m_RNIAK4L4[4]        NOR2        Y                Out     0.514     19.882      -         
+full_out_2_3                                           Net         -                -       0.386     -           2         
+CORESPI_0.USPI.UTXF.empty_out_RNO                      NOR3B       B                In      -         20.267      -         
+CORESPI_0.USPI.UTXF.empty_out_RNO                      NOR3B       Y                Out     0.607     20.874      -         
+empty_out_2                                            Net         -                -       0.322     -           1         
+CORESPI_0.USPI.UTXF.empty_out                          DFN1P0      D                In      -         21.195      -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 21.769 is 9.416(43.3%) logic and 12.353(56.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -912,117 +1032,125 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 136MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 136MB peak: 142MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 136MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 136MB peak: 142MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
 Report for cell turret_servos.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2    44      1.0       44.0
+              AND2    66      1.0       66.0
              AND2A     3      1.0        3.0
               AND3   143      1.0      143.0
-               AO1    28      1.0       28.0
+               AO1    46      1.0       46.0
               AO17     1      1.0        1.0
-              AO1A    12      1.0       12.0
-              AO1B     1      1.0        1.0
-              AO1C    29      1.0       29.0
-              AO1D     2      1.0        2.0
-              AOI1    11      1.0       11.0
+              AO1A    22      1.0       22.0
+              AO1B    11      1.0       11.0
+              AO1C    33      1.0       33.0
+              AO1D     3      1.0        3.0
+              AOI1    13      1.0       13.0
              AOI1A     7      1.0        7.0
-             AOI1B    20      1.0       20.0
+             AOI1B    23      1.0       23.0
                AX1    20      1.0       20.0
-              AX1A     4      1.0        4.0
-              AX1B    12      1.0       12.0
-              AX1C    18      1.0       18.0
-              AX1D     3      1.0        3.0
+              AX1A     3      1.0        3.0
+              AX1B    13      1.0       13.0
+              AX1C    27      1.0       27.0
+              AX1D     5      1.0        5.0
+              AXO1     1      1.0        1.0
              AXOI4     1      1.0        1.0
              AXOI5     1      1.0        1.0
-              BUFF     2      1.0        2.0
-            CLKINT     1      0.0        0.0
-               GND    20      0.0        0.0
-               INV    35      1.0       35.0
-              MAJ3    10      1.0       10.0
+              BUFF     1      1.0        1.0
+            CLKINT     3      0.0        0.0
+               GND    28      0.0        0.0
+               INV    40      1.0       40.0
+              MAJ3     9      1.0        9.0
               MIN3     1      1.0        1.0
             MSSINT     1      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2    53      1.0       53.0
-              MX2A     2      1.0        2.0
-              MX2B    30      1.0       30.0
-              MX2C    16      1.0       16.0
-              NOR2    52      1.0       52.0
-             NOR2A    93      1.0       93.0
-             NOR2B   169      1.0      169.0
-              NOR3    29      1.0       29.0
-             NOR3A    52      1.0       52.0
-             NOR3B    38      1.0       38.0
-             NOR3C    98      1.0       98.0
-               OA1    18      1.0       18.0
-              OA1A    23      1.0       23.0
-              OA1B     5      1.0        5.0
-              OA1C     5      1.0        5.0
-              OAI1     1      1.0        1.0
-               OR2    32      1.0       32.0
-              OR2A    87      1.0       87.0
-              OR2B    34      1.0       34.0
-               OR3    20      1.0       20.0
-              OR3A     5      1.0        5.0
-              OR3B    13      1.0       13.0
-              OR3C     8      1.0        8.0
+               MX2   361      1.0      361.0
+              MX2A     7      1.0        7.0
+              MX2B    34      1.0       34.0
+              MX2C    28      1.0       28.0
+              NOR2    67      1.0       67.0
+             NOR2A   188      1.0      188.0
+             NOR2B   237      1.0      237.0
+              NOR3    32      1.0       32.0
+             NOR3A    54      1.0       54.0
+             NOR3B    65      1.0       65.0
+             NOR3C   149      1.0      149.0
+               OA1    32      1.0       32.0
+              OA1A    29      1.0       29.0
+              OA1B     4      1.0        4.0
+              OA1C    16      1.0       16.0
+              OAI1     3      1.0        3.0
+               OR2    52      1.0       52.0
+              OR2A    90      1.0       90.0
+              OR2B    23      1.0       23.0
+               OR3    41      1.0       41.0
+              OR3A     4      1.0        4.0
+              OR3B    16      1.0       16.0
+              OR3C    13      1.0       13.0
              RCOSC     1      0.0        0.0
-               VCC    20      0.0        0.0
-               XA1     1      1.0        1.0
-              XA1B     5      1.0        5.0
-              XA1C    11      1.0       11.0
+               VCC    28      0.0        0.0
+               XA1    30      1.0       30.0
+              XA1A     7      1.0        7.0
+              XA1B     6      1.0        6.0
+              XA1C    14      1.0       14.0
              XNOR2    68      1.0       68.0
-               XO1     2      1.0        2.0
-              XO1A     2      1.0        2.0
-              XOR2   114      1.0      114.0
-              XOR3    16      1.0       16.0
+             XNOR3     2      1.0        2.0
+               XO1     5      1.0        5.0
+              XO1A     5      1.0        5.0
+              XOR2   129      1.0      129.0
+              XOR3    15      1.0       15.0
+              ZOR3     1      1.0        1.0
 
 
           DFI1E0P0     1      1.0        1.0
-              DFN1   227      1.0      227.0
-            DFN1C0    35      1.0       35.0
-            DFN1E0    27      1.0       27.0
-          DFN1E0C0    18      1.0       18.0
+              DFN1   230      1.0      230.0
+            DFN1C0   149      1.0      149.0
+            DFN1C1     2      1.0        2.0
+            DFN1E0    23      1.0       23.0
+          DFN1E0C0    23      1.0       23.0
+          DFN1E0C1    32      1.0       32.0
           DFN1E0P0     2      1.0        2.0
-            DFN1E1    25      1.0       25.0
-          DFN1E1C0    66      1.0       66.0
-          DFN1E1P0     5      1.0        5.0
-            DFN1P0     4      1.0        4.0
+            DFN1E1   290      1.0      290.0
+          DFN1E1C0   155      1.0      155.0
+          DFN1E1C1    17      1.0       17.0
+          DFN1E1P0    27      1.0       27.0
+          DFN1E1P1     1      1.0        1.0
+            DFN1P0    21      1.0       21.0
           FIFO4K18     2      0.0        0.0
                    -----          ----------
-             TOTAL  1967              1920.0
+             TOTAL  3358              3293.0
 
 
   IO Cell usage:
               cell count
          BIBUF_MSS     2
-             INBUF     2
+             INBUF     5
          INBUF_MSS     4
-            OUTBUF    10
+            OUTBUF    12
         OUTBUF_MSS     2
        TRIBUFF_MSS     1
                    -----
-             TOTAL    21
+             TOTAL    26
 
 
-Core Cells         : 1920 of 4608 (42%)
-IO Cells           : 21
+Core Cells         : 3293 of 4608 (71%)
+IO Cells           : 26
 
   RAM/ROM Usage Summary
 Block Rams : 2 of 8 (25%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 136MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 35MB peak: 142MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Apr 16 17:34:28 2019
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Tue Apr 16 18:48:55 2019
 
 ###########################################################]

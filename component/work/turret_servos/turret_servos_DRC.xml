@@ -6,6 +6,48 @@
     <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
+    <detail>Floating output pin CORESPI_0:SPIINT</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CORESPI_0:SPIINT</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CORESPI_0:SPIRXAVAIL</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CORESPI_0:SPIRXAVAIL</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CORESPI_0:SPITXRFM</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CORESPI_0:SPITXRFM</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin CORESPI_0:SPISS[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CORESPI_0:SPISS</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CORESPI_0:SPIOEN</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CORESPI_0:SPIOEN</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CORESPI_0:SPIMODE</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CORESPI_0:SPIMODE</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.9\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
     <detail>Floating output pin CoreUARTapb_0:TXRDY</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/turret_servos/pins/CoreUARTapb_0:TXRDY</crossprobe>
   </drc>

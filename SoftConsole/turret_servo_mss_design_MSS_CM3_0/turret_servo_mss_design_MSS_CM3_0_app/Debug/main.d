@@ -11,7 +11,8 @@ main.d main.o: ../main.c \
  C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h \
  C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_uart/../../CMSIS/a2fxxxm3.h \
  C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h \
- C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\hal\CortexM3\GNU/cpu_types.h
+ C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\hal\CortexM3\GNU/cpu_types.h \
+ C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h
 
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_spi/drivers/mss_spi/mss_spi.h:
 
@@ -38,3 +39,5 @@ C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_d
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h:
 
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform\hal\CortexM3\GNU/cpu_types.h:
+
+C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole\turret_servo_mss_design_MSS_CM3_0\turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h:

@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\synthesis\\synwork\\turret_servos_comp.srs|-top|turret_servos|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\synthesis\\synwork\\turret_servos_comp.srs|-top|turret_servos|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
@@ -7,19 +7,26 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
 #CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\hdl\\busapb3.v":1555441050
 #CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1536348874
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\mss_tshell.v":1555450440
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\MSS_CCC_0\\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":1555450438
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\turret_servo_mss_design.v":1555450441
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Clock_gen.v":1555450453
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Rx_async.v":1555450453
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Tx_async.v":1555450453
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\fifo_256x8_smartfusion.v":1555450453
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\CoreUART.v":1555450453
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\CoreUARTapb.v":1555450453
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\mss_tshell.v":1555452410
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\MSS_CCC_0\\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v":1555452409
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servo_mss_design\\turret_servo_mss_design.v":1555452411
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Clock_gen.v":1555454916
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Rx_async.v":1555454916
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\Tx_async.v":1555454916
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\fifo_256x8_smartfusion.v":1555454916
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\CoreUART.v":1555454916
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\CoreUARTapb_0\\rtl\\vlog\\core\\CoreUARTapb.v":1555454916
 #CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1537483521
 #CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1537483521
 #CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3.v":1537483521
-#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\turret_servos.v":1555450454
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\spi_clockmux.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\spi_chanctrl.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\spi_control.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\spi_fifo.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\spi_rf.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\spi.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\Actel\\DirectCore\\CORESPI\\5.2.104\\rtl\\vlog\\core\\corespi.v":1544367044
+#CUR:"C:\\Users\\rpuyat\\Desktop\\ps2_turret_ir_integration\\component\\work\\turret_servos\\turret_servos.v":1555454916
 #numinternalfiles:5
 #defaultlanguage:verilog
 0			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\hdl\busapb3.v" verilog
@@ -36,7 +43,14 @@
 11			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" verilog
 12			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" verilog
 13			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" verilog
-14			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" verilog
+14			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v" verilog
+15			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v" verilog
+16			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v" verilog
+17			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v" verilog
+18			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v" verilog
+19			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v" verilog
+20			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v" verilog
+21			"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
@@ -52,23 +66,37 @@
 11 -1
 12 -1
 13 11 12
-14 0 13 10 4
+14 -1
+15 14
+16 -1
+17 -1
+18 -1
+19 18 16 17 15
+20 19
+21 0 13 20 10 4
 #Dependency Lists(Users Of)
-0 14
+0 21
 1 3 4
 2 4
 3 4
-4 14
+4 21
 5 9
 6 9
 7 9
 8 9
 9 10
-10 14
+10 21
 11 13
 12 13
-13 14
-14 -1
+13 21
+14 15
+15 19
+16 19
+17 19
+18 19
+19 20
+20 21
+21 -1
 #Design Unit to File Association
 module work pwmMotor 0
 module work pwm_IR 0
@@ -97,7 +125,14 @@ module work turret_servos_CoreUARTapb_0_fifo_256x8_pa3 8
 module work turret_servos_CoreUARTapb_0_fifo_256x8 8
 module work turret_servos_CoreUARTapb_0_COREUART 9
 module work turret_servos_CoreUARTapb_0_CoreUARTapb 10
-module work turret_servos 14
+module work turret_servos 21
 module COREAPB3_LIB COREAPB3_MUXPTOB3 11
 module COREAPB3_LIB coreapb3_iaddr_reg 12
 module COREAPB3_LIB CoreAPB3 13
+module CORESPI_LIB spi_clockmux 14
+module CORESPI_LIB spi_chanctrl 15
+module CORESPI_LIB spi_control 16
+module CORESPI_LIB spi_fifo 17
+module CORESPI_LIB spi_rf 18
+module CORESPI_LIB spi 19
+module CORESPI_LIB CORESPI 20

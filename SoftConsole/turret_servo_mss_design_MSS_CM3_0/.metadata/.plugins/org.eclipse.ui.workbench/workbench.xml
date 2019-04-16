@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="-40" y="16">
 <fastViewData fastViewLocation="1024"/>
@@ -34,22 +34,17 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_app/main.c" title="main.c" tooltip="turret_servo_mss_design_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_app/main.c" title="main.c" tooltip="turret_servo_mss_design_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/turret_servo_mss_design_MSS_CM3_0_app/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1669" selectionTopPixel="850"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4255" selectionTopPixel="2057"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_gpio.h" partName="mss_gpio.h" path="C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h" title="mss_gpio.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="26" selectionOffset="6948" selectionTopPixel="2754"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_timer.h" partName="mss_timer.h" path="C:/Users/waierdg/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h" title="mss_timer.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="11561" selectionTopPixel="2567"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_spi.h" partName="core_spi.h" path="C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h" title="core_spi.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="24328" selectionTopPixel="9197"/>
 </editor>
 </editors>
 <views>
@@ -86,6 +81,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -100,7 +96,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.debug.ui.DebugView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -288,7 +284,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.44936708" ratioLeft="355" ratioRight="435" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.45280612" ratioLeft="355" ratioRight="429" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
 <info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -323,153 +319,153 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_app/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_app/mytimer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_app/mytimer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/corespi_regs.h"/>
 </editors>
-<item historyLabel="mytimer.h" index="2">
-<position info="not_deleted" x="2070" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4257" y="0"/>
 </item>
-<item historyLabel="mytimer.c" index="1">
-<position info="not_deleted" x="704" y="0"/>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="21373" y="0"/>
 </item>
-<item historyLabel="mytimer.h" index="2">
-<position info="not_deleted" x="2070" y="0"/>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="21373" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1182" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="21373" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="716" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="21373" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5814" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24027" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24071" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24073" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1182" y="0"/>
+<position info="not_deleted" x="4257" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1193" y="0"/>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24073" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
 <position/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="716" y="0"/>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24073" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1182" y="0"/>
+<position info="not_deleted" x="956" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24073" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
+<position info="not_deleted" x="998" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24073" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4420" y="0"/>
+<position info="not_deleted" x="3189" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="879" y="0"/>
-</item>
-<item historyLabel="mss_timer.h" index="3">
-<position info="not_deleted" x="11561" y="18"/>
+<position info="not_deleted" x="2860" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="879" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="38379" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="906" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="864" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="852" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1152" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1182" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1193" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="237" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1193" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1629" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
+<item historyLabel="corespi_regs.h" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="248" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="38379" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
+</item>
+<item historyLabel="mss_gpio.h" index="1">
+<position info="not_deleted" x="6948" y="26"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1280" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24424" y="24"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
+<position info="not_deleted" x="3858" y="0"/>
+</item>
+<item historyLabel="core_spi.h" index="2">
+<position info="not_deleted" x="24328" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
+<position info="not_deleted" x="4259" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1280" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1280" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2495" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1280" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
 </item>
 <item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="1669" y="0"/>
+<position info="not_deleted" x="2860" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -488,8 +484,17 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mss_timer.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h">
-<persistable path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="corespi_regs.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/corespi_regs.h">
+<persistable path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/corespi_regs.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_spi.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h">
+<persistable path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreSPI/core_spi.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core_uart_apb.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h">
+<persistable path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/CoreUARTapb/core_uart_apb.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mss_spi.h" tooltip="turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_spi/drivers/mss_spi/mss_spi.h">
+<persistable path="/turret_servo_mss_design_MSS_CM3_0_hw_platform/drivers/mss_spi/drivers/mss_spi/mss_spi.h"/>
 </file>
 </mruList>
 </workbench>

@@ -2,7 +2,7 @@
 #define turret_servos_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Tue Apr 16 17:34:17 2019
+*Created by Microsemi SmartDesign  Tue Apr 16 18:48:41 2019
 *
 *Memory map specification for peripherals in turret_servos
 */
@@ -13,6 +13,7 @@
 *---------------------------------------------------------------------------*/
 #define BUS_INTERFACE_0                 0x40050000U
 #define COREUARTAPB_0                   0x40050100U
+#define CORESPI_0                       0x40050200U
 
 
 #endif /* turret_servos_HW_PLATFORM_H_*/

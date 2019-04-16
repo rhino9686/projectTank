@@ -2,7 +2,7 @@
 <device>
   <name>turret_servos</name>
   <version>1.0</version>
-  <description>CMSIS description for turret_servos.  Created by Microsemi SmartDesign on Tue Apr 16 17:34:17 2019</description>
+  <description>CMSIS description for turret_servos.  Created by Microsemi SmartDesign on Tue Apr 16 18:48:41 2019</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1857,6 +1857,10 @@
     <peripheral>
       <name>CoreUARTapb_0</name>
       <baseAddress>0x40050100</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>CORESPI_0</name>
+      <baseAddress>0x40050200</baseAddress>
     </peripheral>
     <peripheral>
       <name>FPGA_FABRIC_BACKDOOR</name>
