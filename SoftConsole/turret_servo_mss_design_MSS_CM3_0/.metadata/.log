@@ -1071,3 +1071,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:/Users/rpuyat/Des
 
 !ENTRY org.eclipse.core.resources 2 10035 2019-04-16 15:05:11.393
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2019-04-16 15:46:54.611 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/SoftConsole/turret_servo_mss_design_MSS_CM3_0
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-16 15:46:55.392
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

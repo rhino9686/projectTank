@@ -23,6 +23,7 @@ void changeSpeed( volatile uint32_t*, int );
 
 //int hits = 0;
 int can_hit = 1;
+int sound_done = 1;
 /*
 __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 {
@@ -46,6 +47,13 @@ void Timer1_IRQHandler( void ){
 	//MSS_TIM1_start();
 }
 
+void Timer2_IRQHandler( void ){
+	sound_done = 1;
+	MSS_TIM2_clear_irq();
+	MSS_TIM2_stop();
+	MSS_TIM2_disable_irq();
+}
+
 
 __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 {
@@ -54,8 +62,21 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		uint32_t hits = *hitsAddr;
 		hits++;
 		*hitsAddr++ = hits;
-		uint8_t tx_buff[3] = "#0\n";
+		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
+		uint8_t tx_buff[1] = "q";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
+		volatile int i = 0;
+		 while(i < 1000000)
+		 {
+			 ++i;
+		 }
+		uint8_t tx_buff2[3] = "#1\n";
+		UART_send(&g_uart,(const uint8_t *)&tx_buff2,sizeof(tx_buff2));	// play hit sound
+		//volatile int i = 0;
+				 //while(i < 1000000)
+				 	//	 {
+				 	//		 ++i;
+				 	//	 }
 
 		// MSS timer start
 		MSS_TIM1_init(1); // one shot
@@ -133,8 +154,8 @@ int main()
 
 		//UP/DOWN LOGIC
 		if (up == 0 && down) { //UP
-			if (udPos == 1200000){ // At max, stay
-				*udAddr = 1200000 / 1000;
+			if (udPos == 1000000){ // At max, stay
+				*udAddr = 1000000 / 1000;
 			} 
 			else {
 				udPos += 10000;
@@ -175,11 +196,19 @@ int main()
 		}
 
 		// Shoot
-		if (fire == 0 && can_hit){
+		if (fire == 0 /*&& can_hit*/){
 			*freqAddr = 56;
 			LED += 16;
-			uint8_t tx_buff[3] = "#1\n";
-			UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
+			if (sound_done) {
+				uint8_t tx_buff[3] = "#0\n";
+				UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
+				MSS_TIM2_init(1); // one shot
+				MSS_TIM2_load_immediate(140000000); // 1 seconds
+				MSS_TIM2_start();
+				MSS_TIM2_enable_irq();
+				sound_done = 0;
+			}
+
 		} else {
 			*freqAddr = 0; // Set back to 0 when done or not shooting
 		}

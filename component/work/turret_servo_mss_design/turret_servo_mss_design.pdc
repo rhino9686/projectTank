@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Fri Apr 12 18:55:26 2019 
+# Date generated: Tue Apr 16 17:33:54 2019 
 
 
 # 
@@ -37,28 +37,6 @@ define_group -name UART_1_PADs
 # 
 # Dedicated Peripheral I/O Settings
 # 
-
-# User Group SPI_1_PADs
-
-set_io SPI_1_CLK            \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION INOUT
-
-
-set_io SPI_1_DI             \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION INPUT
-
-
-set_io SPI_1_DO             \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION OUTPUT
-
-
-set_io SPI_1_SS             \
-    -GROUP_NAME SPI_1_PADs  \
-    -DIRECTION INOUT
-
 
 # User Group UART_0_PADs
 
@@ -107,9 +85,13 @@ set_io UART_1_TXD            \
 # set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io UART_0_RXD -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
 # set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
+# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
 # set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
 # set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
 # set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
 # set_io UART_0_RXD -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
 # set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
+# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 

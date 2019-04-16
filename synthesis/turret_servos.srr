@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: EECS373-09
 
-# Tue Apr 16 14:58:03 2019
+# Tue Apr 16 17:34:23 2019
 
 #Implementation: synthesis
 
@@ -36,7 +36,20 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" (library COREAPB3_LIB)
 @I::"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v changed - recompiling
 Selecting top level module turret_servos
 @W: CG775 :"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
 @N: CG364 :"C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\hdl\busapb3.v":207:7:207:14|Synthesizing module pwmMotor in library work.
@@ -386,7 +399,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 16 14:58:04 2019
+# Tue Apr 16 17:34:23 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -397,7 +410,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 16 14:58:04 2019
+# Tue Apr 16 17:34:23 2019
 
 ###########################################################]
 @END
@@ -407,22 +420,22 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 16 14:58:04 2019
+# Tue Apr 16 17:34:23 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
 @N|Running in 64-bit mode
-File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs changed - recompiling
+File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 16 14:58:05 2019
+# Tue Apr 16 17:34:25 2019
 
 ###########################################################]
-# Tue Apr 16 14:58:05 2019
+# Tue Apr 16 17:34:25 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -500,10 +513,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 115MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Apr 16 14:58:06 2019
+# Tue Apr 16 17:34:25 2019
 
 ###########################################################]
-# Tue Apr 16 14:58:06 2019
+# Tue Apr 16 17:34:25 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -585,22 +598,22 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 120MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 122MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 122MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 122MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 127MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 127MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 127MB peak: 127MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 136MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 136MB)
 
 
 High Fanout Net Report
@@ -618,7 +631,7 @@ BUS_INTERFACE_0.HIT_INT4 / Y                                                 28
 
 @N: FP130 |Promoting Net turret_servo_mss_design_0_M2F_RESET_N on CLKINT  I_80 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 135MB peak: 136MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 135MB peak: 136MB)
 
 Replicating Combinational Instance BUS_INTERFACE_0.HIT_INT4, fanout 28 segments 2
 Buffering hit_data_c, fanout 29 segments 2
@@ -676,7 +689,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Apr 16 14:58:08 2019
+# Timing Report written on Tue Apr 16 17:34:28 2019
 #
 
 
@@ -1528,6 +1541,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 136MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Apr 16 14:58:08 2019
+# Tue Apr 16 17:34:28 2019
 
 ###########################################################]

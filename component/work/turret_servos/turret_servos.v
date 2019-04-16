@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Apr 15 19:32:30 2019
+// Created by SmartDesign Tue Apr 16 17:34:14 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -106,8 +106,8 @@ wire          PWM_motor1_net_1;
 wire          PWM_motor2_net_1;
 wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
-wire   [3:0]  MOTOR_net_1;
 wire          TX_net_1;
+wire   [3:0]  MOTOR_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -132,16 +132,16 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_0_4to0;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_0;
-wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
+wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
+wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave1_PRDATA_0;
-wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:20]turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] turret_servo_mss_design_0_MSS_MASTER_APB_PADDR_0;
@@ -186,10 +186,10 @@ assign UART_0_TXD_net_1 = UART_0_TXD_net_0;
 assign UART_0_TXD       = UART_0_TXD_net_1;
 assign UART_1_TXD_net_1 = UART_1_TXD_net_0;
 assign UART_1_TXD       = UART_1_TXD_net_1;
-assign MOTOR_net_1      = MOTOR_net_0;
-assign MOTOR[3:0]       = MOTOR_net_1;
 assign TX_net_1         = TX_net_0;
 assign TX               = TX_net_1;
+assign MOTOR_net_1      = MOTOR_net_0;
+assign MOTOR[3:0]       = MOTOR_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -378,14 +378,13 @@ CoreUARTapb_0(
         // Inputs
         .PCLK        ( turret_servo_mss_design_0_FAB_CLK ),
         .PRESETN     ( turret_servo_mss_design_0_M2F_RESET_N ),
-        .PADDR       ( CoreAPB3_0_APBmslave0_PADDR_0 ),
         .PSEL        ( CoreAPB3_0_APBmslave1_PSELx ),
         .PENABLE     ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PWRITE      ( CoreAPB3_0_APBmslave0_PWRITE ),
-        .PWDATA      ( CoreAPB3_0_APBmslave0_PWDATA_0 ),
         .RX          ( RX ),
+        .PADDR       ( CoreAPB3_0_APBmslave0_PADDR_0 ),
+        .PWDATA      ( CoreAPB3_0_APBmslave0_PWDATA_0 ),
         // Outputs
-        .PRDATA      ( CoreAPB3_0_APBmslave1_PRDATA ),
         .TXRDY       (  ),
         .RXRDY       (  ),
         .PARITY_ERR  (  ),
@@ -393,7 +392,8 @@ CoreUARTapb_0(
         .TX          ( TX_net_0 ),
         .PREADY      ( CoreAPB3_0_APBmslave1_PREADY ),
         .PSLVERR     ( CoreAPB3_0_APBmslave1_PSLVERR ),
-        .FRAMING_ERR (  ) 
+        .FRAMING_ERR (  ),
+        .PRDATA      ( CoreAPB3_0_APBmslave1_PRDATA ) 
         );
 
 //--------turret_servo_mss_design

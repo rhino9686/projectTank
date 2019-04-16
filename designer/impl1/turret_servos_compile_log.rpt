@@ -12,13 +12,13 @@ Opened an existing Libero design turret_servos.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
 
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
 
-The Import command succeeded ( 00:00:01 )
+The Import command succeeded ( 00:00:02 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -578,6 +578,6 @@ The Report command succeeded ( 00:00:01 )
 Design saved to file
 C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb.
 
-The Execute Script command succeeded ( 00:00:06 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 
