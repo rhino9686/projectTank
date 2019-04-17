@@ -30,7 +30,9 @@ spi_instance_t g_spi_led; // LED SPI
 
 void setupSPI(void);
 void changeSpeed( volatile uint32_t*, int );
-
+void greenLED(void);
+void redLED(void);
+void blueLED(void);
 //int hits = 0;
 int can_hit = 1;
 int sound_done = 1;
@@ -75,6 +77,12 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
 		uint8_t tx_buff[1] = "q";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
+		redLED(); //START LED
+		volatile int j = 0;
+		while(j < 10000) {
+		    ++j;
+		}
+		greenLED(); //END LED
 		volatile int i = 0;
 		 while(i < 1000000)
 		 {
@@ -116,23 +124,7 @@ int main()
 	UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY)); // endable sound board UART
 
 	// SPI for LED
-	/*
-	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
-	SPI_configure_master_mode(&g_spi_led);
-	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
-	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
-	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
-
-	master_tx_frame_led = R;
-	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
-	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
-	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
-
-	master_tx_frame_led = end;
-	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
-	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
-	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
-*/
+    greenLED(); //Initialize to greenLED
 	// end SPI LED
 
 
@@ -394,4 +386,91 @@ void changeSpeed( volatile uint32_t* speedPtr, int speed ){
 	*speedPtr = speed;
 
 	return;
+}
+
+void greenLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void redLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void blueLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
 }
