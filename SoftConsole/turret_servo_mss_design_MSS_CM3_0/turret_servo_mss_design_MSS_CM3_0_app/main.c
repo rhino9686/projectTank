@@ -55,6 +55,7 @@ void Timer1_IRQHandler( void ){
 	MSS_TIM1_clear_irq();
 	MSS_TIM1_stop();
 	MSS_TIM1_disable_irq();
+	greenLED();
 	//MSS_TIM1_load_immediate(root->time);
 	//MSS_TIM1_start();
 }
@@ -77,17 +78,18 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
 		uint8_t tx_buff[1] = "q";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
-		redLED(); //START LED
+
 		volatile int j = 0;
 		while(j < 10000) {
 		    ++j;
 		}
-		greenLED(); //END LED
-		volatile int i = 0;
+		redLED(); //START LED
+		//greenLED(); //END LED
+		/*volatile int i = 0;
 		 while(i < 1000000)
 		 {
 			 ++i;
-		 }
+		 } */
 		uint8_t tx_buff2[3] = "#1\n";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff2,sizeof(tx_buff2));	// play hit sound
 		//volatile int i = 0;
@@ -117,7 +119,6 @@ int main()
 	volatile uint32_t * motorAddr = (volatile uint32_t *) 0x40050034; // motor
 	volatile uint32_t * pulsewidthAddr = (volatile uint32_t *) 0x40050038; // pulse width motor
 
-	uint32_t master_tx_frame_led = start;
 	uint32_t joyVals = 0; // values from joysticks
 	*hitsAddr = 0;
 
