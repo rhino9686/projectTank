@@ -667,8 +667,8 @@ SIZE="2942464"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.fdb,fdb"
 STATE="utd"
-TIME="1555531361"
-SIZE="99193"
+TIME="1555540941"
+SIZE="99197"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.ide_des,ide_des"
 STATE="utd"
@@ -697,17 +697,17 @@ SIZE="2469"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1555531361"
-SIZE="2720"
+TIME="1555540925"
+SIZE="2759"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1555531361"
+TIME="1555540942"
 SIZE="746"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1555531361"
+TIME="1555540931"
 SIZE="1217"
 ENDFILE
 VALUE "<project>\hdl\busapb3.v,hdl"
@@ -1125,8 +1125,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1222,8 +1222,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:turret_servos_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;turret_servos;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

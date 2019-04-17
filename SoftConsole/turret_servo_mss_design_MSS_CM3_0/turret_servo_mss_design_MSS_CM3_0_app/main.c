@@ -80,23 +80,12 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
 
 		volatile int j = 0;
-		while(j < 10000) {
+		while(j < 1000000) {
 		    ++j;
 		}
 		redLED(); //START LED
-		//greenLED(); //END LED
-		/*volatile int i = 0;
-		 while(i < 1000000)
-		 {
-			 ++i;
-		 } */
 		uint8_t tx_buff2[3] = "#1\n";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff2,sizeof(tx_buff2));	// play hit sound
-		//volatile int i = 0;
-				 //while(i < 1000000)
-				 	//	 {
-				 	//		 ++i;
-				 	//	 }
 
 		// MSS timer start
 		MSS_TIM1_init(1); // one shot
@@ -176,7 +165,7 @@ int main()
 		int right = (master_rx_buffer[1] & (1 << 7)) != 0;
 		int fire = (master_rx_buffer[1] & (1 << 1)) != 0;
 
-		uint32_t LED = 0;
+		//uint32_t LED = 0;
 
 		//UP/DOWN LOGIC
 		if (up == 0 && down) { //UP
@@ -187,7 +176,7 @@ int main()
 				udPos += 10000;
 				*udAddr = udPos / 1000; // Divide by 1000 for smoother turning
 			}
-			LED += 1;
+			//LED += 1;
 		} 
 		else if (down == 0 && up) { // down
 			if (udPos == 800000){ // At min, stay
@@ -197,7 +186,6 @@ int main()
 				udPos -= 10000;
 				*udAddr = udPos / 1000;
 			}
-			LED += 2;
 		}
 		// LEFT/RIGHT
 		if (left == 0 && right) { //LEFT
@@ -208,7 +196,6 @@ int main()
 				rlPos -= 10000;
 				*rlAddr = rlPos / 1000;
 			}
-			LED += 4;
 		} 
 		else if (right == 0 && left) { //RIGHT
 			if (rlPos == 1800000){ // At max, stay
@@ -218,18 +205,16 @@ int main()
 				rlPos += 10000;
 				*rlAddr = rlPos / 1000; // Divide by 1000 for smoother turning
 			}
-			LED += 8;
 		}
 
 		// Shoot
-		if (fire == 0 /*&& can_hit*/){
+		if (fire == 0){
 			*freqAddr = 56;
-			LED += 16;
 			if (sound_done) {
 				uint8_t tx_buff[3] = "#0\n";
 				UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
 				MSS_TIM2_init(1); // one shot
-				MSS_TIM2_load_immediate(140000000); // 1 seconds
+				MSS_TIM2_load_immediate(140000000); // 1.4 seconds
 				MSS_TIM2_start();
 				MSS_TIM2_enable_irq();
 				sound_done = 0;
@@ -274,7 +259,6 @@ int main()
 		*motorAddr = joyVals;
 
 		changeSpeed(pulsewidthAddr, 45000); //change this number to fix pwm
-		if(right_y || left_y) {}
 		volatile int i = 0;
 		while (i < 100000)
 		{

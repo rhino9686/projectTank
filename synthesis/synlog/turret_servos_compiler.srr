@@ -38,7 +38,28 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v" (library CORESPI_LIB)
 @I::"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\hdl\busapb3.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v changed - recompiling
 Selecting top level module turret_servos
 @W: CG775 :"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
 @W: CG775 :"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v":27:0:27:6|Found Component CORESPI in library CORESPI_LIB
@@ -509,7 +530,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -520,7 +541,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 ###########################################################]
 @END
@@ -530,6 +551,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 ###########################################################]

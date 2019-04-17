@@ -12,14 +12,14 @@ Opened an existing Libero design turret_servos.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\celinesc\Desktop\ps2_turret_ir_integration\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
 
 C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.\
 pdc
 
-The Import command succeeded ( 00:00:03 )
+The Import command succeeded ( 00:00:02 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -497,8 +497,8 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :  14 ( 82.35% )
-    Placed  :   3 ( 17.65% )
+    Locked  :  13 ( 76.47% )
+    Placed  :   4 ( 23.53% )
     UnPlaced:   0
 
 Warning: Only some I/Os are locked
@@ -580,13 +580,13 @@ Nets that are candidates for clock assignment and the resulting fanout:
     22      INT_NET       Net   : CORESPI_0/USPI/UCC/clock_rx_fe
                           Driver: CORESPI_0/USPI/UCC/clock_rx_q3_RNI3249
 
-The Compile command succeeded ( 00:00:01 )
+The Compile command succeeded ( 00:00:02 )
 Wrote status report to file: turret_servos_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: turret_servos_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: turret_servos_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )

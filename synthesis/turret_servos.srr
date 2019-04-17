@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: EECS373-08
 
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 #Implementation: synthesis
 
@@ -47,7 +47,28 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v" (library CORESPI_LIB)
 @I::"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\hdl\busapb3.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v changed - recompiling
 Selecting top level module turret_servos
 @W: CG775 :"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
 @W: CG775 :"C:\Users\celinesc\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v":27:0:27:6|Found Component CORESPI in library CORESPI_LIB
@@ -518,7 +539,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -529,7 +550,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 ###########################################################]
 @END
@@ -539,22 +560,22 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:32 2019
+# Wed Apr 17 18:40:48 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
 @N|Running in 64-bit mode
-File C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs changed - recompiling
+File C:\Users\celinesc\Desktop\ps2_turret_ir_integration\synthesis\synwork\turret_servos_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 74MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 17 11:33:34 2019
+# Wed Apr 17 18:40:50 2019
 
 ###########################################################]
-# Wed Apr 17 11:33:34 2019
+# Wed Apr 17 18:40:50 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -646,10 +667,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 117MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr 17 11:33:34 2019
+# Wed Apr 17 18:40:50 2019
 
 ###########################################################]
-# Wed Apr 17 11:33:34 2019
+# Wed Apr 17 18:40:50 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -754,7 +775,7 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 128MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 128MB peak: 134MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 128MB peak: 134MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 129MB peak: 134MB)
@@ -808,7 +829,7 @@ CORESPI_0.USPI.URXF.m20 / Y                                                  35
 @N: FP130 |Promoting Net CORESPI_0.USPI.URXF.rd_pointer_q[0] on CLKINT  I_100 
 @N: FP130 |Promoting Net CORESPI_0.USPI.UTXF.rd_pointer_q[0] on CLKINT  I_101 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 140MB peak: 142MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 140MB peak: 142MB)
 
 Replicating Combinational Instance CORESPI_0.USPI.URXF.m20, fanout 35 segments 2
 Replicating Combinational Instance CORESPI_0.USPI.URXF.m21, fanout 33 segments 2
@@ -882,7 +903,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Apr 17 11:33:39 2019
+# Timing Report written on Wed Apr 17 18:40:55 2019
 #
 
 
@@ -1802,6 +1823,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 35MB peak: 142MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Wed Apr 17 11:33:39 2019
+# Wed Apr 17 18:40:55 2019
 
 ###########################################################]

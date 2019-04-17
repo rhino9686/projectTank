@@ -8,7 +8,8 @@ PDB file
 vos.pdb' has been loaded successfully.
 DESIGN : turret_servos;  CHECKSUM : 630E;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
-programmer '78936' : FlashPro3
+programmer '78882' : FlashPro3
+Warning: The programmer with id '78936' in the project file cannot be detected and connected.
 Opened
 'C:\Users\celinesc\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_ser\
 vos.pro'
@@ -27,22 +28,22 @@ vos.pdb' has been loaded successfully.
 DESIGN : turret_servos;  CHECKSUM : 630E;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '78936' : Scan Chain...
-Warning: programmer '78936' : Vpump has been selected on programmer AND an externally provided
+programmer '78882' : Scan Chain...
+Warning: programmer '78882' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '78936' : Scan Chain PASSED.
-programmer '78936' : Executing action PROGRAM
-programmer '78936' : EXPORT FSN[48] = 014b3e606c4c
-programmer '78936' : Erase ...
-programmer '78936' : Completed erase
-programmer '78936' : EXPORT CHECKSUM[16] = 630e
-programmer '78936' : Programming FPGA Array
-programmer '78936' : Verifying FPGA Array
-programmer '78936' :         Verifying FPGA Array -- pass
-programmer '78936' : Program System Init and Boot Clients...
-programmer '78936' : Verify System Init and Boot Clients...
-programmer '78936' : Finished: Wed Apr 17 15:13:02 2019 (Elapsed time 00:00:34)
-programmer '78936' : Executing action PROGRAM PASSED.
+programmer '78882' : Scan Chain PASSED.
+programmer '78882' : Executing action PROGRAM
+programmer '78882' : EXPORT FSN[48] = 014b3e603088
+programmer '78882' : Erase ...
+programmer '78882' : Completed erase
+programmer '78882' : EXPORT CHECKSUM[16] = 630e
+programmer '78882' : Programming FPGA Array
+programmer '78882' : Verifying FPGA Array
+programmer '78882' :         Verifying FPGA Array -- pass
+programmer '78882' : Program System Init and Boot Clients...
+programmer '78882' : Verify System Init and Boot Clients...
+programmer '78882' : Finished: Wed Apr 17 18:44:29 2019 (Elapsed time 00:00:34)
+programmer '78882' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 

@@ -13,13 +13,13 @@ Opened an existing Libero design turret_servos.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: turret_servos_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:04 )
+The Report command succeeded ( 00:00:03 )
 Wrote timing report to file: turret_servos_mindelay_timing_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote timing_violations report to file: turret_servos_maxdelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote timing_violations report to file: turret_servos_mindelay_timingviolations_report.txt
 
 The Report command succeeded ( 00:00:00 )
