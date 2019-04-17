@@ -116,6 +116,7 @@ int main()
 	UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY)); // endable sound board UART
 
 	// SPI for LED
+	/*
 	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
 	SPI_configure_master_mode(&g_spi_led);
 	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
@@ -131,7 +132,7 @@ int main()
 	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
 	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
 	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
-
+*/
 	// end SPI LED
 
 
@@ -196,8 +197,8 @@ int main()
 			LED += 1;
 		} 
 		else if (down == 0 && up) { // down
-			if (udPos == 600000){ // At min, stay
-				*udAddr = 600000 / 1000;
+			if (udPos == 800000){ // At min, stay
+				*udAddr = 800000 / 1000;
 			} 
 			else {
 				udPos -= 10000;
