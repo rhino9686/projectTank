@@ -21,6 +21,8 @@
 #define R 0b11111111000000000000000011111111
 #define B 0b11111111000000001111111100000000
 #define G 0b11111111111111110000000000000000
+#define Y 0b11111111111111110000000011111111
+
 
 
 uint8_t master_tx_buffer[MASTER_TX_BUFFER];
@@ -33,7 +35,9 @@ void changeSpeed( volatile uint32_t*, int );
 void greenLED(void);
 void redLED(void);
 void blueLED(void);
-//int hits = 0;
+void yellowLED(void);
+uint32_t hits = 0;
+const uint32_t DAMAGED_THRESH = 3;
 int can_hit = 1;
 int sound_done = 1;
 /*
@@ -55,7 +59,12 @@ void Timer1_IRQHandler( void ){
 	MSS_TIM1_clear_irq();
 	MSS_TIM1_stop();
 	MSS_TIM1_disable_irq();
-	greenLED();
+	if (hits > DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
+		yellowLED();
+	} else {
+		greenLED();
+	}
+
 	//MSS_TIM1_load_immediate(root->time);
 	//MSS_TIM1_start();
 }
@@ -72,9 +81,9 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 {
 	if (can_hit){
 		volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
-		uint32_t hits = *hitsAddr;
+		hits = *hitsAddr;
 		hits++;
-		*hitsAddr++ = hits;
+		*hitsAddr = hits;
 		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
 		uint8_t tx_buff[1] = "q";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
@@ -89,7 +98,7 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 
 		// MSS timer start
 		MSS_TIM1_init(1); // one shot
-		MSS_TIM1_load_immediate(500000000); // 5 seconds
+		MSS_TIM1_load_immediate(300000000); // 3 seconds
 		MSS_TIM1_start();
 		MSS_TIM1_enable_irq();
 		can_hit = 0; // Prevent from going in additional times
@@ -258,7 +267,7 @@ int main()
 		}
 		*motorAddr = joyVals;
 
-		changeSpeed(pulsewidthAddr, 45000); //change this number to fix pwm
+		changeSpeed(pulsewidthAddr, 90000); //change this number to fix pwm
 		volatile int i = 0;
 		while (i < 100000)
 		{
@@ -451,6 +460,35 @@ void blueLED(void) {
 	master_tx_frame_led = B;
 	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
 	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void yellowLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
 	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
 	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
 

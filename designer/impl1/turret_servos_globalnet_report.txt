@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-Date: Wed Apr 17 18:42:03 2019
+Date: Thu Apr 18 15:56:27 2019
 Design Name: turret_servos  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -24,7 +24,7 @@ Global Nets Information:
         |----------------------------------------------------------------------|
         |CORESPI_0/USPI/UTXF/rd_pointer_q[0]  |       69 |        0 |        0 |
         |----------------------------------------------------------------------|
-        |FAB_CLK                              |      972 |        0 |       64 |
+        |FAB_CLK                              |      973 |        0 |       64 |
         |----------------------------------------------------------------------|
         |turret_servo_mss_design_0_M2F_RESET_N|      421 |        0 |       64 |
         |----------------------------------------------------------------------|

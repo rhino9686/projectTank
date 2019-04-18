@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr 16 18:48:36 2019
+// Created by SmartDesign Thu Apr 18 15:54:42 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -20,7 +20,6 @@ module turret_servos(
     // Outputs
     MOTOR,
     PWM_motor1,
-    PWM_motor2,
     SPISCLKO,
     SPISDO,
     SPI_1_DO,
@@ -52,7 +51,6 @@ input        hit_data;
 //--------------------------------------------------------------------
 output [3:0] MOTOR;
 output       PWM_motor1;
-output       PWM_motor2;
 output       SPISCLKO;
 output       SPISDO;
 output       SPI_1_DO;
@@ -70,7 +68,7 @@ inout        SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire          BUS_INTERFACE_0_FABINT;
+wire          BUS_INTERFACE_0_FABINT_0;
 wire          BUS_INTERFACE_0_HIT_INT;
 wire          CoreAPB3_0_APBmslave0_PENABLE;
 wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
@@ -85,11 +83,11 @@ wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA;
 wire          CoreAPB3_0_APBmslave2_PREADY;
 wire          CoreAPB3_0_APBmslave2_PSELx;
 wire          CoreAPB3_0_APBmslave2_PSLVERR;
+wire          CoreAPB3_0_APBmslave3_0_PSELx;
 wire          hit_data;
 wire   [3:0]  MOTOR_net_0;
 wire          MSS_RESET_N;
 wire          PWM_motor1_net_0;
-wire          PWM_motor2_net_0;
 wire          pwm_out1_net_0;
 wire          pwm_out2_net_0;
 wire          pwm_out_IR_net_0;
@@ -102,6 +100,7 @@ wire          SPICLKI;
 wire          SPISCLKO_net_0;
 wire          SPISDI;
 wire          SPISDO_net_0;
+wire   [7:0]  SPISS;
 wire          SPISSI;
 wire          turret_servo_mss_design_0_FAB_CLK;
 wire          turret_servo_mss_design_0_M2F_RESET_N;
@@ -122,13 +121,12 @@ wire          pwm_out2_net_1;
 wire          SPI_1_DO_net_1;
 wire          pwm_out_IR_net_1;
 wire          PWM_motor1_net_1;
-wire          PWM_motor2_net_1;
 wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
 wire          TX_net_1;
-wire   [3:0]  MOTOR_net_1;
 wire          SPISDO_net_1;
 wire          SPISCLKO_net_1;
+wire   [3:0]  MOTOR_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -152,14 +150,14 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [6:0]  CoreAPB3_0_APBmslave0_PADDR_1_6to0;
+wire   [6:0]  CoreAPB3_0_APBmslave0_PADDR_1;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_0_4to0;
 wire   [4:0]  CoreAPB3_0_APBmslave0_PADDR_0;
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
-wire   [6:0]  CoreAPB3_0_APBmslave0_PADDR_1_6to0;
-wire   [6:0]  CoreAPB3_0_APBmslave0_PADDR_1;
+wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PWDATA_0;
-wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
@@ -201,27 +199,25 @@ assign pwm_out_IR_net_1 = pwm_out_IR_net_0;
 assign pwm_out_IR       = pwm_out_IR_net_1;
 assign PWM_motor1_net_1 = PWM_motor1_net_0;
 assign PWM_motor1       = PWM_motor1_net_1;
-assign PWM_motor2_net_1 = PWM_motor2_net_0;
-assign PWM_motor2       = PWM_motor2_net_1;
 assign UART_0_TXD_net_1 = UART_0_TXD_net_0;
 assign UART_0_TXD       = UART_0_TXD_net_1;
 assign UART_1_TXD_net_1 = UART_1_TXD_net_0;
 assign UART_1_TXD       = UART_1_TXD_net_1;
 assign TX_net_1         = TX_net_0;
 assign TX               = TX_net_1;
-assign MOTOR_net_1      = MOTOR_net_0;
-assign MOTOR[3:0]       = MOTOR_net_1;
 assign SPISDO_net_1     = SPISDO_net_0;
 assign SPISDO           = SPISDO_net_1;
 assign SPISCLKO_net_1   = SPISCLKO_net_0;
 assign SPISCLKO         = SPISCLKO_net_1;
+assign MOTOR_net_1      = MOTOR_net_0;
+assign MOTOR[3:0]       = MOTOR_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
-assign CoreAPB3_0_APBmslave0_PADDR_0_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
-assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_4to0 };
 assign CoreAPB3_0_APBmslave0_PADDR_1_6to0 = CoreAPB3_0_APBmslave0_PADDR[6:0];
 assign CoreAPB3_0_APBmslave0_PADDR_1 = { CoreAPB3_0_APBmslave0_PADDR_1_6to0 };
+assign CoreAPB3_0_APBmslave0_PADDR_0_4to0 = CoreAPB3_0_APBmslave0_PADDR[4:0];
+assign CoreAPB3_0_APBmslave0_PADDR_0 = { CoreAPB3_0_APBmslave0_PADDR_0_4to0 };
 
 assign CoreAPB3_0_APBmslave0_PWDATA_0_7to0 = CoreAPB3_0_APBmslave0_PWDATA[7:0];
 assign CoreAPB3_0_APBmslave0_PWDATA_0 = { CoreAPB3_0_APBmslave0_PWDATA_0_7to0 };
@@ -245,21 +241,20 @@ BUS_INTERFACE BUS_INTERFACE_0(
         .PSEL       ( CoreAPB3_0_APBmslave0_PSELx ),
         .PENABLE    ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PWRITE     ( CoreAPB3_0_APBmslave0_PWRITE ),
-        .hit_data   ( hit_data ),
         .PADDR      ( CoreAPB3_0_APBmslave0_PADDR ),
         .PWDATA     ( CoreAPB3_0_APBmslave0_PWDATA ),
+        .hit_data   ( hit_data ),
         // Outputs
         .PREADY     ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR    ( CoreAPB3_0_APBmslave0_PSLVERR ),
+        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ),
         .pwm_out_IR ( pwm_out_IR_net_0 ),
         .pwm_out1   ( pwm_out1_net_0 ),
         .pwm_out2   ( pwm_out2_net_0 ),
-        .FABINT     ( BUS_INTERFACE_0_FABINT ),
+        .FABINT     ( BUS_INTERFACE_0_FABINT_0 ),
         .HIT_INT    ( BUS_INTERFACE_0_HIT_INT ),
-        .PWM_motor1 ( PWM_motor1_net_0 ),
-        .PWM_motor2 ( PWM_motor2_net_0 ),
-        .PRDATA     ( CoreAPB3_0_APBmslave0_PRDATA ),
-        .MOTOR      ( MOTOR_net_0 ) 
+        .MOTOR      ( MOTOR_net_0 ),
+        .PWM_motor1 ( PWM_motor1_net_0 ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100
@@ -268,7 +263,7 @@ CoreAPB3 #(
         .APBSLOT0ENABLE  ( 1 ),
         .APBSLOT1ENABLE  ( 1 ),
         .APBSLOT2ENABLE  ( 1 ),
-        .APBSLOT3ENABLE  ( 0 ),
+        .APBSLOT3ENABLE  ( 1 ),
         .APBSLOT4ENABLE  ( 0 ),
         .APBSLOT5ENABLE  ( 0 ),
         .APBSLOT6ENABLE  ( 0 ),
@@ -370,7 +365,7 @@ CoreAPB3_0(
         .PSELS0     ( CoreAPB3_0_APBmslave0_PSELx ),
         .PSELS1     ( CoreAPB3_0_APBmslave1_PSELx ),
         .PSELS2     ( CoreAPB3_0_APBmslave2_PSELx ),
-        .PSELS3     (  ),
+        .PSELS3     ( CoreAPB3_0_APBmslave3_0_PSELx ),
         .PSELS4     (  ),
         .PSELS5     (  ),
         .PSELS6     (  ),
@@ -406,26 +401,26 @@ CORESPI_0(
         // Inputs
         .PCLK       ( turret_servo_mss_design_0_FAB_CLK ),
         .PRESETN    ( turret_servo_mss_design_0_M2F_RESET_N ),
-        .PADDR      ( CoreAPB3_0_APBmslave0_PADDR_1 ),
         .PSEL       ( CoreAPB3_0_APBmslave2_PSELx ),
         .PENABLE    ( CoreAPB3_0_APBmslave0_PENABLE ),
         .PWRITE     ( CoreAPB3_0_APBmslave0_PWRITE ),
-        .PWDATA     ( CoreAPB3_0_APBmslave0_PWDATA ),
         .SPISSI     ( SPISSI ),
         .SPISDI     ( SPISDI ),
         .SPICLKI    ( SPICLKI ),
+        .PADDR      ( CoreAPB3_0_APBmslave0_PADDR_1 ),
+        .PWDATA     ( CoreAPB3_0_APBmslave0_PWDATA ),
         // Outputs
-        .PRDATA     ( CoreAPB3_0_APBmslave2_PRDATA ),
         .PREADY     ( CoreAPB3_0_APBmslave2_PREADY ),
         .PSLVERR    ( CoreAPB3_0_APBmslave2_PSLVERR ),
         .SPIINT     (  ),
         .SPIRXAVAIL (  ),
         .SPITXRFM   (  ),
-        .SPISS      (  ),
         .SPISCLKO   ( SPISCLKO_net_0 ),
         .SPIOEN     (  ),
         .SPISDO     ( SPISDO_net_0 ),
-        .SPIMODE    (  ) 
+        .SPIMODE    (  ),
+        .PRDATA     ( CoreAPB3_0_APBmslave2_PRDATA ),
+        .SPISS      ( SPISS ) 
         );
 
 //--------turret_servos_CoreUARTapb_0_CoreUARTapb   -   Actel:DirectCore:CoreUARTapb:5.6.102
@@ -469,11 +464,11 @@ turret_servo_mss_design turret_servo_mss_design_0(
         .MSSPREADY   ( turret_servo_mss_design_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( turret_servo_mss_design_0_MSS_MASTER_APB_PSLVERR ),
         .SPI_1_DI    ( SPI_1_DI ),
-        .FABINT      ( BUS_INTERFACE_0_FABINT ),
         .F2M_GPI_0   ( BUS_INTERFACE_0_HIT_INT ),
         .UART_0_RXD  ( UART_0_RXD ),
         .UART_1_RXD  ( UART_1_RXD ),
         .MSSPRDATA   ( turret_servo_mss_design_0_MSS_MASTER_APB_PRDATA ),
+        .FABINT      ( BUS_INTERFACE_0_FABINT_0 ),
         // Outputs
         .FAB_CLK     ( turret_servo_mss_design_0_FAB_CLK ),
         .MSSPSEL     ( turret_servo_mss_design_0_MSS_MASTER_APB_PSELx ),

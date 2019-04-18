@@ -11,44 +11,44 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
-    <state>GENERATED ( Tue Apr 16 18:48:41 2019 )</state>
-    <swide-toolchain>SoftConsole workspace generated to C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
+    <location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servos</location>
+    <state>GENERATED ( Thu Apr 18 15:54:47 2019 )</state>
+    <swide-toolchain>SoftConsole workspace generated to C:\Users\waierdg\Desktop\ps2_turret_ir_integration\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v</file>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\hdl\busapb3.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Clock_gen.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUART.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\fifo_256x8_smartfusion.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Rx_async.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\Tx_async.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\MSS_CCC_0\turret_servo_mss_design_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\mss_tshell.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\turret_servo_mss_design.v</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\hdl\busapb3.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>C:\Users\rpuyat\Desktop\ps2_turret_ir_integration\component\work\C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
-    <port-name>MOTOR[0]</port-name>
-    <direction>OUT</direction>
+    <port-name>SPISSI</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -59,8 +59,8 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_1_TXD</port-name>
-    <direction>OUT</direction>
+    <port-name>UART_1_RXD</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -71,8 +71,8 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_0_TXD</port-name>
-    <direction>OUT</direction>
+    <port-name>UART_0_RXD</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -83,73 +83,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>RX</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPISDI</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>pwm_out_IR</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>MSS_RESET_N</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPISDO</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>PWM_motor2</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>MOTOR[2]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>MOTOR[1]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_0_RXD</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>hit_data</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPICLKI</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>pwm_out1</port-name>
+    <port-name>TX</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -161,13 +95,79 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>TX</port-name>
+    <port-name>pwm_out_IR</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPISSI</port-name>
+    <port-name>UART_0_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MSS_RESET_N</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>RX</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MOTOR[2]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPICLKI</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPISCLKO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_1_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>hit_data</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MOTOR[1]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>pwm_out1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPISDO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPISDI</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -191,14 +191,8 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPISCLKO</port-name>
+    <port-name>MOTOR[0]</port-name>
     <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_1_RXD</port-name>
-    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -248,9 +242,9 @@ There is one APB3 Master interface.
     </core-param>
     <core-param>
       <param-name>Slot 3:</param-name>
-      <param-value>false</param-value>
+      <param-value>true</param-value>
       <param-hdlname>APBSLOT3ENABLE</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
+      <param-hdlvalue>1</param-hdlvalue>
       <param-tag>spirit:hwParameter</param-tag>
     </core-param>
     <core-param>
@@ -650,7 +644,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>C:/Users/rpuyat/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design</core-location>
+    <core-location>C:/Users/waierdg/Desktop/ps2_turret_ir_integration/component/work/turret_servo_mss_design</core-location>
     <core-name>turret_servo_mss_design_0</core-name>
   </core>
   <firmware_core type="FirmWareModule">

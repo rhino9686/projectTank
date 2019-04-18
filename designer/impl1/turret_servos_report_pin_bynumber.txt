@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Apr 17 18:42:05 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Apr 18 15:59:45 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -21,7 +21,7 @@ A8                   EMC_AB[0]/IO04NDB0V0          Unassigned
 A9                   EMC_AB[1]/IO04PDB0V0          Unassigned
 A10                  GND                           Reserved
 A11                  Not Bonded                    Unconnected
-A12     SPISDI       EMC_AB[7]/IO07PDB0V0          Assigned     LVTTL    ---                ---   None           No               ---   ---               No           No
+A12                  EMC_AB[7]/IO07PDB0V0          Unassigned
 A13                  GND                           Reserved
 A14                  EMC_AB[12]/IO10NDB0V0         Unassigned
 A15                  EMC_AB[13]/IO10PDB0V0         Unassigned
@@ -132,7 +132,7 @@ D9                   GND                           Reserved
 D10                  EMC_OEN0_N/IO03NDB0V0         Unassigned
 D11                  EMC_AB[10]/IO09NDB0V0         Unassigned
 D12                  EMC_AB[11]/IO09PDB0V0         Unassigned
-D13                  EMC_AB[9]/IO08PDB0V0          Unassigned
+D13     SPISDI       EMC_AB[9]/IO08PDB0V0          Assigned     LVTTL    ---                ---   None           No               ---   ---               No           No
 D14                  GND                           Reserved
 D15                  GBC1/IO17PPB0V0               Special
 D16                  EMC_AB[25]/IO16PDB0V0         Unassigned
@@ -229,7 +229,7 @@ H18                  GCC2/IO25PDB1V0               Special
 H19                  GND                           Reserved
 H20     RX           GCC0/IO26NPB1V0               Special      LVTTL    ---                ---   None           No               ---   ---               No           No
 H21                  VCCFPGAIOB1                   Reserved
-H22     PWM_motor2   GCB0/IO27NDB1V0               Special      LVTTL    12                 High  None           ---              No    35                No           No
+H22                  GCB0/IO27NDB1V0               Special
 J1                   EMC_DB[6]/GEB0/IO62NDB5V0     Special
 J2                   EMC_DB[5]/GEA1/IO61PDB5V0     Special
 J3                   EMC_DB[4]/GEA0/IO61NDB5V0     Special

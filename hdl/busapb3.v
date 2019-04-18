@@ -22,8 +22,8 @@ output reg FABINT,
 output reg HIT_INT,
 input hit_data,
 output reg [3:0] MOTOR,
-output PWM_motor1,
-output PWM_motor2
+output PWM_motor1
+//output PWM_motor2
 
 ); 
 
@@ -40,7 +40,7 @@ reg [17:0] pulseWidth1;
 reg [17:0] pulseWidth2;
 assign PSLVERR = 0;
 assign PREADY = 1;
-assign PWM_motor2 = PWM_motor1;
+//assign PWM_motor2 = PWM_motor1;
 
 wire Servo_write_1 = PWRITE && PENABLE && PSEL && (PADDR[7:0] == 8'b00010000);   //enable servo 1 write at offset #0x10
 wire Servo_write_2 = PWRITE && PENABLE && PSEL && (PADDR[7:0] == 8'b00010100);   //enable servo 2 write at offset #0x14

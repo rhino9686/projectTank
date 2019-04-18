@@ -2,31 +2,31 @@ Target Part: A2F200M3F_FBGA484_STD
 Report for cell turret_servos.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2    66      1.0       66.0
+              AND2    55      1.0       55.0
              AND2A     3      1.0        3.0
               AND3   143      1.0      143.0
-               AO1    46      1.0       46.0
+               AO1    47      1.0       47.0
+              AO13     1      1.0        1.0
               AO17     1      1.0        1.0
-              AO1A    22      1.0       22.0
+              AO1A    20      1.0       20.0
               AO1B    11      1.0       11.0
-              AO1C    33      1.0       33.0
+              AO1C    34      1.0       34.0
               AO1D     3      1.0        3.0
-              AOI1    13      1.0       13.0
+              AOI1    14      1.0       14.0
              AOI1A     7      1.0        7.0
              AOI1B    23      1.0       23.0
                AX1    20      1.0       20.0
-              AX1A     3      1.0        3.0
-              AX1B    13      1.0       13.0
-              AX1C    27      1.0       27.0
+              AX1A     2      1.0        2.0
+              AX1B    15      1.0       15.0
+              AX1C    30      1.0       30.0
               AX1D     5      1.0        5.0
-              AXO1     1      1.0        1.0
              AXOI4     1      1.0        1.0
              AXOI5     1      1.0        1.0
-              BUFF     1      1.0        1.0
+              BUFF     3      1.0        3.0
             CLKINT     3      0.0        0.0
                GND    28      0.0        0.0
                INV    40      1.0       40.0
-              MAJ3     9      1.0        9.0
+              MAJ3     8      1.0        8.0
               MIN3     1      1.0        1.0
             MSSINT     1      0.0        0.0
            MSS_APB     1      0.0        0.0
@@ -35,44 +35,42 @@ Report for cell turret_servos.verilog
               MX2A     7      1.0        7.0
               MX2B    34      1.0       34.0
               MX2C    28      1.0       28.0
-              NOR2    67      1.0       67.0
-             NOR2A   188      1.0      188.0
-             NOR2B   237      1.0      237.0
-              NOR3    32      1.0       32.0
-             NOR3A    54      1.0       54.0
-             NOR3B    65      1.0       65.0
-             NOR3C   149      1.0      149.0
-               OA1    32      1.0       32.0
-              OA1A    29      1.0       29.0
-              OA1B     4      1.0        4.0
+              NOR2    66      1.0       66.0
+             NOR2A   182      1.0      182.0
+             NOR2B   262      1.0      262.0
+              NOR3    29      1.0       29.0
+             NOR3A    56      1.0       56.0
+             NOR3B    55      1.0       55.0
+             NOR3C   145      1.0      145.0
+               OA1    23      1.0       23.0
+              OA1A    28      1.0       28.0
+              OA1B    13      1.0       13.0
               OA1C    16      1.0       16.0
               OAI1     3      1.0        3.0
-               OR2    52      1.0       52.0
-              OR2A    90      1.0       90.0
-              OR2B    23      1.0       23.0
-               OR3    41      1.0       41.0
-              OR3A     4      1.0        4.0
-              OR3B    16      1.0       16.0
-              OR3C    13      1.0       13.0
+               OR2    51      1.0       51.0
+              OR2A    88      1.0       88.0
+              OR2B    22      1.0       22.0
+               OR3    42      1.0       42.0
+              OR3A     8      1.0        8.0
+              OR3B    13      1.0       13.0
+              OR3C    12      1.0       12.0
              RCOSC     1      0.0        0.0
                VCC    28      0.0        0.0
-               XA1    30      1.0       30.0
-              XA1A     7      1.0        7.0
+               XA1    29      1.0       29.0
               XA1B     6      1.0        6.0
-              XA1C    14      1.0       14.0
-             XNOR2    68      1.0       68.0
-             XNOR3     2      1.0        2.0
-               XO1     5      1.0        5.0
-              XO1A     5      1.0        5.0
-              XOR2   129      1.0      129.0
-              XOR3    15      1.0       15.0
+              XA1C    15      1.0       15.0
+             XNOR2    69      1.0       69.0
+               XO1     4      1.0        4.0
+              XO1A     3      1.0        3.0
+              XOR2   136      1.0      136.0
+              XOR3    18      1.0       18.0
               ZOR3     1      1.0        1.0
 
 
           DFI1E0P0     1      1.0        1.0
               DFN1   230      1.0      230.0
             DFN1C0   149      1.0      149.0
-            DFN1C1     2      1.0        2.0
+            DFN1C1     3      1.0        3.0
             DFN1E0    23      1.0       23.0
           DFN1E0C0    23      1.0       23.0
           DFN1E0C1    32      1.0       32.0
@@ -85,7 +83,7 @@ Report for cell turret_servos.verilog
             DFN1P0    21      1.0       21.0
           FIFO4K18     2      0.0        0.0
                    -----          ----------
-             TOTAL  3358              3293.0
+             TOTAL  3352              3287.0
 
 
   IO Cell usage:
@@ -93,15 +91,15 @@ Report for cell turret_servos.verilog
          BIBUF_MSS     2
              INBUF     5
          INBUF_MSS     4
-            OUTBUF    12
+            OUTBUF    11
         OUTBUF_MSS     2
        TRIBUFF_MSS     1
                    -----
-             TOTAL    26
+             TOTAL    25
 
 
-Core Cells         : 3293 of 4608 (71%)
-IO Cells           : 26
+Core Cells         : 3287 of 4608 (71%)
+IO Cells           : 25
 
   RAM/ROM Usage Summary
 Block Rams : 2 of 8 (25%)

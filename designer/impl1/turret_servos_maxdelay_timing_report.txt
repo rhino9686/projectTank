@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Wed Apr 17 18:42:10 2019
+Date: Thu Apr 18 15:56:34 2019
 
 
 Design: turret_servos
@@ -32,11 +32,11 @@ External Setup (ns):        N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_fabric_interface_clock
-Period (ns):                16.569
-Frequency (MHz):            60.354
+Period (ns):                17.590
+Frequency (MHz):            56.850
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        5.505
+External Setup (ns):        4.415
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_pclk1
@@ -48,12 +48,12 @@ External Setup (ns):        N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_ccc_gla1
-Period (ns):                14.674
-Frequency (MHz):            68.148
+Period (ns):                12.595
+Frequency (MHz):            79.397
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -0.407
-Max Clock-To-Out (ns):      17.185
+External Setup (ns):        0.577
+Max Clock-To-Out (ns):      15.903
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
@@ -133,61 +133,61 @@ SET Register to Register
 
 Path 1
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
-  Delay (ns):            18.793
-  Slack (ns):            -6.569
-  Arrival (ns):          22.968
-  Required (ns):         16.399
-  Setup (ns):            -2.224
-  Minimum Period (ns):   16.569
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
+  Delay (ns):            19.817
+  Slack (ns):            -7.590
+  Arrival (ns):          23.992
+  Required (ns):         16.402
+  Setup (ns):            -2.227
+  Minimum Period (ns):   17.590
 
 Path 2
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[2]
-  Delay (ns):            18.720
-  Slack (ns):            -6.505
-  Arrival (ns):          22.895
-  Required (ns):         16.390
-  Setup (ns):            -2.215
-  Minimum Period (ns):   16.505
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
+  Delay (ns):            19.790
+  Slack (ns):            -7.566
+  Arrival (ns):          23.965
+  Required (ns):         16.399
+  Setup (ns):            -2.224
+  Minimum Period (ns):   17.566
 
 Path 3
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
-  Delay (ns):            18.692
-  Slack (ns):            -6.472
-  Arrival (ns):          22.867
+  Delay (ns):            19.452
+  Slack (ns):            -7.232
+  Arrival (ns):          23.627
   Required (ns):         16.395
   Setup (ns):            -2.220
-  Minimum Period (ns):   16.472
+  Minimum Period (ns):   17.232
 
 Path 4
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
-  Delay (ns):            18.645
-  Slack (ns):            -6.418
-  Arrival (ns):          22.820
-  Required (ns):         16.402
-  Setup (ns):            -2.227
-  Minimum Period (ns):   16.418
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  Delay (ns):            18.854
+  Slack (ns):            -6.639
+  Arrival (ns):          23.029
+  Required (ns):         16.390
+  Setup (ns):            -2.215
+  Minimum Period (ns):   16.639
 
 Path 5
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
-  Delay (ns):            17.944
-  Slack (ns):            -5.710
-  Arrival (ns):          22.119
-  Required (ns):         16.409
-  Setup (ns):            -2.234
-  Minimum Period (ns):   15.710
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
+  Delay (ns):            18.779
+  Slack (ns):            -6.556
+  Arrival (ns):          22.954
+  Required (ns):         16.398
+  Setup (ns):            -2.223
+  Minimum Period (ns):   16.556
 
 
 Expanded Path 1
   From: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
-  data required time                             16.399
-  data arrival time                          -   22.968
-  slack                                          -6.569
+  To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
+  data required time                             16.402
+  data arrival time                          -   23.992
+  slack                                          -7.590
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -195,60 +195,60 @@ Expanded Path 1
   0.000                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     4.175          Clock generation
   4.175
-               +     3.699          cell: ADLIB:MSS_APB_IP
-  7.874                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[2] (f)
-               +     0.158          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPADDR[2]INT_NET
-  8.032                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_30:PIN3INT (f)
-               +     0.086          cell: ADLIB:MSS_IF
-  8.118                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_30:PIN3 (f)
-               +     1.572          net: CoreAPB3_0_APBmslave0_PADDR[2]
-  9.690                        turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313_0:A (f)
-               +     0.462          cell: ADLIB:BUFF
-  10.152                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313_0:Y (f)
-               +     0.808          net: CoreAPB3_0_APBmslave0_PADDR_0[2]
-  10.960                       CORESPI_0/USPI/URF/control15_0_a2_0:C (f)
-               +     0.604          cell: ADLIB:NOR3
-  11.564                       CORESPI_0/USPI/URF/control15_0_a2_0:Y (r)
-               +     1.071          net: CORESPI_0/USPI/URF/N_127
-  12.635                       CORESPI_0/USPI/URF/rdata54_0_a2:A (r)
-               +     0.445          cell: ADLIB:NOR2B
-  13.080                       CORESPI_0/USPI/URF/rdata54_0_a2:Y (r)
-               +     1.479          net: CORESPI_0/USPI/URF/rdata54
-  14.559                       CORESPI_0/USPI/URF/int_raw_RNITNIF_0[2]:B (r)
-               +     0.538          cell: ADLIB:NOR2B
-  15.097                       CORESPI_0/USPI/URF/int_raw_RNITNIF_0[2]:Y (r)
-               +     0.296          net: CORESPI_0/USPI/URF/int_raw_m_0[2]
-  15.393                       CORESPI_0/USPI/URF/cfg_ssel_RNIEK2E1[4]:C (r)
-               +     0.698          cell: ADLIB:AO1
-  16.091                       CORESPI_0/USPI/URF/cfg_ssel_RNIEK2E1[4]:Y (r)
-               +     0.306          net: CORESPI_0/USPI/URF/rdata_iv_2[4]
-  16.397                       CORESPI_0/USPI/URF/int_raw_RNI5JVS2[4]:C (r)
+               +     3.784          cell: ADLIB:MSS_APB_IP
+  7.959                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[4] (r)
+               +     0.122          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPADDR[4]INT_NET
+  8.081                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_31:PIN2INT (r)
+               +     0.095          cell: ADLIB:MSS_IF
+  8.176                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_31:PIN2 (r)
+               +     3.477          net: CoreAPB3_0_APBmslave0_PADDR[4]
+  11.653                       CORESPI_0/USPI/URF/control17_0_o2_0:B (r)
+               +     0.470          cell: ADLIB:OR2B
+  12.123                       CORESPI_0/USPI/URF/control17_0_o2_0:Y (f)
+               +     0.360          net: CORESPI_0/USPI/URF/N_64
+  12.483                       CORESPI_0/USPI/URF/control17_0_o2:A (f)
+               +     0.462          cell: ADLIB:OR2
+  12.945                       CORESPI_0/USPI/URF/control17_0_o2:Y (f)
+               +     0.416          net: CORESPI_0/USPI/URF/N_65
+  13.361                       CORESPI_0/USPI/URF/int_masked_m_0_a2_0[0]:A (f)
+               +     0.489          cell: ADLIB:NOR2
+  13.850                       CORESPI_0/USPI/URF/int_masked_m_0_a2_0[0]:Y (r)
+               +     1.595          net: CORESPI_0/USPI/URF/N_126
+  15.445                       CORESPI_0/USPI/URF/int_raw_RNI0S6O[7]:B (r)
+               +     0.568          cell: ADLIB:NOR3C
+  16.013                       CORESPI_0/USPI/URF/int_raw_RNI0S6O[7]:Y (r)
+               +     0.306          net: CORESPI_0/USPI/URF/int_masked_m[7]
+  16.319                       CORESPI_0/USPI/URF/control1_RNI08TE1[7]:C (r)
+               +     0.596          cell: ADLIB:AO1
+  16.915                       CORESPI_0/USPI/URF/control1_RNI08TE1[7]:Y (r)
+               +     0.306          net: CORESPI_0/USPI/URF/rdata_iv_1[7]
+  17.221                       CORESPI_0/USPI/URF/control1_RNIQQNF4[7]:C (r)
                +     0.622          cell: ADLIB:OR3
-  17.019                       CORESPI_0/USPI/URF/int_raw_RNI5JVS2[4]:Y (r)
-               +     1.011          net: CORESPI_0/USPI/URF/rdata_iv_4[4]
-  18.030                       CORESPI_0/USPI/URF/int_raw_RNIJHFB5[4]:B (r)
-               +     0.829          cell: ADLIB:OA1
-  18.859                       CORESPI_0/USPI/URF/int_raw_RNIJHFB5[4]:Y (r)
-               +     0.306          net: CORESPI_0/USPI/prdata_regs[4]
-  19.165                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNI32D28[4]:A (r)
+  17.843                       CORESPI_0/USPI/URF/control1_RNIQQNF4[7]:Y (r)
+               +     0.296          net: CORESPI_0/USPI/URF/rdata_iv_4[7]
+  18.139                       CORESPI_0/USPI/URF/int_raw_RNIH28U6[7]:B (r)
+               +     0.848          cell: ADLIB:OA1B
+  18.987                       CORESPI_0/USPI/URF/int_raw_RNIH28U6[7]:Y (r)
+               +     1.071          net: CORESPI_0/USPI/prdata_regs[7]
+  20.058                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNIDV5L9[7]:A (r)
                +     0.517          cell: ADLIB:MX2
-  19.682                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNI32D28[4]:Y (r)
-               +     0.294          net: CoreAPB3_0_APBmslave2_PRDATA[4]
-  19.976                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[4]:A (r)
+  20.575                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNIDV5L9[7]:Y (r)
+               +     0.294          net: CoreAPB3_0_APBmslave2_PRDATA[7]
+  20.869                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[7]:A (r)
                +     0.331          cell: ADLIB:AO1A
-  20.307                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[4]:Y (f)
-               +     0.285          net: CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[4]
-  20.592                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[4]:C (f)
+  21.200                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[7]:Y (f)
+               +     0.285          net: CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[7]
+  21.485                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[7]:C (f)
                +     0.478          cell: ADLIB:OA1C
-  21.070                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[4]:Y (r)
-               +     1.374          net: PRDATA_0_iv_i[4]
-  22.444                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_38:PIN5 (r)
+  21.963                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[7]:Y (r)
+               +     1.505          net: PRDATA_0_iv_i[7]
+  23.468                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_39:PIN5 (r)
                +     0.079          cell: ADLIB:MSS_IF
-  22.523                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_38:PIN5INT (r)
-               +     0.445          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPRDATA[4]INT_NET
-  22.968                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4] (r)
+  23.547                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_39:PIN5INT (r)
+               +     0.445          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPRDATA[7]INT_NET
+  23.992                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7] (r)
                                     
-  22.968                       data arrival time
+  23.992                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_fabric_interface_clock
@@ -256,10 +256,10 @@ Expanded Path 1
   10.000                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     4.175          Clock generation
   14.175
-               -    -2.224          Library setup time: ADLIB:MSS_APB_IP
-  16.399                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
+               -    -2.227          Library setup time: ADLIB:MSS_APB_IP
+  16.402                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
                                     
-  16.399                       data required time
+  16.402                       data required time
 
 
 END SET Register to Register
@@ -271,19 +271,19 @@ SET External Setup
 Path 1
   From:                  SPISSI
   To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
-  Delay (ns):            11.914
+  Delay (ns):            10.824
   Slack (ns):
-  Arrival (ns):          11.914
+  Arrival (ns):          10.824
   Required (ns):
   Setup (ns):            -2.234
-  External Setup (ns):   5.505
+  External Setup (ns):   4.415
 
 
 Expanded Path 1
   From: SPISSI
   To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
   data required time                             N/C
-  data arrival time                          -   11.914
+  data arrival time                          -   10.824
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -296,42 +296,42 @@ Expanded Path 1
   0.967                        SPISSI_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   1.006                        SPISSI_pad/U0/U1:Y (r)
-               +     1.399          net: SPISSI_c
-  2.405                        CORESPI_0/USPI/UCC/spi_ssel_pos_RNI3ICH:A (r)
+               +     2.359          net: SPISSI_c
+  3.365                        CORESPI_0/USPI/UCC/spi_ssel_pos_RNI3ICH:A (r)
                +     0.606          cell: ADLIB:MX2
-  3.011                        CORESPI_0/USPI/UCC/spi_ssel_pos_RNI3ICH:Y (r)
-               +     1.664          net: CORESPI_0/USPI/ssel_both
-  4.675                        CORESPI_0/USPI/URF/cfg_ssel_RNIP02V1[6]:A (r)
+  3.971                        CORESPI_0/USPI/UCC/spi_ssel_pos_RNI3ICH:Y (r)
+               +     0.294          net: CORESPI_0/USPI/ssel_both
+  4.265                        CORESPI_0/USPI/URF/cfg_ssel_RNIP02V1[6]:A (r)
                +     0.473          cell: ADLIB:AO1
-  5.148                        CORESPI_0/USPI/URF/cfg_ssel_RNIP02V1[6]:Y (r)
-               +     0.306          net: CORESPI_0/USPI/URF/rdata_iv_2[6]
-  5.454                        CORESPI_0/USPI/URF/int_raw_RNIM5VD3[6]:C (r)
+  4.738                        CORESPI_0/USPI/URF/cfg_ssel_RNIP02V1[6]:Y (r)
+               +     0.334          net: CORESPI_0/USPI/URF/rdata_iv_2[6]
+  5.072                        CORESPI_0/USPI/URF/int_raw_RNIM5VD3[6]:C (r)
                +     0.622          cell: ADLIB:OR3
-  6.076                        CORESPI_0/USPI/URF/int_raw_RNIM5VD3[6]:Y (r)
-               +     0.296          net: CORESPI_0/USPI/URF/rdata_iv_4[6]
-  6.372                        CORESPI_0/USPI/URF/int_raw_RNIAAFS5[6]:B (r)
-               +     0.829          cell: ADLIB:OA1
-  7.201                        CORESPI_0/USPI/URF/int_raw_RNIAAFS5[6]:Y (r)
-               +     1.044          net: CORESPI_0/USPI/prdata_regs[6]
-  8.245                        CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNI23DJ8[6]:A (r)
+  5.694                        CORESPI_0/USPI/URF/int_raw_RNIM5VD3[6]:Y (r)
+               +     0.322          net: CORESPI_0/USPI/URF/rdata_iv_4[6]
+  6.016                        CORESPI_0/USPI/URF/int_raw_RNIAAFS5[6]:B (r)
+               +     0.848          cell: ADLIB:OA1B
+  6.864                        CORESPI_0/USPI/URF/int_raw_RNIAAFS5[6]:Y (r)
+               +     0.334          net: CORESPI_0/USPI/prdata_regs[6]
+  7.198                        CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNI23DJ8[6]:A (r)
                +     0.517          cell: ADLIB:MX2
-  8.762                        CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNI23DJ8[6]:Y (r)
+  7.715                        CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNI23DJ8[6]:Y (r)
                +     0.294          net: CoreAPB3_0_APBmslave2_PRDATA[6]
-  9.056                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[6]:A (r)
+  8.009                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[6]:A (r)
                +     0.331          cell: ADLIB:AO1A
-  9.387                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[6]:Y (f)
+  8.340                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[6]:Y (f)
                +     0.282          net: CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_0[6]
-  9.669                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[6]:C (f)
+  8.622                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[6]:C (f)
                +     0.478          cell: ADLIB:OA1C
-  10.147                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[6]:Y (r)
-               +     1.273          net: PRDATA_0_iv_i[6]
-  11.420                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_38:PIN6 (r)
+  9.100                        CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[6]:Y (r)
+               +     1.230          net: PRDATA_0_iv_i[6]
+  10.330                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_38:PIN6 (r)
                +     0.076          cell: ADLIB:MSS_IF
-  11.496                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_38:PIN6INT (r)
+  10.406                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_38:PIN6INT (r)
                +     0.418          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPRDATA[6]INT_NET
-  11.914                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6] (r)
+  10.824                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6] (r)
                                     
-  11.914                       data arrival time
+  10.824                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_fabric_interface_clock
@@ -384,55 +384,55 @@ SET mss_ccc_gla1 to mss_fabric_interface_clock
 Path 1
   From:                  CORESPI_0/USPI/URXF/rd_pointer_q[0]:CLK
   To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
-  Delay (ns):            12.104
-  Slack (ns):            -1.618
-  Arrival (ns):          18.008
+  Delay (ns):            14.105
+  Slack (ns):            -3.660
+  Arrival (ns):          20.050
   Required (ns):         16.390
   Setup (ns):            -2.215
 
 Path 2
+  From:                  CORESPI_0/USPI/URXF/rd_pointer_q[0]:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[4]
+  Delay (ns):            12.356
+  Slack (ns):            -1.902
+  Arrival (ns):          18.301
+  Required (ns):         16.399
+  Setup (ns):            -2.224
+
+Path 3
+  From:                  CORESPI_0/USPI/UTXF/full_out:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[3]
+  Delay (ns):            12.011
+  Slack (ns):            -1.473
+  Arrival (ns):          17.868
+  Required (ns):         16.395
+  Setup (ns):            -2.220
+
+Path 4
   From:                  CORESPI_0/USPI/UTXF/empty_out:CLK
   To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
-  Delay (ns):            11.636
-  Slack (ns):            -1.104
-  Arrival (ns):          17.506
+  Delay (ns):            11.964
+  Slack (ns):            -1.413
+  Arrival (ns):          17.815
   Required (ns):         16.402
   Setup (ns):            -2.227
 
-Path 3
-  From:                  CoreUARTapb_0/uUART/make_RX/parity_err_0:CLK
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
-  Delay (ns):            11.339
-  Slack (ns):            -0.813
-  Arrival (ns):          17.203
-  Required (ns):         16.390
-  Setup (ns):            -2.215
-
-Path 4
-  From:                  CORESPI_0/USPI/URXF/rd_pointer_q[0]:CLK
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
-  Delay (ns):            11.160
-  Slack (ns):            -0.655
-  Arrival (ns):          17.064
-  Required (ns):         16.409
-  Setup (ns):            -2.234
-
 Path 5
-  From:                  CORESPI_0/USPI/URF/control1[1]:CLK
-  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
-  Delay (ns):            10.984
-  Slack (ns):            -0.539
-  Arrival (ns):          16.948
-  Required (ns):         16.409
-  Setup (ns):            -2.234
+  From:                  CORESPI_0/USPI/UCC/stxs_state:CLK
+  To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
+  Delay (ns):            11.825
+  Slack (ns):            -1.331
+  Arrival (ns):          17.733
+  Required (ns):         16.402
+  Setup (ns):            -2.227
 
 
 Expanded Path 1
   From: CORESPI_0/USPI/URXF/rd_pointer_q[0]:CLK
   To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
   data required time                             16.390
-  data arrival time                          -   18.008
-  slack                                          -1.618
+  data arrival time                          -   20.050
+  slack                                          -3.660
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -444,54 +444,54 @@ Expanded Path 1
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.655          net: FAB_CLK
-  5.904                        CORESPI_0/USPI/URXF/rd_pointer_q[0]:CLK (r)
+               +     0.696          net: FAB_CLK
+  5.945                        CORESPI_0/USPI/URXF/rd_pointer_q[0]:CLK (r)
                +     0.671          cell: ADLIB:DFN1C0
-  6.575                        CORESPI_0/USPI/URXF/rd_pointer_q[0]:Q (f)
-               +     1.933          net: CORESPI_0/USPI/URXF/rd_pointer_q_0[0]
-  8.508                        CORESPI_0/USPI/URXF/rd_pointer_q_RNI2P6B[0]/U_CLKSRC:A (f)
+  6.616                        CORESPI_0/USPI/URXF/rd_pointer_q[0]:Q (f)
+               +     2.200          net: CORESPI_0/USPI/URXF/rd_pointer_q_0[0]
+  8.816                        CORESPI_0/USPI/URXF/rd_pointer_q_RNI2P6B[0]/U_CLKSRC:A (f)
                +     0.719          cell: ADLIB:CLKSRC
-  9.227                        CORESPI_0/USPI/URXF/rd_pointer_q_RNI2P6B[0]/U_CLKSRC:Y (f)
-               +     0.608          net: CORESPI_0/USPI/URXF/rd_pointer_q[0]
-  9.835                        CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram2__RNIVIKU[0]:S (f)
+  9.535                        CORESPI_0/USPI/URXF/rd_pointer_q_RNI2P6B[0]/U_CLKSRC:Y (f)
+               +     0.609          net: CORESPI_0/USPI/URXF/rd_pointer_q[0]
+  10.144                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNIR2ST[0]:S (f)
                +     0.361          cell: ADLIB:MX2C
-  10.196                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram2__RNIVIKU[0]:Y (f)
-               +     0.306          net: CORESPI_0/USPI/URXF/N_48_0
-  10.502                       CORESPI_0/USPI/URXF/rd_pointer_q_RNITFN72[1]:B (f)
+  10.505                       CORESPI_0/USPI/URXF/fifo_mem_q_fifo_mem_q_ram1__RNIR2ST[0]:Y (f)
+               +     0.306          net: CORESPI_0/USPI/URXF/N_51_0
+  10.811                       CORESPI_0/USPI/URXF/rd_pointer_q_RNITFN72[1]:A (f)
                +     0.563          cell: ADLIB:MX2
-  11.065                       CORESPI_0/USPI/URXF/rd_pointer_q_RNITFN72[1]:Y (f)
-               +     0.282          net: CORESPI_0/USPI/N_45_0
-  11.347                       CORESPI_0/USPI/URF/cfg_ssel_RNI70544[0]:A (f)
+  11.374                       CORESPI_0/USPI/URXF/rd_pointer_q_RNITFN72[1]:Y (f)
+               +     1.076          net: CORESPI_0/USPI/N_45_0
+  12.450                       CORESPI_0/USPI/URF/cfg_ssel_RNI70544[0]:A (f)
                +     0.437          cell: ADLIB:AO1A
-  11.784                       CORESPI_0/USPI/URF/cfg_ssel_RNI70544[0]:Y (r)
+  12.887                       CORESPI_0/USPI/URF/cfg_ssel_RNI70544[0]:Y (r)
                +     0.306          net: CORESPI_0/USPI/URF/rdata_iv_2[0]
-  12.090                       CORESPI_0/USPI/URF/control1_RNIKIUH5[0]:C (r)
+  13.193                       CORESPI_0/USPI/URF/int_raw_RNITUGB5[0]:C (r)
                +     0.622          cell: ADLIB:OR3
-  12.712                       CORESPI_0/USPI/URF/control1_RNIKIUH5[0]:Y (r)
-               +     0.663          net: CORESPI_0/USPI/URF/rdata_iv_4[0]
-  13.375                       CORESPI_0/USPI/URF/int_raw_RNIN5E08[0]:B (r)
-               +     0.829          cell: ADLIB:OA1
-  14.204                       CORESPI_0/USPI/URF/int_raw_RNIN5E08[0]:Y (r)
-               +     0.306          net: CORESPI_0/USPI/prdata_regs[0]
-  14.510                       CORESPI_0/USPI/URXF/rd_pointer_q_RNIJJ8KA[1]:A (r)
+  13.815                       CORESPI_0/USPI/URF/int_raw_RNITUGB5[0]:Y (r)
+               +     0.296          net: CORESPI_0/USPI/URF/rdata_iv_4[0]
+  14.111                       CORESPI_0/USPI/URF/int_raw_RNIN5E08[0]:B (r)
+               +     0.848          cell: ADLIB:OA1B
+  14.959                       CORESPI_0/USPI/URF/int_raw_RNIN5E08[0]:Y (r)
+               +     1.417          net: CORESPI_0/USPI/prdata_regs[0]
+  16.376                       CORESPI_0/USPI/URXF/rd_pointer_q_RNIJJ8KA[1]:A (r)
                +     0.517          cell: ADLIB:MX2B
-  15.027                       CORESPI_0/USPI/URXF/rd_pointer_q_RNIJJ8KA[1]:Y (r)
-               +     0.303          net: CoreAPB3_0_APBmslave2_PRDATA[0]
-  15.330                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_a5[0]:B (r)
+  16.893                       CORESPI_0/USPI/URXF/rd_pointer_q_RNIJJ8KA[1]:Y (r)
+               +     0.294          net: CoreAPB3_0_APBmslave2_PRDATA[0]
+  17.187                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_a5[0]:B (r)
                +     0.351          cell: ADLIB:NOR2A
-  15.681                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_a5[0]:Y (f)
-               +     0.303          net: CoreAPB3_0/u_mux_p_to_b3/N_128
-  15.984                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[0]:A (f)
+  17.538                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i_a5[0]:Y (f)
+               +     0.294          net: CoreAPB3_0/u_mux_p_to_b3/N_137
+  17.832                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[0]:A (f)
                +     0.478          cell: ADLIB:NOR3
-  16.462                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[0]:Y (r)
-               +     1.025          net: PRDATA_0_iv_i[0]
-  17.487                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_36:PIN6 (r)
+  18.310                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_0_iv_i[0]:Y (r)
+               +     1.219          net: PRDATA_0_iv_i[0]
+  19.529                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_36:PIN6 (r)
                +     0.076          cell: ADLIB:MSS_IF
-  17.563                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_36:PIN6INT (r)
+  19.605                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_36:PIN6INT (r)
                +     0.445          net: turret_servo_mss_design_0/MSS_ADLIB_INST/MSSPRDATA[0]INT_NET
-  18.008                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0] (r)
+  20.050                       turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0] (r)
                                     
-  18.008                       data arrival time
+  20.050                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_fabric_interface_clock
@@ -564,9 +564,9 @@ SET mss_ccc_gla1 to mss_pclk1
 Path 1
   From:                  BUS_INTERFACE_0/HIT_INT:CLK
   To:                    turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0]
-  Delay (ns):            2.316
-  Slack (ns):            6.025
-  Arrival (ns):          8.211
+  Delay (ns):            1.016
+  Slack (ns):            7.339
+  Arrival (ns):          6.897
   Required (ns):         14.236
   Setup (ns):            -0.061
 
@@ -575,8 +575,8 @@ Expanded Path 1
   From: BUS_INTERFACE_0/HIT_INT:CLK
   To: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0]
   data required time                             14.236
-  data arrival time                          -   8.211
-  slack                                          6.025
+  data arrival time                          -   6.897
+  slack                                          7.339
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -588,18 +588,18 @@ Expanded Path 1
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.646          net: FAB_CLK
-  5.895                        BUS_INTERFACE_0/HIT_INT:CLK (r)
+               +     0.632          net: FAB_CLK
+  5.881                        BUS_INTERFACE_0/HIT_INT:CLK (r)
                +     0.528          cell: ADLIB:DFN1
-  6.423                        BUS_INTERFACE_0/HIT_INT:Q (r)
-               +     1.572          net: BUS_INTERFACE_0_HIT_INT
-  7.995                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_20:PIN5 (r)
+  6.409                        BUS_INTERFACE_0/HIT_INT:Q (r)
+               +     0.272          net: BUS_INTERFACE_0_HIT_INT
+  6.681                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_20:PIN5 (r)
                +     0.216          cell: ADLIB:MSS_IF
-  8.211                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_20:PIN5INT (r)
+  6.897                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_20:PIN5INT (r)
                +     0.000          net: turret_servo_mss_design_0/MSS_ADLIB_INST/GPI[0]INT_NET
-  8.211                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0] (r)
+  6.897                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GPI[0] (r)
                                     
-  8.211                        data arrival time
+  6.897                        data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_pclk1
@@ -622,62 +622,62 @@ Clock Domain mss_ccc_gla1
 SET Register to Register
 
 Path 1
-  From:                  CORESPI_0/USPI/UTXF/rd_pointer_q[0]:CLK
-  To:                    CORESPI_0/USPI/UCC/mtx_spi_data_out:D
-  Delay (ns):            14.184
-  Slack (ns):            -4.674
-  Arrival (ns):          20.055
-  Required (ns):         15.381
-  Setup (ns):            0.490
-  Minimum Period (ns):   14.674
+  From:                  BUS_INTERFACE_0/hit_count[0]:CLK
+  To:                    BUS_INTERFACE_0/hit_count[25]:D
+  Delay (ns):            12.060
+  Slack (ns):            -2.595
+  Arrival (ns):          17.937
+  Required (ns):         15.342
+  Setup (ns):            0.522
+  Minimum Period (ns):   12.595
 
 Path 2
-  From:                  BUS_INTERFACE_0/modulator/count[1]:CLK
-  To:                    BUS_INTERFACE_0/modulator/pwm:D
-  Delay (ns):            12.974
-  Slack (ns):            -3.465
-  Arrival (ns):          18.827
-  Required (ns):         15.362
+  From:                  CORESPI_0/USPI/UTXF/rd_pointer_q[0]:CLK
+  To:                    CORESPI_0/USPI/UCC/mtx_spi_data_out:D
+  Delay (ns):            12.094
+  Slack (ns):            -2.525
+  Arrival (ns):          17.943
+  Required (ns):         15.418
   Setup (ns):            0.490
-  Minimum Period (ns):   13.465
+  Minimum Period (ns):   12.525
 
 Path 3
-  From:                  BUS_INTERFACE_0/modulator/count[0]:CLK
-  To:                    BUS_INTERFACE_0/modulator/pwm:D
-  Delay (ns):            12.588
-  Slack (ns):            -3.075
-  Arrival (ns):          18.437
-  Required (ns):         15.362
+  From:                  CORESPI_0/USPI/UCC/SYNC2_stxp_strobetx:CLK
+  To:                    CORESPI_0/USPI/UTXF/empty_out:D
+  Delay (ns):            11.954
+  Slack (ns):            -2.507
+  Arrival (ns):          17.868
+  Required (ns):         15.361
   Setup (ns):            0.490
-  Minimum Period (ns):   13.075
+  Minimum Period (ns):   12.507
 
 Path 4
-  From:                  BUS_INTERFACE_0/p2/count[20]:CLK
-  To:                    BUS_INTERFACE_0/p2/count[3]:D
-  Delay (ns):            12.029
-  Slack (ns):            -2.542
-  Arrival (ns):          17.903
-  Required (ns):         15.361
-  Setup (ns):            0.522
-  Minimum Period (ns):   12.542
+  From:                  CORESPI_0/USPI/UTXF/rd_pointer_q_0[1]:CLK
+  To:                    CORESPI_0/USPI/UCC/mtx_spi_data_out:D
+  Delay (ns):            12.017
+  Slack (ns):            -2.467
+  Arrival (ns):          17.885
+  Required (ns):         15.418
+  Setup (ns):            0.490
+  Minimum Period (ns):   12.467
 
 Path 5
-  From:                  CoreUARTapb_0/uUART/make_CLOCK_GEN/genblk1.baud_cntr[0]:CLK
-  To:                    CoreUARTapb_0/uUART/make_CLOCK_GEN/genblk1.baud_cntr[12]:D
-  Delay (ns):            11.916
-  Slack (ns):            -2.425
-  Arrival (ns):          17.820
-  Required (ns):         15.395
+  From:                  BUS_INTERFACE_0/hit_count[1]:CLK
+  To:                    BUS_INTERFACE_0/hit_count[25]:D
+  Delay (ns):            11.848
+  Slack (ns):            -2.383
+  Arrival (ns):          17.725
+  Required (ns):         15.342
   Setup (ns):            0.522
-  Minimum Period (ns):   12.425
+  Minimum Period (ns):   12.383
 
 
 Expanded Path 1
-  From: CORESPI_0/USPI/UTXF/rd_pointer_q[0]:CLK
-  To: CORESPI_0/USPI/UCC/mtx_spi_data_out:D
-  data required time                             15.381
-  data arrival time                          -   20.055
-  slack                                          -4.674
+  From: BUS_INTERFACE_0/hit_count[0]:CLK
+  To: BUS_INTERFACE_0/hit_count[25]:D
+  data required time                             15.342
+  data arrival time                          -   17.937
+  slack                                          -2.595
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -689,46 +689,42 @@ Expanded Path 1
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.622          net: FAB_CLK
-  5.871                        CORESPI_0/USPI/UTXF/rd_pointer_q[0]:CLK (r)
-               +     0.671          cell: ADLIB:DFN1C0
-  6.542                        CORESPI_0/USPI/UTXF/rd_pointer_q[0]:Q (f)
-               +     1.789          net: CORESPI_0/USPI/UTXF/rd_pointer_q_0[0]
-  8.331                        CORESPI_0/USPI/UTXF/rd_pointer_q_RNI4TP4[0]/U_CLKSRC:A (f)
-               +     0.719          cell: ADLIB:CLKSRC
-  9.050                        CORESPI_0/USPI/UTXF/rd_pointer_q_RNI4TP4[0]/U_CLKSRC:Y (f)
-               +     0.640          net: CORESPI_0/USPI/UTXF/rd_pointer_q[0]
-  9.690                        CORESPI_0/USPI/UTXF/fifo_mem_q_fifo_mem_q_ram1__RNIBV2J[23]:S (f)
-               +     0.437          cell: ADLIB:MX2
-  10.127                       CORESPI_0/USPI/UTXF/fifo_mem_q_fifo_mem_q_ram1__RNIBV2J[23]:Y (r)
-               +     1.152          net: CORESPI_0/USPI/UTXF/N_224
-  11.279                       CORESPI_0/USPI/UTXF/fifo_mem_q_fifo_mem_q_ram1__RNIEPUL1[23]:A (r)
-               +     0.517          cell: ADLIB:MX2
-  11.796                       CORESPI_0/USPI/UTXF/fifo_mem_q_fifo_mem_q_ram1__RNIEPUL1[23]:Y (r)
-               +     2.260          net: CORESPI_0/USPI/tx_fifo_data_out[23]
-  14.056                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_28:B (r)
-               +     0.533          cell: ADLIB:MX2
-  14.589                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_28:Y (r)
-               +     0.306          net: CORESPI_0/USPI/UCC/N_472
-  14.895                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_13:A (r)
-               +     0.517          cell: ADLIB:MX2
-  15.412                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_13:Y (r)
-               +     0.306          net: CORESPI_0/USPI/UCC/N_474
-  15.718                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_5:B (r)
-               +     0.533          cell: ADLIB:MX2
-  16.251                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_5:Y (r)
-               +     0.627          net: CORESPI_0/USPI/UCC/N_475
-  16.878                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_1:B (r)
-               +     0.533          cell: ADLIB:MX2
-  17.411                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO_1:Y (r)
-               +     0.306          net: CORESPI_0/USPI/UCC/N_476
-  17.717                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO:B (r)
-               +     0.533          cell: ADLIB:MX2
-  18.250                       CORESPI_0/USPI/UCC/mtx_spi_data_out_RNO:Y (r)
-               +     1.805          net: CORESPI_0/USPI/UCC/mtx_spi_data_out_2
-  20.055                       CORESPI_0/USPI/UCC/mtx_spi_data_out:D (r)
+               +     0.628          net: FAB_CLK
+  5.877                        BUS_INTERFACE_0/hit_count[0]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  6.405                        BUS_INTERFACE_0/hit_count[0]:Q (r)
+               +     1.151          net: BUS_INTERFACE_0/hit_count[0]
+  7.556                        BUS_INTERFACE_0/hit_count_RNI7C381[2]:B (r)
+               +     0.652          cell: ADLIB:NOR3C
+  8.208                        BUS_INTERFACE_0/hit_count_RNI7C381[2]:Y (r)
+               +     1.565          net: BUS_INTERFACE_0/hit_count_c2
+  9.773                        BUS_INTERFACE_0/hit_count_RNI64R22[4]:B (r)
+               +     0.568          cell: ADLIB:NOR3C
+  10.341                       BUS_INTERFACE_0/hit_count_RNI64R22[4]:Y (r)
+               +     0.383          net: BUS_INTERFACE_0/hit_count_c4
+  10.724                       BUS_INTERFACE_0/hit_count_RNIN17G2[5]:A (r)
+               +     0.445          cell: ADLIB:NOR2B
+  11.169                       BUS_INTERFACE_0/hit_count_RNIN17G2[5]:Y (r)
+               +     2.167          net: BUS_INTERFACE_0/hit_count_c5
+  13.336                       BUS_INTERFACE_0/hit_count_RNIHNDS7[5]:C (r)
+               +     0.683          cell: ADLIB:NOR3C
+  14.019                       BUS_INTERFACE_0/hit_count_RNIHNDS7[5]:Y (r)
+               +     1.138          net: BUS_INTERFACE_0/hit_count_c22
+  15.157                       BUS_INTERFACE_0/hit_count_RNIINI58[23]:A (r)
+               +     0.445          cell: ADLIB:NOR2B
+  15.602                       BUS_INTERFACE_0/hit_count_RNIINI58[23]:Y (r)
+               +     0.349          net: BUS_INTERFACE_0/hit_count_c23
+  15.951                       BUS_INTERFACE_0/hit_count_RNO_0[25]:B (r)
+               +     0.538          cell: ADLIB:NOR2B
+  16.489                       BUS_INTERFACE_0/hit_count_RNO_0[25]:Y (r)
+               +     0.296          net: BUS_INTERFACE_0/hit_count_51_0
+  16.785                       BUS_INTERFACE_0/hit_count_RNO[25]:B (r)
+               +     0.856          cell: ADLIB:XA1
+  17.641                       BUS_INTERFACE_0/hit_count_RNO[25]:Y (r)
+               +     0.296          net: BUS_INTERFACE_0/hit_count_n25
+  17.937                       BUS_INTERFACE_0/hit_count[25]:D (r)
                                     
-  20.055                       data arrival time
+  17.937                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -740,12 +736,12 @@ Expanded Path 1
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.622          net: FAB_CLK
-  15.871                       CORESPI_0/USPI/UCC/mtx_spi_data_out:CLK (r)
-               -     0.490          Library setup time: ADLIB:DFN1C0
-  15.381                       CORESPI_0/USPI/UCC/mtx_spi_data_out:D
+               +     0.615          net: FAB_CLK
+  15.864                       BUS_INTERFACE_0/hit_count[25]:CLK (r)
+               -     0.522          Library setup time: ADLIB:DFN1
+  15.342                       BUS_INTERFACE_0/hit_count[25]:D
                                     
-  15.381                       data required time
+  15.342                       data required time
 
 
 END SET Register to Register
@@ -756,60 +752,60 @@ SET External Setup
 
 Path 1
   From:                  hit_data
-  To:                    BUS_INTERFACE_0/hit_count[19]:D
-  Delay (ns):            4.970
+  To:                    BUS_INTERFACE_0/hit_count[17]:D
+  Delay (ns):            5.963
   Slack (ns):
-  Arrival (ns):          4.970
+  Arrival (ns):          5.963
   Required (ns):
   Setup (ns):            0.490
-  External Setup (ns):   -0.407
+  External Setup (ns):   0.577
 
 Path 2
   From:                  hit_data
-  To:                    BUS_INTERFACE_0/hit_count[18]:D
-  Delay (ns):            4.791
+  To:                    BUS_INTERFACE_0/hit_count[15]:D
+  Delay (ns):            5.963
   Slack (ns):
-  Arrival (ns):          4.791
+  Arrival (ns):          5.963
   Required (ns):
   Setup (ns):            0.490
-  External Setup (ns):   -0.601
+  External Setup (ns):   0.577
 
 Path 3
   From:                  hit_data
-  To:                    BUS_INTERFACE_0/hit_count[21]:D
-  Delay (ns):            4.779
+  To:                    BUS_INTERFACE_0/hit_count[2]:D
+  Delay (ns):            5.795
   Slack (ns):
-  Arrival (ns):          4.779
+  Arrival (ns):          5.795
   Required (ns):
   Setup (ns):            0.490
-  External Setup (ns):   -0.713
+  External Setup (ns):   0.421
 
 Path 4
   From:                  hit_data
-  To:                    BUS_INTERFACE_0/hit_count[13]:D
-  Delay (ns):            4.757
+  To:                    BUS_INTERFACE_0/hit_count[5]:D
+  Delay (ns):            5.749
   Slack (ns):
-  Arrival (ns):          4.757
+  Arrival (ns):          5.749
   Required (ns):
   Setup (ns):            0.490
-  External Setup (ns):   -0.735
+  External Setup (ns):   0.331
 
 Path 5
   From:                  hit_data
-  To:                    BUS_INTERFACE_0/hit_count[15]:D
-  Delay (ns):            4.606
+  To:                    BUS_INTERFACE_0/hit_count[25]:D
+  Delay (ns):            5.704
   Slack (ns):
-  Arrival (ns):          4.606
+  Arrival (ns):          5.704
   Required (ns):
   Setup (ns):            0.490
-  External Setup (ns):   -0.775
+  External Setup (ns):   0.330
 
 
 Expanded Path 1
   From: hit_data
-  To: BUS_INTERFACE_0/hit_count[19]:D
+  To: BUS_INTERFACE_0/hit_count[17]:D
   data required time                             N/C
-  data arrival time                          -   4.970
+  data arrival time                          -   5.963
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -822,18 +818,18 @@ Expanded Path 1
   0.967                        hit_data_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   1.006                        hit_data_pad/U0/U1:Y (r)
-               +     0.387          net: hit_data_c
-  1.393                        BUS_INTERFACE_0/hit_count_RNITE7I8[11]:C (r)
-               +     0.369          cell: ADLIB:AOI1
-  1.762                        BUS_INTERFACE_0/hit_count_RNITE7I8[11]:Y (f)
-               +     2.253          net: BUS_INTERFACE_0/hit_count_1_sqmuxa
-  4.015                        BUS_INTERFACE_0/hit_count_RNO[19]:C (f)
+               +     1.956          net: hit_data_c
+  2.962                        BUS_INTERFACE_0/hit_count_RNITE7I8[10]:A (r)
+               +     0.424          cell: ADLIB:NOR2
+  3.386                        BUS_INTERFACE_0/hit_count_RNITE7I8[10]:Y (f)
+               +     1.622          net: BUS_INTERFACE_0/hit_count_1_sqmuxa_0
+  5.008                        BUS_INTERFACE_0/hit_count_RNO[17]:C (f)
                +     0.649          cell: ADLIB:XA1
-  4.664                        BUS_INTERFACE_0/hit_count_RNO[19]:Y (f)
-               +     0.306          net: BUS_INTERFACE_0/hit_count_n19
-  4.970                        BUS_INTERFACE_0/hit_count[19]:D (f)
+  5.657                        BUS_INTERFACE_0/hit_count_RNO[17]:Y (f)
+               +     0.306          net: BUS_INTERFACE_0/hit_count_n17
+  5.963                        BUS_INTERFACE_0/hit_count[17]:D (f)
                                     
-  4.970                        data arrival time
+  5.963                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -845,10 +841,10 @@ Expanded Path 1
   N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   N/C                          turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.618          net: FAB_CLK
-  N/C                          BUS_INTERFACE_0/hit_count[19]:CLK (r)
+               +     0.627          net: FAB_CLK
+  N/C                          BUS_INTERFACE_0/hit_count[17]:CLK (r)
                -     0.490          Library setup time: ADLIB:DFN1
-  N/C                          BUS_INTERFACE_0/hit_count[19]:D
+  N/C                          BUS_INTERFACE_0/hit_count[17]:D
 
 
 END SET External Setup
@@ -858,56 +854,56 @@ END SET External Setup
 SET Clock to Output
 
 Path 1
-  From:                  BUS_INTERFACE_0/freq[1]:CLK
-  To:                    pwm_out_IR
-  Delay (ns):            11.322
-  Slack (ns):
-  Arrival (ns):          17.185
-  Required (ns):
-  Clock to Out (ns):     17.185
-
-Path 2
   From:                  BUS_INTERFACE_0/freq[5]:CLK
   To:                    pwm_out_IR
-  Delay (ns):            10.673
+  Delay (ns):            9.965
   Slack (ns):
-  Arrival (ns):          16.536
+  Arrival (ns):          15.903
   Required (ns):
-  Clock to Out (ns):     16.536
+  Clock to Out (ns):     15.903
+
+Path 2
+  From:                  CORESPI_0/USPI/UCC/stxs_direct/U1:CLK
+  To:                    SPISDO
+  Delay (ns):            9.848
+  Slack (ns):
+  Arrival (ns):          15.745
+  Required (ns):
+  Clock to Out (ns):     15.745
 
 Path 3
-  From:                  BUS_INTERFACE_0/p3/pwm:CLK
-  To:                    pwm_out_IR
-  Delay (ns):            10.466
+  From:                  CORESPI_0/USPI/URF/control1[1]:CLK
+  To:                    SPISDO
+  Delay (ns):            9.730
   Slack (ns):
-  Arrival (ns):          16.345
+  Arrival (ns):          15.657
   Required (ns):
-  Clock to Out (ns):     16.345
+  Clock to Out (ns):     15.657
 
 Path 4
-  From:                  BUS_INTERFACE_0/p2/pwm:CLK
+  From:                  BUS_INTERFACE_0/freq[1]:CLK
   To:                    pwm_out_IR
-  Delay (ns):            10.230
+  Delay (ns):            9.655
   Slack (ns):
-  Arrival (ns):          16.109
+  Arrival (ns):          15.600
   Required (ns):
-  Clock to Out (ns):     16.109
+  Clock to Out (ns):     15.600
 
 Path 5
   From:                  BUS_INTERFACE_0/freq[3]:CLK
   To:                    pwm_out_IR
-  Delay (ns):            9.752
+  Delay (ns):            9.041
   Slack (ns):
-  Arrival (ns):          15.615
+  Arrival (ns):          14.903
   Required (ns):
-  Clock to Out (ns):     15.615
+  Clock to Out (ns):     14.903
 
 
 Expanded Path 1
-  From: BUS_INTERFACE_0/freq[1]:CLK
+  From: BUS_INTERFACE_0/freq[5]:CLK
   To: pwm_out_IR
   data required time                             N/C
-  data arrival time                          -   17.185
+  data arrival time                          -   15.903
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -920,34 +916,34 @@ Expanded Path 1
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.614          net: FAB_CLK
-  5.863                        BUS_INTERFACE_0/freq[1]:CLK (r)
-               +     0.528          cell: ADLIB:DFN1
-  6.391                        BUS_INTERFACE_0/freq[1]:Q (r)
-               +     1.335          net: BUS_INTERFACE_0/freq[1]
-  7.726                        BUS_INTERFACE_0/freq_RNI05PT[1]:B (r)
-               +     0.468          cell: ADLIB:NOR2A
-  8.194                        BUS_INTERFACE_0/freq_RNI05PT[1]:Y (f)
+               +     0.689          net: FAB_CLK
+  5.938                        BUS_INTERFACE_0/freq[5]:CLK (r)
+               +     0.671          cell: ADLIB:DFN1
+  6.609                        BUS_INTERFACE_0/freq[5]:Q (f)
+               +     0.454          net: BUS_INTERFACE_0/freq[5]
+  7.063                        BUS_INTERFACE_0/freq_RNI05PT[1]:A (f)
+               +     0.574          cell: ADLIB:NOR2A
+  7.637                        BUS_INTERFACE_0/freq_RNI05PT[1]:Y (f)
                +     0.306          net: BUS_INTERFACE_0/from_pwm_56_m_0
-  8.500                        BUS_INTERFACE_0/p2/pwm_RNIBQ8Q1:C (f)
+  7.943                        BUS_INTERFACE_0/p2/pwm_RNIBQ8Q1:C (f)
                +     0.620          cell: ADLIB:NOR3C
-  9.120                        BUS_INTERFACE_0/p2/pwm_RNIBQ8Q1:Y (f)
-               +     0.296          net: BUS_INTERFACE_0/from_pwm_56_m
-  9.416                        BUS_INTERFACE_0/p3/pwm_RNINON83:C (f)
+  8.563                        BUS_INTERFACE_0/p2/pwm_RNIBQ8Q1:Y (f)
+               +     0.311          net: BUS_INTERFACE_0/from_pwm_56_m
+  8.874                        BUS_INTERFACE_0/p3/pwm_RNINON83:C (f)
                +     0.576          cell: ADLIB:AO1
-  9.992                        BUS_INTERFACE_0/p3/pwm_RNINON83:Y (f)
-               +     3.224          net: pwm_out_IR_c
-  13.216                       pwm_out_IR_pad/U0/U1:D (f)
+  9.450                        BUS_INTERFACE_0/p3/pwm_RNINON83:Y (f)
+               +     2.484          net: pwm_out_IR_c
+  11.934                       pwm_out_IR_pad/U0/U1:D (f)
                +     0.600          cell: ADLIB:IOTRI_OB_EB
-  13.816                       pwm_out_IR_pad/U0/U1:DOUT (f)
+  12.534                       pwm_out_IR_pad/U0/U1:DOUT (f)
                +     0.000          net: pwm_out_IR_pad/U0/NET1
-  13.816                       pwm_out_IR_pad/U0/U0:D (f)
+  12.534                       pwm_out_IR_pad/U0/U0:D (f)
                +     3.369          cell: ADLIB:IOPAD_TRI
-  17.185                       pwm_out_IR_pad/U0/U0:PAD (f)
+  15.903                       pwm_out_IR_pad/U0/U0:PAD (f)
                +     0.000          net: pwm_out_IR
-  17.185                       pwm_out_IR (f)
+  15.903                       pwm_out_IR (f)
                                     
-  17.185                       data arrival time
+  15.903                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -967,66 +963,66 @@ SET Register to Asynchronous
 
 Path 1
   From:                  CORESPI_0/USPI/UCC/ssel_rx_q2:CLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
-  Delay (ns):            4.403
-  Slack (ns):            5.390
-  Arrival (ns):          10.287
-  Required (ns):         15.677
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
+  Delay (ns):            5.092
+  Slack (ns):            4.623
+  Arrival (ns):          11.037
+  Required (ns):         15.660
   Recovery (ns):         0.271
-  Minimum Period (ns):   4.610
-  Skew (ns):             -0.064
+  Minimum Period (ns):   5.377
+  Skew (ns):             0.014
 
 Path 2
-  From:                  CORESPI_0/USPI/UCC/ssel_rx_q2:CLK
+  From:                  CORESPI_0/USPI/UCC/stx_async_reset_ok:CLK
   To:                    CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
-  Delay (ns):            4.364
-  Slack (ns):            5.406
-  Arrival (ns):          10.248
-  Required (ns):         15.654
+  Delay (ns):            4.982
+  Slack (ns):            4.733
+  Arrival (ns):          10.927
+  Required (ns):         15.660
   Recovery (ns):         0.271
-  Minimum Period (ns):   4.594
-  Skew (ns):             -0.041
+  Minimum Period (ns):   5.267
+  Skew (ns):             0.014
 
 Path 3
-  From:                  CORESPI_0/USPI/UCC/stx_async_reset_ok:CLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
-  Delay (ns):            4.296
-  Slack (ns):            5.497
-  Arrival (ns):          10.180
-  Required (ns):         15.677
+  From:                  CORESPI_0/USPI/UCC/ssel_rx_q2:CLK
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[3]/U1:CLR
+  Delay (ns):            4.826
+  Slack (ns):            4.903
+  Arrival (ns):          10.771
+  Required (ns):         15.674
   Recovery (ns):         0.271
-  Minimum Period (ns):   4.503
-  Skew (ns):             -0.064
+  Minimum Period (ns):   5.097
+  Skew (ns):             0.000
 
 Path 4
   From:                  CORESPI_0/USPI/UCC/stx_async_reset_ok:CLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
-  Delay (ns):            4.257
-  Slack (ns):            5.513
-  Arrival (ns):          10.141
-  Required (ns):         15.654
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[3]/U1:CLR
+  Delay (ns):            4.716
+  Slack (ns):            5.013
+  Arrival (ns):          10.661
+  Required (ns):         15.674
   Recovery (ns):         0.271
-  Minimum Period (ns):   4.487
-  Skew (ns):             -0.041
+  Minimum Period (ns):   4.987
+  Skew (ns):             0.000
 
 Path 5
   From:                  CORESPI_0/USPI/UCC/ssel_rx_q2:CLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[5]/U1:CLR
-  Delay (ns):            3.970
-  Slack (ns):            5.770
-  Arrival (ns):          9.854
-  Required (ns):         15.624
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[12]/U1:CLR
+  Delay (ns):            4.603
+  Slack (ns):            5.078
+  Arrival (ns):          10.548
+  Required (ns):         15.626
   Recovery (ns):         0.271
-  Minimum Period (ns):   4.230
-  Skew (ns):             -0.011
+  Minimum Period (ns):   4.922
+  Skew (ns):             0.048
 
 
 Expanded Path 1
   From: CORESPI_0/USPI/UCC/ssel_rx_q2:CLK
-  To: CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
-  data required time                             15.677
-  data arrival time                          -   10.287
-  slack                                          5.390
+  To: CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
+  data required time                             15.660
+  data arrival time                          -   11.037
+  slack                                          4.623
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -1038,18 +1034,18 @@ Expanded Path 1
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   5.249                        turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.635          net: FAB_CLK
-  5.884                        CORESPI_0/USPI/UCC/ssel_rx_q2:CLK (r)
+               +     0.696          net: FAB_CLK
+  5.945                        CORESPI_0/USPI/UCC/ssel_rx_q2:CLK (r)
                +     0.671          cell: ADLIB:DFN1C0
-  6.555                        CORESPI_0/USPI/UCC/ssel_rx_q2:Q (f)
+  6.616                        CORESPI_0/USPI/UCC/ssel_rx_q2:Q (f)
                +     0.409          net: CORESPI_0/USPI/UCC/ssel_rx_q2
-  6.964                        CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:B (f)
+  7.025                        CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:B (f)
                +     0.543          cell: ADLIB:AO1B
-  7.507                        CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:Y (f)
-               +     2.780          net: CORESPI_0/USPI/UCC/N_1000_1
-  10.287                       CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR (f)
+  7.568                        CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:Y (f)
+               +     3.469          net: CORESPI_0/USPI/UCC/N_1000_1
+  11.037                       CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR (f)
                                     
-  10.287                       data arrival time
+  11.037                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1061,12 +1057,12 @@ Expanded Path 1
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.699          net: FAB_CLK
-  15.948                       CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLK (r)
+               +     0.682          net: FAB_CLK
+  15.931                       CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLK (r)
                -     0.271          Library recovery time: ADLIB:DFN1C1
-  15.677                       CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
+  15.660                       CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
                                     
-  15.677                       data required time
+  15.660                       data required time
 
 
 END SET Register to Asynchronous
@@ -1093,56 +1089,56 @@ SET mss_ccc_gla0 to mss_ccc_gla1
 
 Path 1
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
-  Delay (ns):            15.568
-  Slack (ns):            -4.066
-  Arrival (ns):          19.743
-  Required (ns):         15.677
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
+  Delay (ns):            13.094
+  Slack (ns):            -1.609
+  Arrival (ns):          17.269
+  Required (ns):         15.660
   Setup (ns):
 
 Path 2
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
-  Delay (ns):            15.529
-  Slack (ns):            -4.050
-  Arrival (ns):          19.704
-  Required (ns):         15.654
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[3]/U1:CLR
+  Delay (ns):            12.828
+  Slack (ns):            -1.329
+  Arrival (ns):          17.003
+  Required (ns):         15.674
   Setup (ns):
 
 Path 3
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[5]/U1:CLR
-  Delay (ns):            15.135
-  Slack (ns):            -3.686
-  Arrival (ns):          19.310
-  Required (ns):         15.624
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[12]/U1:CLR
+  Delay (ns):            12.605
+  Slack (ns):            -1.154
+  Arrival (ns):          16.780
+  Required (ns):         15.626
   Setup (ns):
 
 Path 4
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[10]/U1:CLR
-  Delay (ns):            15.086
-  Slack (ns):            -3.607
-  Arrival (ns):          19.261
-  Required (ns):         15.654
+  To:                    CORESPI_0/USPI/UCC/stxs_bitsel[4]/U1:CLR
+  Delay (ns):            12.647
+  Slack (ns):            -1.148
+  Arrival (ns):          16.822
+  Required (ns):         15.674
   Setup (ns):
 
 Path 5
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    CORESPI_0/USPI/UCC/stxs_datareg[8]/U1:CLR
-  Delay (ns):            15.056
-  Slack (ns):            -3.607
-  Arrival (ns):          19.231
-  Required (ns):         15.624
+  To:                    CORESPI_0/USPI/UCC/stxs_datareg[26]/U1:CLR
+  Delay (ns):            12.361
+  Slack (ns):            -0.876
+  Arrival (ns):          16.536
+  Required (ns):         15.660
   Setup (ns):
 
 
 Expanded Path 1
   From: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To: CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
-  data required time                             15.677
-  data arrival time                          -   19.743
-  slack                                          -4.066
+  To: CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
+  data required time                             15.660
+  data arrival time                          -   17.269
+  slack                                          -1.609
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla0
@@ -1158,18 +1154,18 @@ Expanded Path 1
   7.929                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_46:PIN2INT (r)
                +     0.095          cell: ADLIB:MSS_IF
   8.024                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_46:PIN2 (r)
-               +     7.018          net: turret_servo_mss_design_0/MSS_ADLIB_INST_M2FRESETn
-  15.042                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC:A (r)
+               +     3.808          net: turret_servo_mss_design_0/MSS_ADLIB_INST_M2FRESETn
+  11.832                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC:A (r)
                +     0.699          cell: ADLIB:CLKSRC
-  15.741                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC:Y (r)
-               +     0.626          net: turret_servo_mss_design_0_M2F_RESET_N
-  16.367                       CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:C (r)
+  12.531                       turret_servo_mss_design_0/MSS_ADLIB_INST_RNI7313/U_CLKSRC:Y (r)
+               +     0.673          net: turret_servo_mss_design_0_M2F_RESET_N
+  13.204                       CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:C (r)
                +     0.596          cell: ADLIB:AO1B
-  16.963                       CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:Y (f)
-               +     2.780          net: CORESPI_0/USPI/UCC/N_1000_1
-  19.743                       CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR (f)
+  13.800                       CORESPI_0/USPI/UCC/ssel_rx_q2_RNIKIV7_1:Y (f)
+               +     3.469          net: CORESPI_0/USPI/UCC/N_1000_1
+  17.269                       CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR (f)
                                     
-  19.743                       data arrival time
+  17.269                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1181,12 +1177,12 @@ Expanded Path 1
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.699          net: FAB_CLK
-  15.948                       CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLK (r)
+               +     0.682          net: FAB_CLK
+  15.931                       CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLK (r)
                -     0.271          Library recovery time: ADLIB:DFN1C1
-  15.677                       CORESPI_0/USPI/UCC/stxs_datareg[17]/U1:CLR
+  15.660                       CORESPI_0/USPI/UCC/stxs_datareg[25]/U1:CLR
                                     
-  15.677                       data required time
+  15.660                       data required time
 
 
 END SET mss_ccc_gla0 to mss_ccc_gla1
@@ -1198,55 +1194,55 @@ SET mss_fabric_interface_clock to mss_ccc_gla1
 Path 1
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                    CORESPI_0/USPI/UTXF/empty_out:D
-  Delay (ns):            20.835
-  Slack (ns):            -9.662
-  Arrival (ns):          25.010
-  Required (ns):         15.348
+  Delay (ns):            20.479
+  Slack (ns):            -9.325
+  Arrival (ns):          24.654
+  Required (ns):         15.329
   Setup (ns):            0.522
 
 Path 2
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                    CORESPI_0/USPI/UTXF/full_out:D
-  Delay (ns):            20.779
-  Slack (ns):            -9.609
-  Arrival (ns):          24.954
-  Required (ns):         15.345
+  Delay (ns):            20.483
+  Slack (ns):            -9.323
+  Arrival (ns):          24.658
+  Required (ns):         15.335
   Setup (ns):            0.522
 
 Path 3
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    BUS_INTERFACE_0/pulseWidth2[16]:D
-  Delay (ns):            19.620
-  Slack (ns):            -8.431
-  Arrival (ns):          23.795
-  Required (ns):         15.364
+  To:                    BUS_INTERFACE_0/pulseWidth1[16]:D
+  Delay (ns):            20.551
+  Slack (ns):            -9.301
+  Arrival (ns):          24.726
+  Required (ns):         15.425
   Setup (ns):            0.490
 
 Path 4
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    BUS_INTERFACE_0/pulseWidth1[16]:D
-  Delay (ns):            19.620
-  Slack (ns):            -8.428
-  Arrival (ns):          23.795
-  Required (ns):         15.367
+  To:                    BUS_INTERFACE_0/pulseWidth2[16]:D
+  Delay (ns):            20.534
+  Slack (ns):            -9.284
+  Arrival (ns):          24.709
+  Required (ns):         15.425
   Setup (ns):            0.490
 
 Path 5
   From:                  turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                    BUS_INTERFACE_0/pulseWidth2[17]:D
-  Delay (ns):            19.276
-  Slack (ns):            -8.094
-  Arrival (ns):          23.451
-  Required (ns):         15.357
+  Delay (ns):            20.154
+  Slack (ns):            -9.004
+  Arrival (ns):          24.329
+  Required (ns):         15.325
   Setup (ns):            0.522
 
 
 Expanded Path 1
   From: turret_servo_mss_design_0/MSS_ADLIB_INST/U_CORE:GLB
   To: CORESPI_0/USPI/UTXF/empty_out:D
-  data required time                             15.348
-  data arrival time                          -   25.010
-  slack                                          -9.662
+  data required time                             15.329
+  data arrival time                          -   24.654
+  slack                                          -9.325
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -1260,70 +1256,70 @@ Expanded Path 1
   8.103                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_33:PIN2INT (r)
                +     0.095          cell: ADLIB:MSS_IF
   8.198                        turret_servo_mss_design_0/MSS_ADLIB_INST/U_33:PIN2 (r)
-               +     0.330          net: turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[10]
-  8.528                        CoreAPB3_0/iPSELS_2[0]:A (r)
-               +     0.331          cell: ADLIB:NOR2
-  8.859                        CoreAPB3_0/iPSELS_2[0]:Y (f)
-               +     1.100          net: CoreAPB3_0/CoreAPB3_0_APBmslave0_PSELx_2
-  9.959                        CoreAPB3_0/iPSELS_0_a2[2]:A (f)
+               +     0.342          net: turret_servo_mss_design_0_MSS_MASTER_APB_PADDR[10]
+  8.540                        CoreAPB3_0/iPSELS_2[0]:B (r)
+               +     0.468          cell: ADLIB:NOR2
+  9.008                        CoreAPB3_0/iPSELS_2[0]:Y (f)
+               +     0.328          net: CoreAPB3_0/CoreAPB3_0_APBmslave0_PSELx_2
+  9.336                        CoreAPB3_0/iPSELS_0_a2[2]:A (f)
                +     0.468          cell: ADLIB:NOR2B
-  10.427                       CoreAPB3_0/iPSELS_0_a2[2]:Y (f)
-               +     0.333          net: N_53
-  10.760                       CoreAPB3_0/iPSELS_0_a5[2]:B (f)
+  9.804                        CoreAPB3_0/iPSELS_0_a2[2]:Y (f)
+               +     0.348          net: CoreAPB3_0/N_53
+  10.152                       CoreAPB3_0/iPSELS_0_a5[2]:B (f)
                +     0.584          cell: ADLIB:NOR3B
-  11.344                       CoreAPB3_0/iPSELS_0_a5[2]:Y (f)
-               +     0.322          net: CoreAPB3_0_APBmslave2_PSELx
-  11.666                       CORESPI_0/USPI/UCON/tx_fifo_write_sig16:B (f)
-               +     0.571          cell: ADLIB:NOR2B
-  12.237                       CORESPI_0/USPI/UCON/tx_fifo_write_sig16:Y (f)
-               +     0.328          net: CORESPI_0/USPI/tx_fifo_write_sig16
-  12.565                       CORESPI_0/USPI/UCON/tx_fifo_last_0_a2_0:B (f)
-               +     0.584          cell: ADLIB:NOR3C
-  13.149                       CORESPI_0/USPI/UCON/tx_fifo_last_0_a2_0:Y (f)
-               +     1.981          net: CORESPI_0/USPI/UCON/tx_fifo_last_0_a2_0
-  15.130                       CORESPI_0/USPI/UCON/tx_fifo_write_0_a2:C (f)
-               +     0.649          cell: ADLIB:XA1
-  15.779                       CORESPI_0/USPI/UCON/tx_fifo_write_0_a2:Y (f)
-               +     0.993          net: CORESPI_0/USPI/tx_fifo_write
-  16.772                       CORESPI_0/USPI/UTXF/full_out_RNI0FPI1_0:A (f)
+  10.736                       CoreAPB3_0/iPSELS_0_a5[2]:Y (f)
+               +     1.080          net: CoreAPB3_0_APBmslave2_PSELx
+  11.816                       CORESPI_0/USPI/URF/prdata_1_i_o2:B (f)
+               +     0.571          cell: ADLIB:OR2B
+  12.387                       CORESPI_0/USPI/URF/prdata_1_i_o2:Y (r)
+               +     1.169          net: CORESPI_0/USPI/N_62
+  13.556                       CORESPI_0/USPI/UCON/rx_fifo_read_0_a2_0:B (r)
+               +     0.351          cell: ADLIB:NOR2A
+  13.907                       CORESPI_0/USPI/UCON/rx_fifo_read_0_a2_0:Y (f)
+               +     0.828          net: CORESPI_0/USPI/UCON/N_71
+  14.735                       CORESPI_0/USPI/UCON/tx_fifo_last_0_a2_0:B (f)
+               +     0.574          cell: ADLIB:NOR2B
+  15.309                       CORESPI_0/USPI/UCON/tx_fifo_last_0_a2_0:Y (f)
+               +     0.369          net: CORESPI_0/USPI/UCON/tx_fifo_last_0_a2_0
+  15.678                       CORESPI_0/USPI/UCON/tx_fifo_write_0_a2:C (f)
+               +     0.660          cell: ADLIB:XA1
+  16.338                       CORESPI_0/USPI/UCON/tx_fifo_write_0_a2:Y (f)
+               +     0.306          net: CORESPI_0/USPI/tx_fifo_write
+  16.644                       CORESPI_0/USPI/UTXF/full_out_RNI0FPI1_0:A (f)
                +     0.620          cell: ADLIB:NOR3B
-  17.392                       CORESPI_0/USPI/UTXF/full_out_RNI0FPI1_0:Y (f)
-               +     0.443          net: CORESPI_0/USPI/UTXF/counter_d_0_sqmuxa_1_0
-  17.835                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_1:B (f)
+  17.264                       CORESPI_0/USPI/UTXF/full_out_RNI0FPI1_0:Y (f)
+               +     0.351          net: CORESPI_0/USPI/UTXF/counter_d_0_sqmuxa_1_0
+  17.615                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_1:B (f)
                +     0.571          cell: ADLIB:AND2
-  18.406                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_1:Y (f)
-               +     0.314          net: CORESPI_0/USPI/UTXF/DWACT_ADD_CI_0_TMP[0]
-  18.720                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_27:A (f)
+  18.186                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_1:Y (f)
+               +     0.372          net: CORESPI_0/USPI/UTXF/DWACT_ADD_CI_0_TMP[0]
+  18.558                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_27:A (f)
                +     0.351          cell: ADLIB:NOR2B
-  19.071                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_27:Y (f)
-               +     0.408          net: CORESPI_0/USPI/UTXF/DWACT_ADD_CI_0_g_array_1[0]
-  19.479                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_33:C (f)
+  18.909                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_27:Y (f)
+               +     0.917          net: CORESPI_0/USPI/UTXF/DWACT_ADD_CI_0_g_array_1[0]
+  19.826                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_33:C (f)
                +     0.620          cell: ADLIB:NOR3C
-  20.099                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_33:Y (f)
+  20.446                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_33:Y (f)
                +     0.351          net: CORESPI_0/USPI/UTXF/DWACT_ADD_CI_0_g_array_2[0]
-  20.450                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_21:B (f)
+  20.797                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_21:B (f)
                +     0.853          cell: ADLIB:XOR2
-  21.303                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_21:Y (r)
+  21.650                       CORESPI_0/USPI/UTXF/un1_counter_q_0_I_21:Y (r)
                +     0.306          net: CORESPI_0/USPI/UTXF/un1_counter_q0[4]
-  21.609                       CORESPI_0/USPI/UTXF/un1_counter_q_m[4]:A (r)
+  21.956                       CORESPI_0/USPI/UTXF/un1_counter_q_m[4]:A (r)
                +     0.517          cell: ADLIB:MX2
-  22.126                       CORESPI_0/USPI/UTXF/un1_counter_q_m[4]:Y (r)
+  22.473                       CORESPI_0/USPI/UTXF/un1_counter_q_m[4]:Y (r)
                +     0.294          net: CORESPI_0/USPI/UTXF/un1_counter_q[4]
-  22.420                       CORESPI_0/USPI/UTXF/un1_counter_q_m_RNITMEE[4]:A (r)
+  22.767                       CORESPI_0/USPI/UTXF/un1_counter_q_m_RNITMEE[4]:A (r)
                +     0.445          cell: ADLIB:NOR2B
-  22.865                       CORESPI_0/USPI/UTXF/un1_counter_q_m_RNITMEE[4]:Y (r)
-               +     0.351          net: CORESPI_0/USPI/UTXF/counter_d[4]
-  23.216                       CORESPI_0/USPI/UTXF/un1_counter_q_m_RNIAK4L4[4]:B (r)
-               +     0.538          cell: ADLIB:NOR2
-  23.754                       CORESPI_0/USPI/UTXF/un1_counter_q_m_RNIAK4L4[4]:Y (f)
-               +     0.382          net: CORESPI_0/USPI/UTXF/full_out_2_3
-  24.136                       CORESPI_0/USPI/UTXF/empty_out_RNO:B (f)
-               +     0.552          cell: ADLIB:NOR3B
-  24.688                       CORESPI_0/USPI/UTXF/empty_out_RNO:Y (f)
-               +     0.322          net: CORESPI_0/USPI/UTXF/empty_out_2
-  25.010                       CORESPI_0/USPI/UTXF/empty_out:D (f)
+  23.212                       CORESPI_0/USPI/UTXF/un1_counter_q_m_RNITMEE[4]:Y (r)
+               +     0.724          net: CORESPI_0/USPI/UTXF/counter_d[4]
+  23.936                       CORESPI_0/USPI/UTXF/empty_out_RNO:B (r)
+               +     0.422          cell: ADLIB:NOR3A
+  24.358                       CORESPI_0/USPI/UTXF/empty_out_RNO:Y (f)
+               +     0.296          net: CORESPI_0/USPI/UTXF/empty_out_2
+  24.654                       CORESPI_0/USPI/UTXF/empty_out:D (f)
                                     
-  25.010                       data arrival time
+  24.654                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1335,12 +1331,12 @@ Expanded Path 1
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   15.249                       turret_servo_mss_design_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.621          net: FAB_CLK
-  15.870                       CORESPI_0/USPI/UTXF/empty_out:CLK (r)
+               +     0.602          net: FAB_CLK
+  15.851                       CORESPI_0/USPI/UTXF/empty_out:CLK (r)
                -     0.522          Library setup time: ADLIB:DFN1P0
-  15.348                       CORESPI_0/USPI/UTXF/empty_out:D
+  15.329                       CORESPI_0/USPI/UTXF/empty_out:D
                                     
-  15.348                       data required time
+  15.329                       data required time
 
 
 END SET mss_fabric_interface_clock to mss_ccc_gla1

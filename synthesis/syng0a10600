@@ -1,0 +1,1219 @@
+
+--$Header: //synplicity/mapact/mappers/proasic/lib/gen_pa3/cmp_lt.vhd#1 $
+--::::::::::::::
+--DWACT_TL_CMPLE2.vhd
+--::::::::::::::
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity DWACT_TL_CMPLE2 is
+    port(
+	A		: in std_logic_vector (1 downto 0);
+	B		: in std_logic_vector (1 downto 0);
+	LE		: out std_logic
+    );
+end DWACT_TL_CMPLE2;
+
+architecture impl1 of DWACT_TL_CMPLE2 is
+
+component AO1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AO1C
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NAND3A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+    signal E		: std_logic_vector (2 downto 0);
+
+begin
+
+       ACT_AND2_0 : AND2A port map ( A(1), B(1), E(0) );
+       ACT_AO21F_0 : AO1C port map ( B(0), A(0), B(1), E(1) );
+       ACT_AO21_0 : AO1A port map ( B(0), A(0), A(1), E(2) );
+       ACT_NAND3_0 : NAND3A port map ( E(0), E(1), E(2), LE );
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLE3.vhd
+--::::::::::::::
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity DWACT_TL_CMPLE3 is
+    port(
+	A		: in std_logic_vector (2 downto 0);
+	B		: in std_logic_vector (2 downto 0);
+	LE		: out std_logic
+    );
+end DWACT_TL_CMPLE3;
+
+architecture impl1 of DWACT_TL_CMPLE3 is
+
+component AO1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AOI1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NOR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component XNOR2
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+    signal E		: std_logic_vector (5 downto 0);
+
+begin
+
+       ACT_NOR2_0 : NOR2A port map ( A(0), B(0), E(0) );
+       ACT_OR2_0 : OR2A port map ( A(1), B(1), E(1) );
+       ACT_AND2_0 : AND2A port map ( A(1), B(1), E(2) );
+       ACT_AOI21_0 : AOI1A port map ( E(0), E(1), E(2), E(3) );
+
+       ACT_OR2_1 : OR2A port map ( A(2), B(2), E(4) );
+       ACT_AND2_1 : AND2A port map ( A(2), B(2), E(5) );
+       ACT_AO21_1 : AO1A port map ( E(3), E(4), E(5), LE );
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLE4.vhd
+--::::::::::::::
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity DWACT_TL_CMPLE4 is
+    port(
+	A		: in std_logic_vector (3 downto 0);
+	B		: in std_logic_vector (3 downto 0);
+	LE		: out std_logic
+    );
+end DWACT_TL_CMPLE4;
+
+architecture impl1 of DWACT_TL_CMPLE4 is
+
+component AO1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AOI1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AO1
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NOR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+       signal E		: std_logic_vector (10 downto 0);
+
+begin
+
+       ACT_NOR2_0 : NOR2A port map ( A(0), B(0), E(0) );
+       ACT_OR2_0 : OR2A port map ( A(1), B(1), E(1) );
+       ACT_AND2_0 : AND2A port map ( A(1), B(1), E(2) );
+       ACT_AO21_0 : AOI1A port map ( E(0), E(1), E(2), E(3) );
+       
+       ACT_OR2_1 : OR2A port map ( A(2), B(2), E(4) );
+       ACT_NOR2_1 : NOR2A port map ( A(3), B(3), E(5) );
+       ACT_NOR2_2 : NOR2A port map ( E(4), E(5), E(6) );
+
+       ACT_NOR2_3 : NOR2A port map ( B(2), A(2), E(7) );
+       ACT_OR2_3 : OR2A port map ( B(3), A(3), E(8) );
+       ACT_AO21_1 : AOI1A port map ( E(7), E(8), E(5), E(10) );
+
+       ACT_AO21_2 : AO1A port map ( E(3), E(6), E(10), LE );
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLE5.vhd
+--::::::::::::::
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity DWACT_TL_CMPLE5 is
+    port(
+	A		: in std_logic_vector (4 downto 0);
+	B		: in std_logic_vector (4 downto 0);
+	LE		: out std_logic
+    );
+end DWACT_TL_CMPLE5;
+
+architecture impl1 of DWACT_TL_CMPLE5 is
+
+component OR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NOR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AO1C
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OA1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+   
+component OAI1
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+   
+   signal E		: std_logic_vector (7 downto 0);
+   
+   signal n15, n16, n17, n18, n19, n20, n21, n22, n23, n24 : std_logic;
+
+begin
+   
+   ACT_OR2_0 : OR2A port map( Y => n15, A => A(1), B => B(1));
+   ACT_OR2_1 : OR2A port map( Y => n16, A => B(2), B => A(2));
+   ACT_NOR2_0 : NOR2A port map( Y => n17, A => A(0), B => B(0));
+   ACT_OR2_2 : OR2A port map( Y => n18, A => A(4), B => B(4));
+   ACT_AO21_0 : AO1C port map( Y => n19, A => A(1), B => B(1), C => n17);
+   ACT_AOI21_0 : OA1A port map( Y => n20, A => B(3), B => A(3), C => n16);
+   ACT_AO21_1 : AO1C port map( Y => n21, A => B(2), B => A(2), C => n15);
+   ACT_OR2_3 : OR2A port map( Y => n22, A => B(4), B => A(4));
+   ACT_AO21_2 : AO1C port map( Y => n23, A => B(3), B => A(3), C => n18);
+   ACT_AOI21_1 : OA1A port map( Y => n24, A => n19, B => n21, C => n20);
+   ACT_OAI21_0 : OAI1 port map( Y => LE, A => n24, B => n23, C => n22);
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLT2.vhd
+--::::::::::::::
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity DWACT_TL_CMPLT2 is
+    port(
+	A		: in std_logic_vector (1 downto 0);
+	B		: in std_logic_vector (1 downto 0);
+	LT		: out std_logic
+    );
+end DWACT_TL_CMPLT2;
+
+architecture impl1 of DWACT_TL_CMPLT2 is
+
+component AO1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AO1C
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND3A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+    signal E		: std_logic_vector (2 downto 0);
+
+begin
+
+       ACT_AND2_0 : AND2A port map ( B(1), A(1), E(0) );
+       ACT_AO21F_0 : AO1C port map ( A(0), B(0), A(1), E(1) );
+       ACT_AO21_0 : AO1A port map ( A(0), B(0), B(1), E(2) );
+       ACT_AND3_0 : AND3A port map ( E(0), E(1), E(2), LT );
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLT3.vhd
+--::::::::::::::
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity DWACT_TL_CMPLT3 is
+    port(
+	A		: in std_logic_vector (2 downto 0);
+	B		: in std_logic_vector (2 downto 0);
+	LT		: out std_logic
+    );
+end DWACT_TL_CMPLT3;
+
+architecture impl1 of DWACT_TL_CMPLT3 is
+
+component AO1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AOI1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NOR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component XNOR2
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+    signal E		: std_logic_vector (5 downto 0);
+
+begin
+
+       ACT_NOR2_0 : NOR2A port map ( B(0), A(0), E(0) );
+       ACT_OR2_0 : OR2A port map ( B(1), A(1), E(1) );
+       ACT_AND2_0 : AND2A port map ( B(1), A(1), E(2) );
+       ACT_AOI21_0 : AOI1A port map ( E(0), E(1), E(2), E(3) );
+
+       ACT_OR2_1 : OR2A port map ( B(2), A(2), E(4) );
+       ACT_AND2_1 : AND2A port map ( B(2), A(2), E(5) );
+       ACT_AOI21_1 : AOI1A port map ( E(3), E(4), E(5), LT );
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLT4.vhd
+--::::::::::::::
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity DWACT_TL_CMPLT4 is
+    port(
+	A		: in std_logic_vector (3 downto 0);
+	B		: in std_logic_vector (3 downto 0);
+	LT		: out std_logic
+    );
+end DWACT_TL_CMPLT4;
+
+architecture impl1 of DWACT_TL_CMPLT4 is
+
+component AO1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AOI1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AO1
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NOR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AND2
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+       signal E		: std_logic_vector (10 downto 0);
+
+begin
+
+       ACT_NOR2_0 : NOR2A port map ( B(0), A(0), E(0) );
+       ACT_OR2_0 : OR2A port map ( B(1), A(1), E(1) );
+       ACT_AND2_0 : AND2A port map ( B(1), A(1), E(2) );
+       ACT_AO21_0 : AOI1A port map ( E(0), E(1), E(2), E(3) );
+       
+       ACT_OR2_1 : OR2A port map ( B(2), A(2), E(4) );
+       ACT_NOR2_1 : NOR2A port map ( B(3), A(3), E(5) );
+       ACT_NOR2_2 : NOR2A port map ( E(4), E(5), E(6) );
+
+       ACT_NOR2_3 : NOR2A port map ( A(2), B(2), E(7) );
+       ACT_OR2_3 : OR2A port map ( A(3), B(3), E(8) );
+       ACT_AO21_1 : AOI1A port map ( E(7), E(8), E(5), E(10) );
+
+       ACT_AO21_2 : AOI1A port map ( E(3), E(6), E(10), LT );
+
+end impl1;
+--::::::::::::::
+--DWACT_TL_CMPLT5.vhd
+--::::::::::::::
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity DWACT_TL_CMPLT5 is
+    port(
+	A		: in std_logic_vector (4 downto 0);
+	B		: in std_logic_vector (4 downto 0);
+	LT		: out std_logic
+    );
+end DWACT_TL_CMPLT5;
+
+architecture impl1 of DWACT_TL_CMPLT5 is
+
+component OR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component NOR2A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component AO1C
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OA1A
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+
+component OA1
+    port(
+	A		: in std_logic;
+	B		: in std_logic;
+        C		: in std_logic;
+	Y		: out std_logic
+    );
+end component;
+      
+   signal E		: std_logic_vector (7 downto 0);
+   
+   signal n15, n16, n17, n18, n19, n20, n21, n22, n23, n24 : std_logic;
+
+begin
+   
+   ACT_OR2_0 : OR2A port map( Y => n15, A => B(1), B => A(1));
+   ACT_OR2_1 : OR2A port map( Y => n16, A => A(2), B => B(2));
+   ACT_NOR2_0 : NOR2A port map( Y => n17, A => B(0), B => A(0));
+   ACT_OR2_2 : OR2A port map( Y => n18, A => B(4), B => A(4));
+   ACT_AO21_0 : AO1C port map( Y => n19, A => B(1), B => A(1), C => n17);
+   ACT_AOI21_0 : OA1A port map( Y => n20, A => A(3), B => B(3), C => n16);
+   ACT_AO21_1 : AO1C port map( Y => n21, A => A(2), B => B(2), C => n15);
+   ACT_OR2_3 : OR2A port map( Y => n22, A => A(4), B => B(4));
+   ACT_AO21_2 : AO1C port map( Y => n23, A => A(3), B => B(3), C => n18);
+   ACT_AOI21_1 : OA1A port map( Y => n24, A => n19, B => n21, C => n20);
+   ACT_OA21_0 : OA1 port map( Y => LT, A => n24, B => n23, C => n22);
+
+end impl1;
+---DWACT_ANDTREE
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity DWACT_ANDTREE is
+
+  generic(n: integer);
+  port(
+      A : in std_logic_vector(n-1 downto 0);
+      Y : out std_logic
+      );
+
+end DWACT_ANDTREE;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+     
+architecture FAND OF DWACT_ANDTREE is
+ component DWACT_BL_ANDTREE 
+    generic(n : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        Y : out std_logic
+        );
+ 
+end component;
+
+begin
+
+  DWACT_BL_ANDTREE_0 : DWACT_BL_ANDTREE generic map (n) port map (A,Y);
+
+end FAND;
+
+
+--::::::::::::::
+--DWACT_BL_ANDTREE.vhd
+--::::::::::::::
+library IEEE;
+use IEEE.std_logic_1164.all;
+ 
+entity DWACT_BL_ANDTREE is
+    generic(n : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        Y : out std_logic
+        );
+ 
+end DWACT_BL_ANDTREE ;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+architecture FTREE OF DWACT_BL_ANDTREE  is
+ 
+component DWACT_ANDTREE 
+    generic(n : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        Y : out std_logic
+        );
+ 
+end component;
+  -- Component AND3
+  component AND3
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          C : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+
+  -- Component AND2
+  component AND2
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+
+  signal E   : std_logic_vector(n/3 downto 0);
+ 
+begin
+ 
+ IF_test_1: if (n > 3) generate
+   for_0: for i in 0 to n/3 - 1 generate
+       DWACT_AND_0 : AND3 port map (
+                                A => A( 3*i ),
+                                B => A( 3*i + 1 ),
+                                C => A( 3*i  + 2),
+                                Y => E(i));
+   end generate for_0;
+ end generate IF_test_1;
+
+ IF_test_11: if (n = 3) generate
+      DWACT_AND_3 : AND3 port map (
+                              A => A( n - 1 ),
+                              B => A( n - 2 ),
+                              C => A( n - 3 ),
+                              Y => E(0));
+ end generate IF_test_11;
+
+ IF_test_2: if (n rem 3 = 2) generate
+      DWACT_AND_1 : AND2 port map (
+                              A => A( n - 1 ),
+                              B => A( n - 2 ),
+                              Y => E(n/3));
+ end generate IF_test_2;
+
+ IF_test_3: if (n rem 3 = 1) generate
+      E(n/3) <= A(n-1) ;
+ end generate IF_test_3;
+
+ IF_test_final: if (n > 3) generate
+   IF_test_4: if (n rem 3 > 0) generate
+     DWACT_BL_ANDTREE_0 : DWACT_ANDTREE generic map (n/3 + 1)
+                                port map (
+                                   A => E(n/3 downto 0 ),
+                                   Y => Y);
+   end generate IF_test_4;
+
+   IF_test_5: if (n rem 3 = 0) generate
+     DWACT_BL_ANDTREE_1 : DWACT_ANDTREE generic map (n/3)
+                                port map (
+                                   A => E(n/3 -1 downto 0 ),
+                                   Y => Y);
+   end generate IF_test_5;
+ end generate IF_test_final;
+
+ IF_test_out: if (n < 4) generate
+   Y <= E(0);
+ end generate IF_test_out;
+
+end FTREE;
+--:::::::::::::
+--DWACT_BL_EQUAL.vhd
+--::::::::::::::
+library IEEE;
+use IEEE.std_logic_1164.all;
+ 
+entity DWACT_BL_EQUAL is
+    generic(n : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        B : in std_logic_vector(n-1 downto 0);
+        EQ : out std_logic
+        );
+ 
+end DWACT_BL_EQUAL ;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+architecture FEQ OF DWACT_BL_EQUAL  is
+
+component DWACT_BL_ANDTREE is
+    generic(n : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        Y : out std_logic
+        );
+ 
+end component;
+
+
+  -- Component XNOR2
+  component XNOR2
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+
+
+  signal E   : std_logic_vector(n-1 downto 0);
+ 
+begin
+ 
+ for_0: for i in 0 to n-1 generate
+   DWACT_BL_EQUAL_0 : XNOR2 port map (
+                              A => A( i ),
+                              B => B( i ),
+                              Y => E(i));
+ end generate for_0;
+
+ DWACT_ANDTREE : DWACT_BL_ANDTREE generic map (n)
+                         port map (
+                            A => E( n-1 downto 0 ),
+                            Y => EQ);
+
+end FEQ;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+ 
+entity DWACT_BL_FGCOMP is
+    generic(n,compPola : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        B : in std_logic_vector(n-1 downto 0);
+        LE : out std_logic
+        );
+ 
+end DWACT_BL_FGCOMP ;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+architecture FCOMP OF DWACT_BL_FGCOMP  is
+
+
+  -- Component AND2A
+  component AND2A
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+
+  -- Component OR2A
+  component OR2A
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+ 
+  -- Component AO1
+  component AO1
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          C : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+
+  -- Component AOI1
+  component AOI1
+     port(A : in STD_LOGIC;
+          B : in STD_LOGIC;
+          C : in STD_LOGIC;
+          Y : out STD_LOGIC);
+  end component;
+
+  component DWACT_TL_CMPLE2
+    port(
+	A		: in std_logic_vector (1 downto 0);
+	B		: in std_logic_vector (1 downto 0);
+	LE		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLT2
+    port(
+	A		: in std_logic_vector (1 downto 0);
+	B		: in std_logic_vector (1 downto 0);
+	LT		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLE3
+    port(
+	A		: in std_logic_vector (2 downto 0);
+	B		: in std_logic_vector (2 downto 0);
+	LE		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLT3
+    port(
+	A		: in std_logic_vector (2 downto 0);
+	B		: in std_logic_vector (2 downto 0);
+	LT		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLE4
+    port(
+	A		: in std_logic_vector (3 downto 0);
+	B		: in std_logic_vector (3 downto 0);
+	LE		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLT4
+    port(
+	A		: in std_logic_vector (3 downto 0);
+	B		: in std_logic_vector (3 downto 0);
+	LT		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLE5
+    port(
+	A		: in std_logic_vector (4 downto 0);
+	B		: in std_logic_vector (4 downto 0);
+	LE		: out std_logic
+    );
+  end component;
+
+  component DWACT_TL_CMPLT5
+    port(
+	A		: in std_logic_vector (4 downto 0);
+	B		: in std_logic_vector (4 downto 0);
+	LT		: out std_logic
+    );
+  end component;
+
+  component DWACT_CMPLT_PO
+
+  generic(n,compPola : integer);
+  port(
+      A,B : in std_logic_vector(n-1 downto 0);
+      LT : out std_logic
+      );
+
+  end component;
+
+  component DWACT_BL_EQUAL
+    generic(n : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        B : in std_logic_vector(n-1 downto 0);
+        EQ : out std_logic
+        );
+ 
+  end component;
+
+  function CUT ( n: integer ) return integer is
+  variable Result: integer;
+  begin
+    case n is
+      when  6     => Result := 2;
+      when  7     => Result := 3;
+      when  8     => Result := 3;
+      when  9     => Result := 4;
+      when 10     => Result := 5;
+      when 11     => Result := 5;
+      when 12     => Result := 5;
+      when 13     => Result := 5;
+      when 14     => Result := 6;
+      when 15     => Result := 6;
+      when 16     => Result := 7;
+      when 17     => Result := 7;
+      when 18     => Result := 9;
+      when 19     => Result := 9;
+      when 20     => Result := 10;
+      when 21     => Result := 10;
+      when 22     => Result := 10;
+      when 23     => Result := 10;
+      when 24     => Result := 10;
+      when 25     => Result := 10;
+      when 26     => Result := 10;
+      when 27     => Result := 11;
+      when 28     => Result := 12;
+      when 29     => Result := 12;
+      when 30     => Result := 12;
+      when 31     => Result := 12;
+      when 32     => Result := 13;
+      when 33     => Result := 14;
+      when 34     => Result := 15;
+      when 35     => Result := 16;
+      when 36     => Result := 16;
+      when 37     => Result := 17;
+      when 38     => Result := 18;
+      when 39     => Result := 19;
+      when 40     => Result := 19;
+      when 41     => Result := 19;
+      when 42     => Result := 20;
+      when 43     => Result := 20;
+      when 44     => Result := 20;
+      when 45     => Result := 20;
+      when 46     => Result := 20;
+      when 47     => Result := 20;
+      when 48     => Result := 20;
+      when 49     => Result := 21;
+      when 50     => Result := 22;
+      when 51     => Result := 22;
+      when 52     => Result := 22;
+      when 53     => Result := 22;
+      when 54     => Result := 22;
+      when 55     => Result := 22;
+      when 56     => Result := 22;
+      when 57     => Result := 22;
+      when 58     => Result := 23;
+      when 59     => Result := 24;
+      when 60     => Result := 25;
+      when 61     => Result := 26;
+      when 62     => Result := 27;
+      when 63     => Result := 28;
+      when 64     => Result := 28;
+      when others => Result := (2*n)/5;
+    end case;
+    return Result;
+  end CUT;
+
+  constant i : integer := CUT(n);
+
+  signal E   : std_logic_vector(8 downto 0);
+ 
+begin
+ 
+  IF_equal_1: if ((n = 1) and (compPola = 1)) generate
+    ACT_OR2FT : OR2A port map ( A(0), B(0), LE );
+  end generate IF_equal_1;
+ 
+  IF_equal_0: if ((n = 1) and (compPola = 0)) generate
+    ACT_AND2FT : AND2A port map ( A(0), B(0), LE );
+  end generate IF_equal_0;
+
+  IF1_2: if (n = 2) generate
+    IF_equal_21: if (compPola = 1) generate
+       ACT_LE2 : DWACT_TL_CMPLE2 port map (A, B, LE);
+    end generate IF_equal_21;
+
+    IF_equal_20: if (compPola = 0) generate
+       ACT_LT2 : DWACT_TL_CMPLT2 port map (A, B, LE);
+    end generate IF_equal_20;
+  end generate IF1_2;
+
+  IF1_3: if (n = 3) generate
+    IF_equal_31: if (compPola = 1) generate
+       ACT_LE3 : DWACT_TL_CMPLE3 port map (A, B, LE);
+    end generate IF_equal_31;
+
+    IF_equal_30: if (compPola = 0) generate
+       ACT_LT3 : DWACT_TL_CMPLT3 port map (A, B, LE);
+    end generate IF_equal_30;
+  end generate IF1_3;
+
+ IF1_4: if (n = 4) generate
+
+    IF_equal_41: if (compPola = 1) generate
+       ACT_LE4 : DWACT_TL_CMPLE4 port map (A, B, LE);
+    end generate IF_equal_41;
+
+    IF_equal_40: if (compPola = 0) generate 
+       ACT_LT4 : DWACT_TL_CMPLT4 port map (A, B, LE);
+    end generate IF_equal_40;
+
+  end generate IF1_4;
+
+ IF1_5: if (n = 5) generate
+
+    IF_equal_51: if (compPola = 1) generate
+       ACT_LE5 : DWACT_TL_CMPLE5 port map (A, B, LE);
+    end generate IF_equal_51;
+
+    IF_equal_50: if (compPola = 0) generate 
+       ACT_LT5 : DWACT_TL_CMPLT5 port map (A, B, LE);
+    end generate IF_equal_50;
+
+  end generate IF1_5;
+
+ IF1_n: if (n > 5) generate
+
+   DWACT_BL_EQUAL_0 : DWACT_BL_EQUAL generic map (i)
+                           port map (
+                              A => A( n-1 downto n-i ),
+                              B => B( n-1 downto n-i ),
+                              EQ => E(1));
+
+   IF_equal_n0: if (compPola = 0) generate 
+     DWACT_CMPLE_PO0 : DWACT_CMPLT_PO generic map (i,1)
+                             port map (
+                                A => A( n-1 downto n-i ),
+                                B => B( n-1 downto n-i ),
+                                LT => E(0));
+ 
+     DWACT_CMPLE_PO2 : DWACT_CMPLT_PO generic map (n-i,1)
+                             port map (
+                                A => A( n-i-1 downto 0 ),
+                                B => B( n-i-1 downto 0 ),
+                                LT => E(2));
+
+     DWACT_AO21 : AO1 port map (E(1),E(2),E(0),LE);
+
+   end generate IF_equal_n0;
+
+   IF_equal_n1: if (compPola = 1) generate 
+     DWACT_CMPLE_PO0 : DWACT_CMPLT_PO generic map (i,1)
+                             port map (
+                                A => B( n-1 downto n-i ),
+                                B => A( n-1 downto n-i ),
+                                LT => E(0));
+  
+     DWACT_CMPLE_PO2 : DWACT_CMPLT_PO generic map (n-i,1)
+                             port map (
+                                A => B( n-i-1 downto 0 ),
+                                B => A( n-i-1 downto 0 ),
+                                LT => E(2));
+
+     DWACT_AOI21 : AOI1 port map (E(1),E(2),E(0),LE);
+
+   end generate IF_equal_n1;
+
+ end generate IF1_n;
+
+end FCOMP;
+--::::::::::::::
+--DWACT_CMPLT_PO.vhd
+--::::::::::::::
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity DWACT_CMPLT_PO is
+
+  generic(n,compPola : integer);
+  port(
+      A,B : in std_logic_vector(n-1 downto 0);
+      LT : out std_logic
+      );
+
+end DWACT_CMPLT_PO;
+--::::::::::::::
+--DWACT_CMPLT_PO_FCOMP.vhd
+--::::::::::::::
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+architecture FCOMP OF DWACT_CMPLT_PO is
+
+component DWACT_BL_FGCOMP
+    generic(n,compPola : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        B : in std_logic_vector(n-1 downto 0);
+        LE : out std_logic
+        );
+ 
+end component;
+
+
+begin
+
+  DWACT_COMP0 : DWACT_BL_FGCOMP generic map (n,0) port map (A,B,LT);
+
+end FCOMP;
+--::::::::::::::
+--DWACT_CMPLT.vhd
+--::::::::::::::
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity CMP_LT is
+
+  generic(width: integer:=8);
+  port(
+      A,B : in std_logic_vector(width-1 downto 0);
+      LT : out std_logic
+      );
+
+end CMP_LT;
+--::::::::::::::
+--DWACT_CMPLT_FCOMP.vhd
+--::::::::::::::
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+     
+architecture FCOMP OF CMP_LT is
+
+component DWACT_BL_FGCOMP
+    generic(n,compPola : integer);
+    port(
+        A : in std_logic_vector(n-1 downto 0);
+        B : in std_logic_vector(n-1 downto 0);
+        LE : out std_logic
+        );
+ 
+end component;
+
+begin
+
+  DWACT_COMP0 : DWACT_BL_FGCOMP generic map (width,0) port map (A,B,LT);
+
+end FCOMP;
+
+
