@@ -30,12 +30,32 @@ uint8_t master_rx_buffer[MASTER_TX_BUFFER]; 	//Initialize return array for Data 
 UART_instance_t g_uart;		// sound board UART
 spi_instance_t g_spi_led; // LED SPI
 
+
+typedef struct
+{
+	uint32_t MAX_HEALTH;
+    uint32_t health;
+    uint32_t SPEED_MPLIER;
+
+} tank;
+
+//Global Tank variable
+tank myTank;
+
+
+
+
+//Function Stubs
+
 void setupSPI(void);
 void changeSpeed( volatile uint32_t*, int );
 void greenLED(void);
 void redLED(void);
 void blueLED(void);
 void yellowLED(void);
+void printToXBee();
+void uart1_rx_handler( mss_uart_instance_t * this_uart);
+
 uint32_t hits = 0;
 const uint32_t DAMAGED_THRESH = 3;
 int can_hit = 1;
@@ -142,6 +162,24 @@ int main()
 
 	//Setup SPI stuff
 	setupSPI();
+
+
+	// Initialize UART for xBees
+	MSS_UART_init(&g_mss_uart1, MSS_UART_57600_BAUD,
+			 MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT );
+
+
+	MSS_UART_set_rx_handler( &g_mss_uart1,uart1_rx_handler,
+			MSS_UART_FIFO_EIGHT_BYTES );
+
+
+	//Initialize Tank
+	myTank.health = 100;
+	myTank.MAX_HEALTH = 100;
+
+
+
+
 
 	//Full Polling: put in while 1 loop
 	while(1) {
@@ -497,3 +535,45 @@ void yellowLED(void) {
 	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
 	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
 }
+
+
+//UART interrupt handler for xBee module
+void uart1_rx_handler( mss_uart_instance_t * this_uart) {
+	uint8_t receive[16] = { };
+	int rx_size =  MSS_UART_get_rx(this_uart, receive, sizeof(receive));
+	if (rx_size) {
+
+	}
+	int type =  receive[4];
+	if (type == 1){
+		printf("1\r\n");
+		//HANDLE CASE FOR POWERUPS HERE
+	}
+	else if (type == 2) {
+		printf("2\r\n");
+	}
+	else if (type == 3) {
+		printf("3\r\n");
+	}
+
+	 uint8_t message[12] = "Hello";
+	 MSS_UART_polled_tx( this_uart, message, sizeof(message) );
+}
+void printToXBee() {
+	 uint8_t health_msg[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	 health_msg[4] = myTank.health;
+	 MSS_UART_polled_tx(&g_mss_uart1, health_msg, sizeof(health_msg) );
+	 printf("sending \r\n");
+}
+
+//Delay function for delaying stuff
+void delay(int time) {
+
+	volatile int dC; //delayCounter
+	int temp = 0;
+
+	for ( dC = 0; dC < time; dC++ ){
+		temp = dC;
+	}
+}
+

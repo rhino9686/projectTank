@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Thu Apr 18 15:54:42 2019 
+# Date generated: Sat Apr 20 13:50:50 2019 
 
 
 # 
@@ -38,14 +38,48 @@ define_group -name UART_1_PADs
 # Dedicated Peripheral I/O Settings
 # 
 
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+set_io MSS_RESET_N    \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io SPI_1_CLK      \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
+set_io SPI_1_DI       \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io SPI_1_DO        \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_1_SS       \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
 # User Group UART_0_PADs
 
 set_io UART_0_RXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_0_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_0_TXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_0_PADs  \
     -DIRECTION OUTPUT
 
@@ -53,21 +87,16 @@ set_io UART_0_TXD            \
 # User Group UART_1_PADs
 
 set_io UART_1_RXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_1_TXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION OUTPUT
 
-
-
-# 
-# Unlocked I/O settings
-# The I/Os in this section are unplaced or placed but are not locked
-# the other listed attributes have been applied
-# 
 
 
 #
@@ -88,11 +117,3 @@ set_io UART_1_TXD            \
 # set_io UART_0_TXD -iostd LVTTL -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
 # set_io UART_1_RXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
 # set_io UART_1_TXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
-# set_io UART_0_RXD -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
-# set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
-# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
-# set_io UART_0_RXD -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
-# set_io UART_0_TXD -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
-# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 

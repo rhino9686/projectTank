@@ -662,8 +662,8 @@ SIZE="11449"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.adb,adb"
 STATE="utd"
-TIME="1555700287"
-SIZE="2950144"
+TIME="1555700471"
+SIZE="2946048"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.fdb,fdb"
 STATE="utd"
@@ -672,28 +672,28 @@ SIZE="99423"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos.ide_des,ide_des"
 STATE="utd"
-TIME="1555700287"
-SIZE="1120"
+TIME="1555700471"
+SIZE="1124"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_compile_log.rpt,log"
 STATE="utd"
-TIME="1555700287"
-SIZE="39350"
+TIME="1555700397"
+SIZE="39356"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\projectData\turret_servos.pdb,pdb"
 STATE="utd"
-TIME="1555700287"
-SIZE="104977"
+TIME="1555782162"
+SIZE="104975"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\turret_servos.pdb,pdb"
 STATE="utd"
-TIME="1555700287"
-SIZE="104977"
+TIME="1555782122"
+SIZE="104975"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_fp\turret_servos.pro,pro"
 STATE="utd"
-TIME="1555700287"
-SIZE="2466"
+TIME="1555782162"
+SIZE="2469"
 ENDFILE
 VALUE "<project>\designer\impl1\turret_servos_placeroute_log.rpt,log"
 STATE="utd"
@@ -786,8 +786,8 @@ SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\BUS_INTERFACE_syn.prj,prj"
 STATE="utd"
-TIME="1555700287"
-SIZE="1755"
+TIME="1555700345"
+SIZE="1757"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
@@ -796,23 +796,23 @@ SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos.edn,syn_edn"
 STATE="utd"
-TIME="1555700287"
+TIME="1555700387"
 SIZE="1826102"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos.so,so"
 STATE="utd"
-TIME="1555700287"
-SIZE="246"
+TIME="1555700387"
+SIZE="247"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1555700287"
+TIME="1555700387"
 SIZE="564"
 ENDFILE
 VALUE "<project>\synthesis\turret_servos_syn.prj,prj"
 STATE="utd"
-TIME="1555700287"
-SIZE="5018"
+TIME="1555700387"
+SIZE="5042"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -1125,8 +1125,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1222,13 +1222,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:turret_servos_prgdata_log.rpt
 StartPage;StartPage;0
-SmartDesign;turret_servos;0
-SmartDesign;turret_servo_mss_design;0
-HDL;hdl\busapb3.v;0
-ACTIVEVIEW;turret_servos
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
