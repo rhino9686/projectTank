@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Apr 18 15:55:30 2019 ***************************************************************************
+                          Fri Apr 19 14:59:55 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb
+File Name: C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.adb
 Design Name: turret_servos  Design State: compile
-Last Saved: Thu Apr 18 15:08:16 2019
+Last Saved: Fri Apr 19 14:58:07 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Apr 18 15:55:25 2019:
-        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
-        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
+Source File(s) Imported on Fri Apr 19 14:59:51 2019:
+        C:\Users\robcecil\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
+        C:\Users\robcecil\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,10 +50,10 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
+Source      : C:\Users\robcecil\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.edn
 
-C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.p\
-dc
+C:\Users\robcecil\Desktop\ps2_turret_ir_integration\component\work\turret_servos\turret_servos.\
+pdc
 Format      : EDIF
 Topcell     : turret_servos
 Speed grade : STD

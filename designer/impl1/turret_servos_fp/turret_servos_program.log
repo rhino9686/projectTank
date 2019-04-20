@@ -4,46 +4,46 @@ Release: v11.9
 
 Software Version: 11.9.0.4
 PDB file
-'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_serv\
-os.pdb' has been loaded successfully.
+'C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_ser\
+vos.pdb' has been loaded successfully.
 DESIGN : turret_servos;  CHECKSUM : 75EF;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
-programmer '78882' : FlashPro3
-Warning: The programmer with id '78936' in the project file cannot be detected and connected.
+programmer '79052' : FlashPro3
+Warning: The programmer with id '78882' in the project file cannot be detected and connected.
 Opened
-'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_serv\
-os.pro'
+'C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_ser\
+vos.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
 The 'set_device_type' command succeeded.
 The 'set_device_package' command succeeded.
 Info: Adding Flash Memory data from file
-      C:\Users\waierdg\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_design\
-      \MSS_ENVM_0\MSS_ENVM_0.efc.
+      C:\Users\robcecil\Desktop\ps2_turret_ir_integration\component\work\turret_servo_mss_desig\
+      n\MSS_ENVM_0\MSS_ENVM_0.efc.
 Info: Adding FPGA Array data from file
-      C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.fdb.
+      C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos.fdb.
 PDB file
-'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_serv\
-os.pdb' has been loaded successfully.
+'C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_ser\
+vos.pdb' has been loaded successfully.
 DESIGN : turret_servos;  CHECKSUM : 75EF;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '78882' : Scan Chain...
-Warning: programmer '78882' : Vpump has been selected on programmer AND an externally provided
+programmer '79052' : Scan Chain...
+Warning: programmer '79052' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '78882' : Scan Chain PASSED.
-programmer '78882' : Executing action PROGRAM
-programmer '78882' : EXPORT FSN[48] = 014b3e603088
-programmer '78882' : Erase ...
-programmer '78882' : Completed erase
-programmer '78882' : EXPORT CHECKSUM[16] = 75ef
-programmer '78882' : Programming FPGA Array
-programmer '78882' : Verifying FPGA Array
-programmer '78882' :         Verifying FPGA Array -- pass
-programmer '78882' : Program System Init and Boot Clients...
-programmer '78882' : Verify System Init and Boot Clients...
-programmer '78882' : Finished: Thu Apr 18 17:29:32 2019 (Elapsed time 00:00:34)
-programmer '78882' : Executing action PROGRAM PASSED.
+programmer '79052' : Scan Chain PASSED.
+programmer '79052' : Executing action PROGRAM
+programmer '79052' : EXPORT FSN[48] = 014b3e645040
+programmer '79052' : Erase ...
+programmer '79052' : Completed erase
+programmer '79052' : EXPORT CHECKSUM[16] = 75ef
+programmer '79052' : Programming FPGA Array
+programmer '79052' : Verifying FPGA Array
+programmer '79052' :         Verifying FPGA Array -- pass
+programmer '79052' : Program System Init and Boot Clients...
+programmer '79052' : Verify System Init and Boot Clients...
+programmer '79052' : Finished: Fri Apr 19 15:02:08 2019 (Elapsed time 00:00:34)
+programmer '79052' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 

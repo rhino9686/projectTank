@@ -1,6 +1,6 @@
 <project name="turret_servos" version="1.1">
     <ProjectDirectory>
-        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp
+        C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,17 +9,17 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.log
+        C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            78882
+            79052
         </name>
         <id>
-            78882
+            79052
         </id>
     </programmer>
     <configuration>
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\waierdg\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.pdb
+                C:\Users\robcecil\Desktop\ps2_turret_ir_integration\designer\impl1\turret_servos_fp\turret_servos.pdb
             </filename>
             <local>
                 projectData\turret_servos.pdb
