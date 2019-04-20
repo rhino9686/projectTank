@@ -43,8 +43,6 @@ typedef struct
 tank myTank;
 
 
-
-
 //Function Stubs
 
 void setupSPI(void);
@@ -55,9 +53,11 @@ void blueLED(void);
 void yellowLED(void);
 void printToXBee();
 void uart1_rx_handler( mss_uart_instance_t * this_uart);
+void getHit();
+void reset();
 
 uint32_t hits = 0;
-const uint32_t DAMAGED_THRESH = 3;
+const uint32_t DAMAGED_THRESH = 35;
 int can_hit = 1;
 int sound_done = 1;
 /*
@@ -79,7 +79,7 @@ void Timer1_IRQHandler( void ){
 	MSS_TIM1_clear_irq();
 	MSS_TIM1_stop();
 	MSS_TIM1_disable_irq();
-	if (hits > DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
+	if (myTank.health < DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
 		yellowLED();
 	} else {
 		greenLED();
@@ -100,10 +100,10 @@ void Timer2_IRQHandler( void ){
 __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 {
 	if (can_hit){
-		volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
-		hits = *hitsAddr;
-		hits++;
-		*hitsAddr = hits;
+		//volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
+		//hits = *hitsAddr;
+		//hits++;
+		//*hitsAddr = hits;
 		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
 		uint8_t tx_buff[1] = "q";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
@@ -112,6 +112,7 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		while(j < 1000000) {
 		    ++j;
 		}
+		getHit();
 		redLED(); //START LED
 		uint8_t tx_buff2[3] = "#1\n";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff2,sizeof(tx_buff2));	// play hit sound
@@ -547,7 +548,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart) {
 	int type =  receive[4];
 	if (type == 1){
 		printf("1\r\n");
-		//HANDLE CASE FOR POWERUPS HERE
+		//HANDLE CASES FOR POWERUPS HERE
 	}
 	else if (type == 2) {
 		printf("2\r\n");
@@ -555,15 +556,13 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart) {
 	else if (type == 3) {
 		printf("3\r\n");
 	}
+	reset();
 
-	 uint8_t message[12] = "Hello";
-	 MSS_UART_polled_tx( this_uart, message, sizeof(message) );
 }
 void printToXBee() {
 	 uint8_t health_msg[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	 health_msg[4] = myTank.health;
 	 MSS_UART_polled_tx(&g_mss_uart1, health_msg, sizeof(health_msg) );
-	 printf("sending \r\n");
 }
 
 //Delay function for delaying stuff
@@ -577,3 +576,18 @@ void delay(int time) {
 	}
 }
 
+void reset() {
+	myTank.health = myTank.MAX_HEALTH;
+	greenLED();
+	printToXBee();
+
+}
+void getHit( ) {
+
+    if (myTank.health == 0) {
+    	return;
+    }
+
+    myTank.health = myTank.health - 5;
+	printToXBee();
+}
