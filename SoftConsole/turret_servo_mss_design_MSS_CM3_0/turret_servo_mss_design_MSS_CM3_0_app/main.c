@@ -55,6 +55,7 @@ void printToXBee();
 void uart1_rx_handler( mss_uart_instance_t * this_uart);
 void getHit();
 void reset();
+void delay(int);
 
 uint32_t hits = 0;
 const uint32_t DAMAGED_THRESH = 35;
@@ -105,13 +106,10 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		//hits++;
 		//*hitsAddr = hits;
 		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
-		uint8_t tx_buff[1] = "q";
+		uint8_t tx_buff[2] = "q\n";
 		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
 
-		volatile int j = 0;
-		while(j < 1000000) {
-		    ++j;
-		}
+		delay(1000000);
 		getHit();
 		redLED(); //START LED
 		uint8_t tx_buff2[3] = "#1\n";
@@ -124,6 +122,7 @@ __attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
 		MSS_TIM1_enable_irq();
 		can_hit = 0; // Prevent from going in additional times
 		//NVIC_DisableIRQ(Fabric_IRQn); // Add interrupts to disable timer for certain period of time later
+		delay(1000000);
 	}
 	MSS_GPIO_clear_irq(MSS_GPIO_0);
 	MSS_GPIO_set_output(MSS_GPIO_0, 0);
@@ -179,9 +178,6 @@ int main()
 	myTank.MAX_HEALTH = 100;
 
 
-
-
-
 	//Full Polling: put in while 1 loop
 	while(1) {
 		
@@ -213,9 +209,8 @@ int main()
 		int right = (master_rx_buffer[1] & (1 << 7)) != 0;
 		int fire = (master_rx_buffer[1] & (1 << 1)) != 0;
 
-		//uint32_t LED = 0;
 
-		//UP/DOWN LOGIC
+		//UP/DOWN (turret)
 		if (up == 0 && down) { //UP
 			if (udPos == 1000000){ // At max, stay
 				*udAddr = 1000000 / 1000;
@@ -235,7 +230,7 @@ int main()
 				*udAddr = udPos / 1000;
 			}
 		}
-		// LEFT/RIGHT
+		// LEFT/RIGHT (turret)
 		if (left == 0 && right) { //LEFT
 			if (rlPos == 0){ // At min, stay
 				*rlAddr = 0;
@@ -259,10 +254,18 @@ int main()
 		if (fire == 0){
 			*freqAddr = 56;
 			if (sound_done) {
+				uint8_t tx_buff0[2] = "q\n";
+				UART_send(&g_uart,(const uint8_t *)&tx_buff0,sizeof(tx_buff0));	// play hit sound
+
+				delay(1000000);
+
 				uint8_t tx_buff[3] = "#0\n";
 				UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
+
+				delay(1000000);
+
 				MSS_TIM2_init(1); // one shot
-				MSS_TIM2_load_immediate(140000000); // 1.4 seconds
+				MSS_TIM2_load_immediate(10000000); // .1 seconds
 				MSS_TIM2_start();
 				MSS_TIM2_enable_irq();
 				sound_done = 0;
@@ -306,12 +309,8 @@ int main()
 		}
 		*motorAddr = joyVals;
 
-		changeSpeed(pulsewidthAddr, 90000); //change this number to fix pwm
-		volatile int i = 0;
-		while (i < 100000)
-		{
-			++i;
-		}
+		changeSpeed(pulsewidthAddr, 90000); //change this number to fix pwm of motors
+		delay(100000);
 	}
 
 	return 0;
