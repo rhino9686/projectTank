@@ -20,8 +20,11 @@
 #define end 0x11111111
 #define R 0b11111111000000000000000011111111
 #define B 0b11111111000000001111111100000000
-#define G 0b11111111111111110000000000000000
-#define Y 0b1111111111111111000000001111111
+#define W 0b11111111111111110000000000000000
+#define Y 0b11111111111111110000000011111111
+#define P 0xff00cc66
+#define T 0xffffff00
+#define G 0xffffffff
 #define MAX_HEALTH 100
 
 
@@ -52,6 +55,9 @@ void greenLED(void);
 void redLED(void);
 void blueLED(void);
 void yellowLED(void);
+void purpleLED(void);
+void tealLED(void);
+void whiteLED(void);
 void printToXBee();
 void uart1_rx_handler( mss_uart_instance_t * this_uart);
 void getHit();
@@ -549,6 +555,94 @@ void yellowLED(void) {
 	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
 }
 
+void purpleLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = P;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = P;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = P;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = P;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = P;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = P;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void tealLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = T;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = T;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = T;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = T;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = T;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = T;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void whiteLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = W;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = W;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = W;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = W;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = W;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = W;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+
 
 //UART interrupt handler for xBee module
 void uart1_rx_handler( mss_uart_instance_t * this_uart) {
@@ -603,6 +697,7 @@ void reset() {
 void getHit( ) {
 
     if (myTank.health <= 0) {
+    	myTank.drivingSpeed = 0;
     	return;
     }
 
