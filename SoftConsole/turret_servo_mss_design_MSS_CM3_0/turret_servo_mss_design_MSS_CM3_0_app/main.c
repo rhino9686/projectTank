@@ -21,8 +21,8 @@
 #define R 0b11111111000000000000000011111111
 #define B 0b11111111000000001111111100000000
 #define G 0b11111111111111110000000000000000
-#define Y 0b11111111111111110000000011111111
-
+#define Y 0b1111111111111111000000001111111
+#define MAX_HEALTH 100
 
 
 uint8_t master_tx_buffer[MASTER_TX_BUFFER];
@@ -33,9 +33,10 @@ spi_instance_t g_spi_led; // LED SPI
 
 typedef struct
 {
-	uint32_t MAX_HEALTH;
     uint32_t health;
-    uint32_t SPEED_MPLIER;
+    uint32_t aimingSpeed;
+    uint32_t damagePerHit; //Should be 5 or 3
+    uint32_t drivingSpeed; // Should be 90k or 100k?
 
 } tank;
 
@@ -174,8 +175,12 @@ int main()
 
 
 	//Initialize Tank
-	myTank.health = 100;
-	myTank.MAX_HEALTH = 100;
+	myTank.health = MAX_HEALTH;
+	myTank.damagePerHit = 5;
+	myTank.aimingSpeed = 10000;
+	myTank.drivingSpeed = 90000;
+	printf("Yeet");
+
 
 
 	//Full Polling: put in while 1 loop
@@ -212,40 +217,48 @@ int main()
 
 		//UP/DOWN (turret)
 		if (up == 0 && down) { //UP
-			if (udPos == 1000000){ // At max, stay
+			if (udPos >= 1000000){ // At max, stay
 				*udAddr = 1000000 / 1000;
 			} 
 			else {
-				udPos += 10000;
+				udPos += myTank.aimingSpeed;
+				if (udPos > 1000000)
+					udPos = 1000000;
 				*udAddr = udPos / 1000; // Divide by 1000 for smoother turning
 			}
 			//LED += 1;
 		} 
 		else if (down == 0 && up) { // down
-			if (udPos == 800000){ // At min, stay
+			if (udPos <= 800000){ // At min, stay
 				*udAddr = 800000 / 1000;
 			} 
 			else {
-				udPos -= 10000;
+				udPos -= myTank.aimingSpeed;
+				if (udPos < 800000)
+					udPos = 800000;
 				*udAddr = udPos / 1000;
 			}
 		}
 		// LEFT/RIGHT (turret)
 		if (left == 0 && right) { //LEFT
-			if (rlPos == 0){ // At min, stay
+			if (rlPos <= 0){ // At min, stay
 				*rlAddr = 0;
 			} 
 			else {
-				rlPos -= 10000;
+				rlPos -= myTank.aimingSpeed;
+				if (rlPos < 0)
+					rlPos = 0;
 				*rlAddr = rlPos / 1000;
 			}
 		} 
 		else if (right == 0 && left) { //RIGHT
-			if (rlPos == 1800000){ // At max, stay
+			if (rlPos >= 1800000){ // At max, stay
 				*rlAddr = 1800000 / 1000;
 			} 
 			else {
-				rlPos += 10000;
+				rlPos += myTank.aimingSpeed;
+				if (rlPos > 1800000)
+					rlPos = 1800000;
 				*rlAddr = rlPos / 1000; // Divide by 1000 for smoother turning
 			}
 		}
@@ -309,7 +322,7 @@ int main()
 		}
 		*motorAddr = joyVals;
 
-		changeSpeed(pulsewidthAddr, 90000); //change this number to fix pwm of motors
+		changeSpeed(pulsewidthAddr, myTank.drivingSpeed); //change this number to fix pwm of motors
 		delay(100000);
 	}
 
@@ -541,19 +554,25 @@ void yellowLED(void) {
 void uart1_rx_handler( mss_uart_instance_t * this_uart) {
 	uint8_t receive[16] = { };
 	int rx_size =  MSS_UART_get_rx(this_uart, receive, sizeof(receive));
-	if (rx_size) {
-
-	}
+	myTank.aimingSpeed = 10000;
+	myTank.damagePerHit = 5;
+	myTank.drivingSpeed = 90000;
 	int type =  receive[4];
-	if (type == 1){
+	if (type == 3){
 		printf("1\r\n");
-		//HANDLE CASES FOR POWERUPS HERE
+		//Extra Health
+		myTank.damagePerHit = 3;
 	}
 	else if (type == 2) {
 		printf("2\r\n");
+		// Aiming speed increase
+		myTank.aimingSpeed = 12000;
+
 	}
-	else if (type == 3) {
+	else if (type == 1) {
 		printf("3\r\n");
+		//driving speed increase
+		myTank.drivingSpeed = 100000;
 	}
 	reset();
 
@@ -576,17 +595,17 @@ void delay(int time) {
 }
 
 void reset() {
-	myTank.health = myTank.MAX_HEALTH;
+	myTank.health = MAX_HEALTH;
 	greenLED();
 	printToXBee();
 
 }
 void getHit( ) {
 
-    if (myTank.health == 0) {
+    if (myTank.health <= 0) {
     	return;
     }
 
-    myTank.health = myTank.health - 5;
+    myTank.health = myTank.health - myTank.damagePerHit;
 	printToXBee();
 }

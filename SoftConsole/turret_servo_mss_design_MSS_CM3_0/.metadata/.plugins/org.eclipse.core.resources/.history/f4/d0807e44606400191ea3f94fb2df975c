@@ -1,0 +1,592 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
+#include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
+#include "CMSIS/a2fxxxm3.h"
+#include "drivers/mss_gpio/mss_gpio.h"
+#include "mss_timer.h"
+#include "drivers/mss_uart/mss_uart.h"
+#include "drivers/CoreUARTapb/core_uart_apb.h"
+#include "drivers/CoreSPI/core_spi.h"
+
+#define MASTER_TX_BUFFER 9
+#define FREQ_ADDR 0x40050020
+#define HITS_ADDR 0x40050024
+#define BAUD_VALUE_9600    650
+#define COREUARTAPB0_BASE_ADDR      0x40050100 // base address of apb3 slave ie PSEL
+#define CORESPI0_BASE_ADDR     		0x40050200
+#define MAX_RX_DATA_SIZE    256
+#define start 0x00000000
+#define end 0x11111111
+#define R 0b11111111000000000000000011111111
+#define B 0b11111111000000001111111100000000
+#define G 0b11111111111111110000000000000000
+#define Y 0b1111111111111111000000001111111
+#define MAX_HEALTH 100
+
+
+uint8_t master_tx_buffer[MASTER_TX_BUFFER];
+uint8_t master_rx_buffer[MASTER_TX_BUFFER]; 	//Initialize return array for Data buffer
+UART_instance_t g_uart;		// sound board UART
+spi_instance_t g_spi_led; // LED SPI
+
+
+typedef struct
+{
+    uint32_t health;
+    uint32_t SPEED_MPLIER;
+    uint32_t damagePerHit;
+
+} tank;
+
+//Global Tank variable
+tank myTank;
+
+
+//Function Stubs
+
+void setupSPI(void);
+void changeSpeed( volatile uint32_t*, int );
+void greenLED(void);
+void redLED(void);
+void blueLED(void);
+void yellowLED(void);
+void printToXBee();
+void uart1_rx_handler( mss_uart_instance_t * this_uart);
+void getHit();
+void reset();
+void delay(int);
+
+uint32_t hits = 0;
+const uint32_t DAMAGED_THRESH = 35;
+int can_hit = 1;
+int sound_done = 1;
+/*
+__attribute__ ((interrupt)) void Fabric_IRQHandler( void )
+{
+    uint32_t status = MYTIMER_getInterrupt_status();
+
+    if(status & 0x01) // OVERFLOW interrupt
+    {
+    	MYTIMER_disable();
+    	can_hit = 1;
+    }
+    NVIC_ClearPendingIRQ( Fabric_IRQn );
+} */
+
+void Timer1_IRQHandler( void ){
+
+	can_hit = 1;
+	MSS_TIM1_clear_irq();
+	MSS_TIM1_stop();
+	MSS_TIM1_disable_irq();
+	if (myTank.health < DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
+		yellowLED();
+	} else {
+		greenLED();
+	}
+
+	//MSS_TIM1_load_immediate(root->time);
+	//MSS_TIM1_start();
+}
+
+void Timer2_IRQHandler( void ){
+	sound_done = 1;
+	MSS_TIM2_clear_irq();
+	MSS_TIM2_stop();
+	MSS_TIM2_disable_irq();
+}
+
+
+__attribute__ ((interrupt)) void GPIO0_IRQHandler( void )
+{
+	if (can_hit){
+		//volatile uint32_t * hitsAddr = (volatile uint32_t *)(HITS_ADDR);
+		//hits = *hitsAddr;
+		//hits++;
+		//*hitsAddr = hits;
+		//UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY));
+		uint8_t tx_buff[2] = "q\n";
+		UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));	// play hit sound
+
+		delay(1000000);
+		getHit();
+		redLED(); //START LED
+		uint8_t tx_buff2[3] = "#1\n";
+		UART_send(&g_uart,(const uint8_t *)&tx_buff2,sizeof(tx_buff2));	// play hit sound
+
+		// MSS timer start
+		MSS_TIM1_init(1); // one shot
+		MSS_TIM1_load_immediate(300000000); // 3 seconds
+		MSS_TIM1_start();
+		MSS_TIM1_enable_irq();
+		can_hit = 0; // Prevent from going in additional times
+		//NVIC_DisableIRQ(Fabric_IRQn); // Add interrupts to disable timer for certain period of time later
+		delay(1000000);
+	}
+	MSS_GPIO_clear_irq(MSS_GPIO_0);
+	MSS_GPIO_set_output(MSS_GPIO_0, 0);
+}
+
+int main()
+{
+	volatile uint32_t * rlAddr = (volatile uint32_t *)(0x40050010); // Right/Left Servo
+	volatile uint32_t * udAddr = (volatile uint32_t *)(0x40050014); // Up/Down Servo
+	volatile uint32_t * freqAddr = (volatile uint32_t *)(0x40050020); // Frequency of IR
+	volatile uint32_t * hitsAddr = (volatile uint32_t *)(0x40050024); // hits IR
+	volatile uint32_t * motorAddr = (volatile uint32_t *) 0x40050034; // motor
+	volatile uint32_t * pulsewidthAddr = (volatile uint32_t *) 0x40050038; // pulse width motor
+
+	uint32_t joyVals = 0; // values from joysticks
+	*hitsAddr = 0;
+
+	UART_init(&g_uart, COREUARTAPB0_BASE_ADDR, BAUD_VALUE_9600, (DATA_8_BITS | NO_PARITY)); // endable sound board UART
+
+	// SPI for LED
+    greenLED(); //Initialize to greenLED
+	// end SPI LED
+
+
+	NVIC_EnableIRQ(Fabric_IRQn);
+	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_IRQ_EDGE_POSITIVE);
+	MSS_GPIO_enable_irq(MSS_GPIO_0);
+
+	//NVIC_EnableIRQ(GPIO0_IRQn);
+
+	uint32_t udPos = 900000; // Start at 90 deg. (middle position)
+	uint32_t rlPos = 900000;
+
+	// Initialize servo positions
+	*udAddr = udPos;
+	*rlAddr = rlPos;
+
+	//Setup SPI stuff
+	setupSPI();
+
+
+	// Initialize UART for xBees
+	MSS_UART_init(&g_mss_uart1, MSS_UART_57600_BAUD,
+			 MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT );
+
+
+	MSS_UART_set_rx_handler( &g_mss_uart1,uart1_rx_handler,
+			MSS_UART_FIFO_EIGHT_BYTES );
+
+
+	//Initialize Tank
+	myTank.health = 100;
+	myTank.MAX_HEALTH = 100;
+
+
+	//Full Polling: put in while 1 loop
+	while(1) {
+		
+		master_tx_buffer[0] = 0x80;
+		master_tx_buffer[1] = 0x42;
+		master_tx_buffer[2] = 0x00;
+		master_tx_buffer[3] = 0x00;
+		master_tx_buffer[4] = 0x00;
+		master_tx_buffer[5] = 0x00;
+		master_tx_buffer[6] = 0x00;
+		master_tx_buffer[7] = 0x00;
+		master_tx_buffer[8] = 0x00;
+
+		MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+		MSS_SPI_transfer_block
+		(
+			&g_mss_spi1,
+			&master_tx_buffer,
+			3, 	//3 bytes of command
+			&master_rx_buffer,
+			6 	//6 bytes of command
+		);
+
+		MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+
+		int up = (master_rx_buffer[1] & (1 << 4)) != 0;
+		int down = (master_rx_buffer[1] & (1 << 6)) != 0;
+		int left = (master_rx_buffer[1] & (1 << 5)) != 0;
+		int right = (master_rx_buffer[1] & (1 << 7)) != 0;
+		int fire = (master_rx_buffer[1] & (1 << 1)) != 0;
+
+
+		//UP/DOWN (turret)
+		if (up == 0 && down) { //UP
+			if (udPos == 1000000){ // At max, stay
+				*udAddr = 1000000 / 1000;
+			} 
+			else {
+				udPos += 10000;
+				*udAddr = udPos / 1000; // Divide by 1000 for smoother turning
+			}
+			//LED += 1;
+		} 
+		else if (down == 0 && up) { // down
+			if (udPos == 800000){ // At min, stay
+				*udAddr = 800000 / 1000;
+			} 
+			else {
+				udPos -= 10000;
+				*udAddr = udPos / 1000;
+			}
+		}
+		// LEFT/RIGHT (turret)
+		if (left == 0 && right) { //LEFT
+			if (rlPos == 0){ // At min, stay
+				*rlAddr = 0;
+			} 
+			else {
+				rlPos -= 10000;
+				*rlAddr = rlPos / 1000;
+			}
+		} 
+		else if (right == 0 && left) { //RIGHT
+			if (rlPos == 1800000){ // At max, stay
+				*rlAddr = 1800000 / 1000;
+			} 
+			else {
+				rlPos += 10000;
+				*rlAddr = rlPos / 1000; // Divide by 1000 for smoother turning
+			}
+		}
+
+		// Shoot
+		if (fire == 0){
+			*freqAddr = 56;
+			if (sound_done) {
+				uint8_t tx_buff0[2] = "q\n";
+				UART_send(&g_uart,(const uint8_t *)&tx_buff0,sizeof(tx_buff0));	// play hit sound
+
+				delay(1000000);
+
+				uint8_t tx_buff[3] = "#0\n";
+				UART_send(&g_uart,(const uint8_t *)&tx_buff,sizeof(tx_buff));
+
+				delay(1000000);
+
+				MSS_TIM2_init(1); // one shot
+				MSS_TIM2_load_immediate(10000000); // .1 seconds
+				MSS_TIM2_start();
+				MSS_TIM2_enable_irq();
+				sound_done = 0;
+			}
+
+		} else {
+			*freqAddr = 0; // Set back to 0 when done or not shooting
+		}
+
+		int8_t right_y = master_rx_buffer[3];	// down = -1, center = -2, up = 0
+		int8_t left_y = master_rx_buffer[5];
+
+
+		if((right_y == 0) && (left_y == 0)){ // robot go forward both sides
+			joyVals = 0b1010;
+		}
+		else if((right_y == 0) && (left_y == -2)){ // robot go forward right, left stopped
+			joyVals = 0b1011;
+		}
+		else if((right_y == 0) && (left_y == -1)){ // robot go forward right, left backwards
+			joyVals = 0b1001;
+		}
+		else if((right_y == -1) && (left_y == 0)){ // robot go backward right, left forward
+			joyVals = 0b0110;
+		}
+		else if((right_y == -1) && (left_y == -1)){ // robot go backward both sides
+			joyVals = 0b0101;
+
+		}
+		else if((right_y == -1) && (left_y == -2)){ // robot go backward right, left stopped
+			joyVals = 0b0111;
+		}
+		else if((right_y == -2) && (left_y == 0)){ // robot stopped right, forward left
+			joyVals = 0b1110;
+		}
+		else if((right_y == -2) && (left_y == -1)){ // robot go stopped right, backward left
+			joyVals = 0b1101;
+		}
+		else if((right_y == -2) && (left_y == -2)){ //robot fullstop
+			joyVals = 0b1111;
+		}
+		*motorAddr = joyVals;
+
+		changeSpeed(pulsewidthAddr, 90000); //change this number to fix pwm of motors
+		delay(100000);
+	}
+
+	return 0;
+}
+
+void setupSPI(void) {
+	//Initial short polling for refresh and initiation
+	master_tx_buffer[0] = 0x80;
+	master_tx_buffer[1] = 0x42;
+	master_tx_buffer[2] = 0x00;
+	master_tx_buffer[3] = 0xFF;
+	master_tx_buffer[4] = 0xFF;
+
+	MSS_SPI_init(&g_mss_spi1);
+	MSS_SPI_configure_master_mode
+	(
+		&g_mss_spi1,
+		MSS_SPI_SLAVE_0,
+		MSS_SPI_MODE3,
+		MSS_SPI_PCLK_DIV_256,
+		MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
+	);
+
+	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	int i = 3;
+	while(i) {
+		MSS_SPI_transfer_block
+		(
+			&g_mss_spi1,
+			&master_tx_buffer,
+			5, 	//5 bytes of command
+			&master_rx_buffer,
+			5	//5 bytes of data
+		);
+		--i;
+	}
+	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+
+
+	//Enter Config Mode
+	master_tx_buffer[0] = 0x80;
+	master_tx_buffer[1] = 0xc2;
+	master_tx_buffer[2] = 0x00;
+	master_tx_buffer[3] = 0x80;
+	master_tx_buffer[4] = 0x00;
+	
+	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	MSS_SPI_transfer_block
+	(
+		&g_mss_spi1,
+		&master_tx_buffer,
+		5, 	//5 bytes of command
+		&master_rx_buffer,
+		5	//5 bytes of data
+	);
+	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+
+	//Select Mode: Digital or Analog
+	master_tx_buffer[0] = 0x80;
+	master_tx_buffer[1] = 0x22;
+	master_tx_buffer[2] = 0x00;
+	master_tx_buffer[3] = 0x80; //0x01 = analog, 0x00 = digital
+	master_tx_buffer[4] = 0xc0; //0x03 = lock mode
+	master_tx_buffer[5] = 0x00;
+	master_tx_buffer[6] = 0x00;
+	master_tx_buffer[7] = 0x00;
+	master_tx_buffer[8] = 0x00;
+
+	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	MSS_SPI_transfer_block
+	(
+		&g_mss_spi1,
+		&master_tx_buffer,
+		9,	//9 bytes of command
+		&master_rx_buffer,
+		9 	//9 bytes of data
+	);
+	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+
+	//Exit Config
+	master_tx_buffer[0] = 0x80;
+	master_tx_buffer[1] = 0xc2;
+	master_tx_buffer[2] = 0x00;
+	master_tx_buffer[3] = 0x00;
+	master_tx_buffer[4] = 0x5A;
+	master_tx_buffer[5] = 0x5A;
+	master_tx_buffer[6] = 0x5A;
+	master_tx_buffer[7] = 0x5A;
+	master_tx_buffer[8] = 0x5A;
+
+	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	MSS_SPI_transfer_block
+	(
+		&g_mss_spi1,
+		&master_tx_buffer,
+		9, 	//9 bytes of command
+		&master_rx_buffer,
+		9 	//9 bytes of data
+	);
+	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+
+}
+void changeSpeed( volatile uint32_t* speedPtr, int speed ){
+
+	*speedPtr = speed;
+
+	return;
+}
+
+void greenLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = G;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void redLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = R;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void blueLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = B;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+void yellowLED(void) {
+	uint32_t master_tx_frame_led = start;
+	SPI_init(&g_spi_led, CORESPI0_BASE_ADDR, 1);
+	SPI_configure_master_mode(&g_spi_led);
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	master_tx_frame_led = Y;
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+
+	master_tx_frame_led = end;
+	SPI_set_slave_select(&g_spi_led, SPI_SLAVE_0 );
+	SPI_transfer_frame( &g_spi_led, master_tx_frame_led );
+	SPI_clear_slave_select(&g_spi_led, SPI_SLAVE_0 );
+}
+
+
+//UART interrupt handler for xBee module
+void uart1_rx_handler( mss_uart_instance_t * this_uart) {
+	uint8_t receive[16] = { };
+	int rx_size =  MSS_UART_get_rx(this_uart, receive, sizeof(receive));
+	if (rx_size) {
+
+	}
+	int type =  receive[4];
+	if (type == 1){
+		printf("1\r\n");
+		//HANDLE CASES FOR POWERUPS HERE
+	}
+	else if (type == 2) {
+		printf("2\r\n");
+	}
+	else if (type == 3) {
+		printf("3\r\n");
+	}
+	reset();
+
+}
+void printToXBee() {
+	 uint8_t health_msg[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	 health_msg[4] = myTank.health;
+	 MSS_UART_polled_tx(&g_mss_uart1, health_msg, sizeof(health_msg) );
+}
+
+//Delay function for delaying stuff
+void delay(int time) {
+
+	volatile int dC; //delayCounter
+	int temp = 0;
+
+	for ( dC = 0; dC < time; dC++ ){
+		temp = dC;
+	}
+}
+
+void reset() {
+	myTank.health = myTank.MAX_HEALTH;
+	greenLED();
+	printToXBee();
+
+}
+void getHit( ) {
+
+    if (myTank.health == 0) {
+    	return;
+    }
+
+    myTank.health = myTank.health - 5;
+	printToXBee();
+}
