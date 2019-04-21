@@ -20,11 +20,11 @@
 #define end 0x11111111
 #define R 0b11111111000000000000000011111111
 #define B 0b11111111000000001111111100000000
-#define W 0b11111111111111110000000000000000
+#define G 0b11111111111111110000000000000000
 #define Y 0b11111111111111110000000011111111
 #define P 0xff00cc66
 #define T 0xffffff00
-#define G 0xffffffff
+#define W 0xffffffff
 #define MAX_HEALTH 100
 
 
@@ -40,6 +40,7 @@ typedef struct
     uint32_t aimingSpeed;
     uint32_t damagePerHit; //Should be 5 or 3
     uint32_t drivingSpeed; // Should be 90k or 100k?
+    uint32_t color;
 
 } tank;
 
@@ -63,6 +64,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart);
 void getHit();
 void reset();
 void delay(int);
+void setColor();
 
 uint32_t hits = 0;
 const uint32_t DAMAGED_THRESH = 35;
@@ -90,7 +92,7 @@ void Timer1_IRQHandler( void ){
 	if (myTank.health < DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
 		yellowLED();
 	} else {
-		greenLED();
+		setColor();
 	}
 
 	//MSS_TIM1_load_immediate(root->time);
@@ -652,6 +654,8 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart) {
 	myTank.damagePerHit = 5;
 	myTank.drivingSpeed = 90000;
 	int type =  receive[4];
+	int color = receive[6];
+	myTank.color = color;
 	if (type == 3){
 		printf("1\r\n");
 		//Extra Health
@@ -668,6 +672,10 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart) {
 		//driving speed increase
 		myTank.drivingSpeed = 100000;
 	}
+
+
+
+
 	reset();
 
 }
@@ -690,9 +698,25 @@ void delay(int time) {
 
 void reset() {
 	myTank.health = MAX_HEALTH;
-	greenLED();
+	setColor();
+	//purpleLED();
 	printToXBee();
 
+}
+
+void setColor() {
+	 int color = myTank.color;
+	 switch(color)
+	{
+					case (1): greenLED();
+					   break;
+					case (2): blueLED();
+						break;
+					case (3): purpleLED();
+						break;
+					case (4): tealLED();
+						break;
+     }
 }
 void getHit( ) {
 

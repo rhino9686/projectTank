@@ -852,10 +852,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\turret_servos_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\turret_servos_report_pin_bynumber.txt,log"
-ENDLIST
 ENDLIST
 LIST "turret_servos_CoreUARTapb_0_CoreUARTapb::work"
 FILE "<project>\component\work\turret_servos\CoreUARTapb_0\rtl\vlog\core\CoreUARTapb.v,hdl"
@@ -1223,7 +1219,8 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;turret_servos;0
+ACTIVEVIEW;turret_servos
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
