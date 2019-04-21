@@ -68,6 +68,3 @@ Implementation;Synthesis|| MT322 ||@N: Clock constraints include only register-t
 Implementation;Synthesis|| MT582 ||@N: Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack||turret_servos.srr(930);liberoaction://cross_probe/hdl/file/'C:\Users\waierdg\Desktop\ps2_turret_ir_integration\synthesis\turret_servos.srr'/linenumber/930||null;null
 Implementation;Compile;RootName:turret_servos
 Implementation;Compile||(null)||Please refer to the log file for details about 306 Warning(s) , 1 Info(s)||turret_servos_compile_log.rpt;liberoaction://open_report/file/turret_servos_compile_log.rpt||(null);(null)
-Implementation;Place and Route||OnlineHelp;liberoaction://open_online_help/98304003||Info: I/O Bank Assigner detected (1) out of (6) I/O Bank(s) with locked I/O technologies.||(null);(null)||(null);(null)
-Implementation;Place and Route;RootName:turret_servos
-Implementation;Place and Route||(null)||Please refer to the log file for details about 2 Info(s)||turret_servos_placeroute_log.rpt;liberoaction://open_report/file/turret_servos_placeroute_log.rpt||(null);(null)
