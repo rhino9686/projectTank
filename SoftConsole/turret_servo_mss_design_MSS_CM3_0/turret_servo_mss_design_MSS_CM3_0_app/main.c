@@ -89,9 +89,11 @@ void Timer1_IRQHandler( void ){
 	MSS_TIM1_clear_irq();
 	MSS_TIM1_stop();
 	MSS_TIM1_disable_irq();
-	if (myTank.health < DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
+	if (myTank.health == 0){
+		redLED();
+	} else if (myTank.health < DAMAGED_THRESH){ // When at DAMAGED_THRESH, reset running light to yellow
 		yellowLED();
-	} else {
+	} else{
 		setColor();
 	}
 
@@ -651,11 +653,13 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart) {
 	uint8_t receive[16] = { };
 	int rx_size =  MSS_UART_get_rx(this_uart, receive, sizeof(receive));
 	myTank.aimingSpeed = 10000;
-	myTank.damagePerHit = 5;
+	myTank.damagePerHit = 25;
 	myTank.drivingSpeed = 90000;
 	int type =  receive[4];
 	int color = receive[6];
-	myTank.color = color;
+	if (color > 0) {
+		myTank.color = color;
+	}
 	if (type == 3){
 		printf("1\r\n");
 		//Extra Health
@@ -708,7 +712,7 @@ void setColor() {
 	 int color = myTank.color;
 	 switch(color)
 	{
-					case (1): greenLED();
+			     	case (1): greenLED();
 					   break;
 					case (2): blueLED();
 						break;
@@ -720,11 +724,15 @@ void setColor() {
 }
 void getHit( ) {
 
+	if (!(myTank.health <= 0)){
+		myTank.health = myTank.health - myTank.damagePerHit;
+	}
+
     if (myTank.health <= 0) {
     	myTank.drivingSpeed = 0;
-    	return;
+    	myTank.aimingSpeed = 0;
+
     }
 
-    myTank.health = myTank.health - myTank.damagePerHit;
 	printToXBee();
 }
