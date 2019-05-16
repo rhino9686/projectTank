@@ -5,8 +5,7 @@
 
 This was our final project for EECS 373. We made two remote-controlled tanks, armed with IR lasers and receivers, that could be controlled by two players and shoot at each other in a real-time arcade style match.
 
-
-![tank #2](https://user-images.githubusercontent.com/41589697/57890311-52277d00-7805-11e9-8d6b-f06c6329f885.jpeg)
+![tank#2 resize](https://user-images.githubusercontent.com/41589697/57891187-79cc1480-7808-11e9-8c35-25ea086762f5.jpg)
 
 ## Demos
 
@@ -16,7 +15,7 @@ https://www.youtube.com/watch?v=z8IZLVbdijM&feature=youtu.be
 
 https://www.youtube.com/watch?v=xQlTcAtDIuE&feature=youtu.be
 
-## installation:
+## Installation:
 Not worth installing unless you have experience with Libero and Softconsole, and have a programmable SmartFusion Chip available. 
 
 ## The Good stuff
@@ -36,4 +35,7 @@ All the Hardware/Verilog is in hdl/
 * **Ray Puyat** 
 
 * **David Waier** 
+
+![groupShot](https://user-images.githubusercontent.com/41589697/57891265-cfa0bc80-7808-11e9-98fe-a6b496384759.jpg)
+
 
