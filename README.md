@@ -8,7 +8,13 @@ This was our final project for EECS 373. We made two remote-controlled tanks, ar
 
 ![tank #2](https://user-images.githubusercontent.com/41589697/57890311-52277d00-7805-11e9-8d6b-f06c6329f885.jpeg)
 
+## Demos
 
+https://www.youtube.com/watch?v=HnKF4izMBwo&feature=youtu.be
+
+https://www.youtube.com/watch?v=z8IZLVbdijM&feature=youtu.be
+
+https://www.youtube.com/watch?v=xQlTcAtDIuE&feature=youtu.be
 
 ## installation:
 Not worth installing unless you have experience with Libero and Softconsole, and have a programmable SmartFusion Chip available. 
