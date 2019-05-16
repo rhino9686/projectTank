@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=z8IZLVbdijM&feature=youtu.be
 https://www.youtube.com/watch?v=xQlTcAtDIuE&feature=youtu.be
 
 ## Installation:
-Not worth installing unless you have experience with Libero and Softconsole, and have a programmable SmartFusion Chip available. 
+Not worth installing unless you have experience with Libero and Softconsole, and have a programmable SmartFusion Chip available. If you can, then just clone the repo or download all the files (LARGE download). The directory for the GUI and Server are found on https://github.com/rhino9686/projectTank-GUI and https://github.com/rhino9686/projectTank-Server.
 
 ## The Good stuff
 All the C code is in SoftConsole/turret_servo_mss_design_MSS_CM3_0_app/main.c.
@@ -30,11 +30,14 @@ All the Hardware/Verilog is in hdl/
 
 * **Madeline Devore** 
 
-* **Celine Schlueter** 
+* **Celine Schlueter**
+
+* **David Waier** 
 
 * **Ray Puyat** 
 
-* **David Waier** 
+(top down is left to right in the picture)
+
 
 ![groupShot](https://user-images.githubusercontent.com/41589697/57891265-cfa0bc80-7808-11e9-98fe-a6b496384759.jpg)
 
